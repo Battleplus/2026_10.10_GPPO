@@ -1,0 +1,58 @@
+# Python bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.token
+*token*
+*credential*
+*secret*
+*auth*
+secrets/
+credentials/
+auth/
+
+# Model checkpoints and training artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+checkpoints/
+models/
+runs/
+wandb/
+mlruns/
+
+# Datasets and large generated outputs
+data/
+datasets/
+artifacts/
+outputs/
+*.parquet
+*.arrow
+*.feather
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.tfrecord*
+
+# Full-text papers and downloaded documents
+*.pdf
+*.epub
