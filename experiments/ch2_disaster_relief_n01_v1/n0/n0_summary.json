@@ -1,0 +1,23 @@
+{
+  "identity": "ch2-disaster-relief-n01-v1",
+  "n0_research_forward_passes": 0,
+  "n0_research_optimizer_updates": 0,
+  "parent_count": 56,
+  "method_count": 8,
+  "trajectory_count": 448,
+  "expected_trajectory_count": 448,
+  "all_trajectories_complete": true,
+  "checkpoint_count": 6,
+  "checkpoint_metadata_verified": true,
+  "metrics_recomputed_by_full_raw_event_replay": true,
+  "primary_macro_by_method": {
+    "C0": 0.4727118119975263,
+    "C1": 0.970105440194726,
+    "L0-8201": 0.9741045660688518,
+    "L0-8202": 0.9567080736723594,
+    "L0-8203": 0.9628165485308342,
+    "L1-8201": 0.959581192616907,
+    "L1-8202": 0.9566851303458446,
+    "L1-8203": 0.9718758919651778
+  }
+}

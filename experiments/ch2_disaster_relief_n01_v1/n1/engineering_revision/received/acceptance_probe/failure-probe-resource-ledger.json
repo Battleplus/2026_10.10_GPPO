@@ -1,0 +1,119 @@
+{
+  "schema": "n01-failure-probe-resource-ledger/1",
+  "identity": "n01-engineering-failure-probes-v1-20261011",
+  "stage": "engineering_smoke",
+  "status": "open",
+  "entries": [
+    {
+      "probe_id": "n01-accept-ssh-disconnect-systemd-auth-denied-20261011",
+      "mode": "launcher-diagnostic",
+      "status": "failed",
+      "failure": "system-level systemd transient unit required interactive authentication; helper never started",
+      "wall_seconds_charged": 0.7,
+      "cpu_seconds_charged": 0.1,
+      "measurement_limitations": "SSH command call wall is measured at 0.7 seconds; denied-request server CPU is unknown and charged as a 0.1-second conservative reserve.",
+      "evidence": [
+        {"path": "systemd-launch-diagnostic.txt", "sha256": "3A6853FE88387329A27A1D1E38921BFBF81780820D8BED82A08C901ADE102994"}
+      ]
+    },
+    {
+      "probe_id": "n01-accept-ssh-disconnect-20261011",
+      "mode": "disconnect",
+      "status": "failed",
+      "failure": "systemd-run --wait delayed SSH return until unit completion; disconnect acceptance not met",
+      "wall_seconds_charged": 16.723,
+      "cpu_seconds_charged": 2.863,
+      "measured_wall_seconds_outer": 16.723,
+      "measured_cpu_seconds_outer": 2.863,
+      "measurement_limitations": "The local SSH/systemd harness observed these charged totals; the retained guardian ledger below is the inner process scope. Separate unit-level accounting output for this attempt was not retained.",
+      "evidence": [
+        {"path": "probe-work/resource-ledger.jsonl", "sha256": "3DA6F378E1431C5402EFD8CDF4A9DE87F00763BCF40705D7B0B25C6073F54F8B", "entry": 1},
+        {"path": "probe-work/guardians/01-engineering_smoke.json", "sha256": "9F3E7A10FC6571F7FD77299F2ADDE4C226E76491DAD73362419C4891E8A3BCA0"},
+        {"path": "probe-work/receipts/01-engineering_smoke.json", "sha256": "C51F9F7EA2B03B3E8590301721F4CEC808879D5B3A1551BC91E782633BF3AD48"},
+        {"path": "probe-work/probe-receipt.json", "sha256": "6A0462947473F87FA3FFF84E0A543FC1B0397C281D331EACFE64980E072D7655"},
+        {"path": "probe-work/probe-completion.json", "sha256": "0742D0EF1A3F264943EBD1568E3DA216C37DE319E432F6D8A6821932709497F1"},
+        {"path": "probe-work/probe_artifacts/model_state.pt", "sha256": "7DFA0C5A79B265F5F439B41728F08269E361702E7DBBA9E052DC092FD9576B8B"}
+      ]
+    },
+    {
+      "probe_id": "n01-accept-ssh-disconnect-v2-20261011",
+      "mode": "disconnect",
+      "status": "failed",
+      "failure": "SSH returned while service was running, but outer guardian could not find the child stage entry because the shared work root was not passed",
+      "wall_seconds_charged": 25.884,
+      "cpu_seconds_charged": 3.942,
+      "measured_wall_seconds_outer": 25.884,
+      "measured_cpu_seconds_outer": 3.942,
+      "measurement_limitations": "The local SSH/systemd harness observed these charged totals; the retained guardian ledger below is the inner process scope. Separate unit-level accounting output for this attempt was not retained.",
+      "evidence": [
+        {"path": "probe-work/resource-ledger.jsonl", "sha256": "3DA6F378E1431C5402EFD8CDF4A9DE87F00763BCF40705D7B0B25C6073F54F8B", "entry": 2},
+        {"path": "probe-work/guardians/02-engineering_smoke.json", "sha256": "C31614F75B89FD453297ABFDB92BA05966CD786C8EF3002E82C27AD3D6337765"},
+        {"path": "probe-work/receipts/02-engineering_smoke.json", "sha256": "2A059C2BDD3798937AE659DB39D799CB252251F21107051B9A8DD92B46CD6E0A"},
+        {"path": "probe-work/disconnect-v2/probe-receipt.json", "sha256": "55E921CC042F11152477AA7B3A244E09C1066CFA7B2FC11AEEF5B8457EFFE26B"},
+        {"path": "probe-work/disconnect-v2/probe-completion.json", "sha256": "A639241AA3130086EB0FD15DE3426A79C88A50F6FD47E92F8A684AF517989576"},
+        {"path": "probe-work/disconnect-v2/probe_artifacts/model_state.pt", "sha256": "E96120B00DD8BBD46AFCE95C185335DFF5C051606BFABFF3D153DADBEFA242FE"}
+      ]
+    },
+    {
+      "probe_id": "n01-accept-ssh-disconnect-v3-20261011",
+      "mode": "disconnect",
+      "status": "failed",
+      "failure": "SSH returned while the same InvocationID remained active and the checkpoint-bound model completed forward/save, but outer guardian could not find the child stage entry",
+      "wall_seconds_charged": 11.924,
+      "cpu_seconds_charged": 10.978,
+      "measured_wall_seconds_outer": 11.924,
+      "measured_cpu_seconds_outer": 10.978,
+      "guardian_cpu_seconds": 10.946197158,
+      "systemd_cpu_seconds": 10.978,
+      "evidence": [
+        {"path": "probe-work/resource-ledger.jsonl", "sha256": "3DA6F378E1431C5402EFD8CDF4A9DE87F00763BCF40705D7B0B25C6073F54F8B", "entry": 3},
+        {"path": "probe-work/disconnect-v3/resource-ledger.jsonl", "sha256": "F8452E6E511EFD6221758FE3BE3C8BFDBACCDD93E31AD38D94A0F0FE0F03B242"},
+        {"path": "probe-work/guardians/03-engineering_smoke.json", "sha256": "0011864EAE4F74E7ED4AC3F7CCB8FF5632D485BFA27191560D96DB572D42C11D"},
+        {"path": "probe-work/receipts/03-engineering_smoke.json", "sha256": "011DE09315FDA9528BDB035C7F52272B674149497C6D058FA19E38E67899F106"},
+        {"path": "probe-work/disconnect-v3/probe-completion.json", "sha256": "C098669FB398232B1255C7A64D7A3E85599EF5E398FEB34A997D7275BFDFE86A"},
+        {"path": "probe-work/disconnect-v3/probe_artifacts/model_state.pt", "sha256": "775DDFACA6BB40F122842AA824C613E4D10208A322993DCC0BB267EB62690F41"}
+      ]
+    },
+    {
+      "probe_id": "n01-accept-ssh-disconnect-v4-20261011",
+      "mode": "disconnect",
+      "status": "complete",
+      "wall_seconds_charged": 10.083810556679964,
+      "cpu_seconds_charged": 9.097367590000001,
+      "result": "child completed after original SSH client termination; checkpoint artifact saved and 2727 bounded forwards completed; no residual process",
+      "evidence": [
+        {"path": "probe-work/resource-ledger.jsonl", "entry": 4},
+        {"path": "probe-work/guardians/04-engineering_smoke.json", "sha256": "511CAB2AEAF8B0A9A7A023CC2B61E23F4E2DB2AD6DA381C42D2C89AE2C086F63"},
+        {"path": "probe-work/receipts/04-engineering_smoke.json", "sha256": "87C2870288045DAE604F5E988CD3BD0B290A195562A0A1A6EB7CD7F89B2FDD5E"},
+        {"path": "probe-work/disconnect-v4-20261011/probe-completion.json", "sha256": "3AE25674AEBF0CE4928453FA9D6236F5BB01AE392D321AC6235D11ADCCB6994C"},
+        {"path": "probe-work/disconnect-v4-20261011/probe-receipt.json", "sha256": "AC4C58E59419153470EF21793F8A074BE9AEFAD4FDA5701B9FE8D74056324853"},
+        {"path": "probe-work/disconnect-v4-20261011/probe_artifacts/model_state.pt", "sha256": "2B29605D37A26D8A6CB7A4C4E502D728FC2F1BBD43A2421D81AC1B04CBD5C536"}
+      ]
+    },
+    {
+      "probe_id": "n01-accept-runtime-timeout-20261011",
+      "mode": "systemd-runtime-timeout",
+      "status": "failed",
+      "failure": "systemd user unit reached RuntimeMaxSec=5s and terminated parent with Result=timeout, status=15; no final guardian settlement",
+      "wall_seconds_charged": 5.066,
+      "cpu_seconds_charged": 4.660,
+      "evidence": [{"path": "remote systemd journal", "result": "Result=timeout; ExecMainStatus=15; CPUUsageNSec=4660244000; runtime=5.066s"}]
+    },
+    {
+      "probe_id": "n01-accept-guardian-overrun-20261011",
+      "mode": "guardian-overrun",
+      "status": "failed",
+      "failure": "guardian killed child on engineering_smoke wall overrun; kill_reason recorded as engineering_smoke wall 107.745>108s",
+      "wall_seconds_charged": 3.2708789743483067,
+      "cpu_seconds_charged": 3.004235556,
+      "evidence": [{"path": "probe-work/guardians/05-engineering_smoke.json", "sha256": "599F72C10193968FC6B55A1319D5F7B2EB4BBB5971D8367F07E6E99EAA5A7A52"}]
+    }
+  ],
+  "limits": {
+    "engineering_smoke_wall_seconds": 900,
+    "engineering_smoke_cpu_seconds": 600,
+    "whole_pilot_wall_seconds": 1140,
+    "whole_pilot_cpu_seconds": 720
+  },
+  "next_probe_must_be_reserved_against_current_summary": true
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "n01-engineering-resource-summary/1",
+  "identity": "ch2-disaster-relief-n01-engineering-r2-20261011",
+  "status": "probes-complete-budget-freeze-pending",
+  "scope": "N01 carry-forward, admission, engineering smoke and all acceptance failure probes",
+  "limits": {
+    "engineering_smoke_wall_seconds": 900,
+    "engineering_smoke_cpu_seconds": 600,
+    "whole_pilot_wall_seconds": 1140,
+    "whole_pilot_cpu_seconds": 720
+  },
+  "main_run": {
+    "wall_seconds": 99.42736250441521,
+    "cpu_seconds": 90.196396295,
+    "sources": [
+      {"path": "../package/PRIOR_RESOURCE_COST.json", "sha256": "37447E7D142BE5351861D9921CB2076A391901B907607F1D66C2358B34ACBE86"},
+      {"path": "resource-ledger.jsonl", "sha256": "74E5CDC4905EFC40AFAE7B7C74EEC142E2ED57B8311E680D85FC04674808CE63"},
+      {"path": "receipts/01-admission.json", "sha256": "B33E2D5959A79C296BE8FBF848042C72C2DDD3DDC8F19FC8B86AFC3E4279A25C"},
+      {"path": "receipts/02-engineering_smoke.json", "sha256": "13018338C14092A8D108D14218BF968E886458F5FA5173159E647B33E5BC0FD1"},
+      {"path": "guardians/01-admission.json", "sha256": "4053955DEF2084F73B3B932A3240DE46076C374A607B8605B8FC76DDF6736B51"},
+      {"path": "guardians/02-engineering_smoke.json", "sha256": "0DC27A22A790E10650A5B8954759F7954EF46297554FBCC5393993F69C047C26"}
+    ]
+  },
+  "failure_probes": {
+    "wall_seconds": 73.65168953102827,
+    "cpu_seconds": 34.644603146,
+    "ledger_path": "acceptance_probe/failure-probe-resource-ledger.json",
+    "ledger_sha256": "74ABD8B6F53561A92E9C196A19C30EC0B3C389260FFD06E8313ABFBA3AE70F60"
+  },
+  "used_before_next_probe": {
+    "engineering_smoke_wall_seconds": 173.07905203544348,
+    "engineering_smoke_cpu_seconds": 124.840999441,
+    "whole_pilot_wall_seconds": 173.07905203544348,
+    "whole_pilot_cpu_seconds": 124.840999441
+  },
+  "available_before_next_probe": {
+    "engineering_smoke_wall_seconds": 726.9209479645565,
+    "engineering_smoke_cpu_seconds": 475.159396854,
+    "whole_pilot_wall_seconds": 966.9209479645565,
+    "whole_pilot_cpu_seconds": 595.159396854
+  },
+  "reservation_policy": "Before each new probe, cap its runtime by the minimum of the remaining engineering-stage and whole-pilot wall/CPU budgets. Record the failed or complete row and re-hash this summary before starting another probe."
+}

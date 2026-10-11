@@ -1,0 +1,62 @@
+{
+  "schema": "n01-evaluation-budget-freeze/1",
+  "status": "ready-for-independent-review-budget-insufficient-before-2800",
+  "scope": {
+    "parents": 70,
+    "methods": 5,
+    "seeds": 8,
+    "episodes": 2800,
+    "formula": "70*5*8",
+    "sample_episodes": 100,
+    "sample_is_excluded_from_final_episodes": true
+  },
+  "measured_sample_cost": {
+    "wall_seconds": 53.98369542090222,
+    "cpu_seconds": 49.039534243,
+    "source": "N1 100-sample engineering smoke receipt",
+    "max_single_episode_wall_seconds": 1.160301276948303,
+    "max_single_episode_cpu_seconds": 0.943576775,
+    "sum_episode_wall_seconds": 47.94707480818033,
+    "sum_episode_cpu_seconds": 39.20041993499999
+  },
+  "conservative_scaled_estimate": {
+    "scale_factor": 28,
+    "wall_seconds": 1511.543471785262,
+    "cpu_seconds": 1373.106958804,
+    "includes_all_methods_and_seeds": true,
+    "startup_export_cleanup_reserve_seconds": {"wall": 0, "cpu": 0},
+    "reason": "The 100-sample measurement is the only directly bound full-sample cost; no lower-granularity per-episode receipt is assumed. Reserve is zero because the scaled estimate already exceeds the cap."
+  },
+  "known_cost_before_final": {
+    "wall_seconds": 173.07905203544348,
+    "cpu_seconds": 124.840999441
+  },
+  "available_before_final": {
+    "engineering_wall_seconds": 726.9209479645565,
+    "engineering_cpu_seconds": 475.159000559,
+    "whole_pilot_wall_seconds": 966.9209479645565,
+    "whole_pilot_cpu_seconds": 595.159000559
+  },
+  "projected_total": {
+    "wall_seconds": 1684.6225238207056,
+    "cpu_seconds": 1497.947958245,
+    "engineering_cap_seconds": {"wall": 900, "cpu": 600},
+    "whole_pilot_cap_seconds": {"wall": 1140, "cpu": 720}
+  },
+  "decision": "do_not_start_2800_until_an_independent_review_accepts_a_tighter_per-episode cost bound or an authorized budget change",
+  "n2_n3_started": false,
+  "known_resource_summary_sha256": "74ABD8B6F53561A92E9C196A19C30EC0B3C389260FFD06E8313ABFBA3AE70F60"
+  ,"source_hashes": {
+    "sample_diagnostic/episode_metrics.json": "5F3A8B40591A3888956ABE3F35C10BDB3C7F5EBC000F97D00CC510BA0EECC12C",
+    "sample_diagnostic/sample_summary.json": "782E40D761A49B82DABF54E63AD6E2C66D6CCA057F90E32609B59DED112DEF70",
+    "sample_diagnostic/checkpoint_barrier.json": "C9EB5D54603DF1974BE5F14D7705075D0A455745B31EE283E58CCDF628881045",
+    "resource-ledger.jsonl": "74E5CDC4905EFC40AFAE7B7C74EEC142E2ED57B8311E680D85FC04674808CE63"
+  },
+  "protocol_constraints": {
+    "actual_external_commitment_task_counts": "10 parents have 14 tasks at 8x12 and 21 tasks at 12x18; other 60 parents have 12/18 tasks",
+    "fixed_checkpoints": true,
+    "model_updates": false,
+    "sample_100_excluded_from_final_2800": true,
+    "n2_n3_started": false
+  }
+}

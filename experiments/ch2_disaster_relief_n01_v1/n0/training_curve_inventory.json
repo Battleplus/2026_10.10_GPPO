@@ -1,0 +1,1766 @@
+{
+  "L0-8201": {
+    "sha256": "3cd0a3e5f9b50cdd6d509d3e0be753e134b5003fca8fef1dadb70721c4f775ec",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.586513732707793,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.4801580011844635,
+        "entropy": 0.1749895375687629,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.7404774586981886,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.22574744513258338,
+        "entropy": 0.17922345106489956,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.1614431288571434,
+        "mean_weighted_on_time_delivery_rate": 0.851890756302521,
+        "value_loss": 0.39231861010193825,
+        "entropy": 0.1613726536743343,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.614540523503234,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.4168399143964052,
+        "entropy": 0.17350727115990594,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.090044412935241,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.1847668024711311,
+        "entropy": 0.14481797703774646,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.397070065365249,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.08615415636450052,
+        "entropy": 0.13915800847462378,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.411623909430546,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.05032751336693764,
+        "entropy": 0.13236457272432745,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.6269820261914347,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.06492247222922742,
+        "entropy": 0.13961282512173057,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.9499040329646433,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.08951339079067111,
+        "entropy": 0.15633428178261966,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.0461358912440173,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08582648960873485,
+        "entropy": 0.16968788858503103,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.2723458393061295,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.0405065129743889,
+        "entropy": 0.21273378562182188,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 2.1445868732687003,
+        "mean_weighted_on_time_delivery_rate": 0.8782051282051282,
+        "value_loss": 0.060682678828015924,
+        "entropy": 0.18719494552351534,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.6078488440538057,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04213193990290165,
+        "entropy": 0.16236927267163992,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.5313260364697063,
+        "mean_weighted_on_time_delivery_rate": 0.8595352564102565,
+        "value_loss": 0.0482397626619786,
+        "entropy": 0.18222414702177048,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.6141793252610848,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.0486294167349115,
+        "entropy": 0.13002727009006776,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.7262840093039165,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03366264799842611,
+        "entropy": 0.11776119616115466,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 2.246543027149512,
+        "mean_weighted_on_time_delivery_rate": 0.8697478991596639,
+        "value_loss": 0.07017446728423238,
+        "entropy": 0.12040015170350671,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.5892783910574306,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.02556655276566744,
+        "entropy": 0.12646443347330205,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.1750107862351946,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01696295087458566,
+        "entropy": 0.11309234429791104,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.380153290196008,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03439185139723122,
+        "entropy": 0.12156363175745355,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.4457033204283554,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.014128808223176748,
+        "entropy": 0.10954136785221635,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6068909357096133,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04075716558145359,
+        "entropy": 0.1199764203192899,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.9375287007526865,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07271866220980883,
+        "entropy": 0.14824860834050924,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.0878021415491554,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.0785552361048758,
+        "entropy": 0.14292430086061358,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.3577440997188215,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.04259700118564069,
+        "entropy": 0.18501030653715134,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 2.159514728975408,
+        "mean_weighted_on_time_delivery_rate": 0.8782051282051282,
+        "value_loss": 0.050103743094950914,
+        "entropy": 0.18849079287610948,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.599473966257794,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04972996306605637,
+        "entropy": 0.1329520869476255,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.5220638876801753,
+        "mean_weighted_on_time_delivery_rate": 0.8762019230769231,
+        "value_loss": 0.060234899865463376,
+        "entropy": 0.12740290956571698,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.6117728541822847,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04485914611723274,
+        "entropy": 0.11142163497424917,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7247450166900347,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03790403850143775,
+        "entropy": 0.10835999444316258,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 2.6331062480636325,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.07461540889926255,
+        "entropy": 0.11457943305686058,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.437611825494061,
+        "mean_weighted_on_time_delivery_rate": 0.9464285714285714,
+        "value_loss": 0.027674682554788888,
+        "entropy": 0.12016927526565269,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  },
+  "L0-8202": {
+    "sha256": "9c66f724e15dab4b9ed47e979cb16ad52b08485f6a91725401e6c7a2c91159df",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.609808183165521,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.45806057564914227,
+        "entropy": 0.22385557764209807,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.7387343215032782,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.2217911183834076,
+        "entropy": 0.21543288487009704,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.3588295342170973,
+        "mean_weighted_on_time_delivery_rate": 0.8964285714285715,
+        "value_loss": 0.4271334856748581,
+        "entropy": 0.17846619803458452,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.5753568426848603,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.4722596500068903,
+        "entropy": 0.19476661179214716,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.136350695108714,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.2585004987195134,
+        "entropy": 0.19359971210360527,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.4306862579709794,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.12091659847646952,
+        "entropy": 0.17403890984132886,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.450121367912226,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.046162813901901245,
+        "entropy": 0.15278486482566223,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.6335515328882693,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.054154495359398425,
+        "entropy": 0.15477182471659034,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.9379590250136227,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07727982755750418,
+        "entropy": 0.1969409107696265,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.0335218028541426,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08842232311144471,
+        "entropy": 0.19168125046417117,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.320902365971382,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.03656979266088456,
+        "entropy": 0.23775120289064944,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 2.1076734670182393,
+        "mean_weighted_on_time_delivery_rate": 0.8573717948717948,
+        "value_loss": 0.04933271009940654,
+        "entropy": 0.1817952945129946,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.5665973024412527,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.053389211650937796,
+        "entropy": 0.15511139621958137,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.6312878834574778,
+        "mean_weighted_on_time_delivery_rate": 0.9172275641025642,
+        "value_loss": 0.039769443683326244,
+        "entropy": 0.16588401270564646,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.609799053115278,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.06257068295963109,
+        "entropy": 0.1287011645908933,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.7007480863118924,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03114244603784755,
+        "entropy": 0.11878889493527822,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 2.250055331902846,
+        "mean_weighted_on_time_delivery_rate": 0.861904761904762,
+        "value_loss": 0.0768251281697303,
+        "entropy": 0.11853708798298612,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.3039852124053994,
+        "mean_weighted_on_time_delivery_rate": 0.9107142857142857,
+        "value_loss": 0.02548623544862494,
+        "entropy": 0.12946375014871592,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.124779468179254,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.014606289798393846,
+        "entropy": 0.11250682240643073,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.372452786901336,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.05022796499542892,
+        "entropy": 0.11742228609728045,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.459072993190294,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01300662849098444,
+        "entropy": 0.11729152319094283,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6324323734017563,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04436338655068539,
+        "entropy": 0.11972599459113553,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.9363695033796282,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07073426432907581,
+        "entropy": 0.1463612646330148,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.0099675163328854,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08286096225492656,
+        "entropy": 0.14086523337755352,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.2445982250618304,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.03409295837627724,
+        "entropy": 0.18891144171357155,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 1.9567417149498632,
+        "mean_weighted_on_time_delivery_rate": 0.829059829059829,
+        "value_loss": 0.03838035778608173,
+        "entropy": 0.13948946015443653,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.600381213169794,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04660957888700068,
+        "entropy": 0.1523172763409093,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.5547489554580967,
+        "mean_weighted_on_time_delivery_rate": 0.8762019230769231,
+        "value_loss": 0.04783179808873683,
+        "entropy": 0.12872771359980106,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.574545253434658,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.051055236952379346,
+        "entropy": 0.11679309524333803,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7395310193375915,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04103313328232616,
+        "entropy": 0.11959883279996575,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 1.8293215497846087,
+        "mean_weighted_on_time_delivery_rate": 0.7304621848739496,
+        "value_loss": 0.06041497818659991,
+        "entropy": 0.10763795209277305,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.3972272386828024,
+        "mean_weighted_on_time_delivery_rate": 0.9271978021978022,
+        "value_loss": 0.03625547792762518,
+        "entropy": 0.11195459616283188,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  },
+  "L0-8203": {
+    "sha256": "0cfbd96368427b9848f612fb823a81eac1770526df433808aa3f3ee719caf427",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.584039265783367,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.49941914714872837,
+        "entropy": 0.22720177401788533,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.7127434702447422,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.28080906346440315,
+        "entropy": 0.23673060862347484,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.0105845919381102,
+        "mean_weighted_on_time_delivery_rate": 0.7852240896358543,
+        "value_loss": 0.3558365311473608,
+        "entropy": 0.2652651909738779,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.440164301999734,
+        "mean_weighted_on_time_delivery_rate": 0.9423076923076923,
+        "value_loss": 0.31009034626185894,
+        "entropy": 0.22736123157665133,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.138706867406236,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.07415135391056538,
+        "entropy": 0.2465999680571258,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.3930579381305197,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.06372629490215331,
+        "entropy": 0.19301429763436317,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.4226304770160882,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01826893724501133,
+        "entropy": 0.158340472553391,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.6421402464466155,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04897733684629202,
+        "entropy": 0.18679550930391997,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.9636650091976282,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07943640439771116,
+        "entropy": 0.1815265881596133,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.0483130225662816,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.09206816577352583,
+        "entropy": 0.18486825074069202,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.3076411804541785,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.041081907227635384,
+        "entropy": 0.22433362749870867,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 2.0818034857153833,
+        "mean_weighted_on_time_delivery_rate": 0.8782051282051282,
+        "value_loss": 0.05420092097483575,
+        "entropy": 0.1811765048187226,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.6109904218874087,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03647271264344454,
+        "entropy": 0.188276813714765,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.67107165666146,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.04631787061225623,
+        "entropy": 0.18871620297431946,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.5871924155115025,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.053325161105021834,
+        "entropy": 0.19584964797832072,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.7076049417616943,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03547326073748991,
+        "entropy": 0.17428756883600727,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 1.976641378096578,
+        "mean_weighted_on_time_delivery_rate": 0.759453781512605,
+        "value_loss": 0.09551421203650534,
+        "entropy": 0.21307517495006323,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.340442767103192,
+        "mean_weighted_on_time_delivery_rate": 0.9107142857142857,
+        "value_loss": 0.022925090976059437,
+        "entropy": 0.15262815565802157,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.136540948373357,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.013789609918603674,
+        "entropy": 0.12815344266709872,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.4197747186341276,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04198013909626752,
+        "entropy": 0.12836091546341777,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.4097301783803267,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.013292490155436099,
+        "entropy": 0.12502326116373297,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6435885914278234,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.038340334431268275,
+        "entropy": 0.12664259504526854,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.9225868315924335,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07841809652745724,
+        "entropy": 0.15529928426258266,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.021483363527042,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08276989567093551,
+        "entropy": 0.15702465909998864,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.335756250246203,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.04164298193063587,
+        "entropy": 0.19234862853772938,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 1.782563783474067,
+        "mean_weighted_on_time_delivery_rate": 0.7612179487179487,
+        "value_loss": 0.05297328461892903,
+        "entropy": 0.15429612679872662,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.5503258617475604,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.040548166958615184,
+        "entropy": 0.13616713543888181,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.7335075607970043,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.032380089280195534,
+        "entropy": 0.14506925782188773,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.5877071085118297,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.05112664483021945,
+        "entropy": 0.12080540315946564,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7605193429396007,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.041793362237513065,
+        "entropy": 0.11653386084071826,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 2.358290634511147,
+        "mean_weighted_on_time_delivery_rate": 0.9107142857142857,
+        "value_loss": 0.07514306483790278,
+        "entropy": 0.11862446494342294,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.4013570436500506,
+        "mean_weighted_on_time_delivery_rate": 0.9271978021978022,
+        "value_loss": 0.02895407029427588,
+        "entropy": 0.11700947122881189,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  },
+  "L1-8201": {
+    "sha256": "04bdb143facaa34cfe0034f58e02fc894852e653ae5380f6cd1e54ac25e4f532",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.549520213108101,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.49142999574542046,
+        "entropy": 0.1866852603852749,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.7221511398096214,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.27011680230498314,
+        "entropy": 0.21598658163566142,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.2331413978878665,
+        "mean_weighted_on_time_delivery_rate": 0.8392857142857143,
+        "value_loss": 0.4172067139297724,
+        "entropy": 0.20006428664783016,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.427635776150221,
+        "mean_weighted_on_time_delivery_rate": 0.9464285714285714,
+        "value_loss": 0.35497262980788946,
+        "entropy": 0.2220338759943843,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.1106699160409397,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.11954309791326523,
+        "entropy": 0.21448651771061122,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.4322319835356696,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.07160270842723548,
+        "entropy": 0.18757367134094238,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.436905720600969,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03142385941464454,
+        "entropy": 0.23192024370655417,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.6313998170427766,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.06994513375684619,
+        "entropy": 0.24143026862293482,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.9525007347358072,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.09035059530287981,
+        "entropy": 0.20600342005491257,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.046978792119246,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08861110243014991,
+        "entropy": 0.20766033325344324,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.2715341476157542,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.03635667351773009,
+        "entropy": 0.2325748852454126,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 1.803795350178771,
+        "mean_weighted_on_time_delivery_rate": 0.7820512820512819,
+        "value_loss": 0.05653897416777909,
+        "entropy": 0.2323214947246015,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.5814475010139653,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.059264254523441195,
+        "entropy": 0.2786977286450565,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.70257909392425,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.04482572851702571,
+        "entropy": 0.23194137355312705,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.6144036236303636,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.058125582872889936,
+        "entropy": 0.18138433003332466,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.7013644035049704,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04726339067565277,
+        "entropy": 0.24940958456136286,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 1.8607409698530184,
+        "mean_weighted_on_time_delivery_rate": 0.7011904761904763,
+        "value_loss": 0.11956192343495786,
+        "entropy": 0.20294559700414538,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.599121467871598,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.026819591410458088,
+        "entropy": 0.18990479572676122,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.111678440506384,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01837564245215617,
+        "entropy": 0.1795212528668344,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.383731617754327,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04031960590509698,
+        "entropy": 0.19216810585930943,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.43493894883212,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.018426984490361065,
+        "entropy": 0.2080398420803249,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6554297438338397,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.045377730566542596,
+        "entropy": 0.1626511076465249,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.9551749865261656,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07322828797623515,
+        "entropy": 0.17531181569211185,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.024559773821411,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08436053106561303,
+        "entropy": 0.15956796321552247,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.0851711949046,
+        "mean_weighted_on_time_delivery_rate": 0.8873626373626373,
+        "value_loss": 0.030475144740194082,
+        "entropy": 0.2270134687423706,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 2.001645249999654,
+        "mean_weighted_on_time_delivery_rate": 0.8568376068376068,
+        "value_loss": 0.06006508332211524,
+        "entropy": 0.16924962413031608,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.5789286936626703,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.05377264425624162,
+        "entropy": 0.14211816526949406,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.544059525047456,
+        "mean_weighted_on_time_delivery_rate": 0.8762019230769231,
+        "value_loss": 0.0611148236785084,
+        "entropy": 0.1631723465397954,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.624637466866159,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04714812198653817,
+        "entropy": 0.13327110433601774,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7516787247439745,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03054051019717008,
+        "entropy": 0.13499100346234627,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 2.4067085504281955,
+        "mean_weighted_on_time_delivery_rate": 0.9107142857142857,
+        "value_loss": 0.08200037223286927,
+        "entropy": 0.12379146830062382,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.4267931021879416,
+        "mean_weighted_on_time_delivery_rate": 0.9423076923076923,
+        "value_loss": 0.04409918689634651,
+        "entropy": 0.1313712875271449,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  },
+  "L1-8202": {
+    "sha256": "64866eabcfe9efca0a819267518ee880f8328ab7ddc97c97793bb63453dd5253",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.599293912843563,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.5100768357515335,
+        "entropy": 0.21738517086487263,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.7663834384689707,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.2521758293733001,
+        "entropy": 0.21542876726016402,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.3588295342170973,
+        "mean_weighted_on_time_delivery_rate": 0.8964285714285715,
+        "value_loss": 0.4473159369081259,
+        "entropy": 0.17834799853153527,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.5753568426848603,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.48858869448304176,
+        "entropy": 0.19424215517938137,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.136350695108714,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.2633557552471757,
+        "entropy": 0.19565103482455015,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.405379036150631,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.11956710601225495,
+        "entropy": 0.16515376511961222,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.4492083957315267,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.030562850064598024,
+        "entropy": 0.16115807963069528,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.6546898713039306,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.061373665696009994,
+        "entropy": 0.17782496148720384,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.886221619866332,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.08948208368383348,
+        "entropy": 0.19383749621920288,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.0002846823560825,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.09281398192979395,
+        "entropy": 0.19777492282446474,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.3426115362598594,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.04104921733960509,
+        "entropy": 0.25628460897132754,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 1.9069314849716732,
+        "mean_weighted_on_time_delivery_rate": 0.8376068376068375,
+        "value_loss": 0.04459371301345527,
+        "entropy": 0.19697115663439035,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.5812009477458893,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.036069504101760685,
+        "entropy": 0.18973781657405198,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.6950724455677353,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.03633034054655582,
+        "entropy": 0.18989011750090867,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.5850977680679263,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.05199034686665982,
+        "entropy": 0.17787330620922148,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.6985132420462647,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04002592072356492,
+        "entropy": 0.2066310124937445,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 2.076309838333718,
+        "mean_weighted_on_time_delivery_rate": 0.8161764705882353,
+        "value_loss": 0.08270924584940076,
+        "entropy": 0.21386534930206835,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.3904520318329174,
+        "mean_weighted_on_time_delivery_rate": 0.9271978021978022,
+        "value_loss": 0.020270621054805815,
+        "entropy": 0.22490950231440365,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.1245034468531054,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.014288303587818518,
+        "entropy": 0.22280696919187903,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.431503627264034,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04760066547896713,
+        "entropy": 0.2080970082897693,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.4349589319153893,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01603741041617468,
+        "entropy": 0.18903837748803198,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6302196526732353,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04524557484546676,
+        "entropy": 0.18907264748122543,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.925712337244142,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.06079529761336744,
+        "entropy": 0.23656999040395021,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.048750744313408,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08225619373843074,
+        "entropy": 0.18235460598953068,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.2989284918728834,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.031993901822716,
+        "entropy": 0.24612359516322613,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 2.1415225189461626,
+        "mean_weighted_on_time_delivery_rate": 0.8782051282051282,
+        "value_loss": 0.05272768042050302,
+        "entropy": 0.1735045356908813,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.6299390853023197,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.031318252556957304,
+        "entropy": 0.14880746975541115,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.7305522334724714,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.04008963669184595,
+        "entropy": 0.16835910198278725,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.599805716016242,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04258930333890021,
+        "entropy": 0.17558121192269027,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7733967779839002,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.040637555124703795,
+        "entropy": 0.14687073836103082,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 2.087033950037889,
+        "mean_weighted_on_time_delivery_rate": 0.8161764705882353,
+        "value_loss": 0.07605149294249713,
+        "entropy": 0.18765431037172675,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.422638406010252,
+        "mean_weighted_on_time_delivery_rate": 0.9271978021978022,
+        "value_loss": 0.01861055620247498,
+        "entropy": 0.18859554117079824,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  },
+  "L1-8203": {
+    "sha256": "58f047848c523247ba3eabe158085bb808fa62fc89d9bc4772249b947d7c16c4",
+    "rounds": 32,
+    "rounds_detail": [
+      {
+        "round": 1,
+        "mean_episode_reward": 2.5719287579978247,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.5176558941602707,
+        "entropy": 0.18300794064998627,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 2,
+        "mean_episode_reward": 1.72922519221405,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.27618483267724514,
+        "entropy": 0.1917565695475787,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 3,
+        "mean_episode_reward": 2.1836056285864247,
+        "mean_weighted_on_time_delivery_rate": 0.8392857142857143,
+        "value_loss": 0.46122458577156067,
+        "entropy": 0.1724043961148709,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 4,
+        "mean_episode_reward": 2.587319331896652,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.4827111177146435,
+        "entropy": 0.17949228594079614,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 5,
+        "mean_episode_reward": 2.1289264927827336,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.2189474985934794,
+        "entropy": 0.1623343548271805,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 6,
+        "mean_episode_reward": 2.372002234608262,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.08110732724890113,
+        "entropy": 0.14156963367713615,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 7,
+        "mean_episode_reward": 2.448738086935667,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.02909651555819437,
+        "entropy": 0.12990765646100044,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 8,
+        "mean_episode_reward": 2.653541915635312,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.052531605353578925,
+        "entropy": 0.11316553060896695,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 9,
+        "mean_episode_reward": 1.923323392412447,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07252818113192916,
+        "entropy": 0.1511628752341494,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 10,
+        "mean_episode_reward": 2.034477050570202,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08578123291954398,
+        "entropy": 0.15540441358461976,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 11,
+        "mean_episode_reward": 2.2726197507614456,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.03989890357479453,
+        "entropy": 0.1973668448626995,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 12,
+        "mean_episode_reward": 2.18923564924605,
+        "mean_weighted_on_time_delivery_rate": 0.9337606837606838,
+        "value_loss": 0.05585555708967149,
+        "entropy": 0.14441247301874682,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 13,
+        "mean_episode_reward": 2.5893168179611954,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.026916501752566546,
+        "entropy": 0.132840083562769,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 14,
+        "mean_episode_reward": 2.6320650878167555,
+        "mean_weighted_on_time_delivery_rate": 0.9172275641025642,
+        "value_loss": 0.04641130135860294,
+        "entropy": 0.12795424251817167,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 15,
+        "mean_episode_reward": 2.5866054473751445,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.045163154136389494,
+        "entropy": 0.11702562958089402,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 16,
+        "mean_episode_reward": 1.7402044016282896,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03631708084139973,
+        "entropy": 0.11941884009866044,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 17,
+        "mean_episode_reward": 2.17579143293556,
+        "mean_weighted_on_time_delivery_rate": 0.8523109243697479,
+        "value_loss": 0.0585059872828424,
+        "entropy": 0.11485569741034851,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 18,
+        "mean_episode_reward": 2.538441349629154,
+        "mean_weighted_on_time_delivery_rate": 0.9807692307692308,
+        "value_loss": 0.025472943030763417,
+        "entropy": 0.11433768671577127,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 19,
+        "mean_episode_reward": 2.1256976456117638,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.01925625797593966,
+        "entropy": 0.1142003294053211,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 20,
+        "mean_episode_reward": 2.4472659876041094,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04990061593707651,
+        "entropy": 0.11355044818083115,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 21,
+        "mean_episode_reward": 2.4211362307312494,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.014879377791658044,
+        "entropy": 0.10445166594081456,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 22,
+        "mean_episode_reward": 2.6948519671093134,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.04625064379069954,
+        "entropy": 0.1194022344352561,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 23,
+        "mean_episode_reward": 1.9385923179558748,
+        "mean_weighted_on_time_delivery_rate": 0.8314393939393939,
+        "value_loss": 0.07341838418506086,
+        "entropy": 0.1444964649854228,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 24,
+        "mean_episode_reward": 2.0217231936732425,
+        "mean_weighted_on_time_delivery_rate": 0.9285714285714286,
+        "value_loss": 0.08079780405387282,
+        "entropy": 0.1365356256137602,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 25,
+        "mean_episode_reward": 2.2987123931336297,
+        "mean_weighted_on_time_delivery_rate": 0.9642857142857143,
+        "value_loss": 0.0362192076863721,
+        "entropy": 0.18331274099182338,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 26,
+        "mean_episode_reward": 2.1896377813479413,
+        "mean_weighted_on_time_delivery_rate": 0.9337606837606838,
+        "value_loss": 0.047594893956556916,
+        "entropy": 0.12877016770653427,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 27,
+        "mean_episode_reward": 2.6049587235855514,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03427545487647876,
+        "entropy": 0.12920108772050298,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 28,
+        "mean_episode_reward": 2.7066591804665805,
+        "mean_weighted_on_time_delivery_rate": 0.9338942307692308,
+        "value_loss": 0.03229347767774016,
+        "entropy": 0.12181092028549756,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 29,
+        "mean_episode_reward": 2.6004821900346817,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.048774082912132144,
+        "entropy": 0.11404041346713711,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 30,
+        "mean_episode_reward": 1.7582249404965462,
+        "mean_weighted_on_time_delivery_rate": 1.0,
+        "value_loss": 0.03637597698252648,
+        "entropy": 0.1243483425305385,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 31,
+        "mean_episode_reward": 2.485100333243392,
+        "mean_weighted_on_time_delivery_rate": 0.9558823529411764,
+        "value_loss": 0.06812485679984093,
+        "entropy": 0.11001308302797952,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      },
+      {
+        "round": 32,
+        "mean_episode_reward": 2.5506702673116832,
+        "mean_weighted_on_time_delivery_rate": 0.9807692307692308,
+        "value_loss": 0.02576769038569182,
+        "entropy": 0.12757373554632068,
+        "optimizer_updates": 16,
+        "transition_count": 240
+      }
+    ]
+  }
+}

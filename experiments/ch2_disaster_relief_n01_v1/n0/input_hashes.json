@@ -1,0 +1,18 @@
+{
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\reports\\results_summary.json": "b1dfe49ca1d641d45fa9267e9ec54bcd6925c2b4e92126798198c5291a05f5ac",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\reports\\method_metrics.csv": "cec35d4baa3721094c2c58023150f928a82b3beebe00ba321051dd98f41dd730",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\reports\\training_curve_summary.csv": "3efd188fc5650b0bf58d02849d917eaf3a5183105134b34d1a2e7eea1a08fe35",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\indexes\\checkpoint_index.csv": "f6dad351d9db315a76a4aa4eacc2a0a3e353d5afce062b40ad1b35a934708caa",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\DEPLOYMENT_MANIFEST.json": "05a9bed38d8728f5ae7a068122e81abf2df60153505c5d64ac614d1feeb41c47",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\registered_data\\input_registry.json": "bf50433281761ca3264c62f5e63cc0c49e578bcc1fcafa369f3014daced8e093",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\independent_audit.py": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+  "research-executions\\ch2-disaster-relief-graph-v2-20261011\\evidence\\raw\\formal-run-evidence.tar.gz": "9259d39d8c8ec1950b2f6b27376c30068594f8e39ac6e0e4b055a065d296e3c3",
+  "development\\ch2_disaster_relief_n01_v1\\n0\\trajectory_recomputation.csv": "651501b052232c4683ec3ebb81b42b575e3c62d2771b374a60da3288c7352932",
+  "development\\ch2_disaster_relief_n01_v1\\n0\\checkpoint_metadata.json": "152ba0ff9570ba4a376408bb117c3824c257bc7dcc11265d3374286a6663b619",
+  "development\\ch2_disaster_relief_n01_v1\\n0\\training_curve_inventory.json": "fe6629405dd1c878e6315a9c7e09b9d24e3871fa21582f6dd2c4036554daa477",
+  "development\\ch2_disaster_relief_n01_v1\\n0\\n0_summary.json": "b8b4c580c30a2565ed5322f28cb1fcc514ded21134567dc994f62bcabb952442",
+  "development\\ch2_disaster_relief_n01_v1\\n01_evidence_audit.py": "cf2c86e25987b8799b1efdd30cab2a4965e2fd3debc7fcd36ae49f21fe8bf8dc",
+  "development\\ch2_disaster_relief_n01_v1\\N0_FINDINGS_ZH.md": "b25379ec9f43210f097cc5ef8cf36095ea777c737ca9dd00130ee4604bd7922b",
+  "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/raw/formal-run-evidence.tar.gz.sha256": "9259d39d8c8ec1950b2f6b27376c30068594f8e39ac6e0e4b055a065d296e3c3",
+  "research-executions/ch2-disaster-relief-graph-v2-20261011/source/package/independent_audit_source_identity": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc"
+}
