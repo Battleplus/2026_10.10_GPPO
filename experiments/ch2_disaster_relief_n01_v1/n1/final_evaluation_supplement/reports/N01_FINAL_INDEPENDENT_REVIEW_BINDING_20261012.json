@@ -1,0 +1,65 @@
+{
+  "schema": "n01-independent-review-binding/1",
+  "review_date": "2026-10-12",
+  "review_report": "independent_review/N01_FINAL_INDEPENDENT_REVIEW_20261012.md",
+  "review_report_sha256": "b4670933613d5bb59ac783fed45790f3c5677046acddd3d580a00265dbf97e13",
+  "decision": {
+    "local_package_static_review": "PASS",
+    "target_execution_readiness": "NOT_READY",
+    "full_evaluation_started": false,
+    "training_started": false,
+    "results_available": false
+  },
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r1-20261011",
+  "identity_manifest_sha256": "3667872dc04bcabbc6c5bbe77cabf169e8344c5e8cb337376c164a24c5d9bdb6",
+  "static_plan": {
+    "primary_file": "received/n01_full_evaluation_preflight_plan_final_r11.json",
+    "same_content_file": "received/n01_full_evaluation_preflight_plan_final_r12.json",
+    "file_sha256": "7cb41b1045b0a37f3803dce2bd85c92cce6291dce53d60bb8775b2206c1d4da5",
+    "canonical_plan_sha256": "84e37c9816ba27aa780d07ddf31b19fe4609977532825f19a8d7976918cfd78d",
+    "independently_reproduced_by_static_dry_run": true,
+    "scenario_manifest_sha256": "d6570c8299438ab3183bc96badb6f1a310b2565855176a1bd67983c0a84c33f8",
+    "checkpoint_manifest_sha256": "1d73153df7f4498d03018eef26ce7e53034d26c2e4859398043460cabda21b9f",
+    "scenario_count": 350,
+    "checkpoint_count": 6,
+    "current_source_hash_count": 28,
+    "episode_count": 2800,
+    "unique_run_key_count": 2800,
+    "split_episode_counts": {
+      "heldout": 2240,
+      "development": 560
+    }
+  },
+  "budget_binding": {
+    "stage_budget_sha256": "ebc7b2140569ad470aa1c7eb4e00cbd234e8f0092a00c0f7a2dc717e1703d572",
+    "status": "proposed",
+    "identity_wall_seconds": 5940,
+    "identity_cpu_seconds": 4800,
+    "wall_stop_reserve_seconds": 70,
+    "cpu_stop_reserve_seconds": 40,
+    "external_approval_record_present": false
+  },
+  "target_evidence": {
+    "current_static_preflight_receipt_present": false,
+    "current_systemd_effective_config_receipt_present": false,
+    "historical_no_model_probe_is_current_proof": false,
+    "kernel_cpu_quota_claim": "none without readable cpu.max readback"
+  },
+  "future_result_recalculation_contract": {
+    "expected_episode_rows": 2800,
+    "expected_unique_key_count": 2800,
+    "key_fields": [
+      "condition",
+      "parent_id",
+      "method",
+      "seed"
+    ],
+    "expected_heldout_rows": 2240,
+    "expected_development_rows": 560,
+    "bind_results_to_evaluation_identity": true,
+    "bind_results_to_canonical_plan_sha256": true,
+    "require_independent_audit_per_trajectory": true,
+    "source_of_expected_keys": "static plan run_keys; canonical plan SHA-256 above"
+  },
+  "review_scope": "Local static package only; no archive or GitHub release not present in this workspace is certified."
+}

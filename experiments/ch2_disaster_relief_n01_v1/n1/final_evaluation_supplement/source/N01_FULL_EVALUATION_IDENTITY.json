@@ -1,0 +1,102 @@
+{
+  "schema": "n01-full-evaluation-identity/1",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r1-20261011",
+  "status": "frozen-for-independent-review",
+  "scope": {
+    "conditions": [
+      "original",
+      "scale_8x12",
+      "scale_12x18",
+      "carrier_competition",
+      "stock_competition"
+    ],
+    "parents_per_condition": 70,
+    "scenario_count": 350,
+    "methods": [
+      "C0",
+      "C1",
+      "L0-8201",
+      "L0-8202",
+      "L0-8203",
+      "L1-8201",
+      "L1-8202",
+      "L1-8203"
+    ],
+    "episode_count": 2800,
+    "split_episode_counts": {
+      "heldout": 2240,
+      "development": 560
+    }
+  },
+  "current_source_hashes": {
+    "n01_full_evaluator.py": "881b75dca87c5316cf6a5fb7afd33f71ba53bdd08fe63322040ffc4cb1487abf",
+    "evaluator.py": "acdced01d4064a58b8d10f1c4639a144510940d2dac48934cd8575059c7c3efc",
+    "n01_fixed_sample_evaluator.py": "4064c18d75a47e35ba8efac1d34f269abaa1fc3d1213f337bf49b86f92e9a53b",
+    "n01_sample_manifest.json": "56121ba402493a51f1d8af5ed13abb42a16e7bf5f00ed1c8ab93da4f48903b3e",
+    "n01_scenarios/scenario_counts.json": "356fcacee38e8054d4d3c4b73fc503cc6e505f7591689138360c8b42b9a9371c",
+    "baselines.py": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+    "graph_policy.py": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+    "literal_graph_ops.py": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+    "relief_env.py": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+    "scenario_schema.py": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+    "independent_audit.py": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+    "dataset_protocol.py": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+    "ppo_trainer.py": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891",
+    "resource_supervisor.py": "406edcc58ea326e68b722606fa0081de47def12943a2858a598db368243243a1",
+    "process_guardian.py": "9e6ccfec9beb208eb7f746de3dff612f903e3c571283e020ffd2eeed352e10ad",
+    "stable_identity.py": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+    "runtime-spec.json": "539f8e32c7f43a1b1f4b9461f95b2a9d2358d5c1d7b04aff3c53975f10eab64e",
+    "protocol/preregistered_protocol.json": "62b58009959a66640a11e7ee06b9b684498431c817f13b884f74c553b68119a0",
+    "n01_full_evaluation_stage_budget.json": "ebc7b2140569ad470aa1c7eb4e00cbd234e8f0092a00c0f7a2dc717e1703d572",
+    "N01_FULL_EVALUATION_PRIOR_COST.json": "697f72fedf73507962210db7556121aeb34743afcebe0223ab75f31dac9af000",
+    "n01_fixed_checkpoint_manifest.json": "1d73153df7f4498d03018eef26ce7e53034d26c2e4859398043460cabda21b9f",
+    "n01_scenarios/scenario_manifest.json": "d6570c8299438ab3183bc96badb6f1a310b2565855176a1bd67983c0a84c33f8",
+    "registered_data/input_registry.json": "bf50433281761ca3264c62f5e63cc0c49e578bcc1fcafa369f3014daced8e093",
+    "PRIOR_RESOURCE_COST.json": "37447e7d142be5351861d9921cb2076a391901b907607f1d66c2358b34acbe86",
+    "n01_full_systemd_runner.sh": "f60d8c34d57827659da271ca19c01e8218ac8520e7478f947a2f41b7d6cf2611",
+    "n01_full_systemd_settle.py": "187a882e8146dae88a6d5217b3c18c126bc0a8f717962cb39c0254a8575867f8",
+    "n01_full_evaluation.service": "728a53a959a89cb5ab9f44a093ca249594ca2583574eecff8913b17208d1c5e7",
+    "n01_systemd_contract_probe.service": "4849752446506cc5b4c6d88501610887eb825603b4a1b3e6bae13fce1917511d"
+  },
+  "scenario_manifest_sha256": "d6570c8299438ab3183bc96badb6f1a310b2565855176a1bd67983c0a84c33f8",
+  "checkpoint_manifest_sha256": "1d73153df7f4498d03018eef26ce7e53034d26c2e4859398043460cabda21b9f",
+  "checkpoint_sha256": {
+    "L0-8201": "667ac86f60a1d3b03152bbe6f5a5f30e069ddbdb122335f96b5b66459d405e69",
+    "L1-8201": "94ff7dc6101e34e68d086bf6f349c9b7ad43537fc4a9f7a255f282bd2282afd4",
+    "L0-8202": "ff91411c6b9b6fde44af2ac52b0e14bcf8caec0c1dc8be2f9779c2b55aad5b3e",
+    "L1-8202": "023737d17342a821daa5765f69f7b30dcad87a1b138e5188ad9cc1b1dafc56df",
+    "L0-8203": "c05c8d5d44f55b503e2601e8dd8c25167539dcbb85346dd9ae7c96b7d84b6564",
+    "L1-8203": "fd5f03c7b7d036484876e474cd3789f6cff88d08cb248ce5e7e46c6df64e11b2"
+  },
+  "input_registry_sha256": "bf50433281761ca3264c62f5e63cc0c49e578bcc1fcafa369f3014daced8e093",
+  "runtime_spec_sha256": "539f8e32c7f43a1b1f4b9461f95b2a9d2358d5c1d7b04aff3c53975f10eab64e",
+  "stage_budget_sha256": "ebc7b2140569ad470aa1c7eb4e00cbd234e8f0092a00c0f7a2dc717e1703d572",
+  "prior_cost_sha256": "697f72fedf73507962210db7556121aeb34743afcebe0223ab75f31dac9af000",
+  "resource_limits": {
+    "identity_wall_seconds": 5940,
+    "identity_cpu_seconds": 4800,
+    "known_historical_wall_seconds": 173.07905203544348,
+    "known_historical_cpu_seconds": 124.840999441
+  },
+  "scenario_file_hashes_are_bound_by": "n01_scenarios/scenario_manifest.json scenario_hashes entries; rechecked against bytes during dry-run and admission",
+  "transitive_runtime_dependencies": [
+    "numpy",
+    "torch",
+    "scipy",
+    "networkx",
+    "Python standard library"
+  ],
+  "execution_gate": "budget status must be independently approved; target Linux runtime and guardian admission must pass",
+  "final_freeze": {
+    "static_plan_file": "received/n01_full_evaluation_preflight_plan_final_r11.json",
+    "target_probe_receipt": "received/n01_systemd_contract_probe_r3_receipt.json",
+    "target_probe_receipt_status": "historical-no-model-pass; not current package proof",
+    "target_probe_attempt_file": "received/n01_target_readonly_probe_attempt_20261011.json",
+    "target_current_probe_status": "unavailable-authentication",
+    "cgroup_cpu_measurement": "unified cgroup-v2 cpu.stat usage_usec sampling",
+    "kernel_cpu_quota_claim": "none without readable cpu.max readback",
+    "full_evaluator_executed": false,
+    "training_executed": false,
+    "n2_n3_executed": false
+  }
+}

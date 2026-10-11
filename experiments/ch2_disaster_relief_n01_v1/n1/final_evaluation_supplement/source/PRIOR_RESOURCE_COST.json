@@ -1,0 +1,49 @@
+{
+  "description": "Measured admission and engineering-smoke resources from the previous N01 target run. The old six-run training budget freeze is retained as history only and is not applicable to the revised identity.",
+  "evidence_files": [
+    {
+      "path": "prior_n01_r1/resource-ledger.jsonl",
+      "sha256": "235aafa1ee98e1c9378587d0e958d195b2e33b41261b118d89582cccbd5d6e77"
+    },
+    {
+      "path": "prior_n01_r1/runtime_admission.json",
+      "sha256": "fea4a3b62028c7c99e65b08a6942b6bc8c53f59e28db746302b22ea2f9ac5106"
+    },
+    {
+      "path": "prior_n01_r1/budget_freeze.json",
+      "sha256": "5668a7cf833f0b28f3eb2be7ec5e80266a90b9d630a9f1f8ce83f11e2c5de15e"
+    },
+    {
+      "path": "prior_n01_r1/guardians/01-admission.json",
+      "sha256": "a97efa2b0b72902f4009d1969cdba7d04025686613e8f3ba4bbd0098e51ce93c"
+    },
+    {
+      "path": "prior_n01_r1/guardians/02-engineering_smoke.json",
+      "sha256": "51892e341d51a2560d8feaabdeaafbd03f03d2e8a5d9e0efffb1064e8550acc0"
+    },
+    {
+      "path": "prior_n01_r1/receipts/01-admission.json",
+      "sha256": "6b2604de8364eec6e15148ac152c53b64efeee155abe6fc464444160817d92f0"
+    },
+    {
+      "path": "prior_n01_r1/receipts/02-engineering_smoke.json",
+      "sha256": "ac965597fa80212dde7fba9c2dba951c1a59660707d74a0c247edde7f603261a"
+    }
+  ],
+  "ledger_path": "prior_n01_r1/resource-ledger.jsonl",
+  "prior_identity": "ch2-disaster-relief-n01-v1-20261011",
+  "schema": "n01-prior-resource-cost/1",
+  "stage_costs": {
+    "admission": {
+      "cpu_seconds": 2.176374841,
+      "wall_seconds": 2.6277489038184285
+    },
+    "engineering_smoke": {
+      "cpu_seconds": 36.408798139,
+      "wall_seconds": 39.95782536780462
+    }
+  },
+  "status": "frozen",
+  "total_cpu_seconds": 38.585172979999996,
+  "total_wall_seconds": 42.585574271623045
+}

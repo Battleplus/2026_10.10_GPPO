@@ -1,0 +1,18 @@
+# N0 Mechanism Source Review
+
+This is a read-only source review tied to the original deployed package in `research-executions/ch2-disaster-relief-graph-v2-20261011/source/package`. Raw-trajectory replay results are in `n0_replay_20261011.json`.
+
+| N0 claim | Source evidence inspected | Independent assessment |
+| --- | --- | --- |
+| Entity graph has platform/task nodes, type masks, dynamic counts, and public-ID ordering | `graph_policy.py:199-208,213-237,239-246,312-325` | Supported. Entity arrays are sorted by visible IDs; slots are sized to current entity counts unless explicitly padded. |
+| Platform-task relation and stable candidate IDs map to entity pairs | `graph_policy.py:262-303`; relation constants in `literal_graph_ops.py:16-19` | Supported with a scope note: the graph builder puts `UAV_TASK_EDGE` on every visible platform/task pair and uses candidate presence/features to identify dispatchable pairs. The candidate catalog carries stable IDs and a unique `(platform, task)` mapping. |
+| Platform and task self-relations exist | `graph_policy.py:241-246`; `literal_graph_ops.py:16` | Supported. |
+| General task predecessor/successor edges are absent from the public graph | `graph_policy.py:362-365,415-419`; `graph_policy.py:239-305` | Supported. The environment's `discovered_by` field is an inspection-to-hidden-order discovery rule, not a general task-precedence graph. The public task serializer omits `discovered_by` and `report_delay` (`relief_env.py:150-157`). Do not infer learned causal task scheduling. |
+| Hidden orders and report timing are enforced at the public boundary | `relief_env.py:84-107,145-157,166-182,627-631`; event schedule logic at `relief_env.py:555-625` | Supported. Internal truth and event tape are separate from the detached public observation; task truth is published through received reports. |
+| Future failures, stock losses, and energy changes update public state on report receipt | `relief_env.py:487-507,555-625,627-631` | Supported. Disturbances are applied to private environment state when scheduled; corresponding public mirrors change in `_report_receive` when a report becomes due. |
+| Stock competition is represented by observed stock and autoregressive action masking | `graph_policy.py:247-256,281-293,515-557`; `relief_env.py:349-365` | Supported, with terminology precision: stock enters pair features and stock limits/masks; depots are not graph nodes. In-batch reserved quantities prevent overcommitment. |
+| Legacy data generally eliminates initial-stock competition | `dataset_protocol.py:99-108` | Supported by generator code. It raises each commodity's stock to at least total declared demand. This is a coverage limitation, not evidence of poor learned stock handling. |
+| Chapter-1 queues and outside commitments constrain assignment | `relief_env.py:55-58,112-114,177-181,395-408` | Supported. Outside-block task assignment remains with the snapshot owner; C0 is further restricted to initial owners. |
+| Capacity/locality and stock feasibility are mission-level contracts; no global knapsack edge is encoded | `relief_env.py:341-347,402-417`; `graph_policy.py:154-182,480-559` | Supported. Each candidate has individual capacity/locality feasibility; autoregressive masks reserve platforms, tasks, and stock across the action batch. There is no global multi-order cargo allocation relation. |
+
+The N0 finding correctly separates code-structural limits from empirical outcomes. The 448 full-artifact replays establish consistency of the archived episodes and metrics; they do not establish generalization beyond the registered parents. No inference or optimizer update was run during this independent review.

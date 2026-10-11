@@ -1,0 +1,52 @@
+{
+  "schema": "n01-github-archive-review-binding/1",
+  "review_date": "2026-10-12",
+  "review_type": "independent-static-archive-review",
+  "review_report": "independent_review/N01_GITHUB_ARCHIVE_REVIEW_20261012.md",
+  "review_report_sha256": "5a8664a92e4210589f8aba56056875b963be09a9f734cbc7c6c84a8115f58af2",
+  "decision": {
+    "candidate_archive_integrity": "PASS",
+    "suitable_for_publication_review": true,
+    "publication_authorized": false,
+    "target_execution_readiness": "NOT_READY",
+    "full_2800_evaluation_executed": false,
+    "results_available": false,
+    "training_or_evaluation_authorized": false
+  },
+  "candidate": {
+    "archive_path": "received/n01_github_archive_candidate_identity_3667872d.tar.gz",
+    "archive_sha256": "3910174846bb818fe84b3f1c90266e98ab413ed21aa001f361c733f000bd2da8",
+    "archive_size_bytes": 13353942,
+    "archive_file_count": 557,
+    "manifest_path": "received/N01_GITHUB_ARCHIVE_CANDIDATE_MANIFEST.json",
+    "manifest_sha256_at_review": "ce297c0f1b166cfb9ab87a4facfcb7d46af2b4d873448f8038856e05866d9c9d",
+    "manifest_review_status_at_review": "pending",
+    "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r1-20261011",
+    "identity_sha256": "3667872dc04bcabbc6c5bbe77cabf169e8344c5e8cb337376c164a24c5d9bdb6",
+    "canonical_plan_sha256": "84e37c9816ba27aa780d07ddf31b19fe4609977532825f19a8d7976918cfd78d",
+    "deployment_archive_sha256": "329c30853c380290d13710236809ab085af85b7bc8f697e300febaaa56c831a1"
+  },
+  "verification": {
+    "candidate_manifest_members_match_archive": true,
+    "assembled_candidate_tree_matches_archive": true,
+    "deployment_archive_matches_sidecar_manifest": true,
+    "candidate_source_matches_deployment_payload": true,
+    "identity_source_hashes_verified": 28,
+    "scenario_count": 350,
+    "scenario_hash_mismatches": 0,
+    "checkpoint_count": 6,
+    "checkpoint_hash_mismatches": 0,
+    "protocol_present_and_identity_bound": true,
+    "forbidden_archive_member_hits": 0,
+    "unsafe_archive_paths": 0,
+    "latest_target_access_record": "2026-10-12 TCP connection timeouts; no remote command started",
+    "prior_2026_10_11_authentication_failure_labeled_historical": true
+  },
+  "scope_limits": [
+    "Static archive and document review only.",
+    "No SSH or remote command was run.",
+    "No model loading, training, or evaluation was performed.",
+    "Publication review clearance is not publication approval or execution authorization."
+  ],
+  "follow_up_before_publication": "Update the companion candidate manifest to bind this review report and binding JSON and mark independent archive review passed; retain full evaluation false, results false, published false, and target execution readiness NOT_READY."
+}

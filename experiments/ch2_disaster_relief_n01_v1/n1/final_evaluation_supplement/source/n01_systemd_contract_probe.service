@@ -1,0 +1,18 @@
+[Unit]
+Description=N01 systemd contract no-model evaluator-profile probe r3 ch2-disaster-relief-n01-full-evaluation-r1-20261011
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/true
+ExecStopPost=/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/bin/python -B /home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011/n01_full_systemd_settle.py --unit-name n01-full-evaluation-r1-systemd-probe-r3-20261011.service --work-root /home/user1/w1-pilot/runs/n01-full-evaluation-r1-systemd-probe-r3-20261011 --package-root /home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011 --evaluation-identity ch2-disaster-relief-n01-full-evaluation-r1-20261011 --contract-profile evaluation
+Restart=no
+KillMode=control-group
+MemoryAccounting=yes
+MemoryMax=4G
+CPUAccounting=yes
+CPUAffinity=0
+RuntimeMaxSec=5900s
+TimeoutStopSec=40s
+WorkingDirectory=/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011
+StandardOutput=journal
+StandardError=journal

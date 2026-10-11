@@ -1,0 +1,97 @@
+{
+  "schema": "n01-budget-scope-addendum/1",
+  "created": "2026-10-11",
+  "status": "frozen-for-independent-review",
+  "evaluation_authorized": false,
+  "files": {
+    "package/evaluator.py": "ACDCED01D4064A58B8D10F1C4639A144510940D2DAC48934CD8575059C7C3EFC",
+    "package/n01_fixed_sample_evaluator.py": "4064C18D75A47E35BA8EFAC1D34F269ABAA1FC3D1213F337BF49B86F92E9A53B",
+    "package/n01_fixed_checkpoint_manifest.json": "1D73153DF7F4498D03018EEF26CE7E53034D26C2E4859398043460CABDA21B9F",
+    "package/n01_sample_manifest.json": "56121BA402493A51F1D8AF5ED13ABB42A16E7BF5F00ED1C8AB93DA4F48903B3E",
+    "package/n01_scenarios/scenario_manifest.json": "D6570C8299438AB3183BC96BADB6F1A310B2565855176A1BD67983C0A84C33F8",
+    "package/n01_full_evaluator.py": "881B75DCA87C5316CF6A5FB7AFD33F71BA53BDD08FE63322040FFC4CB1487ABF",
+    "package/N01_FULL_EVALUATION_IDENTITY.json": "3667872DC04BCABBC6C5BBE77CABF169E8344C5E8CB337376C164A24C5D9BDB6",
+    "package/n01_full_evaluation_stage_budget.json": "EBC7B2140569AD470AA1C7EB4E00CBD234E8F0092A00C0F7A2DC717E1703D572",
+    "package/N01_FULL_EVALUATION_PRIOR_COST.json": "697F72FEDF73507962210DB7556121AEB34743AFCEBE0223AB75F31DAC9AF000",
+    "package/resource_supervisor.py": "406EDCC58EA326E68B722606FA0081DE47DEF12943A2858A598DB368243243A1",
+    "package/process_guardian.py": "9E6CCFEC9BEB208EB7F746DE3DFF612F903E3C571283E020FFD2EEED352E10AD",
+    "received/n01_full_evaluation_preflight_plan_final_r2.json": "212765F0B94D2BE6A722DDD5CFCB592AA63543804B00687196CAA81757D32BD5",
+    "N1_FULL_RUNNER_READINESS.md": "B6B6D13C8C7ED40B4131A897D9A60EC7ACC64D9341F1515C1E0AC5F7E90DB511",
+    "received/resource-ledger.jsonl": "74E5CDC4905EFC40AFAE7B7C74EEC142E2ED57B8311E680D85FC04674808CE63",
+    "received/n01_evaluation_budget_freeze.json": "592E147859F0443822319DAF204EB34BC474107275FF52EA1585F808ADE9CEC2",
+    "package/n01_scenarios/scenario_counts.json": "356FCACEE38E8054D4D3C4B73FC503CC6E505F7591689138360C8B42B9A9371C",
+    "package/baselines.py": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A",
+    "package/graph_policy.py": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142",
+    "package/literal_graph_ops.py": "8A7E9E225C9EFE758087C09260BB7AF67281D5E30EC88F05650F87984EE2ED4E",
+    "package/relief_env.py": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D",
+    "package/scenario_schema.py": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0",
+    "package/independent_audit.py": "9BA61300A113A0D60988BFBCA28EDB6DB81581A956015607A98D26916863D1FC",
+    "package/dataset_protocol.py": "582D300580500D0382142A0DA28C5EDE8644534E4DD064083FBB1CB4B1B28DBF",
+    "package/ppo_trainer.py": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891",
+    "package/stable_identity.py": "812944F9F7CB4F16C9907C4D6CF6C552F5B0DC3F7EC8FA2E5CCBE859B04757EF",
+    "package/runtime-spec.json": "539F8E32C7F43A1B1F4B9461F95B2A9D2358D5C1D7B04AFF3C53975F10EAB64E",
+    "package/protocol/preregistered_protocol.json": "62B58009959A66640A11E7EE06B9B684498431C817F13B884F74C553B68119A0",
+    "package/registered_data/input_registry.json": "BF50433281761CA3264C62F5E63CC0C49E578BCC1FCAFA369F3014DACED8E093",
+    "package/PRIOR_RESOURCE_COST.json": "37447E7D142BE5351861D9921CB2076A391901B907607F1D66C2358B34ACBE86",
+    "package/n01_full_systemd_runner.sh": "F60D8C34D57827659DA271CA19C01E8218AC8520E7478F947A2F41B7D6CF2611",
+    "package/n01_full_systemd_settle.py": "187A882E8146DAE88A6D5217B3C18C126BC0A8F717962CB39C0254A8575867F8",
+    "package/n01_full_evaluation.service": "728A53A959A89CB5AB9F44A093CA249594CA2583574EECFF8913B17208D1C5E7",
+    "package/n01_systemd_contract_probe.service": "4849752446506CC5B4C6D88501610887EB825603B4A1B3E6BAE13FCE1917511D",
+    "received/n01_full_evaluation_preflight_plan_final_r5.json": "F6EF4FEB97579865B304B6B60E62D0C77F2D762A5FAD84A8D20569E9221BF38D",
+    "received/n01_full_evaluation_preflight_plan_final_r6.json": "39B84C59A6CD739574A3018851C7F67F6BDA1E0CFC0370FBEB97285000B90924",
+    "received/n01_systemd_contract_probe_r3_receipt.json": "64172511BC548243A0279039682B2E113FDE4B922089B4B77273D117FC2CD49F",
+    "received/n01_full_evaluation_preflight_plan_final_r9.json": "D3CA4E2A697D56356460FF749F96FFCDB586D8CF8AD59CD09526B9DD2D096EAD",
+    "received/n01_full_evaluation_preflight_plan_final_r11.json": "7CB41B1045B0A37F3803DCE2BD85C92CCE6291DCE53D60BB8775B2206C1D4DA5",
+    "received/n01_target_readonly_probe_attempt_20261011.json": "896FBADEF49240568347AA92D755AC3BB55FF1D043E90B8880310DD6A0E4A19A"
+  },
+  "addendum_documents": [
+    "N1_BUDGET_SCOPE_CORRECTION.md",
+    "N1_FULL_EVALUATION_BUDGET_PROPOSAL.md",
+    "N1_FULL_RUNNER_READINESS.md"
+  ],
+  "static_preflight": {
+    "status": "passed-static-only",
+    "plan_file": "received/n01_full_evaluation_preflight_plan_final_r11.json",
+    "plan_sha256": "84e37c9816ba27aa780d07ddf31b19fe4609977532825f19a8d7976918cfd78d",
+    "scenario_count": 350,
+    "checkpoint_count": 6,
+    "episode_key_count": 2800,
+    "trajectories_executed": false
+  },
+  "binding_note": "Hashes identify the inspected baseline evidence and final prepared runner. Any change to a bound input requires regenerating this manifest and independent review.",
+  "target_static_preflight": {
+    "status": "not-rerun-target-authentication-unavailable",
+    "local_static_preflight_status": "passed",
+    "local_plan_file": "received/n01_full_evaluation_preflight_plan_final_r11.json",
+    "local_plan_sha256": "84e37c9816ba27aa780d07ddf31b19fe4609977532825f19a8d7976918cfd78d"
+  },
+  "target_systemd_contract_probe": {
+    "status": "historical-passed-no-model-not-current",
+    "unit_name": "n01-full-evaluation-r1-systemd-probe-r3-20261011.service",
+    "invocation_id": "4827e48e0bba49c4aa8e09eee2445cdf",
+    "settlement_status": "complete",
+    "contract_status": "complete",
+    "kernel_cpu_quota_claim": "none; historical receipt has no readable cpu.max readback",
+    "receipt_sha256": "64172511BC548243A0279039682B2E113FDE4B922089B4B77273D117FC2CD49F"
+  },
+  "target_readonly_probe_attempt": {
+    "path": "received/n01_target_readonly_probe_attempt_20261011.json",
+    "sha256": "896FBADEF49240568347AA92D755AC3BB55FF1D043E90B8880310DD6A0E4A19A",
+    "status": "authentication_failed",
+    "remote_commands_started": false
+  },
+  "final_freeze": {
+    "identity_sha256": "3667872DC04BCABBC6C5BBE77CABF169E8344C5E8CB337376C164A24C5D9BDB6",
+    "full_evaluator_executed": false,
+    "training_executed": false,
+    "n2_n3_executed": false,
+    "kernel_cpu_quota_claim": "none without readable cpu.max",
+    "budget_profile": {
+      "identity_wall_seconds": 5940.0,
+      "identity_cpu_seconds": 4800.0,
+      "systemd_runtime_max_seconds": 5900.0,
+      "systemd_timeout_stop_seconds": 40.0,
+      "runtime_max_plus_timeout_stop_seconds": 5940.0
+    }
+  }
+}

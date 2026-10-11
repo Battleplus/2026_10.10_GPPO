@@ -1,0 +1,628 @@
+{
+  "identity": "ch2-disaster-relief-n01-v1",
+  "sample_identity": "n01-100-episode-cost-diagnostic-v1",
+  "written_before_execution": true,
+  "episode_count": 100,
+  "method": "L1-8201 frozen final only",
+  "condition_episodes": {
+    "original": 20,
+    "scale_8x12": 20,
+    "scale_12x18": 20,
+    "carrier_competition": 20,
+    "stock_competition": 20
+  },
+  "results_excluded_from_final_2800": true,
+  "selection": "3 lowest deterministic SHA256 ranks per registered source stratum, then lowest 20 ranks overall, independent of outcomes",
+  "sample": {
+    "original": [
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-combined-03",
+        "file": "n01-original-graph-v1-heldout-combined-03.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "04b33ad0eb0a47723126f68c0c2d17116ebd62cb6feea5dc903f0b6cb87fa921"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-report_delay-04",
+        "file": "n01-original-graph-v1-heldout-report_delay-04.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "0f07cac4dcad1d1ee93b17e68ebb63ca0923b2e12aa2c47acd977f54aefbde01"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-report_delay-02",
+        "file": "n01-original-graph-v1-heldout-report_delay-02.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "18d0738a6e2c27de995a9fd9068d3ce179f95ac42d89159cb2d49933b408996c"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-report_delay-07",
+        "file": "n01-original-graph-v1-heldout-report_delay-07.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "1d11e5312a7e33f480893ac32b47e2cd6dceb8ad31377a2c4959d52d58bfc519"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-combined-02",
+        "file": "n01-original-graph-v1-heldout-combined-02.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "1e69389b5d8058b403848b4c1ffff6bc22c4ab6a96922fdb53df5af79d9f1d4b"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-failure-07",
+        "file": "n01-original-graph-v1-heldout-failure-07.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "209c4b86daf68e88399d358d5894528b85108b62219150fbbca32429894c87cf"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-external_commitment-04",
+        "file": "n01-original-graph-v1-heldout-external_commitment-04.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "279e838ce3efc3865337651381697c2b6ce75593dc9e4aca918b3823d2bd2588"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-energy_change-06",
+        "file": "n01-original-graph-v1-heldout-energy_change-06.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "2803e4060921e5470029cb42f535c0adb2db895c029c223d5e5d1da908709b61"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-combined-06",
+        "file": "n01-original-graph-v1-heldout-combined-06.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "2c297a9999b0c7c92945151dc600edefe6abbcea379741fc26d564216c07c469"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-external_commitment-01",
+        "file": "n01-original-graph-v1-heldout-external_commitment-01.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "39e67e3953e62669966699381f7bfb207c30faeb2aedaf600021bd625a37ef74"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-failure-03",
+        "file": "n01-original-graph-v1-heldout-failure-03.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "3a8f6a3d08ec01ebdf7da2bf118dfcf90f032a0788410687532b170e3a9e17b6"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-development-stock_loss-01",
+        "file": "n01-original-graph-v1-development-stock_loss-01.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "3b28185c07d852de4460bee44b737cefd6f843cea0908dda212f2f61e049a7b5"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-energy_change-07",
+        "file": "n01-original-graph-v1-heldout-energy_change-07.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "3b74f69b2cfee05cf3bf72eb0a4e0bc9895336f3b875ef5c8b0fdf3651335f50"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-control-02",
+        "file": "n01-original-graph-v1-heldout-control-02.json",
+        "stratum": "control",
+        "selection_rank_sha256": "3dbfb91092cca91eb532344c59eb867c86d280ef043703e67a1a2295bb72a3cf"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-external_commitment-06",
+        "file": "n01-original-graph-v1-heldout-external_commitment-06.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "3fe747368a4e197a0b048ba87f61bd240e2ef89cb331659fbeacce29130dfa3a"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-stock_loss-05",
+        "file": "n01-original-graph-v1-heldout-stock_loss-05.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "40c719cf744a2a167b1dc5f03d4546b511f30b790a8f896c263af97b0bce4d2e"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-control-07",
+        "file": "n01-original-graph-v1-heldout-control-07.json",
+        "stratum": "control",
+        "selection_rank_sha256": "41d5a8048fa211f688a95303e32f6a3436a255d2a29d9ec9f86b6dec1a2e9ef4"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-energy_change-02",
+        "file": "n01-original-graph-v1-heldout-energy_change-02.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "461cd14eabb1f42f2b77dcbf3d5d1d053231e00f2b58c117ce36fd6b55aec475"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-stock_loss-04",
+        "file": "n01-original-graph-v1-heldout-stock_loss-04.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "58a92dc4a865fc4e849ab65f492095023c4963eb245707e548866c7b6db565e5"
+      },
+      {
+        "scenario_id": "n01-original-graph-v1-heldout-control-06",
+        "file": "n01-original-graph-v1-heldout-control-06.json",
+        "stratum": "control",
+        "selection_rank_sha256": "7a0a4b88264602175891d5191c126d8056455279611ec3388525439a41e71c83"
+      }
+    ],
+    "scale_8x12": [
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-combined-03",
+        "file": "n01-scale_8x12-graph-v1-heldout-combined-03.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "04b33ad0eb0a47723126f68c0c2d17116ebd62cb6feea5dc903f0b6cb87fa921"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-report_delay-04",
+        "file": "n01-scale_8x12-graph-v1-heldout-report_delay-04.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "0f07cac4dcad1d1ee93b17e68ebb63ca0923b2e12aa2c47acd977f54aefbde01"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-report_delay-02",
+        "file": "n01-scale_8x12-graph-v1-heldout-report_delay-02.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "18d0738a6e2c27de995a9fd9068d3ce179f95ac42d89159cb2d49933b408996c"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-report_delay-07",
+        "file": "n01-scale_8x12-graph-v1-heldout-report_delay-07.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "1d11e5312a7e33f480893ac32b47e2cd6dceb8ad31377a2c4959d52d58bfc519"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-combined-02",
+        "file": "n01-scale_8x12-graph-v1-heldout-combined-02.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "1e69389b5d8058b403848b4c1ffff6bc22c4ab6a96922fdb53df5af79d9f1d4b"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-failure-07",
+        "file": "n01-scale_8x12-graph-v1-heldout-failure-07.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "209c4b86daf68e88399d358d5894528b85108b62219150fbbca32429894c87cf"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-external_commitment-04",
+        "file": "n01-scale_8x12-graph-v1-heldout-external_commitment-04.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "279e838ce3efc3865337651381697c2b6ce75593dc9e4aca918b3823d2bd2588"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-energy_change-06",
+        "file": "n01-scale_8x12-graph-v1-heldout-energy_change-06.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "2803e4060921e5470029cb42f535c0adb2db895c029c223d5e5d1da908709b61"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-combined-06",
+        "file": "n01-scale_8x12-graph-v1-heldout-combined-06.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "2c297a9999b0c7c92945151dc600edefe6abbcea379741fc26d564216c07c469"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-external_commitment-01",
+        "file": "n01-scale_8x12-graph-v1-heldout-external_commitment-01.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "39e67e3953e62669966699381f7bfb207c30faeb2aedaf600021bd625a37ef74"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-failure-03",
+        "file": "n01-scale_8x12-graph-v1-heldout-failure-03.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "3a8f6a3d08ec01ebdf7da2bf118dfcf90f032a0788410687532b170e3a9e17b6"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-development-stock_loss-01",
+        "file": "n01-scale_8x12-graph-v1-development-stock_loss-01.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "3b28185c07d852de4460bee44b737cefd6f843cea0908dda212f2f61e049a7b5"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-energy_change-07",
+        "file": "n01-scale_8x12-graph-v1-heldout-energy_change-07.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "3b74f69b2cfee05cf3bf72eb0a4e0bc9895336f3b875ef5c8b0fdf3651335f50"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-control-02",
+        "file": "n01-scale_8x12-graph-v1-heldout-control-02.json",
+        "stratum": "control",
+        "selection_rank_sha256": "3dbfb91092cca91eb532344c59eb867c86d280ef043703e67a1a2295bb72a3cf"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-external_commitment-06",
+        "file": "n01-scale_8x12-graph-v1-heldout-external_commitment-06.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "3fe747368a4e197a0b048ba87f61bd240e2ef89cb331659fbeacce29130dfa3a"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-stock_loss-05",
+        "file": "n01-scale_8x12-graph-v1-heldout-stock_loss-05.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "40c719cf744a2a167b1dc5f03d4546b511f30b790a8f896c263af97b0bce4d2e"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-control-07",
+        "file": "n01-scale_8x12-graph-v1-heldout-control-07.json",
+        "stratum": "control",
+        "selection_rank_sha256": "41d5a8048fa211f688a95303e32f6a3436a255d2a29d9ec9f86b6dec1a2e9ef4"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-energy_change-02",
+        "file": "n01-scale_8x12-graph-v1-heldout-energy_change-02.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "461cd14eabb1f42f2b77dcbf3d5d1d053231e00f2b58c117ce36fd6b55aec475"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-stock_loss-04",
+        "file": "n01-scale_8x12-graph-v1-heldout-stock_loss-04.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "58a92dc4a865fc4e849ab65f492095023c4963eb245707e548866c7b6db565e5"
+      },
+      {
+        "scenario_id": "n01-scale_8x12-graph-v1-heldout-control-06",
+        "file": "n01-scale_8x12-graph-v1-heldout-control-06.json",
+        "stratum": "control",
+        "selection_rank_sha256": "7a0a4b88264602175891d5191c126d8056455279611ec3388525439a41e71c83"
+      }
+    ],
+    "scale_12x18": [
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-combined-03",
+        "file": "n01-scale_12x18-graph-v1-heldout-combined-03.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "04b33ad0eb0a47723126f68c0c2d17116ebd62cb6feea5dc903f0b6cb87fa921"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-report_delay-04",
+        "file": "n01-scale_12x18-graph-v1-heldout-report_delay-04.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "0f07cac4dcad1d1ee93b17e68ebb63ca0923b2e12aa2c47acd977f54aefbde01"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-report_delay-02",
+        "file": "n01-scale_12x18-graph-v1-heldout-report_delay-02.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "18d0738a6e2c27de995a9fd9068d3ce179f95ac42d89159cb2d49933b408996c"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-report_delay-07",
+        "file": "n01-scale_12x18-graph-v1-heldout-report_delay-07.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "1d11e5312a7e33f480893ac32b47e2cd6dceb8ad31377a2c4959d52d58bfc519"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-combined-02",
+        "file": "n01-scale_12x18-graph-v1-heldout-combined-02.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "1e69389b5d8058b403848b4c1ffff6bc22c4ab6a96922fdb53df5af79d9f1d4b"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-failure-07",
+        "file": "n01-scale_12x18-graph-v1-heldout-failure-07.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "209c4b86daf68e88399d358d5894528b85108b62219150fbbca32429894c87cf"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-external_commitment-04",
+        "file": "n01-scale_12x18-graph-v1-heldout-external_commitment-04.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "279e838ce3efc3865337651381697c2b6ce75593dc9e4aca918b3823d2bd2588"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-energy_change-06",
+        "file": "n01-scale_12x18-graph-v1-heldout-energy_change-06.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "2803e4060921e5470029cb42f535c0adb2db895c029c223d5e5d1da908709b61"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-combined-06",
+        "file": "n01-scale_12x18-graph-v1-heldout-combined-06.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "2c297a9999b0c7c92945151dc600edefe6abbcea379741fc26d564216c07c469"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-external_commitment-01",
+        "file": "n01-scale_12x18-graph-v1-heldout-external_commitment-01.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "39e67e3953e62669966699381f7bfb207c30faeb2aedaf600021bd625a37ef74"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-failure-03",
+        "file": "n01-scale_12x18-graph-v1-heldout-failure-03.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "3a8f6a3d08ec01ebdf7da2bf118dfcf90f032a0788410687532b170e3a9e17b6"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-development-stock_loss-01",
+        "file": "n01-scale_12x18-graph-v1-development-stock_loss-01.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "3b28185c07d852de4460bee44b737cefd6f843cea0908dda212f2f61e049a7b5"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-energy_change-07",
+        "file": "n01-scale_12x18-graph-v1-heldout-energy_change-07.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "3b74f69b2cfee05cf3bf72eb0a4e0bc9895336f3b875ef5c8b0fdf3651335f50"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-control-02",
+        "file": "n01-scale_12x18-graph-v1-heldout-control-02.json",
+        "stratum": "control",
+        "selection_rank_sha256": "3dbfb91092cca91eb532344c59eb867c86d280ef043703e67a1a2295bb72a3cf"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-external_commitment-06",
+        "file": "n01-scale_12x18-graph-v1-heldout-external_commitment-06.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "3fe747368a4e197a0b048ba87f61bd240e2ef89cb331659fbeacce29130dfa3a"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-stock_loss-05",
+        "file": "n01-scale_12x18-graph-v1-heldout-stock_loss-05.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "40c719cf744a2a167b1dc5f03d4546b511f30b790a8f896c263af97b0bce4d2e"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-control-07",
+        "file": "n01-scale_12x18-graph-v1-heldout-control-07.json",
+        "stratum": "control",
+        "selection_rank_sha256": "41d5a8048fa211f688a95303e32f6a3436a255d2a29d9ec9f86b6dec1a2e9ef4"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-energy_change-02",
+        "file": "n01-scale_12x18-graph-v1-heldout-energy_change-02.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "461cd14eabb1f42f2b77dcbf3d5d1d053231e00f2b58c117ce36fd6b55aec475"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-stock_loss-04",
+        "file": "n01-scale_12x18-graph-v1-heldout-stock_loss-04.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "58a92dc4a865fc4e849ab65f492095023c4963eb245707e548866c7b6db565e5"
+      },
+      {
+        "scenario_id": "n01-scale_12x18-graph-v1-heldout-control-06",
+        "file": "n01-scale_12x18-graph-v1-heldout-control-06.json",
+        "stratum": "control",
+        "selection_rank_sha256": "7a0a4b88264602175891d5191c126d8056455279611ec3388525439a41e71c83"
+      }
+    ],
+    "carrier_competition": [
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-combined-03",
+        "file": "n01-carrier-graph-v1-heldout-combined-03.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "04b33ad0eb0a47723126f68c0c2d17116ebd62cb6feea5dc903f0b6cb87fa921"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-report_delay-04",
+        "file": "n01-carrier-graph-v1-heldout-report_delay-04.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "0f07cac4dcad1d1ee93b17e68ebb63ca0923b2e12aa2c47acd977f54aefbde01"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-report_delay-02",
+        "file": "n01-carrier-graph-v1-heldout-report_delay-02.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "18d0738a6e2c27de995a9fd9068d3ce179f95ac42d89159cb2d49933b408996c"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-report_delay-07",
+        "file": "n01-carrier-graph-v1-heldout-report_delay-07.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "1d11e5312a7e33f480893ac32b47e2cd6dceb8ad31377a2c4959d52d58bfc519"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-combined-02",
+        "file": "n01-carrier-graph-v1-heldout-combined-02.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "1e69389b5d8058b403848b4c1ffff6bc22c4ab6a96922fdb53df5af79d9f1d4b"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-failure-07",
+        "file": "n01-carrier-graph-v1-heldout-failure-07.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "209c4b86daf68e88399d358d5894528b85108b62219150fbbca32429894c87cf"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-external_commitment-04",
+        "file": "n01-carrier-graph-v1-heldout-external_commitment-04.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "279e838ce3efc3865337651381697c2b6ce75593dc9e4aca918b3823d2bd2588"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-energy_change-06",
+        "file": "n01-carrier-graph-v1-heldout-energy_change-06.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "2803e4060921e5470029cb42f535c0adb2db895c029c223d5e5d1da908709b61"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-combined-06",
+        "file": "n01-carrier-graph-v1-heldout-combined-06.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "2c297a9999b0c7c92945151dc600edefe6abbcea379741fc26d564216c07c469"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-external_commitment-01",
+        "file": "n01-carrier-graph-v1-heldout-external_commitment-01.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "39e67e3953e62669966699381f7bfb207c30faeb2aedaf600021bd625a37ef74"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-failure-03",
+        "file": "n01-carrier-graph-v1-heldout-failure-03.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "3a8f6a3d08ec01ebdf7da2bf118dfcf90f032a0788410687532b170e3a9e17b6"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-development-stock_loss-01",
+        "file": "n01-carrier-graph-v1-development-stock_loss-01.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "3b28185c07d852de4460bee44b737cefd6f843cea0908dda212f2f61e049a7b5"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-energy_change-07",
+        "file": "n01-carrier-graph-v1-heldout-energy_change-07.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "3b74f69b2cfee05cf3bf72eb0a4e0bc9895336f3b875ef5c8b0fdf3651335f50"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-control-02",
+        "file": "n01-carrier-graph-v1-heldout-control-02.json",
+        "stratum": "control",
+        "selection_rank_sha256": "3dbfb91092cca91eb532344c59eb867c86d280ef043703e67a1a2295bb72a3cf"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-external_commitment-06",
+        "file": "n01-carrier-graph-v1-heldout-external_commitment-06.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "3fe747368a4e197a0b048ba87f61bd240e2ef89cb331659fbeacce29130dfa3a"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-stock_loss-05",
+        "file": "n01-carrier-graph-v1-heldout-stock_loss-05.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "40c719cf744a2a167b1dc5f03d4546b511f30b790a8f896c263af97b0bce4d2e"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-control-07",
+        "file": "n01-carrier-graph-v1-heldout-control-07.json",
+        "stratum": "control",
+        "selection_rank_sha256": "41d5a8048fa211f688a95303e32f6a3436a255d2a29d9ec9f86b6dec1a2e9ef4"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-energy_change-02",
+        "file": "n01-carrier-graph-v1-heldout-energy_change-02.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "461cd14eabb1f42f2b77dcbf3d5d1d053231e00f2b58c117ce36fd6b55aec475"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-stock_loss-04",
+        "file": "n01-carrier-graph-v1-heldout-stock_loss-04.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "58a92dc4a865fc4e849ab65f492095023c4963eb245707e548866c7b6db565e5"
+      },
+      {
+        "scenario_id": "n01-carrier-graph-v1-heldout-control-06",
+        "file": "n01-carrier-graph-v1-heldout-control-06.json",
+        "stratum": "control",
+        "selection_rank_sha256": "7a0a4b88264602175891d5191c126d8056455279611ec3388525439a41e71c83"
+      }
+    ],
+    "stock_competition": [
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-combined-03",
+        "file": "n01-stock-graph-v1-heldout-combined-03.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "04b33ad0eb0a47723126f68c0c2d17116ebd62cb6feea5dc903f0b6cb87fa921"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-report_delay-04",
+        "file": "n01-stock-graph-v1-heldout-report_delay-04.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "0f07cac4dcad1d1ee93b17e68ebb63ca0923b2e12aa2c47acd977f54aefbde01"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-report_delay-02",
+        "file": "n01-stock-graph-v1-heldout-report_delay-02.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "18d0738a6e2c27de995a9fd9068d3ce179f95ac42d89159cb2d49933b408996c"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-report_delay-07",
+        "file": "n01-stock-graph-v1-heldout-report_delay-07.json",
+        "stratum": "report_delay",
+        "selection_rank_sha256": "1d11e5312a7e33f480893ac32b47e2cd6dceb8ad31377a2c4959d52d58bfc519"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-combined-02",
+        "file": "n01-stock-graph-v1-heldout-combined-02.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "1e69389b5d8058b403848b4c1ffff6bc22c4ab6a96922fdb53df5af79d9f1d4b"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-failure-07",
+        "file": "n01-stock-graph-v1-heldout-failure-07.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "209c4b86daf68e88399d358d5894528b85108b62219150fbbca32429894c87cf"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-external_commitment-04",
+        "file": "n01-stock-graph-v1-heldout-external_commitment-04.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "279e838ce3efc3865337651381697c2b6ce75593dc9e4aca918b3823d2bd2588"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-energy_change-06",
+        "file": "n01-stock-graph-v1-heldout-energy_change-06.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "2803e4060921e5470029cb42f535c0adb2db895c029c223d5e5d1da908709b61"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-combined-06",
+        "file": "n01-stock-graph-v1-heldout-combined-06.json",
+        "stratum": "combined",
+        "selection_rank_sha256": "2c297a9999b0c7c92945151dc600edefe6abbcea379741fc26d564216c07c469"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-external_commitment-01",
+        "file": "n01-stock-graph-v1-heldout-external_commitment-01.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "39e67e3953e62669966699381f7bfb207c30faeb2aedaf600021bd625a37ef74"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-failure-03",
+        "file": "n01-stock-graph-v1-heldout-failure-03.json",
+        "stratum": "failure",
+        "selection_rank_sha256": "3a8f6a3d08ec01ebdf7da2bf118dfcf90f032a0788410687532b170e3a9e17b6"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-development-stock_loss-01",
+        "file": "n01-stock-graph-v1-development-stock_loss-01.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "3b28185c07d852de4460bee44b737cefd6f843cea0908dda212f2f61e049a7b5"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-energy_change-07",
+        "file": "n01-stock-graph-v1-heldout-energy_change-07.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "3b74f69b2cfee05cf3bf72eb0a4e0bc9895336f3b875ef5c8b0fdf3651335f50"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-control-02",
+        "file": "n01-stock-graph-v1-heldout-control-02.json",
+        "stratum": "control",
+        "selection_rank_sha256": "3dbfb91092cca91eb532344c59eb867c86d280ef043703e67a1a2295bb72a3cf"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-external_commitment-06",
+        "file": "n01-stock-graph-v1-heldout-external_commitment-06.json",
+        "stratum": "external_commitment",
+        "selection_rank_sha256": "3fe747368a4e197a0b048ba87f61bd240e2ef89cb331659fbeacce29130dfa3a"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-stock_loss-05",
+        "file": "n01-stock-graph-v1-heldout-stock_loss-05.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "40c719cf744a2a167b1dc5f03d4546b511f30b790a8f896c263af97b0bce4d2e"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-control-07",
+        "file": "n01-stock-graph-v1-heldout-control-07.json",
+        "stratum": "control",
+        "selection_rank_sha256": "41d5a8048fa211f688a95303e32f6a3436a255d2a29d9ec9f86b6dec1a2e9ef4"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-energy_change-02",
+        "file": "n01-stock-graph-v1-heldout-energy_change-02.json",
+        "stratum": "energy_change",
+        "selection_rank_sha256": "461cd14eabb1f42f2b77dcbf3d5d1d053231e00f2b58c117ce36fd6b55aec475"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-stock_loss-04",
+        "file": "n01-stock-graph-v1-heldout-stock_loss-04.json",
+        "stratum": "stock_loss",
+        "selection_rank_sha256": "58a92dc4a865fc4e849ab65f492095023c4963eb245707e548866c7b6db565e5"
+      },
+      {
+        "scenario_id": "n01-stock-graph-v1-heldout-control-06",
+        "file": "n01-stock-graph-v1-heldout-control-06.json",
+        "stratum": "control",
+        "selection_rank_sha256": "7a0a4b88264602175891d5191c126d8056455279611ec3388525439a41e71c83"
+      }
+    ]
+  }
+}

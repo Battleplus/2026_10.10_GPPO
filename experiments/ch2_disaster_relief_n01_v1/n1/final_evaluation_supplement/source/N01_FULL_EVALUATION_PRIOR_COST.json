@@ -1,0 +1,19 @@
+{
+  "schema": "n01-full-evaluation-prior-cost/1",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r1-20261011",
+  "evidence_root_relative": "..",
+  "known_total_wall_seconds": 173.07905203544348,
+  "known_total_cpu_seconds": 124.840999441,
+  "evidence_sha256": {
+    "received/resource-ledger.jsonl": "74E5CDC4905EFC40AFAE7B7C74EEC142E2ED57B8311E680D85FC04674808CE63",
+    "received/acceptance_probe/failure-probe-resource-ledger.json": "74ABD8B6F53561A92E9C196A19C30EC0B3C389260FFD06E8313ABFBA3AE70F60",
+    "received/acceptance_probe/probe-work/resource-ledger.jsonl": "96BFDCE525EF268FA9F74E9E5C790EDE246F836B83788FB11AF664A7034D2F6F",
+    "received/acceptance_probe/probe-work/disconnect-v3/resource-ledger.jsonl": "F8452E6E511EFD6221758FE3BE3C8BFDBACCDD93E31AD38D94A0F0FE0F03B242",
+    "package/PRIOR_RESOURCE_COST.json": "37447E7D142BE5351861D9921CB2076A391901B907607F1D66C2358B34ACBE86",
+    "package/prior_n01_r1/resource-ledger.jsonl": "235AAFA1EE98E1C9378587D0E958D195B2E33B41261B118D89582CCCBD5D6E77",
+    "N1_DEVELOPMENT_AND_ACCEPTANCE_REPORT.md": "704C3C89D70F6BA259B1A16AA8629E78733CDB1C4F0A630470917EFB8F454D0B",
+    "GUARDIAN_OVERRUN_CORRECTION_NOTE.md": "9CD09D1CF529BB9070731BA8D41C39E56BAAFAEDA4D3C389D378E4A29913F59C",
+    "N1_BUDGET_SCOPE_CORRECTION.md": "44DDFCD2B1F00256E3DA87B25E3BFA619111E85EF8336B462C1DB0EB7D2B5EE6"
+  },
+  "accounting_note": "This is the documented known use carried into the new identity, including the prior N01 carry-forward, engineering admission/smoke and recorded probes. Any historical usage not present in the retained evidence is unquantified, not zero. See N1_DEVELOPMENT_AND_ACCEPTANCE_REPORT.md and N1_BUDGET_SCOPE_CORRECTION.md."
+}
