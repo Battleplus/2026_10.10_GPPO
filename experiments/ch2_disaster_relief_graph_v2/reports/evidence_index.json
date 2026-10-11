@@ -1,0 +1,56 @@
+{
+  "checkpoints": [
+    {
+      "local_only": true,
+      "run_id": "L0-8201",
+      "sha256": "667ac86f60a1d3b03152bbe6f5a5f30e069ddbdb122335f96b5b66459d405e69",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L0-8201.pt"
+    },
+    {
+      "local_only": true,
+      "run_id": "L0-8202",
+      "sha256": "ff91411c6b9b6fde44af2ac52b0e14bcf8caec0c1dc8be2f9779c2b55aad5b3e",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L0-8202.pt"
+    },
+    {
+      "local_only": true,
+      "run_id": "L0-8203",
+      "sha256": "c05c8d5d44f55b503e2601e8dd8c25167539dcbb85346dd9ae7c96b7d84b6564",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L0-8203.pt"
+    },
+    {
+      "local_only": true,
+      "run_id": "L1-8201",
+      "sha256": "94ff7dc6101e34e68d086bf6f349c9b7ad43537fc4a9f7a255f282bd2282afd4",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L1-8201.pt"
+    },
+    {
+      "local_only": true,
+      "run_id": "L1-8202",
+      "sha256": "023737d17342a821daa5765f69f7b30dcad87a1b138e5188ad9cc1b1dafc56df",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L1-8202.pt"
+    },
+    {
+      "local_only": true,
+      "run_id": "L1-8203",
+      "sha256": "fd5f03c7b7d036484876e474cd3789f6cff88d08cb248ce5e7e46c6df64e11b2",
+      "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/extracted/checkpoints/L1-8203.pt"
+    }
+  ],
+  "evaluation": {
+    "full_trajectories": 448,
+    "heldout_parents": 56,
+    "independent_trajectory_audits": 448,
+    "local_only": true
+  },
+  "export_manifest_sha256": "4fcca36b5765b35d357003749fc58f6da29fef54e6a8d79bb13016cbdd8f9931",
+  "independent_audit_sha256": "5e9381a356a10ac6dfde1c99cc1354130031a81ca45f33cb68901317cfcff746",
+  "raw_evidence": {
+    "bytes": 234378923,
+    "local_only": true,
+    "sha256": "9259d39d8c8ec1950b2f6b27376c30068594f8e39ac6e0e4b055a065d296e3c3",
+    "workspace_relative_path": "research-executions/ch2-disaster-relief-graph-v2-20261011/evidence/raw/formal-run-evidence.tar.gz"
+  },
+  "schema": "ch2-graph-published-evidence-index/1",
+  "source_identity_sha256": "bed250f4cc5c9cd001b9d5fe4b596780ccc24ac1ef9cd50dbdf3ea182a87a0f3"
+}

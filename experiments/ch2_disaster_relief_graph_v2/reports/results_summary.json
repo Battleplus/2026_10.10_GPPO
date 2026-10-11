@@ -1,0 +1,278 @@
+{
+  "evaluation_parent_count": 56,
+  "evaluation_run_count": 448,
+  "heldout_consumed_for_future_development": true,
+  "independent_audit": {
+    "conclusion": "No demonstrated graph-layer benefit; both intervals cross zero. Heldout results are consumed.",
+    "contrasts_independently_recomputed": {
+      "L1_minus_C1": {
+        "interval_excludes_training_seed_uncertainty": true,
+        "mean": -0.0073913685520828375,
+        "paired_parent_95_ci": [
+          -0.02390644573680288,
+          0.010225980616605611
+        ],
+        "per_seed": {
+          "8201": -0.010524247577819007,
+          "8202": -0.013420309848881278,
+          "8203": 0.00177045177045177
+        }
+      },
+      "L1_minus_L0": {
+        "interval_excludes_training_seed_uncertainty": true,
+        "mean": -0.0018289911147053985,
+        "paired_parent_95_ci": [
+          -0.02271938048723763,
+          0.01807599807599807
+        ],
+        "per_seed": {
+          "8201": -0.014523373451944878,
+          "8202": -2.2943326514753203e-05,
+          "8203": 0.009059343434343435
+        }
+      }
+    },
+    "full_independent_trajectory_audits": 448
+  },
+  "paired_primary_differences": {
+    "L1_minus_C1": {
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20261011,
+      "interval_scope": "paired parent scenarios over the observed three model seeds; excludes training-seed uncertainty",
+      "mean_difference": -0.0073913685520828375,
+      "paired_parent_bootstrap_95_percentile_interval": [
+        -0.023906445736802874,
+        0.010225980616605611
+      ],
+      "parent_count": 56,
+      "per_seed": {
+        "8201": -0.010524247577819007,
+        "8202": -0.013420309848881278,
+        "8203": 0.00177045177045177
+      },
+      "seed_mean_differences": {
+        "8201": -0.010524247577819007,
+        "8202": -0.013420309848881278,
+        "8203": 0.00177045177045177
+      },
+      "training_seed_count": 3
+    },
+    "L1_minus_L0": {
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20261012,
+      "interval_scope": "paired parent scenarios over the observed three model seeds; excludes training-seed uncertainty",
+      "mean_difference": -0.001828991114705399,
+      "paired_parent_bootstrap_95_percentile_interval": [
+        -0.02271938048723763,
+        0.018075998075998072
+      ],
+      "parent_count": 56,
+      "per_seed": {
+        "8201": -0.014523373451944878,
+        "8202": -2.2943326514753203e-05,
+        "8203": 0.009059343434343435
+      },
+      "seed_mean_differences": {
+        "8201": -0.014523373451944878,
+        "8202": -2.2943326514753203e-05,
+        "8203": 0.009059343434343435
+      },
+      "training_seed_count": 3
+    }
+  },
+  "parent_macro_metrics": {
+    "C0": {
+      "decision_cpu_ms_per_tick": 0.006579277976128964,
+      "decision_wall_ms_per_tick": 0.006616551434576867,
+      "energy_used": 4.653547695360168,
+      "inspection_on_time_rate": 0.9821428571428571,
+      "late_orders": 0.03571428571428571,
+      "new_assignments": 0.0,
+      "outside_commitment_delay_minutes": 0.03571428571428571,
+      "outside_commitment_late_orders": 0.017857142857142856,
+      "reassignments": 0.0,
+      "unmet_orders": 2.0892857142857144,
+      "weighted_on_time_delivery_rate": 0.4727118119975263
+    },
+    "C1": {
+      "decision_cpu_ms_per_tick": 0.005714212797628973,
+      "decision_wall_ms_per_tick": 0.005748523038900679,
+      "energy_used": 6.701268887313565,
+      "inspection_on_time_rate": 1.0,
+      "late_orders": 0.05357142857142857,
+      "new_assignments": 1.9821428571428572,
+      "outside_commitment_delay_minutes": 0.03571428571428571,
+      "outside_commitment_late_orders": 0.017857142857142856,
+      "reassignments": 3.017857142857143,
+      "unmet_orders": 0.07142857142857142,
+      "weighted_on_time_delivery_rate": 0.9701054401947259
+    },
+    "L0": {
+      "decision_cpu_ms_per_tick": 1.6115546967262115,
+      "decision_wall_ms_per_tick": 1.8890900070786418,
+      "energy_used": 6.962759952764856,
+      "inspection_on_time_rate": 1.0,
+      "late_orders": 0.07142857142857142,
+      "new_assignments": 1.9940476190476193,
+      "outside_commitment_delay_minutes": 0.03571428571428571,
+      "outside_commitment_late_orders": 0.017857142857142856,
+      "per_seed": {
+        "8201": {
+          "decision_cpu_ms_per_tick": 1.6138583744047759,
+          "decision_wall_ms_per_tick": 1.8311589317385197,
+          "energy_used": 7.074382951790333,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.08928571428571429,
+          "new_assignments": 2.0,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 2.875,
+          "unmet_orders": 0.03571428571428571,
+          "weighted_on_time_delivery_rate": 0.9741045660688518
+        },
+        "8202": {
+          "decision_cpu_ms_per_tick": 1.5981111892857736,
+          "decision_wall_ms_per_tick": 1.9436420454266705,
+          "energy_used": 6.870954114835363,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.05357142857142857,
+          "new_assignments": 1.9821428571428572,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 2.5,
+          "unmet_orders": 0.10714285714285714,
+          "weighted_on_time_delivery_rate": 0.9567080736723594
+        },
+        "8203": {
+          "decision_cpu_ms_per_tick": 1.622694526488085,
+          "decision_wall_ms_per_tick": 1.8924690440707352,
+          "energy_used": 6.942942791668871,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.07142857142857142,
+          "new_assignments": 2.0,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 3.25,
+          "unmet_orders": 0.08928571428571429,
+          "weighted_on_time_delivery_rate": 0.9628165485308342
+        }
+      },
+      "reassignments": 2.875,
+      "unmet_orders": 0.07738095238095238,
+      "weighted_on_time_delivery_rate": 0.9645430627573485
+    },
+    "L1": {
+      "decision_cpu_ms_per_tick": 2.125038730258033,
+      "decision_wall_ms_per_tick": 2.5305294902026945,
+      "energy_used": 6.990617220585052,
+      "inspection_on_time_rate": 1.0,
+      "late_orders": 0.08928571428571429,
+      "new_assignments": 1.9940476190476193,
+      "outside_commitment_delay_minutes": 0.03571428571428571,
+      "outside_commitment_late_orders": 0.017857142857142856,
+      "per_seed": {
+        "8201": {
+          "decision_cpu_ms_per_tick": 2.0964708851191527,
+          "decision_wall_ms_per_tick": 2.4696780123382007,
+          "energy_used": 7.2958694534061355,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.08928571428571429,
+          "new_assignments": 1.9821428571428572,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 2.7857142857142856,
+          "unmet_orders": 0.07142857142857142,
+          "weighted_on_time_delivery_rate": 0.959581192616907
+        },
+        "8202": {
+          "decision_cpu_ms_per_tick": 2.1602156142858115,
+          "decision_wall_ms_per_tick": 2.559176528787551,
+          "energy_used": 6.812063262843888,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.08928571428571429,
+          "new_assignments": 2.0,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 2.8214285714285716,
+          "unmet_orders": 0.14285714285714285,
+          "weighted_on_time_delivery_rate": 0.9566851303458446
+        },
+        "8203": {
+          "decision_cpu_ms_per_tick": 2.1184296913691356,
+          "decision_wall_ms_per_tick": 2.562733929482333,
+          "energy_used": 6.863918945505134,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0.08928571428571429,
+          "new_assignments": 2.0,
+          "outside_commitment_delay_minutes": 0.03571428571428571,
+          "outside_commitment_late_orders": 0.017857142857142856,
+          "reassignments": 2.732142857142857,
+          "unmet_orders": 0.05357142857142857,
+          "weighted_on_time_delivery_rate": 0.9718758919651778
+        }
+      },
+      "reassignments": 2.779761904761905,
+      "unmet_orders": 0.08928571428571429,
+      "weighted_on_time_delivery_rate": 0.962714071642643
+    }
+  },
+  "primary_metric": "parent-macro priority-weighted on-time delivery rate",
+  "schema": "ch2-disaster-relief-graph-results/1",
+  "training": {
+    "final_checkpoints": 6,
+    "optimizer_updates": 3072,
+    "rounds": 192,
+    "runs": {
+      "L0-8201": {
+        "final_sha256": "667ac86f60a1d3b03152bbe6f5a5f30e069ddbdb122335f96b5b66459d405e69",
+        "first_round_reward": 2.586513732707793,
+        "last_round_reward": 2.437611825494061,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 500,
+        "rounds": 32
+      },
+      "L0-8202": {
+        "final_sha256": "ff91411c6b9b6fde44af2ac52b0e14bcf8caec0c1dc8be2f9779c2b55aad5b3e",
+        "first_round_reward": 2.609808183165521,
+        "last_round_reward": 2.3972272386828024,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 501,
+        "rounds": 32
+      },
+      "L0-8203": {
+        "final_sha256": "c05c8d5d44f55b503e2601e8dd8c25167539dcbb85346dd9ae7c96b7d84b6564",
+        "first_round_reward": 2.584039265783367,
+        "last_round_reward": 2.4013570436500506,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 508,
+        "rounds": 32
+      },
+      "L1-8201": {
+        "final_sha256": "94ff7dc6101e34e68d086bf6f349c9b7ad43537fc4a9f7a255f282bd2282afd4",
+        "first_round_reward": 2.549520213108101,
+        "last_round_reward": 2.4267931021879416,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 505,
+        "rounds": 32
+      },
+      "L1-8202": {
+        "final_sha256": "023737d17342a821daa5765f69f7b30dcad87a1b138e5188ad9cc1b1dafc56df",
+        "first_round_reward": 2.599293912843563,
+        "last_round_reward": 2.422638406010252,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 508,
+        "rounds": 32
+      },
+      "L1-8203": {
+        "final_sha256": "fd5f03c7b7d036484876e474cd3789f6cff88d08cb248ce5e7e46c6df64e11b2",
+        "first_round_reward": 2.5719287579978247,
+        "last_round_reward": 2.5506702673116832,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 505,
+        "rounds": 32
+      }
+    },
+    "target_runtime_note": "Local Torch 2.13 initialization digest differs from target Torch 2.7. Compared target paired initialization receipts, target architecture, and loaded all six model states strictly; did not require local initial random bytes to equal target.",
+    "transitions": 46080
+  }
+}

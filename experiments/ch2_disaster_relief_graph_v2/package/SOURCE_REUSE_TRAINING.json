@@ -1,0 +1,29 @@
+{
+  "schema": "source-reuse/1",
+  "sources": [
+    {
+      "path": "src/uav_assignment/ppo.py",
+      "sha256": "493ec0dc2f05e0896a0689c819a38c385bf6f46ab743fc2542a261ad3af97f9b",
+      "reuse": [
+        "PPO probability ratio exp(new_log_prob - old_log_prob)",
+        "clipped surrogate objective using min(unclipped, clipped)",
+        "mean-squared value loss",
+        "categorical entropy regularization",
+        "gradient norm clipping followed by optimizer step"
+      ],
+      "adaptation": "Reimplemented for scalar rewards and autoregressive whole-batch likelihoods; explicit terminal, truncation, and rollout-cut bootstrapping; no legacy environment, preference, world-model, or checkpoint data imported."
+    },
+    {
+      "path": "src/uav_assignment/config.py",
+      "sha256": "fbc3789d535dacf701a5c9e7f332aec60b388c97c7819f7d6d8e53c796277811",
+      "reuse": [
+        "Adam learning rate 3e-4",
+        "gamma 0.99 and GAE lambda 0.95",
+        "clip 0.2, value coefficient 0.5, entropy coefficient 0.01",
+        "maximum gradient norm 0.5"
+      ],
+      "adaptation": "Values are pinned in the new package config and are not inherited through runtime imports."
+    }
+  ],
+  "data_policy": "Only source hashes and algorithm/configuration summaries are retained; no legacy checkpoint or task data is loaded."
+}

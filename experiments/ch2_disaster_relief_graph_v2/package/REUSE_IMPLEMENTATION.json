@@ -1,0 +1,70 @@
+{
+  "schema": "relief-graph-reuse/1",
+  "destination": "development/ch2_disaster_relief_graph_v1",
+  "historical_results_copied": false,
+  "bytecode_copied": false,
+  "sources": [
+    {
+      "path": "development/ch2_disaster_relief_v1/scenario_schema.py",
+      "sha256": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+      "destination": "scenario_schema.py",
+      "reuse": "Copied schema validation; new learned-policy code consumes the same civilian scenario contract."
+    },
+    {
+      "path": "development/ch2_disaster_relief_v1/relief_env.py",
+      "sha256": "0531534a79db6e2f443180bdbbbd2601fc870f43793ca1086054cfd1e52d1e69",
+      "destination": "relief_env.py",
+      "reuse": "Copied state machine, public mirror, candidate construction, C0/C1 runners, events, and independent task metrics; appended reset/step/export and reward API."
+    },
+    {
+      "path": "development/ch2_disaster_relief_v1/baselines.py",
+      "sha256": "712bf93f599455f11bb392a1c193ae1c5e2536a564bd0c5e229deb83916bc758",
+      "destination": "baselines.py",
+      "reuse": "Copied the legacy deterministic C0 and C1 selection rules unchanged; added separate step-mode adapters that reserve visible stock within a minute batch."
+    },
+    {
+      "path": "development/ch2_disaster_relief_v1/chapter1_adapter.py",
+      "sha256": "3ad0ceb89f1db98b9243a29b51d2149b23d0a6e64eb20baeebd43d192c94956d",
+      "destination": "chapter1_adapter.py",
+      "reuse": "Copied explicit public initial-queue handoff and identity calculation."
+    },
+    {
+      "path": "development/ch2_disaster_relief_v1/stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "destination": "stable_identity.py",
+      "reuse": "Copied strict JSON hashing and public decision binding."
+    },
+    {
+      "path": "development/ch2_disaster_relief_v1/independent_audit.py",
+      "sha256": "9299b5b38e17ec303d38b3378ecf1c8eefd27f1ebbe4bb043694022eb3460c99",
+      "destination": "independent_audit.py",
+      "reuse": "Copied event replay, inventory/energy conservation, public-observation, and terminal-state audit; extended accepted policy IDs to L0/L1."
+    },
+    {
+      "path": "src/uav_assignment/paper_faithful_models.py",
+      "sha256": "904c7b39b0956cf800cc09f8edc413966836897e05409136def9eca7ddaf46b1",
+      "destination": "literal_graph_ops.py",
+      "destination_sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "reuse": "Vendored the source LiteralUAVAttention, LiteralTaskUpdate, deterministic RReLU, shared module definitions, and constructor order; graph_policy.py adapts these locally with dynamic entity masks and candidate mapping."
+    },
+    {
+      "path": "src/uav_assignment/paper_env.py",
+      "sha256": "aafee1eb17b6413bc1525d1d3609722b51095773aa3d4b7cd1a204815d875fb4",
+      "destination": "literal_graph_ops.py",
+      "destination_sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "reuse": "Vendored SELF_EDGE and UAV_TASK_EDGE constants from the reviewed graph environment; runtime no longer imports the source tree."
+    }
+  ],
+  "adaptations": [
+    "Graph nodes are sorted public platform and task entities with explicit node type, platform mask, task mask, and node mask.",
+    "Candidate IDs bind to entity indices explicitly; actor input contains only public observation plus the public candidate catalog.",
+    "Autoregressive masks reserve each delivery's required commodity quantity against public depot stock and visible pre-load delivery commitments; step-mode candidate construction and environment step enforce the same remaining-stock contract, while the legacy run path keeps its original per-candidate stock rule.",
+    "The minute-step C0/C1 comparison adapters filter aggregate stock overcommit in stable policy order; legacy choose_actions and ReliefEnv.run retain the copied first-chapter semantics.",
+    "Literal message-passing operators and module constructor topology are vendored locally; the deployed package has no runtime import from the old src tree.",
+    "L0 uses an entity-wise MLP selected by deterministic static parameter count; L1 calls the locally vendored Literal attention and task-update operators.",
+    "The public environment currently encodes no task-predecessor/successor edges; their two first-layer relation matrices are frozen and excluded from effective-capacity matching, while active platform-task message passing remains enabled.",
+    "Node feature columns 21 and 56-59 are structurally zero for both entity types; their encoder weights are excluded from L0/L1 effective-capacity counts and are covered by encoded-value and gradient tests.",
+    "Linux driver stages run in a token-bound child process supervised by process_guardian.py; resource receipts include wait4 child accounting and record the 250 ms /proc and storage sampling limits.",
+    "This v2 identity requires a hash-bound PRIOR_RESOURCE_COST.json receipt; all failed v1 admission, shutdown, and systemd-observed overhead are charged to current per-stage and pilot budgets without importing old ledger rows into the current identity gate."
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "training": {
+    "rounds": 192,
+    "optimizer_updates": 3072,
+    "transitions": 46080,
+    "final_checkpoints": 6,
+    "all_intermediate_checkpoint_digests_and_steps_verified": 192,
+    "endpoints": {
+      "L0-8201": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 500,
+        "first_round_reward": 2.586513732707793,
+        "last_round_reward": 2.437611825494061,
+        "final_sha256": "667ac86f60a1d3b03152bbe6f5a5f30e069ddbdb122335f96b5b66459d405e69"
+      },
+      "L1-8201": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 505,
+        "first_round_reward": 2.549520213108101,
+        "last_round_reward": 2.4267931021879416,
+        "final_sha256": "94ff7dc6101e34e68d086bf6f349c9b7ad43537fc4a9f7a255f282bd2282afd4"
+      },
+      "L0-8202": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 501,
+        "first_round_reward": 2.609808183165521,
+        "last_round_reward": 2.3972272386828024,
+        "final_sha256": "ff91411c6b9b6fde44af2ac52b0e14bcf8caec0c1dc8be2f9779c2b55aad5b3e"
+      },
+      "L1-8202": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 508,
+        "first_round_reward": 2.599293912843563,
+        "last_round_reward": 2.422638406010252,
+        "final_sha256": "023737d17342a821daa5765f69f7b30dcad87a1b138e5188ad9cc1b1dafc56df"
+      },
+      "L0-8203": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 508,
+        "first_round_reward": 2.584039265783367,
+        "last_round_reward": 2.4013570436500506,
+        "final_sha256": "c05c8d5d44f55b503e2601e8dd8c25167539dcbb85346dd9ae7c96b7d84b6564"
+      },
+      "L1-8203": {
+        "rounds": 32,
+        "optimizer_steps": 512,
+        "pair_actor_parameter_updates": 505,
+        "first_round_reward": 2.5719287579978247,
+        "last_round_reward": 2.5506702673116832,
+        "final_sha256": "fd5f03c7b7d036484876e474cd3789f6cff88d08cb248ce5e7e46c6df64e11b2"
+      }
+    },
+    "local_runtime_limit": "Local Torch 2.13 initialization digest differs from target Torch 2.7. Compared target paired initialization receipts, target architecture, and loaded all six model states strictly; did not require local initial random bytes to equal target.",
+    "adam_step_scope": "Each optimizer executes 512 updates. The four pair_actor parameters have fewer Adam steps when minibatches contain only NOOP decisions and their gradients are None; all other state-bearing parameters reach 512, with monotone per-round pair_actor steps."
+  },
+  "evaluation": {
+    "full_independent_trajectory_audits": 448,
+    "heldout_parents": 56,
+    "primary": {
+      "C0": 0.4727118119975263,
+      "C1": 0.9701054401947259,
+      "L0": 0.9645430627573485,
+      "L1": 0.962714071642643
+    },
+    "contrasts_independently_recomputed": {
+      "L1_minus_C1": {
+        "mean": -0.0073913685520828375,
+        "per_seed": {
+          "8201": -0.010524247577819007,
+          "8202": -0.013420309848881278,
+          "8203": 0.00177045177045177
+        },
+        "paired_parent_95_ci": [
+          -0.02390644573680288,
+          0.010225980616605611
+        ],
+        "interval_excludes_training_seed_uncertainty": true
+      },
+      "L1_minus_L0": {
+        "mean": -0.0018289911147053985,
+        "per_seed": {
+          "8201": -0.014523373451944878,
+          "8202": -2.2943326514753203e-05,
+          "8203": 0.009059343434343435
+        },
+        "paired_parent_95_ci": [
+          -0.02271938048723763,
+          0.01807599807599807
+        ],
+        "interval_excludes_training_seed_uncertainty": true
+      }
+    },
+    "conclusion": "No demonstrated graph-layer benefit; both intervals cross zero. Heldout results are consumed."
+  },
+  "export": {
+    "hashed_files": 1850,
+    "manifest_sha256": "4fcca36b5765b35d357003749fc58f6da29fef54e6a8d79bb13016cbdd8f9931",
+    "summary_sha256": "f7b73ad8febff66498dfa3fe9ac955f8f70343b11e9642cb0c5ccd9d5ffe325f"
+  },
+  "resource": {
+    "ledger_including_prior_wall": 1112.0932177785837,
+    "ledger_including_prior_cpu": 1105.965847126,
+    "formal_service_wall": 1052.655733,
+    "formal_service_cpu": 1049.641056,
+    "formal_wrapper_additional_wall": 0.3049923958974432,
+    "formal_wrapper_additional_cpu": 0.30391300499991303,
+    "known_total_wall_including_service_envelopes_and_prior": 1112.45299305402,
+    "known_total_cpu_including_services_and_prior": 1106.3521389999999,
+    "remaining_whole_wall": 13287.54700694598,
+    "remaining_whole_cpu": 10893.647861,
+    "peak_rss_bytes": 824274944,
+    "peak_package_work_bytes": 964447677,
+    "stage_costs": {
+      "admission": {
+        "wall": 3.2480525537393987,
+        "cpu": 3.2143362079999998
+      },
+      "engineering_smoke": {
+        "wall": 50.759695620741695,
+        "cpu": 50.499738922999995
+      },
+      "training": {
+        "wall": 948.6396157718264,
+        "cpu": 945.694668918
+      },
+      "evaluation_analysis": {
+        "wall": 98.22599001321942,
+        "cpu": 98.178276792
+      },
+      "export": {
+        "wall": 5.485134819056839,
+        "cpu": 5.464197284999999
+      }
+    }
+  },
+  "source_identity_sha256": "bed250f4cc5c9cd001b9d5fe4b596780ccc24ac1ef9cd50dbdf3ea182a87a0f3",
+  "wall_seconds_for_local_audit": 23.044190299999173
+}
