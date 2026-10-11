@@ -1,0 +1,193 @@
+{
+  "schema": "ch2-planning-source-inventory/1",
+  "date": "2026-10-11",
+  "scope": "local_static_review_only_not_full_package_admission",
+  "files": [
+    {
+      "path": "src/uav_assignment/paper_faithful_models.py",
+      "bytes": 13887,
+      "sha256": "904c7b39b0956cf800cc09f8edc413966836897e05409136def9eca7ddaf46b1"
+    },
+    {
+      "path": "src/uav_assignment/paper_faithful_env.py",
+      "bytes": 11308,
+      "sha256": "39a1e7bd759e5e7c6b4ba2a0a0c913b190ef7463cbb76fbe8d680b0f9280f461"
+    },
+    {
+      "path": "src/uav_assignment/paper_models.py",
+      "bytes": 15793,
+      "sha256": "39220b44923c8bbf7e3cb4ab79d8cbffb416a4d51e9dc867feddaefc04e19a86"
+    },
+    {
+      "path": "src/uav_assignment/paper_env.py",
+      "bytes": 51536,
+      "sha256": "aafee1eb17b6413bc1525d1d3609722b51095773aa3d4b7cd1a204815d875fb4"
+    },
+    {
+      "path": "src/uav_assignment/ppo.py",
+      "bytes": 10948,
+      "sha256": "493ec0dc2f05e0896a0689c819a38c385bf6f46ab743fc2542a261ad3af97f9b"
+    },
+    {
+      "path": "src/uav_assignment/preco.py",
+      "bytes": 3498,
+      "sha256": "2e4693ec7b5c1266c85d3d65f732a9bca3655a5532ec3cde13007c5c1bbf5db1"
+    },
+    {
+      "path": "src/uav_assignment/pcrl_training.py",
+      "bytes": 30335,
+      "sha256": "1d0b77b0c25bed85261abf481a1ce4282c12fc223664fd552d9e82344bd63668"
+    },
+    {
+      "path": "src/uav_assignment/pcrl_models.py",
+      "bytes": 22248,
+      "sha256": "d408b473c1f1a1ca0d94e9adeec7c2991bd3d475b39211adc895752b35aef135"
+    },
+    {
+      "path": "train_paper_faithful.py",
+      "bytes": 21216,
+      "sha256": "8bc522f974a7cebeebe5c052be85c0d625e301e7e0ea900d8f1c33118a4596da"
+    },
+    {
+      "path": "tests/test_paper_faithful.py",
+      "bytes": 13564,
+      "sha256": "c95ec3096bcfefe4bde479338aea69f77926a401bb7c514517d0f886f16ef8d4"
+    },
+    {
+      "path": "tests/test_paper_faithful_generalization.py",
+      "bytes": 446,
+      "sha256": "9e2a7b4981956f8c205b7f161a7d82316aaa8d8a21ba03ccdfe8c0bee2aed332"
+    },
+    {
+      "path": "research-archives/2026_10.10_GPPO/docs/RESEARCH_PLAN_V1.md",
+      "bytes": 14811,
+      "sha256": "c2dc409879455960df474126a4a0bc564158fff795e31f44fc48b83184ee9a58"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_model.py",
+      "bytes": 9040,
+      "sha256": "b92b10fcae979cbce476c145480403263925fc69b02dd8d320440fde63e409dd"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_training.py",
+      "bytes": 13882,
+      "sha256": "54d79991fc5e3e6e1aca65aeda9eebd52b1c308478e84003c84228c744a837de"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_policy.py",
+      "bytes": 4108,
+      "sha256": "018e6a1508ce93be6c36c47d97c3d942e87373bb7b59435df5bbc77fcdb8338a"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_replay.py",
+      "bytes": 6035,
+      "sha256": "a91b0c6b8fde0767c4c63de6e3fed4935a42bb5b2567af3da2c0f646eb11ef22"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_collection.py",
+      "bytes": 14508,
+      "sha256": "7e29913475f2ebc573063afd2c6cb95fc71bb9d7841169748b8a4a0986ae503b"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/public_prefix.py",
+      "bytes": 17219,
+      "sha256": "82095baeb687f479250486d983ad027dc0271f6bd058b8b0aea785221d6a2ae6"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/candidate_keys.py",
+      "bytes": 12799,
+      "sha256": "e799cddeaf6fafb206943d03fbd8886ec9badc109bdcc24885a9bd6c884615f2"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_contract.py",
+      "bytes": 11512,
+      "sha256": "9fd4da2353faea0677f79117d0d0a2f0980a6ee140e66b086d8c73d9dd40f79d"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/vendor/w1_graph_jepa.py",
+      "bytes": 7466,
+      "sha256": "239ff4e78327d1e9d9b7fafad61b4b78e310de1e437758d51ca7290b564a2b63"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/native/gppo_world/joint_gppo.py",
+      "bytes": 20878,
+      "sha256": "3c799cfe12050971e1b11da6b2c04fa6a7c244a36935578861c5db533396f55e"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/native/gppo_world/joint_training.py",
+      "bytes": 114181,
+      "sha256": "39d202d0c590875af25764001c99e39af7d4cc82d4f7689f6b12c3cc6213874e"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/native/gppo_world/graph5.py",
+      "bytes": 6483,
+      "sha256": "ed29c11754d9eeb14af86417a52e5d52f1297069e51935268e01ee70bc95e51c"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/evaluation_config_contract.py",
+      "bytes": 9550,
+      "sha256": "e317178009a3468ff584f368b8fd85503d0ae3ee664a647405a91a6bf68148b0"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/evaluation_tape_contract.py",
+      "bytes": 8649,
+      "sha256": "202f113e795f0c27f7371217bf376a7b943b6d157c74fbe8808cd8c8ce828392"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/evaluation_recovery_worker.py",
+      "bytes": 13029,
+      "sha256": "a05bbe3b0422fd6cb3cbc6430ee62e2a8ddde3deeffc927df4aeb44509aa2e5d"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/production_driver.py",
+      "bytes": 54957,
+      "sha256": "36406b730127daa5de638680b00736ae019f6074938e3e640b2524154860e0e0"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/budget_ledger.py",
+      "bytes": 13506,
+      "sha256": "739a7a09b980cd612bb528f983b81dafa662ec9cda02e992f800fd60e1ae28a4"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/phase_handshake.py",
+      "bytes": 32952,
+      "sha256": "cba29223018bec26972bd3f3352cf400cfa94fb98ef22cec2851291646817b43"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/launch_pilot.py",
+      "bytes": 22673,
+      "sha256": "aa9760a51aa2925d73fe37f5f6a50507afd52439bf85943843a675718d8f5aed"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/package/supervise.py",
+      "bytes": 45961,
+      "sha256": "1aef29841ea8e7317a6234df4824b9ea58d61e20d0e626f9edaaa35ad1c48c26"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/formal-run-20261011/RESULT_AUDIT.md",
+      "bytes": 6463,
+      "sha256": "8e4acc5aea541a63d70ba053a128434a7f11a355bc89a64c581a417dcea82ec6"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/formal-run-20261011/run-once/ranking-ablation-results.json",
+      "bytes": 107920,
+      "sha256": "d74e4bbbcc4dcf061ccb1d0f7420dd07f5c591fa4675d61aba1658a8e927826e"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/formal-run-20261011/run-once/evaluation-six-model-restore-audit.json",
+      "bytes": 15005,
+      "sha256": "4320b0db29b0c85d41b797a5cff488a51260d38a5078c9df70d0e8392b7974f2"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/formal-run-20261011/run-once/resource-settlement.json",
+      "bytes": 885,
+      "sha256": "eb9b2ddc8816c2ec24cfdbcfe0e136c41c4762294635da48e90bcb517bdae33f"
+    },
+    {
+      "path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-evaluation-recovery-v3-config-contract-repair/formal-run-20261011/run-once/status.json",
+      "bytes": 524,
+      "sha256": "cb62382dc407afb9d8b213f1dadd53a1b7c23b432a8a033dd25d41d2de1e8d3b"
+    }
+  ],
+  "snapshot_note": "Historical source inventory captured before this publication; not a manifest of current repository contents. The archived research-plan source hash describes its pre-publication revision."
+}
