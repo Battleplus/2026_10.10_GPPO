@@ -1,0 +1,640 @@
+{
+  "chapter1_snapshot": {
+    "queues": {
+      "heli-1-rep1": [
+        "known-food-rep1"
+      ],
+      "uav-1-rep1": [
+        "inspect-west-rep1",
+        "known-water-rep1"
+      ],
+      "uav-2-rep1": [
+        "inspect-east-rep1"
+      ],
+      "uav-3-rep1": [],
+      "heli-1-rep2": [
+        "known-food-rep2"
+      ],
+      "uav-1-rep2": [
+        "inspect-west-rep2",
+        "known-water-rep2"
+      ],
+      "uav-2-rep2": [
+        "inspect-east-rep2"
+      ],
+      "uav-3-rep2": [],
+      "heli-1-rep3": [
+        "known-food-rep3"
+      ],
+      "uav-1-rep3": [
+        "inspect-west-rep3",
+        "known-water-rep3"
+      ],
+      "uav-2-rep3": [
+        "inspect-east-rep3"
+      ],
+      "uav-3-rep3": []
+    },
+    "source": "synthetic_initial_assignment",
+    "time": 0
+  },
+  "depots": [
+    {
+      "id": "depot-1-rep1",
+      "position": [
+        0.0,
+        0.75
+      ],
+      "stock": {
+        "food": 12.0,
+        "medical": 8.0,
+        "water": 18.0
+      }
+    },
+    {
+      "id": "depot-1-rep2",
+      "position": [
+        0.0,
+        0.75
+      ],
+      "stock": {
+        "food": 12.0,
+        "medical": 8.0,
+        "water": 18.0
+      }
+    },
+    {
+      "id": "depot-1-rep3",
+      "position": [
+        0.0,
+        0.75
+      ],
+      "stock": {
+        "food": 12.0,
+        "medical": 8.0,
+        "water": 18.0
+      }
+    }
+  ],
+  "disturbances": [],
+  "dt": 1,
+  "horizon": 60,
+  "map": {
+    "cell_km": 1.0,
+    "cols": 10,
+    "local_block": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "rows": 10
+  },
+  "platforms": [
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-1-rep1",
+      "local": true,
+      "position": [
+        0.5,
+        0.0
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-2-rep1",
+      "local": true,
+      "position": [
+        0.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-3-rep1",
+      "local": true,
+      "position": [
+        1.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 30,
+      "energy_initial": 100,
+      "energy_per_km": 0.4,
+      "id": "heli-1-rep1",
+      "local": true,
+      "position": [
+        1.0,
+        1.25
+      ],
+      "service_energy_per_min": 0.08,
+      "speed_km_min": 1.0,
+      "type": "helicopter"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-1-rep2",
+      "local": true,
+      "position": [
+        0.5,
+        0.0
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-2-rep2",
+      "local": true,
+      "position": [
+        0.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-3-rep2",
+      "local": true,
+      "position": [
+        1.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 30,
+      "energy_initial": 100,
+      "energy_per_km": 0.4,
+      "id": "heli-1-rep2",
+      "local": true,
+      "position": [
+        1.0,
+        1.25
+      ],
+      "service_energy_per_min": 0.08,
+      "speed_km_min": 1.0,
+      "type": "helicopter"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-1-rep3",
+      "local": true,
+      "position": [
+        0.5,
+        0.0
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-2-rep3",
+      "local": true,
+      "position": [
+        0.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 8,
+      "energy_initial": 40,
+      "energy_per_km": 0.5,
+      "id": "uav-3-rep3",
+      "local": true,
+      "position": [
+        1.25,
+        1.5
+      ],
+      "service_energy_per_min": 0.05,
+      "speed_km_min": 0.5,
+      "type": "uav"
+    },
+    {
+      "capabilities": [
+        "inspect",
+        "deliver"
+      ],
+      "capacity_kg": 30,
+      "energy_initial": 100,
+      "energy_per_km": 0.4,
+      "id": "heli-1-rep3",
+      "local": true,
+      "position": [
+        1.0,
+        1.25
+      ],
+      "service_energy_per_min": 0.08,
+      "speed_km_min": 1.0,
+      "type": "helicopter"
+    }
+  ],
+  "scenario_id": "n01-scale_12x18-graph-v1-heldout-control-06",
+  "schema_version": "relief-engineering/1",
+  "synthetic": true,
+  "tasks": [
+    {
+      "deadline": 21,
+      "discovered_by": null,
+      "id": "inspect-west-rep1",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        1.75,
+        1.5
+      ],
+      "priority": 1,
+      "report_delay": 0,
+      "service_minutes": 2
+    },
+    {
+      "deadline": 37,
+      "discovered_by": null,
+      "id": "inspect-east-rep1",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        0.75,
+        0.25
+      ],
+      "priority": 2,
+      "report_delay": 0,
+      "service_minutes": 3
+    },
+    {
+      "commodity": "water",
+      "deadline": 51,
+      "depot_id": "depot-1-rep1",
+      "discovered_by": null,
+      "id": "known-water-rep1",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        1.75,
+        0.25
+      ],
+      "priority": 4,
+      "quantity": 3,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "food",
+      "deadline": 41,
+      "depot_id": "depot-1-rep1",
+      "discovered_by": null,
+      "id": "known-food-rep1",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 3,
+      "local": true,
+      "position": [
+        1.5,
+        0.5
+      ],
+      "priority": 2,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "medical",
+      "deadline": 21,
+      "depot_id": "depot-1-rep1",
+      "discovered_by": "inspect-west-rep1",
+      "id": "latent-medical-rep1",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        0.0,
+        0.0
+      ],
+      "priority": 3,
+      "quantity": 2,
+      "report_delay": 0,
+      "unload_minutes": 2
+    },
+    {
+      "commodity": "water",
+      "deadline": 55,
+      "depot_id": "depot-1-rep1",
+      "discovered_by": "inspect-east-rep1",
+      "id": "latent-water-rep1",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 1,
+      "local": true,
+      "position": [
+        0.0,
+        0.25
+      ],
+      "priority": 3,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "deadline": 21,
+      "discovered_by": null,
+      "id": "inspect-west-rep2",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        1.75,
+        1.5
+      ],
+      "priority": 1,
+      "report_delay": 0,
+      "service_minutes": 2
+    },
+    {
+      "deadline": 37,
+      "discovered_by": null,
+      "id": "inspect-east-rep2",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        0.75,
+        0.25
+      ],
+      "priority": 2,
+      "report_delay": 0,
+      "service_minutes": 3
+    },
+    {
+      "commodity": "water",
+      "deadline": 51,
+      "depot_id": "depot-1-rep2",
+      "discovered_by": null,
+      "id": "known-water-rep2",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        1.75,
+        0.25
+      ],
+      "priority": 4,
+      "quantity": 3,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "food",
+      "deadline": 41,
+      "depot_id": "depot-1-rep2",
+      "discovered_by": null,
+      "id": "known-food-rep2",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 3,
+      "local": true,
+      "position": [
+        1.5,
+        0.5
+      ],
+      "priority": 2,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "medical",
+      "deadline": 21,
+      "depot_id": "depot-1-rep2",
+      "discovered_by": "inspect-west-rep2",
+      "id": "latent-medical-rep2",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        0.0,
+        0.0
+      ],
+      "priority": 3,
+      "quantity": 2,
+      "report_delay": 0,
+      "unload_minutes": 2
+    },
+    {
+      "commodity": "water",
+      "deadline": 55,
+      "depot_id": "depot-1-rep2",
+      "discovered_by": "inspect-east-rep2",
+      "id": "latent-water-rep2",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 1,
+      "local": true,
+      "position": [
+        0.0,
+        0.25
+      ],
+      "priority": 3,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "deadline": 21,
+      "discovered_by": null,
+      "id": "inspect-west-rep3",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        1.75,
+        1.5
+      ],
+      "priority": 1,
+      "report_delay": 0,
+      "service_minutes": 2
+    },
+    {
+      "deadline": 37,
+      "discovered_by": null,
+      "id": "inspect-east-rep3",
+      "kind": "inspection",
+      "known_initial": true,
+      "local": true,
+      "position": [
+        0.75,
+        0.25
+      ],
+      "priority": 2,
+      "report_delay": 0,
+      "service_minutes": 3
+    },
+    {
+      "commodity": "water",
+      "deadline": 51,
+      "depot_id": "depot-1-rep3",
+      "discovered_by": null,
+      "id": "known-water-rep3",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        1.75,
+        0.25
+      ],
+      "priority": 4,
+      "quantity": 3,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "food",
+      "deadline": 41,
+      "depot_id": "depot-1-rep3",
+      "discovered_by": null,
+      "id": "known-food-rep3",
+      "kind": "delivery",
+      "known_initial": true,
+      "load_minutes": 3,
+      "local": true,
+      "position": [
+        1.5,
+        0.5
+      ],
+      "priority": 2,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    },
+    {
+      "commodity": "medical",
+      "deadline": 21,
+      "depot_id": "depot-1-rep3",
+      "discovered_by": "inspect-west-rep3",
+      "id": "latent-medical-rep3",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 2,
+      "local": true,
+      "position": [
+        0.0,
+        0.0
+      ],
+      "priority": 3,
+      "quantity": 2,
+      "report_delay": 0,
+      "unload_minutes": 2
+    },
+    {
+      "commodity": "water",
+      "deadline": 55,
+      "depot_id": "depot-1-rep3",
+      "discovered_by": "inspect-east-rep3",
+      "id": "latent-water-rep3",
+      "kind": "delivery",
+      "known_initial": false,
+      "load_minutes": 1,
+      "local": true,
+      "position": [
+        0.0,
+        0.25
+      ],
+      "priority": 3,
+      "quantity": 5,
+      "report_delay": 0,
+      "unload_minutes": 1
+    }
+  ],
+  "units": {
+    "distance": "km",
+    "energy": "synthetic_unit",
+    "quantity": "kg",
+    "time": "min"
+  }
+}

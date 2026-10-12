@@ -1,0 +1,131 @@
+{
+  "first_error": "RuntimeError: RSS fields missing for pid 3543979",
+  "outer_guardian_receipt": "/home/user1/w1-pilot/runs/ch2-disaster-relief-graph-v1-20261011-once/guardians/01-admission.json",
+  "partial_checkpoints": [],
+  "resource_entry": {
+    "child_error_preceded_outer_guardian": false,
+    "cpu_seconds": 2.711286834,
+    "finished_wall_monotonic": 2583822.835053567,
+    "first_error": "RuntimeError: RSS fields missing for pid 3543979",
+    "metadata": {
+      "disk_peak_sampling_method": "directory size scan every 0.25 seconds; short-lived growth between scans may be missed",
+      "outer_guardian_receipt": "/home/user1/w1-pilot/runs/ch2-disaster-relief-graph-v1-20261011-once/guardians/01-admission.json",
+      "outer_guardian_sampling_interval_seconds": 0.25,
+      "receipt": "/home/user1/w1-pilot/runs/ch2-disaster-relief-graph-v1-20261011-once/receipts/01-admission.json"
+    },
+    "outer_guardian_error": "RuntimeError: RSS fields missing for pid 3543979",
+    "outer_guardian_error_at_wall_monotonic": 2583822.8221168,
+    "outer_guardian_kill_reason": null,
+    "peak_rss_bytes": 772370432,
+    "peak_work_export_bytes": 963051,
+    "pilot_cpu_used_including_this": 2.711286834,
+    "pilot_wall_used_including_this": 5.31248185178265,
+    "rss_high_water_source": "wait4.ru_maxrss plus /proc sampled process-group VmRSS",
+    "rss_limit_bytes": 4294967296,
+    "schema": "resource-ledger-entry/1",
+    "stage": "admission",
+    "stage_cpu_used_including_this": 2.711286834,
+    "stage_wall_used_including_this": 5.31248185178265,
+    "started_wall_monotonic": 2583817.752832765,
+    "status": "failed",
+    "wall_seconds": 5.31248185178265,
+    "work_export_limit_bytes": 8589934592
+  },
+  "result": {
+    "actual": {
+      "affinity": [
+        0
+      ],
+      "affinity_error": null,
+      "cuda_is_initialized": false,
+      "cuda_is_initialized_before_witness": false,
+      "device": "cpu",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "numpy": "1.26.0",
+      "python": "3.11.16",
+      "torch": "2.7.0+cu128",
+      "torch_interop_threads": 1,
+      "torch_threads": 1
+    },
+    "input_registry_sha256": "bf50433281761ca3264c62f5e63cc0c49e578bcc1fcafa369f3014daced8e093",
+    "kernel_witness": {
+      "cuda_initialized_after_witness": false,
+      "device": "cpu",
+      "grad_norm_preclip": 0.69820237159729,
+      "input_sha256": "b1eee243e3e549c8e2d9ea6e582fd5c4ecc4dd5b31f9dfcc66e7c02d7aa21df8",
+      "kernel": "torch.nn.Linear forward + MSE backward + clipped gradient + Adam step",
+      "loss": 0.4210408627986908,
+      "parameter_changed": true,
+      "post_step_parameter_sha256": "5d1b5a1b5d98f894d0a8747d3b98ba71674742c4178949f38e455f793b14bec7",
+      "prediction_sha256": "e9237a5f5475a6c4f7d8c03887851c43269faef90b9b209dc1a3d03b0be1b1cf"
+    },
+    "mismatches": {},
+    "package_root": "/home/user1/w1-pilot/packages/ch2-disaster-relief-graph-v1-20261011",
+    "runtime_spec": {
+      "affinity": [
+        0
+      ],
+      "device": "cpu",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "gpu_initialization_allowed": false,
+      "install_or_rebuild_required": false,
+      "numpy": "1.26.0",
+      "provider": "existing-ssh-linux-runtime",
+      "python": "3.11.16",
+      "readiness": "pending target-runtime kernel and true-driver acceptance",
+      "schema": "relief-graph-runtime/1",
+      "torch": "2.7.0+cu128",
+      "torch_interop_threads": 1,
+      "torch_threads": 1
+    },
+    "runtime_spec_sha256": "539f8e32c7f43a1b1f4b9461f95b2a9d2358d5c1d7b04aff3c53975f10eab64e",
+    "schema": "runtime-admission/1",
+    "source_hashes": {
+      "REUSE_IMPLEMENTATION.json": "14902b455938007ef4e61b00f72e7ebc8f5a60cf68c061b6366d02dc08e22498",
+      "SOURCE_REUSE_TRAINING.json": "525c492be8b53e0a957be5d0dffbd7fc18e599bb9314d1c5e7dbdfc11a9f715c",
+      "baselines.py": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "chapter1_adapter.py": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "dataset_protocol.py": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+      "driver.py": "055af403b5aea1de6fa6cf30c8d300eb968c0d2874ea93f5a17303595688e026",
+      "evaluator.py": "acdced01d4064a58b8d10f1c4639a144510940d2dac48934cd8575059c7c3efc",
+      "fixtures/combined.json": "de6a123b0ef8aeddad7bd4fe51a8d3ff54d684196bd92d36a074fae7bc15c66b",
+      "fixtures/control.json": "eb4946623237fd88c8464d54d974eb027335f2ead1370b9d9ad0f8b37cecf4c0",
+      "fixtures/energy_change.json": "e346bdc989a500d208bacc723fb6333a3d43562c9260af84c0d73575a4c06b0c",
+      "fixtures/external_commitment.json": "2ae3b507e817871186631809558940ed5950f202559199ecb3e2078bffd7115a",
+      "fixtures/failure.json": "879d5b986cd4b20194d6dc373c5c026c15400b4bad62b7f21635e0919c2ac0da",
+      "fixtures/report_delay.json": "ab717059858b22249b049bd86a6b43111aa9df8bdb88eb608bf572602ed9c0cb",
+      "fixtures/stock_loss.json": "b247756d597797982031c501eb17b4f1805c0e9287399e19abd1706d0bbe5106",
+      "graph_policy.py": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+      "independent_audit.py": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+      "literal_graph_ops.py": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "ppo_trainer.py": "d1397cdde15df47e3208b133e7fd152d403480a8c4934d5c5dde6051434627bf",
+      "process_guardian.py": "31e710ac061d676ee99beb9b8f1f4e98b25eea64b24ed9a16c19a239f7aa388d",
+      "protocol/preregistered_protocol.json": "62b58009959a66640a11e7ee06b9b684498431c817f13b884f74c553b68119a0",
+      "relief_env.py": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+      "resource_supervisor.py": "b35fadce04781d94e2b77d7e9dcab614a3ecba40a9850d9d0bdcd8329bb90546",
+      "runtime-spec.json": "539f8e32c7f43a1b1f4b9461f95b2a9d2358d5c1d7b04aff3c53975f10eab64e",
+      "scenario_schema.py": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+      "stable_identity.py": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef"
+    },
+    "status": "accepted",
+    "target_runtime_acceptance": true,
+    "work_root": "/home/user1/w1-pilot/runs/ch2-disaster-relief-graph-v1-20261011-once"
+  },
+  "schema": "driver-stage-receipt/1",
+  "stage": "admission",
+  "status": "failed"
+}

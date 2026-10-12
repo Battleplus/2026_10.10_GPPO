@@ -1,0 +1,22 @@
+{
+  "schema": "n01-r2-verification-report/1",
+  "archive_sha256": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+  "direct_package_stdout": "{\"admit_called\": false, \"budget_status\": \"proposed\", \"checkpoint_loaded\": false, \"evaluation_identity\": \"ch2-disaster-relief-n01-full-evaluation-r2-prior-evidence-20261012\", \"evidence_file_count\": 9, \"known_prior_cpu_seconds\": 124.840999441, \"known_prior_wall_seconds\": 173.07905203544348, \"model_loaded\": false, \"source_hash_count\": 28, \"status\": \"prior-cost-and-static-package-valid\"}",
+  "unpacked_package_stdout": "{\"admit_called\": false, \"budget_status\": \"proposed\", \"checkpoint_loaded\": false, \"evaluation_identity\": \"ch2-disaster-relief-n01-full-evaluation-r2-prior-evidence-20261012\", \"evidence_file_count\": 9, \"known_prior_cpu_seconds\": 124.840999441, \"known_prior_wall_seconds\": 173.07905203544348, \"model_loaded\": false, \"source_hash_count\": 28, \"status\": \"prior-cost-and-static-package-valid\"}",
+  "tampered_evidence_rejected": true,
+  "tamper_error": "PermissionError: prior-cost evidence hash mismatch: received/resource-ledger.jsonl",
+  "prior_cost_only_scope": "did not import torch, read checkpoints, or call admit",
+  "independent_full_dry_run": {
+    "status": "static_preflight_passed_direct_and_unpacked",
+    "checkpoint_deserializations": 12,
+    "checkpoint_files": 6,
+    "model_forward": false,
+    "admit_called": false,
+    "training": false,
+    "formal_evaluation": false,
+    "audit_report": "r2_independent_review/N1_PRIOR_COST_REPAIR_R2_INDEPENDENT_AUDIT.md"
+  },
+  "model_loaded": false,
+  "overall_checkpoint_deserializations": 12,
+  "admit_called": false
+}

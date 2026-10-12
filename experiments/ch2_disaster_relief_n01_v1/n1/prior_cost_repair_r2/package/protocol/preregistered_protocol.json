@@ -1,0 +1,49 @@
+{
+  "protocol_id": "disaster-relief-graph-transfer-v1",
+  "protocol_frozen_at": "2026-10-11",
+  "generator": {
+    "algorithm": "SHA-256 counter mapping: digest(seed || NUL || field), unsigned big-endian modulo inclusive integer interval; position quarter-cell index mapped to coordinate / 4",
+    "seed_derivation": "first 8 bytes of SHA-256('relief-v1|' || split || '|' || stratum || '|' || index), unsigned big-endian",
+    "base_scenario": "schema relief-engineering/1 control fixture; external_commitment fixture only for its named stratum",
+    "platforms": "exactly 3 UAVs and 1 helicopter; local platforms remain in the local 2x2 block; external-commitment stratum keeps the helicopter and its initial commitment outside the block",
+    "tasks": "retain the six-task base roster; external-commitment stratum retains the single named outside delivery",
+    "split_sizes": {
+      "train": 56,
+      "development": 14,
+      "heldout": 56
+    },
+    "strata_per_split": {
+      "control": "no exogenous change",
+      "failure": "one UAV failure and its report",
+      "energy_change": "one public delayed energy change",
+      "stock_loss": "one public delayed depot stock loss",
+      "report_delay": "delayed inspection and discovered-task reports",
+      "combined": "one failure, one energy change, one stock loss, and delayed reports",
+      "external_commitment": "one outside delivery kept with its initial helicopter carrier"
+    },
+    "allocation": "equal parent counts per stratum: 8 each in train and heldout, 2 each in development; generation order split then stratum then index",
+    "ranges": {
+      "local_position_coordinate_km": [0.0, 1.75],
+      "outside_position_coordinate_km": [2.0, 9.0],
+      "coordinate_increment_km": 0.25,
+      "priority": [1, 5],
+      "inspection_service_minutes": [1, 4],
+      "delivery_load_minutes": [1, 3],
+      "delivery_unload_minutes": [1, 3],
+      "delivery_quantity_kg": [1, 8],
+      "deadline_minute": [15, 60],
+      "disturbance_time_minute": [2, 20],
+      "report_delay_minute": [2, 12],
+      "energy_change_new_uav_energy": [10, 28],
+      "stock_loss_requested_kg": [1, 8]
+    },
+    "constraints": [
+      "All initial deliveries have quantity no greater than the initial carrier capacity.",
+      "Initial queues retain valid capability and local-area assignments.",
+      "Initial commodity stock covers all listed delivery demand before exogenous stock loss.",
+      "Every task deadline is within the fixed 60-minute horizon.",
+      "No scenario is removed, replaced, or re-seeded based on its outcome."
+    ],
+    "heldout_access": "scenario files and hashes are registered before training; no policy outcomes or metrics are opened until all six final checkpoints pass the evaluation barrier"
+  }
+}

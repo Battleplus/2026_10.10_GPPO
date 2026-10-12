@@ -1,0 +1,14 @@
+{
+  "schema": "n01-r2-budget-gate-verification/1",
+  "package_budget_status": "proposed",
+  "missing_external_approval_rejected": true,
+  "synthetic_hash_bound_approval_accepted": true,
+  "identity_total": {
+    "wall_seconds": 5940.0,
+    "cpu_seconds": 4800.0
+  },
+  "temporary_copy_only": true,
+  "admit_called": false,
+  "checkpoint_loaded": false,
+  "model_loaded": false
+}

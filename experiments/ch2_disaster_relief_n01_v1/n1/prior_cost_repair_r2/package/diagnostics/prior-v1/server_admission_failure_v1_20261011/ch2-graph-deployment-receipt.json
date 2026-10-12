@@ -1,0 +1,11 @@
+{
+  "status": "deployed",
+  "target": "/home/user1/w1-pilot/packages/ch2-disaster-relief-graph-v1-20261011",
+  "files": 173,
+  "source_identity_sha256": "6b2395fca1af120f45d88f86123095903b99f264dd61930305e315002f185b14",
+  "archive_sha256": "cb896f1de7ae37831250b47322a8aa501263468237710f95bff029b52d661cf2",
+  "manifest_sha256": "b5707e02184b0a04ea6d5202dc470e5178ccca89d86c650eeced3b665327b55b",
+  "deployment_wall_seconds": 0.045867328997701406,
+  "deployment_process_cpu_seconds": 0.04583313400000001,
+  "scope": "artifact transfer preparation/deployment, not research or runtime acceptance"
+}

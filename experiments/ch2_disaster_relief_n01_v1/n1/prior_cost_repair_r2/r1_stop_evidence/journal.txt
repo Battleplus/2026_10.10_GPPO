@@ -1,0 +1,24 @@
+Starting N01 full fixed-checkpoint evaluation ch2-disaster-relief-n01-full-evaluation-r1-20261011...
+Started N01 full fixed-checkpoint evaluation ch2-disaster-relief-n01-full-evaluation-r1-20261011.
+Traceback (most recent call last):
+  File "/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011/n01_full_evaluator.py", line 978, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011/n01_full_evaluator.py", line 906, in main
+    return _guarded_dispatch(package, args.work_root.resolve(), stage, child_mode, child_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011/n01_full_evaluator.py", line 593, in _guarded_dispatch
+    prior = _read_bound_prior_cost(package)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r1-20261011/n01_full_evaluator.py", line 383, in _read_bound_prior_cost
+    evidence = (evidence_root / relative).resolve(strict=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 993, in resolve
+    s = os.path.realpath(self, strict=strict)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 413, in realpath
+  File "<frozen posixpath>", line 457, in _joinrealpath
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user1/w1-pilot/packages/received'
+n01-full-evaluation-r1-20261011.service: Main process exited, code=exited, status=1/FAILURE
+n01-full-evaluation-r1-20261011.service: Control process exited, code=exited, status=1/FAILURE
+n01-full-evaluation-r1-20261011.service: Failed with result 'exit-code'.

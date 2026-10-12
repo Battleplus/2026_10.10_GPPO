@@ -1,0 +1,22 @@
+{
+  "schema": "relief-graph-runtime/1",
+  "provider": "existing-ssh-linux-runtime",
+  "python": "3.11.16",
+  "torch": "2.7.0+cu128",
+  "numpy": "1.26.0",
+  "device": "cpu",
+  "affinity": [0],
+  "torch_threads": 1,
+  "torch_interop_threads": 1,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "gpu_initialization_allowed": false,
+  "install_or_rebuild_required": false,
+  "readiness": "pending target-runtime kernel and true-driver acceptance"
+}

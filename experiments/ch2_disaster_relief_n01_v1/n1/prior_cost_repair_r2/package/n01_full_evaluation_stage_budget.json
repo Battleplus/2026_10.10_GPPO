@@ -1,0 +1,44 @@
+{
+  "schema": "n01-stage-budget/1",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-prior-evidence-20261012",
+  "status": "proposed",
+  "approval_reference": null,
+  "approved_by": null,
+  "stages": {
+    "admission": {
+      "wall_seconds": 120.0,
+      "cpu_seconds": 60.0
+    },
+    "evaluation": {
+      "wall_seconds": 5400.0,
+      "cpu_seconds": 4500.0
+    },
+    "export": {
+      "wall_seconds": 300.0,
+      "cpu_seconds": 180.0
+    },
+    "shutdown": {
+      "wall_seconds": 120.0,
+      "cpu_seconds": 60.0
+    }
+  },
+  "identity_total": {
+    "wall_seconds": 5940.0,
+    "cpu_seconds": 4800.0
+  },
+  "historical_known_use": {
+    "wall_seconds": 173.07905203544348,
+    "cpu_seconds": 124.840999441,
+    "unknown_usage": "unquantified; not treated as zero"
+  },
+  "known_cumulative_ceiling_if_all_stages_use_caps": {
+    "wall_seconds": 6113.079052035443,
+    "cpu_seconds": 4924.840999441
+  },
+  "unknown_historical_usage": "unquantified; this proposal does not treat the unknown amount as zero",
+  "notes": [
+    "The historical 173.07905203544348 wall / 124.840999441 CPU seconds remain a separate carry-forward charge.",
+    "The 5,940 / 4,800 total is the sum of proposed limits for this new identity only.",
+    "No stage may start until independent review and explicit budget authorization are recorded here."
+  ]
+}
