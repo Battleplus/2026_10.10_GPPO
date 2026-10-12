@@ -1,0 +1,29 @@
+{
+  "schema": "n01-r2-formal-runner-repair/2",
+  "status": "NOT_APPROVED",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "server_contact_performed": false,
+  "formal_attempt_performed": false,
+  "release_package": "release/",
+  "runner": "n01_r2_formal_runner_repaired.py",
+  "offline_acceptance": "test_offline_runner.py",
+  "approval_included": false,
+  "approval_request": "N01_FULL_EVALUATION_BUDGET_APPROVAL_REQUEST.json",
+  "unique_start_policy": "atomic external lock mkdir; one start command; no retry",
+  "failure_settlement": "same invocation id; preserve status/journal/run-file index; timeout remains pending",
+  "old_identity": "ch2-disaster-relief-n01-full-evaluation-r2-prior-evidence-20261012",
+  "old_identity_retry": false,
+  "identity_and_budget_binding_reissued": true,
+  "algorithm_scenario_and_checkpoint_content_changed": false,
+  "research_inputs_preserved": [
+    "scenario manifest and scenario files",
+    "six frozen checkpoints and checkpoint manifest",
+    "registered data",
+    "evaluation algorithm other than identity constant and stage budget binding",
+    "historical prior-cost evidence"
+  ],
+  "bindings_file": "FROZEN_BINDINGS.json",
+  "source_summary": "SOURCE_SUMMARY.md",
+  "diff": "SOURCE_DIFF.md",
+  "report": "REPAIR_REPORT_ZH.md"
+}

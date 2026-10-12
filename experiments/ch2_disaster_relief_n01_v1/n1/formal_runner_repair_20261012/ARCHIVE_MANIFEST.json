@@ -1,0 +1,38 @@
+{
+  "schema": "n01-formal-runner-repair-archive/1",
+  "status": "NOT_APPROVED",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "base_commit": "7de7bf7aa5737176929baeabf1062e27fb0fb46b",
+  "old_identity_retry": false,
+  "approval_included": false,
+  "approval_request": "N01_FULL_EVALUATION_BUDGET_APPROVAL_REQUEST.json",
+  "server_contact_for_repair": false,
+  "deployed": false,
+  "server_acceptance_received": false,
+  "formal_run_performed": false,
+  "baseline_source_package": "../prior_cost_repair_r2/package/",
+  "baseline_source_is_already_tracked": true,
+  "release_reconstruction_index": "RELEASE_OVERLAY_INDEX.json",
+  "release_file_hash_inventory": "ARTIFACT_HASHES.json",
+  "public_archive_hash_index": "PUBLIC_ARCHIVE_HASH_INDEX.json",
+  "independent_review_hash_index_scope": "review/INDEPENDENT_HASH_INDEX.json covers the local frozen release, not this public archive layout",
+  "release_overrides": [
+    "N01_FULL_EVALUATION_IDENTITY.json",
+    "n01_full_evaluation_stage_budget.json",
+    "static_plan_r2.json",
+    "n01_full_evaluator.py",
+    "n01_full_systemd_runner.sh",
+    "n01_full_evaluation.service",
+    "n01_systemd_contract_probe.service"
+  ],
+  "payload_policy": {
+    "reuse_tracked_scenarios_checkpoints_prior_evidence": true,
+    "copy_large_research_payload": false,
+    "include_credentials_or_tokens": false,
+    "include_received_directory": false,
+    "include_old_approval": false,
+    "include_raw_formal_transcript": false
+  },
+  "independent_review": "review/INDEPENDENT_REVIEW_ZH.md",
+  "offline_tests": "test_offline_runner.py"
+}

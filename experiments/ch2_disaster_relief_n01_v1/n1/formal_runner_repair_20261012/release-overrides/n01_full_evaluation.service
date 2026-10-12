@@ -1,0 +1,20 @@
+[Unit]
+Description=N01 full fixed-checkpoint evaluation ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012
+After=default.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/bash /home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012/n01_full_systemd_runner.sh
+ExecStopPost=/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/bin/python -B /home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012/n01_full_systemd_settle.py --unit-name n01-full-evaluation-r2-formal-repair-v1-20261012.service --work-root /home/user1/w1-pilot/runs/ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012-once --package-root /home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012 --evaluation-identity ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012 --contract-profile evaluation
+Environment=N01_FULL_EVALUATION_IDENTITY=ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012
+Restart=no
+KillMode=control-group
+MemoryAccounting=yes
+MemoryMax=4G
+CPUAccounting=yes
+CPUAffinity=0
+RuntimeMaxSec=5900s
+TimeoutStopSec=40s
+WorkingDirectory=/home/user1/w1-pilot/packages/ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012
+StandardOutput=journal
+StandardError=journal

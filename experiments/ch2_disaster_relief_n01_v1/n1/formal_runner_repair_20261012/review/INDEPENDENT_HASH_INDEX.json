@@ -1,0 +1,32 @@
+{
+  "schema": "n01-r2-formal-runner-repair-independent-review-hashes/1",
+  "review_scope": "local only; no SSH, server deployment, training, forward, or evaluation",
+  "old_identity": "ch2-disaster-relief-n01-full-evaluation-r2-prior-evidence-20261012",
+  "old_first_error_transcript_sha256": "fc25e4cb80d729cc5b5a4324ba0bc9ad51d477d8d08e464565b32005381e8e9f",
+  "old_runner_sha256": "9e5ccfaf1dbfc563cadd11c31e9cfb9ccd128095e6e8eab691e51bd2e661047f",
+  "new_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "new_identity_sha256": "e01f2444bfb75d765f9522934a581a535055990445ec0356e6dd13b6fdc6e5fe",
+  "status": "NOT_APPROVED",
+  "offline_simulation": {
+    "command": "wsl bash -lc 'cd /mnt/e/Z博士/development/ch2_disaster_relief_n01_v1/n1/formal_runner_repair_v1 && python3 -m unittest -v test_offline_runner.py'",
+    "result": "6 tests passed",
+    "mocked_external_commands": ["systemctl", "journalctl", "sleep"]
+  },
+  "sha256": {
+    "MANIFEST.json": "ed8d42b28847638507b260c9cbfa6bfc117987f2b1d4b2f252b69a2f204e2a6f",
+    "ARTIFACT_HASHES.json": "2bca0d8bc8e4ba530525480977a7eebb0ab7606d745ce01a1c01b73bb9d5352c",
+    "n01_r2_formal_runner_repaired.py": "77cd7dc63e08d4dc63bd624158f288736894d08a36878794a4632357daca4842",
+    "test_offline_runner.py": "336245d17c98cc42268e6be08e1be91b43419b7af82700e8f6a164ab886567b3",
+    "FROZEN_BINDINGS.json": "7575504e2c78788421aa3931abcc998c401fdb01ad417ac6915e191794a6cbbc",
+    "N01_FULL_EVALUATION_BUDGET_APPROVAL_REQUEST.json": "3c743dfcff3629047f74e6b6b7294f000e94e9b6a2267f6f2204910a26e05b85",
+    "SOURCE_SUMMARY.md": "62757b3653eb4d6d6d588003cb2f6447e6a2a6844b3859240a85a824e0c9d7ee",
+    "SOURCE_DIFF.md": "65f398aefcd7b0fc39a55100aa7dbd607e170a0b9e6e20e7ce1ed10222809767",
+    "REPAIR_REPORT_ZH.md": "11165e585a0a3fbdd0e769cbd9c34f6a3997c9835b59255167521a64092803a2",
+    "release/N01_FULL_EVALUATION_IDENTITY.json": "e01f2444bfb75d765f9522934a581a535055990445ec0356e6dd13b6fdc6e5fe",
+    "release/n01_full_evaluation_stage_budget.json": "49f2736a53e6428b3893a1ae0c81500b0e48ca766300352fb464715627ebeb5c",
+    "release/static_plan_r2.json": "3eb535aa7390c0056044ba4ee5356fc3e2cea6ca9ce8e2e6d4ad5064d919aa3d"
+  },
+  "one_systemctl_start_call": true,
+  "approval_included": false,
+  "formal_evaluation_started": false
+}

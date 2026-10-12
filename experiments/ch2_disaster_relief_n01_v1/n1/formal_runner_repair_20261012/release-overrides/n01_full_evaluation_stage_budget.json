@@ -1,0 +1,44 @@
+{
+  "approval_reference": null,
+  "approved_by": null,
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "historical_known_use": {
+    "cpu_seconds": 124.840999441,
+    "unknown_usage": "unquantified; not treated as zero",
+    "wall_seconds": 173.07905203544348
+  },
+  "identity_total": {
+    "cpu_seconds": 4800.0,
+    "wall_seconds": 5940.0
+  },
+  "known_cumulative_ceiling_if_all_stages_use_caps": {
+    "cpu_seconds": 4924.840999441,
+    "wall_seconds": 6113.079052035443
+  },
+  "notes": [
+    "The historical 173.07905203544348 wall / 124.840999441 CPU seconds remain a separate carry-forward charge.",
+    "The 5,940 / 4,800 total is the sum of proposed limits for this new identity only.",
+    "No stage may start until independent review and explicit budget authorization are recorded here."
+  ],
+  "schema": "n01-stage-budget/1",
+  "stages": {
+    "admission": {
+      "cpu_seconds": 60.0,
+      "wall_seconds": 120.0
+    },
+    "evaluation": {
+      "cpu_seconds": 4500.0,
+      "wall_seconds": 5400.0
+    },
+    "export": {
+      "cpu_seconds": 180.0,
+      "wall_seconds": 300.0
+    },
+    "shutdown": {
+      "cpu_seconds": 60.0,
+      "wall_seconds": 120.0
+    }
+  },
+  "status": "proposed",
+  "unknown_historical_usage": "unquantified; this proposal does not treat the unknown amount as zero"
+}

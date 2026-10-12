@@ -1,0 +1,12 @@
+{
+  "approval_reference": null,
+  "approved_by": null,
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "formal_start_performed": false,
+  "note": "Request only; the consumed prior identity and authorization are not reusable.",
+  "plan_sha256": "7e5334cd8c9691df59a63501e5ed8bbb8ad31e466ecffdb535ae45bed832fb45",
+  "reader_sha256": "3eb535aa7390c0056044ba4ee5356fc3e2cea6ca9ce8e2e6d4ad5064d919aa3d",
+  "schema": "n01-stage-budget-approval-request/1",
+  "stage_budget_sha256": "49f2736a53e6428b3893a1ae0c81500b0e48ca766300352fb464715627ebeb5c",
+  "status": "NOT_APPROVED"
+}

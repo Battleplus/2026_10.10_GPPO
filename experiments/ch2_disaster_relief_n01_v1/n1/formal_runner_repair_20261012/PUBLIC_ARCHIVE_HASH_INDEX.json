@@ -1,0 +1,33 @@
+{
+  "file_count": 25,
+  "files": {
+    "ARCHIVE_MANIFEST.json": "0ee66a86cb457c51e444cff528fd724587e9b39036985b7d7bc9bc981c391a7c",
+    "ARTIFACT_HASHES.json": "0c18a8e0eebb0338267b45099262e470fcbb5cd7682fc8c15f464083ed3064ac",
+    "DEIDENTIFICATION.md": "3d7e19d9ee92bfe3d8e06691257b8ecbe89606929cbcfeed2c146eebf7a461b2",
+    "FROZEN_BINDINGS.json": "7575504e2c78788421aa3931abcc998c401fdb01ad417ac6915e191794a6cbbc",
+    "MANIFEST.json": "ed8d42b28847638507b260c9cbfa6bfc117987f2b1d4b2f252b69a2f204e2a6f",
+    "N01_FULL_EVALUATION_BUDGET_APPROVAL_REQUEST.json": "3c743dfcff3629047f74e6b6b7294f000e94e9b6a2267f6f2204910a26e05b85",
+    "README.md": "7629dab04d2546b62aa00e8670e88838b0b1c394401d967a82b9279173b2609a",
+    "RELEASE_OVERLAY_INDEX.json": "cecc9e79be925560b9fb25b9096c60cdd710e830e2aa73c7c09b6be56a5d2bf7",
+    "REPAIR_REPORT_ZH.md": "48b10c8fb2218dd1522252f3ae3f82a196d15706cc8fde80280fe438bc6e8540",
+    "SOURCE_DIFF.md": "65f398aefcd7b0fc39a55100aa7dbd607e170a0b9e6e20e7ce1ed10222809767",
+    "SOURCE_SUMMARY.md": "62757b3653eb4d6d6d588003cb2f6447e6a2a6844b3859240a85a824e0c9d7ee",
+    "build_overlay_index.py": "6cbff6fc1c440fa0b9b43d1bdd17c16f0170e979bd0c345c6ad6c5298611a612",
+    "finalize_hashes.py": "a56c5506967dbdbb5994416642ef2308d11b881a76a545ee9c63e822c957d35d",
+    "n01_r2_formal_runner_repaired.py": "77cd7dc63e08d4dc63bd624158f288736894d08a36878794a4632357daca4842",
+    "prepare_release.py": "2e535aa330ffa747f88a6e3f4ca3fd54c9f51ac9f0aad0e77bc4bbac7f9f2620",
+    "release-overrides/N01_FULL_EVALUATION_IDENTITY.json": "e01f2444bfb75d765f9522934a581a535055990445ec0356e6dd13b6fdc6e5fe",
+    "release-overrides/n01_full_evaluation.service": "0fba708f00f0df8be450964cd5a8819b338b6de1bee4470fc62bdf007f3a3e91",
+    "release-overrides/n01_full_evaluation_stage_budget.json": "49f2736a53e6428b3893a1ae0c81500b0e48ca766300352fb464715627ebeb5c",
+    "release-overrides/n01_full_evaluator.py": "18cfd467df9d39b99fcf54b00732c56fe89c221d026615e2adc9a0fc130531e5",
+    "release-overrides/n01_full_systemd_runner.sh": "3102cacddfd1fafc37d4b9734b8bb1c3b77e4c91e1ea7a2348dcb166c4f9fbe2",
+    "release-overrides/n01_systemd_contract_probe.service": "2b48c4623574e3dd6c224e8822f76cba6f5174815ab0b44d05d6f8eec850fd27",
+    "release-overrides/static_plan_r2.json": "3eb535aa7390c0056044ba4ee5356fc3e2cea6ca9ce8e2e6d4ad5064d919aa3d",
+    "review/INDEPENDENT_HASH_INDEX.json": "2aeab2e85cff8ed981eac000d92cac00b9a229ad8bb72cd5420ede62a967fb9c",
+    "review/INDEPENDENT_REVIEW_ZH.md": "4fcb27a596dc0f7ab430b7862cb3b88ac562c355bb883635529cc9fab11bf515",
+    "test_offline_runner.py": "823fc028cef6c8e81987e563e8546c291455694a05f49c274ea08d043ab68f2f"
+  },
+  "hash_algorithm": "sha256",
+  "schema": "n01-public-archive-hashes/1",
+  "self_hash_included": false
+}
