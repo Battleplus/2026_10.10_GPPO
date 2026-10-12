@@ -1,0 +1,102 @@
+{
+  "schema": "n01-r2-target-preparation-closeout/1",
+  "evidence_date": "2026-10-12",
+  "event_timestamps_utc": null,
+  "timestamp_note": "Original command runner output did not expose event timestamps. Do not infer timestamps from file modification times.",
+  "source_record": "received/target_preparation_20261012/session-record.json",
+  "source_observation_summary": "received/target_preparation_20261012/raw-observations.log",
+  "earlier_wrong_key_attempt_source": ".codex-tmp/n01-r2-target-access-attempt-20261012.json",
+  "local_evidence_paths": {
+    "session_record": "E:/Z博士/.codex-tmp/n01-github-release-20261012-a/experiments/ch2_disaster_relief_n01_v1/n1/prior_cost_repair_r2/received/target_preparation_20261012/session-record.json",
+    "observation_summary": "E:/Z博士/.codex-tmp/n01-github-release-20261012-a/experiments/ch2_disaster_relief_n01_v1/n1/prior_cost_repair_r2/received/target_preparation_20261012/raw-observations.log",
+    "earlier_wrong_key_attempt": "E:/Z博士/.codex-tmp/n01-r2-target-access-attempt-20261012.json",
+    "original_mux_helper": "E:/Z博士/.codex-tmp/n01-github-release-20261012-a/experiments/ch2_disaster_relief_n01_v1/n1/prior_cost_repair_r2/received/target_preparation_20261012/n01-r2-fail-closed-mux.sh"
+  },
+  "original_output_field_map": {
+    "connect_stdout_stderr": "session-record.json:initial_connection.raw_remote_stdout/raw_remote_stderr",
+    "read_only_stdout_stderr": "session-record.json:read_only_observation.raw_output",
+    "tar_scp_stdout_stderr": "session-record.json:tar_transfer.raw_scp_stdout/raw_scp_stderr",
+    "preparation_scp_stdout_stderr": "session-record.json:preparation_script_transfer.raw_output",
+    "event_timestamps": "session-record.json:event_time_utc is null; no per-command event timestamp was captured"
+  },
+  "attempts": [
+    {
+      "kind": "earlier_wrong_key_ssh",
+      "exit_code": 1,
+      "result": "Permission denied (publickey,password)",
+      "remote_command_started": false,
+      "followup_attempts": 0,
+      "raw_stdout_stderr_available": false,
+      "event_timestamp_utc": null,
+      "source": ".codex-tmp/n01-r2-target-access-attempt-20261012.json"
+    },
+    {
+      "kind": "dedicated_key_controlmaster_connect",
+      "exit_code": 0,
+      "wall_time_seconds": 7.403,
+      "stdout": "MASTER_CONNECTED socket=/tmp/codex-n01-r2-control",
+      "stderr": "",
+      "key_material_archived": false,
+      "source_field": "initial_connection"
+    },
+    {
+      "kind": "read_only_remote_preparation_check",
+      "exit_code": 0,
+      "wall_time_seconds": 0.982,
+      "findings": {
+        "r1_invocation_id": "7b65d35b5b4c464b810ecac918978166",
+        "r1_state": "failed",
+        "r2_package_run_and_unit": "absent",
+        "shared_approval_identity": "ch2-disaster-relief-n01-full-evaluation-r1-20261011"
+      },
+      "stdout_stderr": "Embedded in the source session record; see read_only_observation.raw_output.",
+      "source_field": "read_only_observation"
+    },
+    {
+      "kind": "staging_precheck_and_creation",
+      "precheck_exit_code": 0,
+      "creation_exit_code": 0,
+      "creation_stdout": "STAGING_CREATED",
+      "staging_directory": "/home/user1/w1-pilot/packages/.n01-r2-prior-evidence-20261012.stage",
+      "source_fields": ["staging_precheck", "staging_creation"]
+    },
+    {
+      "kind": "archive_scp_transfer",
+      "exit_code": 0,
+      "wall_time_seconds": 7.814,
+      "bytes": 6568593,
+      "sha256_expected": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+      "remote_sha256_verified": false,
+      "stdout": "",
+      "stderr": "",
+      "remote_path": "/home/user1/w1-pilot/packages/.n01-r2-prior-evidence-20261012.stage/archive.tar.gz",
+      "source_field": "tar_transfer"
+    },
+    {
+      "kind": "preparation_script_scp_after_mux_loss",
+      "exit_code": 1,
+      "wall_time_seconds": 1.641,
+      "captured_error_redacted": "mux_client_request_session: read from master failed: Broken pipe\n[remote target]: Permission denied (publickey,password).\nscp: Connection closed",
+      "redaction_note": "Remote username and address are withheld in this public archive. The exact local source record is listed under local_evidence_paths.",
+      "new_authentication_fallback": "SCP attempted it automatically after mux failure; authentication was rejected.",
+      "script_uploaded": false,
+      "source_field": "preparation_script_transfer"
+    },
+    {
+      "kind": "post_disconnect_local_socket_check",
+      "raw_output": "Control socket connect(/tmp/codex-n01-r2-control): No such file or directory",
+      "remote_connection_attempted": false,
+      "source_field": "post_disconnect_local_socket_check"
+    }
+  ],
+  "remote_staging_state_after_disconnect": "unknown",
+  "not_performed": [
+    "archive extraction or verification on target",
+    "atomic package publication",
+    "prior-cost-dry-run or full dry-run",
+    "systemd unit installation or daemon-reload",
+    "r2 approval, token, or formal run creation",
+    "start, admit, training, or formal evaluation"
+  ],
+  "assessment": "NOT_READY; no evaluation completion claim is supported"
+}
