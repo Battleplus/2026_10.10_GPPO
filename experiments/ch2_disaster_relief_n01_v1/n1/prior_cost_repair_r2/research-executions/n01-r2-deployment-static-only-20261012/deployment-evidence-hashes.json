@@ -1,0 +1,60 @@
+{
+  "schema": "n01-r2-deployment-public-evidence/1",
+  "status": "DEPLOYED_STATIC_ONLY",
+  "research_status": "NOT_READY_NOT_APPROVED",
+  "sha256": {
+    "public_readback": "b98d4d6df471d468a56287357e1bcef3557cc21fc200cd1356bc74d6da4ee4d2",
+    "frozen_archive": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+    "evaluation_identity": "0b56977312a3c926e6595b97fbcbbe379f54f69e69a1d07935c7136310716800",
+    "stage_budget": "38dea8cef35f1f7b3fb428bf302afd812b05958e0c520859935615b5745129d1",
+    "canonical_plan": "f14ce0f4cfc271febf0753bf202253c2a5b9db92a02e2c8ce7d70c7121edc383",
+    "run_keys": "54e72e67110976e1f3ad7ecb67e581749e42b1e68866d80819e7e7bf7caa170a",
+    "private_execution_transcript": "4d43ee78ce5189184d8e71fd93942309575611c1f5c963b10ba478688f599b80",
+    "independent_local_review": "c3b6a7e5b63eff8641d25a24aff082887da564e12120a8b9bc4191bfcbde1ced"
+  },
+  "counts": {
+    "ssh_sessions": 1,
+    "successful_captured_steps": 8,
+    "tar_members": 594,
+    "regular_files": 560,
+    "directories": 34,
+    "source_hashes": 28,
+    "prior_evidence_files": 9,
+    "scenarios": 350,
+    "episodes": 2800,
+    "unique_run_keys": 2800,
+    "checkpoints": 6,
+    "checkpoint_payload_loads_in_static_dry_run": 6,
+    "strict_model_loads": 0,
+    "model_forward": 0,
+    "training": 0,
+    "formal_evaluation": 0,
+    "admission_or_start": 0
+  },
+  "budget": {
+    "status": "proposed",
+    "approval_reference": null,
+    "wall_seconds": 5940,
+    "cpu_seconds": 4800,
+    "memory_max_bytes": 4294967296,
+    "historical_known_wall_seconds": 173.07905203544348,
+    "historical_known_cpu_seconds": 124.840999441,
+    "unknown_historical_usage": "unquantified; not treated as zero"
+  },
+  "measured_resources": {
+    "measurement_scope": "full dry-run process only",
+    "elapsed_seconds": 1.47,
+    "user_seconds": 1.29,
+    "system_seconds": 0.14,
+    "peak_rss_kib": 600160,
+    "host_memory_capacity_or_availability": "not measured",
+    "cpu_topology": "not measured",
+    "gpu_utilization": "not measured",
+    "per_checkpoint_elapsed_time": "not measured"
+  },
+  "future_start": {
+    "unit": "n01-full-evaluation-r2-prior-evidence-20261012.service",
+    "command_for_new_explicit_authorization_review": "systemctl --user start n01-full-evaluation-r2-prior-evidence-20261012.service",
+    "executed": false
+  }
+}
