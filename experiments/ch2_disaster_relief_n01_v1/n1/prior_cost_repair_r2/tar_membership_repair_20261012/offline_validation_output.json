@@ -1,0 +1,49 @@
+{
+  "schema": "n01-r2-tar-offline-validation/1",
+  "status": "passed",
+  "archive_sha256": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+  "archive_bytes": 6568593,
+  "members": {
+    "total": 594,
+    "regular_files": 560,
+    "directories": 34
+  },
+  "source_manifest": {
+    "file_count": 560,
+    "matched_file_set": true,
+    "matched_sizes_and_sha256": true,
+    "manifest_sha256": "2e0eb1a1fd2eadaecbe5e9192ce492ac8a07d49691a7bc1541253f3e2a8f26e8"
+  },
+  "remote_validator_heredoc_output": {
+    "status": "archive-valid",
+    "source_hash_count": 28,
+    "prior_evidence_count": 9,
+    "scenario_count": 350,
+    "checkpoint_count": 6,
+    "identity_sha256": "0b56977312a3c926e6595b97fbcbbe379f54f69e69a1d07935c7136310716800",
+    "stage_budget_sha256": "38dea8cef35f1f7b3fb428bf302afd812b05958e0c520859935615b5745129d1",
+    "budget_status": "proposed"
+  },
+  "extraction": {
+    "status": "passed",
+    "extracted_file_count": 560,
+    "identity_sha256": "0b56977312a3c926e6595b97fbcbbe379f54f69e69a1d07935c7136310716800",
+    "stage_budget_sha256": "38dea8cef35f1f7b3fb428bf302afd812b05958e0c520859935615b5745129d1"
+  },
+  "security_cases": {
+    "legal_package_root_directory": "accepted",
+    "absolute_path": "rejected",
+    "parent_traversal": "rejected",
+    "backslash_path": "rejected",
+    "duplicate_member": "rejected",
+    "symlink": "rejected",
+    "hardlink": "rejected",
+    "special_file": "rejected",
+    "file_parent_conflict": "rejected",
+    "missing_package_root": "rejected"
+  },
+  "model_forward": 0,
+  "training": 0,
+  "evaluation": 0,
+  "server_access": 0
+}

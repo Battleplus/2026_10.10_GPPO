@@ -1,0 +1,23 @@
+{
+  "schema": "n01-r2-tar-membership-repair-public-hashes/1",
+  "status": "NOT_READY",
+  "base_commit": "68734e14ca32aae357b8dc47d57ab7f5bf9e6ec2",
+  "archived_files_sha256": {
+    "README_zh.md": "57587ac672767d83f251a0941aa581becb96b3efa3f5dbcc7fcf2ab9e0d6816f",
+    "first_failure_zh.md": "d31712349b83c54d3a575043a583d658fe530dc46e81a277edae8acb3a07856a",
+    "independent_review_zh.md": "c9b1e44eec4bd35a82f7a3158a1e9432d5bccda849b5407b091cef534ff93643",
+    "offline_validation_output.json": "a4f78527e3d9a82f8a82f7373d432aef6557a9711c6ff645b699bf2555517354",
+    "tar_member_validator.py": "6773ffedb48e16fb3fdc90547f8c80a737fdae0965c8d63467e1362220d75d81",
+    "prior_hash_index_unmodified.json": "c2a8c1ec0b1fdce9f1d540d8c736dcc3bfa8934a38da25626a8c686a6a4fdf5d",
+    "HASH_INDEX_ERRATUM_zh.md": "69f48983d3560775784f10e48a1ab3b10a08c557b2730c7c993a3297e45eb43f"
+  },
+  "existing_frozen_artifacts_sha256": {
+    "../n01-prior-cost-repair-r2-20261012.tar.gz": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+    "../tar-sha256-manifest.json": "5c6d25f691075985147a53cf38b7c237f8d31080c3166de071b86b9eb57d7fa8",
+    "../source-manifest.json": "2e0eb1a1fd2eadaecbe5e9192ce492ac8a07d49691a7bc1541253f3e2a8f26e8"
+  },
+  "source_index_erratum": {
+    "legacy_value_preserved_verbatim": "a8043689b624c227cb8934b5d1cea61e17ba2ab2073a3485238ce9fb58f5a03",
+    "locally_rechecked_value": "a8043689b624c227cb8934b5d1cefa61e17ba2ab2073a3485238ce9fb58f5a03"
+  }
+}

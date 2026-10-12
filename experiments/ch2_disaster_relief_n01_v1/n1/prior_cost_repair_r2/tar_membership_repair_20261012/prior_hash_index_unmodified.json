@@ -1,0 +1,25 @@
+{
+  "schema": "n01-r2-tar-local-repair-hashes/1",
+  "status": "NOT_READY",
+  "sha256": {
+    "original_deployment_script": "99a42285050fa0393d7e8056d6aff7769a613357d5c45e46711c03ed20404ab0",
+    "original_failure_transcript": "9689e80c0f6422de2a06c0bcc6e894672f79f54274813965b3a66f308a9eba39",
+    "repaired_deployment_script_unexecuted": "a8043689b624c227cb8934b5d1cea61e17ba2ab2073a3485238ce9fb58f5a03",
+    "local_validation_script": "a486b0844d0bb731117beb2ea2ea64a8eebe70d5a3d3b7a7f2989ccc3fe7ed89",
+    "frozen_archive_unchanged": "36f4fb3b72eba0dcbf82c16a3bfe062901e6d6590cd3271099cdf6941ab3b860",
+    "offline_validation_report": "f8647ea33fa74b6ebff1f8dfe08060abc27977f223a65ca60e36f5c801414bf3",
+    "repair_report": "2c7a1aea1fb5f5077e46afa52dc28bdd742485e2224944e9c3291b3436bc52db"
+  },
+  "offline_validator_output": {
+    "status": "archive-valid",
+    "member_count": 594,
+    "file_count": 560,
+    "directory_count": 34,
+    "source_hash_count": 28,
+    "prior_evidence_count": 9,
+    "scenario_count": 350,
+    "checkpoint_count": 6,
+    "identity_sha256": "0b56977312a3c926e6595b97fbcbbe379f54f69e69a1d07935c7136310716800",
+    "stage_budget_sha256": "38dea8cef35f1f7b3fb428bf302afd812b05958e0c520859935615b5745129d1"
+  }
+}
