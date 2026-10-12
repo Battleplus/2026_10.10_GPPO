@@ -1,0 +1,31 @@
+{
+  "schema": "n01-deploy-only-public-evidence-index/1",
+  "identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "public_report": "DEPLOYMENT_STATIC_READBACK_ZH.md",
+  "public_report_sha256": "dee2bb64fea63812c48dbafd06dd0431701217d4dc70f9ff70281942e15939c7",
+  "public_evidence": {
+    "deploy_only_companion_commit": "ac3dd8b74928cb19eae59187ea969cbaba9a2345",
+    "deploy_only_script_sha256": "470f5133b76ee0ef497bdee93087fe3fdfb29d84f857f2939a125dca5d6774ba",
+    "frozen_bindings_file_sha256": "7575504e2c78788421aa3931abcc998c401fdb01ad417ac6915e191794a6cbcb",
+    "identity_manifest_sha256": "e01f2444bfb75d765f9522934a581a535055990445ec0356e6dd13b6fdc6e5fe",
+    "stage_budget_sha256": "49f2736a53e6428b3893a1ae0c81500b0e48ca766300352fb464715627ebeb5c",
+    "reader_file_sha256": "3eb535aa7390c0056044ba4ee5356fc3e2cea6ca9ce8e2e6d4ad5064d919aa3d",
+    "reader_embedded_plan_sha256": "7e5334cd8c9691df59a63501e5ed8bbb8ad31e466ecffdb535ae45bed832fb45",
+    "expanded_plan_file_sha256": "b2adef5016c9e5b0e6b9b54420d8e1e2ecc09753232cf77c7c7bcfb216f44dd3",
+    "expanded_plan_canonical_sha256": "1c1563508730ed6b2cf63e9a4a3aec39e77401aecb17d920af883967d1e390e8",
+    "release_archive_sha256": "d1aa7b5e03e8bf7c4f90f4a2f3c6f5085ad4df4f097e30647c49ed5ab098b7b1",
+    "release_manifest_sha256": "b345ee5e1a342d546615a3ea10498ef7c9e7e5e8ed13d4fae09aaaf63bc95c0c",
+    "execution_started_utc": "2026-10-12T14:27:29.056968+00:00",
+    "execution_ended_utc": "2026-10-12T14:27:45.857736+00:00",
+    "execution_exit_code": 0,
+    "ssh_command_invocation_count": 1,
+    "local_raw_combined_output_sha256": "bf0278948d6747b9d79cc194d8ec6c0dee54ac7f797005bf1c95ec095e58e8ad",
+    "local_raw_combined_output_bytes": 2456,
+    "local_execution_receipt_sha256": "a6180616c29d84f88e19dbf77130a772145b7acfe1467016ba7ccfd1b3d5544c",
+    "local_execution_meta_sha256": "1cd891b77721680e227e9f648bdfefa6d2750343738eb5b76bfa64a15b4a1c7f",
+    "release_file_hash_inventory_sha256": "9299f740658fda0c7d9123d0fa1b2642a2a296c3142a5242166795ef3140663a",
+    "independent_review": "PASS"
+  },
+  "publication_boundary": "De-identified report and hash index only; raw output, detailed execution receipt, and complete release hash inventory remain in local evidence storage.",
+  "authorization_boundary": "Deploy-only and static acceptance; no unit start, admission, approval/token creation, run creation, or formal evaluation."
+}
