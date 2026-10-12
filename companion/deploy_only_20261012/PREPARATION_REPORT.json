@@ -1,0 +1,51 @@
+{
+  "admission": false,
+  "approval_or_token_creation": false,
+  "archive_member_count": 561,
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "expanded_dry_run_plan_bytes": 743708,
+  "expanded_dry_run_plan_file": "expanded_dry_run_plan.json",
+  "expanded_dry_run_plan_sha256": "1c1563508730ed6b2cf63e9a4a3aec39e77401aecb17d920af883967d1e390e8",
+  "formal_evaluation": false,
+  "frozen_budget_sha256": "49f2736a53e6428b3893a1ae0c81500b0e48ca766300352fb464715627ebeb5c",
+  "frozen_identity_sha256": "e01f2444bfb75d765f9522934a581a535055990445ec0356e6dd13b6fdc6e5fe",
+  "frozen_plan_sha256": "7e5334cd8c9691df59a63501e5ed8bbb8ad31e466ecffdb535ae45bed832fb45",
+  "frozen_reader_sha256": "3eb535aa7390c0056044ba4ee5356fc3e2cea6ca9ce8e2e6d4ad5064d919aa3d",
+  "model_forward": false,
+  "release_archive_bytes": 6563519,
+  "release_archive_sha256": "d1aa7b5e03e8bf7c4f90f4a2f3c6f5085ad4df4f097e30647c49ed5ab098b7b1",
+  "release_file_count": 560,
+  "release_manifest_sha256": "b345ee5e1a342d546615a3ea10498ef7c9e7e5e8ed13d4fae09aaaf63bc95c0c",
+  "schema": "n01-deploy-only-preparation/1",
+  "scope": {
+    "checkpoints": 6,
+    "run_keys": 2800,
+    "scenarios": 350
+  },
+  "ssh_performed": false,
+  "static_checkpoint_deserializations_expected": 6,
+  "static_checkpoint_payloads_deserialized": 6,
+  "status": "LOCAL_PREPARATION_PASS",
+  "substitute_run": {
+    "diagnostics_retained": true,
+    "evaluator_modes": [
+      "prior-cost-dry-run",
+      "dry-run"
+    ],
+    "expanded_plan_mismatch_rejected": true,
+    "failed_child_returncode": 7,
+    "failed_child_stderr_retained": true,
+    "failed_child_stdout_retained": true,
+    "mismatch_diagnostics_retained": true,
+    "mismatch_stage_retained": true,
+    "package_published": true,
+    "remote_substitute_exit": 0,
+    "remote_substitute_failure_exit": 1,
+    "run_created": false,
+    "stage_retained": true,
+    "systemctl_call_count": 4,
+    "unit_started": false
+  },
+  "systemctl_start": false,
+  "training": false
+}

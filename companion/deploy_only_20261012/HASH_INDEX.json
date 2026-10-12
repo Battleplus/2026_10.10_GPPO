@@ -1,0 +1,14 @@
+{
+  "schema": "n01-deploy-only-companion-hash-index/1",
+  "files": {
+    "DEPLOY_ONLY_NOTES.md": "b2ce9856fa225487167cc61d730ff1d13e72b018249534d95b2237d37108cac4",
+    "PREPARATION_REPORT.json": "c0772c1fe017c400eb5fc1944e56717ad8abdf3a4628cfa677da20d4e8bd543b",
+    "expanded_dry_run_plan.json": "b2adef5016c9e5b0e6b9b54420d8e1e2ecc09753232cf77c7c7bcfb216f44dd3",
+    "prepare_deploy_only.py": "470f5133b76ee0ef497bdee93087fe3fdfb29d84f857f2939a125dca5d6774ba"
+  },
+  "archive_sha256": "d1aa7b5e03e8bf7c4f90f4a2f3c6f5085ad4df4f097e30647c49ed5ab098b7b1",
+  "expanded_dry_run_plan_sha256": "1c1563508730ed6b2cf63e9a4a3aec39e77401aecb17d920af883967d1e390e8",
+  "release_file_count": 560,
+  "archive_member_count": 561,
+  "server_execution": false
+}
