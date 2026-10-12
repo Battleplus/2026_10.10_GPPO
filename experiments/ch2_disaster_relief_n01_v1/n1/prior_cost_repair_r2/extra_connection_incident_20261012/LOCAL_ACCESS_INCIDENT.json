@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-12",
+  "scope": "local_only_after_remote_access_stop",
+  "remote_operations_after_stop": false,
+  "remote_state": "not_observed",
+  "commands": [
+    {
+      "kind": "local_process_and_socket_readback",
+      "pid": 718,
+      "socket": "/tmp/codex-n01-r2-control2",
+      "observed_command_prefix": "ssh -M -S /tmp/codex-n01-r2-control2 -fnNT",
+      "socket_check_text": "Master running (pid=718)",
+      "exit_code": "unknown"
+    },
+    {
+      "kind": "local_cleanup",
+      "signal": "TERM",
+      "pid": 718,
+      "remote_contact": false
+    },
+    {
+      "kind": "local_final_readback",
+      "pid_row": "absent",
+      "socket": "absent",
+      "remote_contact": false
+    }
+  ],
+  "credentials_read_or_exposed": false,
+  "deployment": "not performed",
+  "dry_run": "not performed",
+  "service_start": "not performed",
+  "evaluation": "not performed"
+}
