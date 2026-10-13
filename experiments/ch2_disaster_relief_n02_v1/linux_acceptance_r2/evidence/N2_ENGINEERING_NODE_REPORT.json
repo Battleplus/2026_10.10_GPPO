@@ -1,0 +1,76 @@
+{
+  "exports": {
+    "failure_receipt": "E:\\Z\u535a\u58eb\\build\\n2-r2-synthetic-smoke-os-user-final\\failed_export.json.failure.json",
+    "normal": {
+      "path": "E:\\Z\u535a\u58eb\\build\\n2-r2-synthetic-smoke-os-user-final\\normal_export.json",
+      "record_count": 2,
+      "status": "complete"
+    }
+  },
+  "input": {
+    "fixture": "E:\\Z\u535a\u58eb\\build\\n2-linux-acceptance-r2-os-user-verified\\development\\ch2_disaster_relief_graph_v2\\fixtures\\control.json",
+    "fixture_sha256": "EB4946623237FD88C8464D54D974EB027335F2EAD1370B9D9AD0F8B37CECF4C0",
+    "synthetic_scenarios": 4
+  },
+  "limitations": [
+    "Synthetic control fixture repeated as four engineering episodes; not a parent-split WM dataset.",
+    "The smoke runs one civilian PPO rollout/update round and the strict next-round comparison; it does not run the 40-epoch research WM fit or development prediction gate.",
+    "Target-Linux runtime/resource caps remain unmeasured; this CPU measurement is local Windows engineering evidence."
+  ],
+  "measurement": {
+    "process_cpu_seconds_including_checkpoints_and_exports": 53.78125,
+    "wall_seconds_including_checkpoints_and_exports": 55.83574139999837
+  },
+  "ppo": {
+    "bootstrap_adapter_probe": {
+      "direct_adapter_value": 0.7308573126792908,
+      "observed_next_value": 0.7308573126792908,
+      "rollout_cut": true
+    },
+    "checkpoint_round_1": "E:\\Z\u535a\u58eb\\build\\n2-r2-synthetic-smoke-os-user-final\\ppo_original\\checkpoints\\round_0001.pt",
+    "checkpoint_round_2": "E:\\Z\u535a\u58eb\\build\\n2-r2-synthetic-smoke-os-user-final\\ppo_original\\checkpoints\\round_0002.pt",
+    "combined_environment_transitions_across_comparison_paths": 720,
+    "combined_optimizer_updates_across_comparison_paths": 48,
+    "first_round_max_initial_probability_ratio_error": 0.0,
+    "first_round_optimizer_updates": 16,
+    "first_round_transitions": 240,
+    "minibatch_value_path": "civilian PPOTrainer.evaluate_batch -> CriticAugmentedGraphPolicy.evaluate_batch -> adapted critic value",
+    "next_round_strict_restore": {
+      "compared_round": 2,
+      "equivalent": true,
+      "expected_round_cpu_seconds_including_checkpoint": 18.046875,
+      "expected_round_wall_seconds_including_checkpoint": 18.908694700003252,
+      "model_state_sha256": "84f0d9c73f0072c0b3ef7df75d130edd0b4e49ee106a9e8a5bd54f85a3984b4a",
+      "optimizer_state_sha256": "ba6de563a37f1fc2e9ae5d2028f1ac2ebab83a4d3ebf491e18b2ce5fa54a5de3",
+      "restore_setup_cpu_seconds": 0.0625,
+      "restore_setup_wall_seconds": 0.07328660000348464,
+      "restored_round_cpu_seconds_including_checkpoint": 18.578125,
+      "restored_round_wall_seconds_including_checkpoint": 19.282145199998922,
+      "round_record_sha256": "dadfab2513ec31d57c4cd716c334a532b273fd43f3e416e8d8429ee4cac675d5"
+    },
+    "rollout_round_1": "E:\\Z\u535a\u58eb\\build\\n2-r2-synthetic-smoke-os-user-final\\ppo_original\\rollouts\\round_0001.jsonl",
+    "rollout_round_1_sha256": "cb4dd7c17c02b19428c0b6190228b057aa8b10f60178c65e763e5ab705adb88c",
+    "seed": 8201,
+    "total_environment_transitions_per_continuous_or_resumed_path": 480,
+    "total_optimizer_updates_per_continuous_or_resumed_path": 32,
+    "variant": "L1 actor with critic-only frozen synthetic WM adapter"
+  },
+  "runtime": {
+    "device": "cpu",
+    "python": "3.14.4",
+    "torch": "2.13.0+cpu"
+  },
+  "schema": "n2-local-ppo-engineering-smoke/1",
+  "scope": "local synthetic G/G-WM engineering smoke only; not research collection or policy efficacy",
+  "source_sha256": {
+    "baselines.py": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A",
+    "branching.py": "65711D9F1D9F86766339708148075F2A72FDBA1BB5D7227961B7D810BCBF975B",
+    "failure_export.py": "CF963C29D8916DD0108C9AE1B5FB648F51A447C521C979A988AD2EB1BA2BBCEE",
+    "graph_policy.py": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142",
+    "ppo_integration.py": "BF4305AE8D775A6B706C36C849C6AF0CA165A527F83E2826BAEA0A0E2D04AAEA",
+    "ppo_trainer.py": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891",
+    "relief_env.py": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D",
+    "scenario_schema.py": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0",
+    "world_model.py": "EA90196934A77F2A09A3FD0F5EFDED8F96B65DECDED1F70DBC0BE7007120BCAF"
+  }
+}

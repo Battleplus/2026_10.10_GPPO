@@ -1,0 +1,124 @@
+{
+  "schema": "n2-linux-engineering-acceptance-package/1",
+  "identity": "n2-local-synthetic-engineering-linux-acceptance-r2",
+  "builder": {
+    "name": "package_n2_linux_acceptance.py",
+    "version": "2.0.0"
+  },
+  "status": "prepared_not_authorized_for_execution",
+  "package_layout": "package root contains the preserved development/ tree and preparation/linux_acceptance/package-manifest.json; pass the manifest digest out of band",
+  "scope": [
+    "target runtime admission",
+    "N2 engineering unit tests",
+    "local synthetic PPO integration smoke"
+  ],
+  "excluded_scope": [
+    "registered research data processing",
+    "40-epoch world-model fitting",
+    "development prediction gate",
+    "G versus G-WM policy comparison",
+    "formal training or publication claims"
+  ],
+  "runtime": {
+    "python": "3.11.16",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "device": "cpu",
+    "cuda_initialized": false,
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "external_packages_to_install": [],
+    "host": "ru-server-MS-1",
+    "user": "user1"
+  },
+  "files": [
+    "development/ch2_disaster_relief_graph_v2/baselines.py",
+    "development/ch2_disaster_relief_graph_v2/chapter1_adapter.py",
+    "development/ch2_disaster_relief_graph_v2/dataset_protocol.py",
+    "development/ch2_disaster_relief_graph_v2/fixtures/control.json",
+    "development/ch2_disaster_relief_graph_v2/graph_policy.py",
+    "development/ch2_disaster_relief_graph_v2/literal_graph_ops.py",
+    "development/ch2_disaster_relief_graph_v2/ppo_trainer.py",
+    "development/ch2_disaster_relief_graph_v2/PRIOR_RESOURCE_COST.json",
+    "development/ch2_disaster_relief_graph_v2/relief_env.py",
+    "development/ch2_disaster_relief_graph_v2/scenario_schema.py",
+    "development/ch2_disaster_relief_graph_v2/stable_identity.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/branching.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/failure_export.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/n2_linux_runner.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/package_n2_linux_acceptance.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/ppo_integration.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/run_ppo_integration_smoke.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_branching.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_failure_export.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_linux_runner.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_ppo_integration.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_runtime_admission_contract.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/tests/test_world_model.py",
+    "development/ch2_disaster_relief_n2_v1/engineering/world_model.py",
+    "development/ch2_disaster_relief_n2_v1/preparation/linux_acceptance/README.md"
+  ],
+  "hashing": {
+    "algorithm": "SHA-256",
+    "manifest_rule": "the caller passes the frozen manifest SHA-256 out of band; the runner verifies every listed file digest before execution and again before settlement",
+    "file_sha256": {
+      "development/ch2_disaster_relief_graph_v2/baselines.py": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A",
+      "development/ch2_disaster_relief_graph_v2/chapter1_adapter.py": "BB1F7C79F562BAC4C68CA038F3B2CEC69809D2FF86DD992497EA217520F9D6B6",
+      "development/ch2_disaster_relief_graph_v2/dataset_protocol.py": "582D300580500D0382142A0DA28C5EDE8644534E4DD064083FBB1CB4B1B28DBF",
+      "development/ch2_disaster_relief_graph_v2/fixtures/control.json": "EB4946623237FD88C8464D54D974EB027335F2EAD1370B9D9AD0F8B37CECF4C0",
+      "development/ch2_disaster_relief_graph_v2/graph_policy.py": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142",
+      "development/ch2_disaster_relief_graph_v2/literal_graph_ops.py": "8A7E9E225C9EFE758087C09260BB7AF67281D5E30EC88F05650F87984EE2ED4E",
+      "development/ch2_disaster_relief_graph_v2/ppo_trainer.py": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891",
+      "development/ch2_disaster_relief_graph_v2/PRIOR_RESOURCE_COST.json": "B577B88138699DCEFC8286314B64D0C41D7278F36ED3DB38ECCDAE962A5ED263",
+      "development/ch2_disaster_relief_graph_v2/relief_env.py": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D",
+      "development/ch2_disaster_relief_graph_v2/scenario_schema.py": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0",
+      "development/ch2_disaster_relief_graph_v2/stable_identity.py": "812944F9F7CB4F16C9907C4D6CF6C552F5B0DC3F7EC8FA2E5CCBE859B04757EF",
+      "development/ch2_disaster_relief_n2_v1/engineering/branching.py": "65711D9F1D9F86766339708148075F2A72FDBA1BB5D7227961B7D810BCBF975B",
+      "development/ch2_disaster_relief_n2_v1/engineering/failure_export.py": "CF963C29D8916DD0108C9AE1B5FB648F51A447C521C979A988AD2EB1BA2BBCEE",
+      "development/ch2_disaster_relief_n2_v1/engineering/n2_linux_runner.py": "ED2AED02C1037CFE65493C4E5FEBA6DBC4663656A99BB44F21656714B73C73B5",
+      "development/ch2_disaster_relief_n2_v1/engineering/package_n2_linux_acceptance.py": "B668B93FCCA6901A239510CA21FCCC4F10124FEBD58751011C6122868A6C3296",
+      "development/ch2_disaster_relief_n2_v1/engineering/ppo_integration.py": "BF4305AE8D775A6B706C36C849C6AF0CA165A527F83E2826BAEA0A0E2D04AAEA",
+      "development/ch2_disaster_relief_n2_v1/engineering/run_ppo_integration_smoke.py": "880E44E07E45248989CAE447D5F02ABCB92D4BDCCF828EEB407B028B04532B07",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_branching.py": "9EEC0D32D35796EE4F6AAF4D1BF2AEEE836EB0E92A687150AE765376F1D05E78",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_failure_export.py": "45E96F042424D86A61337751316590FFEA73B6FA0A86FB853E8099088730E7FF",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_linux_runner.py": "3EB31A9AC70505ECB23A63952F621DBB4F7A82BECF6678A919011D29CE66F3F7",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_ppo_integration.py": "577CA2C884449392C2ED2EA046B85B6F37910CF0A01C97BE255B62F2AC88C71A",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_runtime_admission_contract.py": "9E28D82FDDC8B4C9EBE4A69229F4540F67D54CBD97D48078EE0202B7B63F6C3F",
+      "development/ch2_disaster_relief_n2_v1/engineering/tests/test_world_model.py": "0401F8F28316B64F8DBF323B1E3CC7EF030BF1DF70986F43A4B99821E39C5C38",
+      "development/ch2_disaster_relief_n2_v1/engineering/world_model.py": "EA90196934A77F2A09A3FD0F5EFDED8F96B65DECDED1F70DBC0BE7007120BCAF",
+      "development/ch2_disaster_relief_n2_v1/preparation/linux_acceptance/README.md": "41CE1563C1B44AA26434CCEFABCBE5DFE67C37798421633CACCCBFBD932FCE6D"
+    }
+  },
+  "proposed_hard_caps": {
+    "runtime_admission": {
+      "wall_seconds": 120,
+      "cpu_seconds": 60
+    },
+    "unit_suite": {
+      "wall_seconds": 600,
+      "cpu_seconds": 480
+    },
+    "ppo_smoke": {
+      "wall_seconds": 900,
+      "cpu_seconds": 600
+    },
+    "shutdown_receipt": {
+      "wall_seconds": 120,
+      "cpu_seconds": 60
+    },
+    "combined_wall_seconds": 1740,
+    "combined_cpu_seconds": 1200,
+    "peak_rss_bytes": 4294967296,
+    "package_work_export_storage_bytes": 8589934592,
+    "approval_status": "frozen_engineering_caps; target_execution_not_authorized"
+  },
+  "target_runner": {
+    "status": "r2-structured-runtime-contract-pending-independent-review",
+    "prerequisites": [
+      "explicit N2 execution decision and target",
+      "staged immutable package matching this manifest digest",
+      "independent review of this exact runner and package identity",
+      "runtime admission host and user match the reviewed target identity"
+    ]
+  }
+}
