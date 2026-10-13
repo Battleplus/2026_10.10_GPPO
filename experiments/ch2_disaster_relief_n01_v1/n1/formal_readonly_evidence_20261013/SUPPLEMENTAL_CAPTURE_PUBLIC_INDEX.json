@@ -1,0 +1,48 @@
+{
+  "schema": "n01-supplemental-capture-public-index/1",
+  "capture_status": "complete",
+  "ssh_exit_code": 0,
+  "ssh_invocation_count": 1,
+  "remote_writes": false,
+  "framing_status": "decoded",
+  "raw_streams": {
+    "stdout.raw": {
+      "bytes": 66857282,
+      "sha256": "6821ff7463080f1e1bbd28d74c1c8398015aaa47548ed3d1887fd6fbf7758f8a"
+    },
+    "stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "retrieved_files": [
+    {
+      "path": "run/export/n01-full-evaluation.zip",
+      "bytes": 66112453,
+      "sha256": "93a3bcf316f9a71dd69e5f9570f6313dbad5ba7d1a74c3779f5c46a8709e1f31",
+      "expected_sha256_match": true
+    },
+    {
+      "path": "run/preflight_plan.json",
+      "bytes": 743708,
+      "sha256": "b2adef5016c9e5b0e6b9b54420d8e1e2ecc09753232cf77c7c7bcfb216f44dd3",
+      "expected_sha256_before_retrieval": null
+    }
+  ],
+  "zip_validation": {
+    "member_count": 8403,
+    "unsafe_member_paths": 0,
+    "symlink_entries": 0,
+    "crc_failure": null,
+    "trajectory_json_count": 2800,
+    "audit_json_count": 2800,
+    "episode_row_json_count": 2800,
+    "summary_status": "complete",
+    "summary_episode_count": 2800,
+    "summary_audit_count": 2800,
+    "episode_metrics_rows": 2800
+  },
+  "session_record_archived": false,
+  "raw_streams_archived": false,
+  "archive_contains_retrieved_file_contents": false
+}

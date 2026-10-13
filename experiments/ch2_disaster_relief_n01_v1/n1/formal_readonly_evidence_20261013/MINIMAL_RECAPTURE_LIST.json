@@ -1,0 +1,42 @@
+{
+  "schema": "n01-minimal-readonly-recapture-list/1",
+  "status": "fulfilled_by_supplemental_capture",
+  "evidence_directory": "E:\\Z博士\\research-executions\\n01_formal_readonly_capture_20261013\\capture-20261013-approved-once",
+  "total_requested_bytes": 66856161,
+  "items": [
+    {
+      "path": "run/export/n01-full-evaluation.zip",
+      "initial_status": "size_limit_skipped",
+      "bytes": 66112453,
+      "expected_sha256": "93a3bcf316f9a71dd69e5f9570f6313dbad5ba7d1a74c3779f5c46a8709e1f31",
+      "purpose": "Recover all files under evaluation/, including the 596 individually skipped trajectory JSONs; verify archive SHA against captured export_manifest.json before extraction."
+    },
+    {
+      "path": "run/preflight_plan.json",
+      "initial_status": "size_limit_skipped",
+      "bytes": 743708,
+      "expected_sha256": null,
+      "purpose": "The only other skipped file outside evaluation/; no content hash was captured, so compute after any future authorized retrieval."
+    }
+  ],
+  "fulfillment": {
+    "capture_status": "complete",
+    "capture_directory": "E:\\Z博士\\research-executions\\n01_minimal_recapture_plan_20261013\\capture-20261013-approved-once",
+    "zip_sha256_verified": true,
+    "preflight_plan_sha256": "b2adef5016c9e5b0e6b9b54420d8e1e2ecc09753232cf77c7c7bcfb216f44dd3"
+  },
+  "basis": {
+    "source_file": "release/n01_full_evaluator.py",
+    "function": "_export_result",
+    "captured_summary_status": "complete",
+    "captured_episode_count": 2800,
+    "captured_audit_count": 2800,
+    "captured_audit_pass_count": 2800,
+    "captured_episode_metrics_rows": 2800,
+    "captured_export_manifest_episode_count": 2800,
+    "captured_export_manifest_audit_count": 2800,
+    "captured_export_manifest_archive_sha256": "93a3bcf316f9a71dd69e5f9570f6313dbad5ba7d1a74c3779f5c46a8709e1f31",
+    "source_behavior": "Requires complete 2800-row evaluation, 2800 trajectory/audit/episode-row JSON files each, then writes every file recursively under evaluation/ to the ZIP; writes export_manifest.json only after the ZIP closes.",
+    "retrieval_scope_note": "This list does not assert remote ZIP content beyond the captured source and export manifest. A future retrieval must verify the ZIP hash and contents locally."
+  }
+}

@@ -1,0 +1,3118 @@
+{
+  "schema": "n01-readonly-transport-settlement/1",
+  "identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "expected_invocation_id": "fbdad1589e894466b62cf1785df0de47",
+  "capture_status": "partial",
+  "capture_status_reasons_summary": [
+    {
+      "reason": "inventory_incomplete",
+      "count": 598
+    }
+  ],
+  "framing_status": "decoded",
+  "ssh_exit_code": 0,
+  "local_capture_errors": [],
+  "remote_writes": false,
+  "raw_streams": {
+    "stderr.raw": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.raw": {
+      "bytes": 2152599871,
+      "sha256": "d0125d85d79ef111195898a2aa0a00578f78120ae6c6ca407aeb96531c1349b5"
+    }
+  },
+  "decoded_record_count": 7844,
+  "decoded_payload_count": 7835,
+  "payload_hash_mismatch_count": 0,
+  "total_byte_budget": 2147483648,
+  "captured_inventory_file_bytes": 2147257865.0,
+  "skipped_file_count": 598,
+  "skipped_declared_file_bytes": 417334992.0,
+  "skipped_files": [
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1087825
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1093443
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1098751
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1098034
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1094643
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1207599
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1203215
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1208893
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1206793
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1205994
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1208903
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1201127
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1200435
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1091520
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1096471
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1098367
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1086543
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1102220
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1096415
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1095857
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1099854
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1073889
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1065452
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1084589
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1069417
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1083039
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1085889
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1077977
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1074629
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1087806
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1092479
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1096539
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1096560
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1092673
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1087716
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1096432
+    },
+    {
+      "path": "run/evaluation/trajectories/scale_8x12/heldout/L1-8203/n01-scale_8x12-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 1088022
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 506193
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 511848
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 511563
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513059
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 520438
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 576886
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 581305
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513958
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 514795
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 506124
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 498676
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517896
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C0/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517282
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 521119
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516389
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524037
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525373
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527148
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 528388
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 584810
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 583436
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527591
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 533392
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516883
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 514908
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526391
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/C1/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525671
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551739
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546691
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553563
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551934
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555670
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559306
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 611938
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613390
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555945
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558575
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546587
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 540375
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555924
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8201/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557500
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550384
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546497
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551617
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553408
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555912
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558028
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609391
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615429
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555844
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 562844
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 544405
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541336
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557876
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8202/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555794
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551334
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548589
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553884
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553205
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556792
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559323
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615376
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 616499
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554775
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 564026
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547906
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543818
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557699
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L0-8203/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556188
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551415
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545556
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553915
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554551
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555729
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559273
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609540
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613010
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555140
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558396
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546833
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541313
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556453
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8201/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558385
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550881
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 544784
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551721
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552734
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555690
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557964
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609560
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613610
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555843
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558397
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547377
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 542409
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557429
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8202/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558259
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552424
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547658
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551661
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553004
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556393
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 560073
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615330
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 617268
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557446
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559225
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551488
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541418
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557418
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/development/L1-8203/n01-stock-graph-v1-development-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557631
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518895
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510139
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 507358
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517306
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 502530
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510624
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 508254
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510455
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510621
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 511610
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516476
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510302
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517967
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518163
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517944
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517748
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517914
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 511810
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517636
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516612
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 514759
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518711
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518918
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512016
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 576665
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 577245
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 574357
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 576094
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 572750
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 578039
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 576463
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 577127
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518790
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 471078
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 471162
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516269
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 519080
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512800
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512651
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512006
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 505622
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 500758
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 503893
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 502033
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 510566
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512066
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 504599
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 506473
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517043
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513134
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 519665
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513279
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517967
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 518247
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513912
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C0/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516306
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527773
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524235
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513304
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524982
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 513160
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 520840
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517637
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525780
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524288
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524816
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526664
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524344
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527929
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526978
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 528988
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 529211
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 528068
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526087
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526620
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525265
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526137
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 529330
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527157
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527015
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 580095
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 585252
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 585074
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 585178
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 583509
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 582381
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 584020
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 584700
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527945
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 529214
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 530285
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525792
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 529552
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527433
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527213
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527886
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 515775
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 509227
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 520955
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 512411
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 519692
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 525492
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 517587
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 516421
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526028
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 521834
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 528364
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 526014
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527792
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 528160
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 527824
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/C1/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 524881
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559510
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553465
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543047
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555447
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 537283
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548816
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547017
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551873
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552833
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551912
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556318
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551908
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556748
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557688
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556836
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557534
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557955
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551963
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557108
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554795
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553417
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556524
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557323
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553905
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608855
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 611107
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 612507
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608935
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613281
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 606352
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609840
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609890
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558525
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559927
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556656
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555411
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 560408
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556150
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553398
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552079
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545894
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 539442
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549109
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543962
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549391
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553428
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545340
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546576
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556206
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549939
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557484
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555435
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557486
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557014
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555799
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8201/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554360
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558041
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550977
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 542632
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554759
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 538239
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548838
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547430
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550728
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553056
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550351
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555202
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551443
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556346
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557072
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558765
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557381
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556137
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554454
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556919
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557192
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556054
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557924
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558917
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555361
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608632
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609580
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613489
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 611364
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613196
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 606375
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608057
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609678
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556331
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557337
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557127
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554305
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557571
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555696
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555642
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551127
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545687
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 539360
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546794
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541761
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549314
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551601
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545895
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545507
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555843
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549868
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558418
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555592
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557189
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556046
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555272
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8202/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554071
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557873
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 561059
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 544165
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556620
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 538510
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553458
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548167
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556031
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554915
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555228
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555759
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552980
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558341
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557095
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557501
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559328
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558581
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554374
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558827
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557902
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557558
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 560355
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557985
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555385
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615171
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615755
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613877
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613997
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613223
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615010
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613709
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 615002
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557388
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558150
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555346
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555767
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558558
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556282
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555374
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553557
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547695
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541555
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549263
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543461
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551413
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554085
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547939
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546241
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556364
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549783
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558750
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557178
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558704
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557109
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556102
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L0-8203/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556655
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558874
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555511
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 564718
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555707
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 540588
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549814
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548362
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555355
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553923
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550327
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554733
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548831
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556332
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556898
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557553
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559177
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558213
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554453
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556563
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557635
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555652
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556768
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558123
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556546
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 610564
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 607963
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613867
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609332
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613296
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 612567
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 607787
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609916
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558217
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559957
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557685
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555390
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 560069
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556830
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554829
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555535
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546011
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 539830
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548141
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 544014
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550826
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553458
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546943
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546060
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558372
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549850
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558409
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556307
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558039
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558602
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556075
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8201/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554354
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558891
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553551
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 542640
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555647
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 540397
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552296
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 547923
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552168
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552344
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553748
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553140
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552605
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556386
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556484
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558171
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559191
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555931
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554088
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556137
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554916
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555289
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559463
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557012
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555706
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609250
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 609305
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613704
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608974
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 614627
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 612075
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 608007
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 611548
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 560143
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556601
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553884
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553881
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559675
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555600
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555872
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 551547
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545969
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 539889
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549129
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 541649
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549962
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553621
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545903
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 544859
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557080
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550088
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557786
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555890
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557192
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556047
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556779
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8202/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554377
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557344
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556174
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543550
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555469
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 540356
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550286
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 548984
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-combined-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556013
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552990
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554359
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554962
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553648
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557777
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557050
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559041
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-control-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558347
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556418
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553786
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557135
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557383
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557396
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559437
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558896
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-energy_change-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555606
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 614764
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 612874
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613708
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 614714
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613178
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 616037
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 613631
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-external_commitment-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 614032
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558741
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559322
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553661
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 553861
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 559982
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555581
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555821
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-failure-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556006
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546091
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 540434
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550111
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 543763
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 550163
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 552703
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 546418
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-report_delay-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 545520
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-00.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558973
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-01.json",
+      "status": "size_limit_skipped",
+      "declared_size": 549946
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-02.json",
+      "status": "size_limit_skipped",
+      "declared_size": 558415
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-03.json",
+      "status": "size_limit_skipped",
+      "declared_size": 556825
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-04.json",
+      "status": "size_limit_skipped",
+      "declared_size": 557175
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-05.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555882
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-06.json",
+      "status": "size_limit_skipped",
+      "declared_size": 555570
+    },
+    {
+      "path": "run/evaluation/trajectories/stock_competition/heldout/L1-8203/n01-stock-graph-v1-heldout-stock_loss-07.json",
+      "status": "size_limit_skipped",
+      "declared_size": 554930
+    },
+    {
+      "path": "run/export/n01-full-evaluation.zip",
+      "status": "size_limit_skipped",
+      "declared_size": 66112453
+    },
+    {
+      "path": "run/preflight_plan.json",
+      "status": "size_limit_skipped",
+      "declared_size": 743708
+    }
+  ],
+  "inventory_status_counts": [
+    {
+      "status": "ok",
+      "count": 7829
+    },
+    {
+      "status": "size_limit_skipped",
+      "count": 598
+    }
+  ],
+  "receipt_checks": [
+    {
+      "path": "diag/final-status.txt",
+      "status": "ok",
+      "bytes": 198,
+      "local_sha256": "d564f98abb8f65c2a19d450f82fa8d33927f6eea465acc12170ebdd37998bc6a",
+      "inventory_sha256": "d564f98abb8f65c2a19d450f82fa8d33927f6eea465acc12170ebdd37998bc6a",
+      "hash_matches": true
+    },
+    {
+      "path": "diag/journal.txt",
+      "status": "ok",
+      "bytes": 3443,
+      "local_sha256": "a01d9bfab843393cfa0171baf814ada80e4aa19e7bc1d5c6d0100e21c78b2587",
+      "inventory_sha256": "a01d9bfab843393cfa0171baf814ada80e4aa19e7bc1d5c6d0100e21c78b2587",
+      "hash_matches": true
+    },
+    {
+      "path": "diag/run-files.tsv",
+      "status": "ok",
+      "bytes": 910660,
+      "local_sha256": "7cfc3b60e288a9c2967d7079e6e4f1734a4ee3d0a392259f005307b5a1099014",
+      "inventory_sha256": "7cfc3b60e288a9c2967d7079e6e4f1734a4ee3d0a392259f005307b5a1099014",
+      "hash_matches": true
+    },
+    {
+      "path": "diag/settlement.json",
+      "status": "ok",
+      "bytes": 377,
+      "local_sha256": "d96be27cc78135ee8d56832f0e1b8857831cc2f3d16f541cf34f6f1d4e5c57f0",
+      "inventory_sha256": "d96be27cc78135ee8d56832f0e1b8857831cc2f3d16f541cf34f6f1d4e5c57f0",
+      "hash_matches": true
+    },
+    {
+      "path": "diag/approval-transition.json",
+      "status": "ok",
+      "bytes": 565,
+      "local_sha256": "f3502e7ca823864ad382627abb7ba7536711b63fbfe509d6cf987e758ed3ffe7",
+      "inventory_sha256": "f3502e7ca823864ad382627abb7ba7536711b63fbfe509d6cf987e758ed3ffe7",
+      "hash_matches": true
+    },
+    {
+      "path": "diag/prior-r1-approval.json",
+      "status": "ok",
+      "bytes": 1184,
+      "local_sha256": "e61324c215158c81d6129c8852c89fbc1200f85e28c6bff78c265cc68c4a91ff",
+      "inventory_sha256": "e61324c215158c81d6129c8852c89fbc1200f85e28c6bff78c265cc68c4a91ff",
+      "hash_matches": true
+    }
+  ],
+  "fixed_unit_readback": {
+    "invocation_id": "fbdad1589e894466b62cf1785df0de47",
+    "active_state": "failed",
+    "sub_state": "failed",
+    "result": "exit-code",
+    "exec_main_code": "1",
+    "exec_main_status": "1",
+    "service_state_stable_at_end": true
+  },
+  "settlement_receipt": {
+    "schema": "n01-formal-run-settlement/1",
+    "status": "FAILED_PRESERVE_FIRST_ERROR",
+    "invocation_id": "fbdad1589e894466b62cf1785df0de47",
+    "active_state": "failed",
+    "result": "exit-code",
+    "start_exit": 0,
+    "start_count": 1,
+    "retry_count": 0,
+    "run_files_index": "run-files.tsv",
+    "journal": "journal.txt",
+    "resource_status": "see final-status.txt; preserve unknown fields",
+    "formal_result_claimed": false
+  },
+  "journal_first_error_line": "2026-10-13T09:43:34+0800 ru-server-MS-1 bash[4128372]: PermissionError: shutdown requires exactly one successful n01_full_admission receipt",
+  "run_files_index": {
+    "rows": 8418,
+    "trajectory_named_paths": 2800,
+    "checkpoint_named_paths": 1,
+    "export_named_paths": 4,
+    "interpretation": "Index path counts only; not a completed-episode or success count."
+  },
+  "evidence_directory": "E:\\Z博士\\research-executions\\n01_formal_readonly_capture_20261013\\capture-20261013-approved-once",
+  "completed_utc": "2026-10-13T10:17:27+08:00"
+}

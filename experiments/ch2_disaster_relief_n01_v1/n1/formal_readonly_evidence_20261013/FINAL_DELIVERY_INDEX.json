@@ -1,0 +1,138 @@
+{
+  "schema": "n01-formal-readonly-evidence-delivery-index/1",
+  "repository_relative_archive_root": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013",
+  "local_archive_root": "E:\\Z博士\\.codex-tmp\\n01-github-release-20261012-a\\experiments\\ch2_disaster_relief_n01_v1\\n1\\formal_readonly_evidence_20261013",
+  "run_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "invocation_id": "fbdad1589e894466b62cf1785df0de47",
+  "formal_result": "failed_at_shutdown",
+  "cleanup_status": "UNKNOWN",
+  "local_evidence_roots": [
+    {
+      "kind": "initial_read_only_capture",
+      "local_path": "E:\\Z博士\\research-executions\\n01_formal_readonly_capture_20261013\\capture-20261013-approved-once",
+      "status": "partial",
+      "raw_streams_session_records_and_remote_diagnostics_archived": false
+    },
+    {
+      "kind": "supplemental_read_only_capture",
+      "local_path": "E:\\Z博士\\research-executions\\n01_minimal_recapture_plan_20261013\\capture-20261013-approved-once",
+      "status": "complete",
+      "raw_streams_session_records_and_retrieved_contents_archived": false
+    },
+    {
+      "kind": "offline_analysis",
+      "local_path": "E:\\Z博士\\research-executions\\n01_analysis_parallel_20261013",
+      "status": "complete",
+      "public_derived_reports_archived": true
+    }
+  ],
+  "source_artifacts": [
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\N1_FORMAL_RESULT_FINAL_INDEPENDENT_REVIEW_20261013.md",
+      "sha256": "17ecca148d883c18064744b77dbe1a7a7b357a37dee545be0ae3673ed87fbe0a"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\N1_READONLY_CAPTURE_TOOLS_INDEPENDENT_REVIEW_20261013.md",
+      "sha256": "e7890d2050353bdf4d15a07ef31f8defd4b8497ea65ba232608c5368d1d59174"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_formal_readonly_capture_20261013\\capture_n01_readonly_once.py",
+      "sha256": "1e24067cf69a2d59bdfb765031b679698cded0c90be54b66f9925a4b146c0fcd"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_formal_readonly_capture_20261013\\test_capture_n01_readonly_once.py",
+      "sha256": "d082c7391e68cd749ee017fe069d597c501ec59b0ff33e31f572f285846de942"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_minimal_recapture_plan_20261013\\capture_n01_minimal_missing_once.py",
+      "sha256": "a44bb01a78ef3277f6e7a0e343039cddd0419f21b5f749cdbceaecfcab9f4e0d"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_analysis_parallel_20261013\\FINAL_N1_ANALYSIS_ZH.md",
+      "sha256": "69dc7f861e0da7ce21fb1863d326cf1616e15edd4795ee82426299bdb74bda55"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_analysis_parallel_20261013\\FINAL_N1_ANALYSIS.json",
+      "sha256": "478a8cb0e260116d76a1be7cd25d4e5da6c521c43f8411e9b5cc52d3329431a3"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_analysis_parallel_20261013\\row_seed_mechanism_summary.json",
+      "sha256": "8d36bfb3aac3d7f6baccb424f8782431a64ccb7d091a40731e912b33d980893d"
+    }
+  ],
+  "public_files": [
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/capture_n01_minimal_missing_once.py",
+      "sha256": "a44bb01a78ef3277f6e7a0e343039cddd0419f21b5f749cdbceaecfcab9f4e0d"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/capture_n01_readonly_once.py",
+      "sha256": "1e24067cf69a2d59bdfb765031b679698cded0c90be54b66f9925a4b146c0fcd"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/CAPTURE_SCRIPT_INDEPENDENT_REVIEW_20261013.md",
+      "sha256": "d507827c630fef12cbc78e15ed93d70a8304db093cfb5008d989696878393839"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/EVIDENCE_HASH_INDEX.json",
+      "sha256": "75a4978b5397a55ba657aad71fff8ed76d054100498cfd53a501e1a7258017f8"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/FINAL_N1_ANALYSIS_ZH.md",
+      "sha256": "69dc7f861e0da7ce21fb1863d326cf1616e15edd4795ee82426299bdb74bda55"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/FINAL_N1_ANALYSIS.json",
+      "sha256": "478a8cb0e260116d76a1be7cd25d4e5da6c521c43f8411e9b5cc52d3329431a3"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/LOCAL_ARTIFACT_SHA256.json",
+      "sha256": "d96bc17dc84ccfc087ceec4554f56e25d071929f842d11c7f38e6590cae06c9f"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/MINIMAL_RECAPTURE_LIST.json",
+      "sha256": "a0042ed3d61bd2c9a0bec4e9bd8c8aae2f9404c7b01a13c5ae632874bc3a4f62"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/N1_FORMAL_RESULT_FINAL_INDEPENDENT_REVIEW_20261013.md",
+      "sha256": "17ecca148d883c18064744b77dbe1a7a7b357a37dee545be0ae3673ed87fbe0a"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/N1_READONLY_CAPTURE_TOOLS_INDEPENDENT_REVIEW_20261013.md",
+      "sha256": "e7890d2050353bdf4d15a07ef31f8defd4b8497ea65ba232608c5368d1d59174"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/READ_ONLY_CAPTURE_REPORT_ZH.md",
+      "sha256": "86ffd77aa88c0c09fe9691f291eedeefd54593958f9d4e364797c9c94b514040"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/row_seed_mechanism_summary.json",
+      "sha256": "8d36bfb3aac3d7f6baccb424f8782431a64ccb7d091a40731e912b33d980893d"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/supplemental_596_replay.json",
+      "sha256": "c6861b6ecb5e525006f267aab922f32f8357e8f799bcbf389c3b4c87f5f212ea"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/SUPPLEMENTAL_CAPTURE_PUBLIC_INDEX.json",
+      "sha256": "fb370f07cb95b59f3524b4f6994c619626e8ec17d248940cd30846c011b6aa7a"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/test_capture_n01_readonly_once.py",
+      "sha256": "d082c7391e68cd749ee017fe069d597c501ec59b0ff33e31f572f285846de942"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/TRANSPORT_SETTLEMENT.json",
+      "sha256": "73ce7caea82e63a70fa006395f92b59b1cd66ecdf5f77d78f2013c917a2d2076"
+    }
+  ],
+  "hash_coverage": "SHA256SUMS.txt covers every file in this directory except itself, including this index. The public_files list omits this index and SHA256SUMS.txt.",
+  "excluded_materials": [
+    "raw_streams",
+    "session_records",
+    "keys",
+    "approval_originals",
+    "remote_diagnostic_file_originals",
+    "retrieved_archive_contents"
+  ]
+}

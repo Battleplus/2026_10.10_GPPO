@@ -1,0 +1,14 @@
+[
+  {
+    "file": "TRANSPORT_SETTLEMENT.json",
+    "sha256": "73ce7caea82e63a70fa006395f92b59b1cd66ecdf5f77d78f2013c917a2d2076"
+  },
+  {
+    "file": "EVIDENCE_HASH_INDEX.json",
+    "sha256": "75a4978b5397a55ba657aad71fff8ed76d054100498cfd53a501e1a7258017f8"
+  },
+  {
+    "file": "MINIMAL_RECAPTURE_LIST.json",
+    "sha256": "31002e5a6d77fa3b0ceee162b06a75ec4e5a6fd46eabb0250c5fcf13e3203500"
+  }
+]
