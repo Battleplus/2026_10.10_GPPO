@@ -1,0 +1,22 @@
+{
+  "schema": "n01-formal-transport-public-archive/1",
+  "status": "TECHNICAL_STOP; FORMAL_RESULT_UNKNOWN_NOT_VERIFIED",
+  "evaluation_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
+  "files": {
+    "FORMAL_TECHNICAL_STOP_ZH.md": "321793da25da3f090a5d2611bcc2461f06e691c3bb796cb03548e0c047b77e1d",
+    "formal_transport_envelope.py": "7a837737cda057c4fba3e41152b316c74780c6e63ab87e89738b7e4c02b5990d",
+    "INDEPENDENT_REVIEW_ADDENDUM_20261013.md": "5b3c441d4a81b640fedb7f011c0ac57bac4e7f05fe5970345b9f1381b00a9c34",
+    "README.md": "8e36e608c4c32268d96247e278207dfccc7985a695ff547cd96a74cc854db720",
+    "test_formal_transport_envelope.py": "d96f09f41d5efcbcbd15f81621bda431467b9e93669cf18f70b74d521a32a76c",
+    "test_windows_transport_bytes.py": "61ec281a726979dfca0c8ae094b697193535d0386440905e56710660fa913a03",
+    "TRANSPORT_REPAIR_REPORT.md": "9ffab7f7ed31d6d20b5d73daa1829355b79dc43de2a7480a51047c2489992a05"
+  },
+  "hash_algorithm": "sha256",
+  "self_hash_included": false,
+  "excluded_private_evidence": [
+    "SSH key and key path",
+    "approval record",
+    "raw stdout/stderr and PTY buffer",
+    "remote diagnostics and result artifacts"
+  ]
+}
