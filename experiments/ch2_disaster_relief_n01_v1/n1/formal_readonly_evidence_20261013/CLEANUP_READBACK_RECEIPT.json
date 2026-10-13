@@ -1,0 +1,19 @@
+{
+  "schema": "n01-cleanup-readback-receipt/1",
+  "expected_invocation_id": "fbdad1589e894466b62cf1785df0de47",
+  "unit": "n01-full-evaluation-r2-formal-repair-v1-20261012.service",
+  "target": "user1@172.17.27.173",
+  "started_utc": "2026-10-13T02:52:59+00:00",
+  "finished_utc": "2026-10-13T02:53:01+00:00",
+  "ssh_invocation_count": 1,
+  "connect_timeout_seconds": 15,
+  "connection_attempts": 1,
+  "remote_writes": false,
+  "stdout_file": "stdout.raw",
+  "stderr_file": "stderr.raw",
+  "stdout_sha256": "9a86eb350da66ab4194c209b414bcf1558c9d933420a8e39f364a17f5e855d4d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command_sha256": "eae6bf74696ba1ec8a81237c2d441fca75153665283ad0957531c30afa10e7d3",
+  "exit_code": 0,
+  "local_error": null
+}

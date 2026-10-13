@@ -5,7 +5,7 @@
   "run_identity": "ch2-disaster-relief-n01-full-evaluation-r2-formal-repair-v1-20261012",
   "invocation_id": "fbdad1589e894466b62cf1785df0de47",
   "formal_result": "failed_at_shutdown",
-  "cleanup_status": "UNKNOWN",
+  "cleanup_status": "verified_at_readback_current_state; historical_shutdown_failed",
   "local_evidence_roots": [
     {
       "kind": "initial_read_only_capture",
@@ -58,6 +58,22 @@
     {
       "local_source_path": "E:\\Z博士\\research-executions\\n01_analysis_parallel_20261013\\row_seed_mechanism_summary.json",
       "sha256": "8d36bfb3aac3d7f6baccb424f8782431a64ccb7d091a40731e912b33d980893d"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\.codex-tmp\\n01-github-release-20261012-a\\experiments\\ch2_disaster_relief_n01_v1\\n1\\formal_readonly_evidence_20261013\\N1_NODE_DECISION_ZH.md",
+      "sha256": "545a40ad0c7d348a9a7725d3d05e8d75c555807ee8beba44e5868b869e1b84c0"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_cleanup_closeout_20261013\\readback-receipt.json",
+      "sha256": "5da09f122d1a6d2b7eab96f8c076c812c7e013cc4b615d0d0ae13a135de9d66c"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_cleanup_closeout_20261013\\stdout.raw",
+      "sha256": "9a86eb350da66ab4194c209b414bcf1558c9d933420a8e39f364a17f5e855d4d"
+    },
+    {
+      "local_source_path": "E:\\Z博士\\research-executions\\n01_cleanup_closeout_20261013\\stderr.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
   "public_files": [
@@ -72,6 +88,18 @@
     {
       "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/CAPTURE_SCRIPT_INDEPENDENT_REVIEW_20261013.md",
       "sha256": "d507827c630fef12cbc78e15ed93d70a8304db093cfb5008d989696878393839"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/CLEANUP_READBACK_RECEIPT.json",
+      "sha256": "5da09f122d1a6d2b7eab96f8c076c812c7e013cc4b615d0d0ae13a135de9d66c"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/CLEANUP_READBACK_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/CLEANUP_READBACK_STDOUT.txt",
+      "sha256": "9a86eb350da66ab4194c209b414bcf1558c9d933420a8e39f364a17f5e855d4d"
     },
     {
       "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/EVIDENCE_HASH_INDEX.json",
@@ -96,6 +124,10 @@
     {
       "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/N1_FORMAL_RESULT_FINAL_INDEPENDENT_REVIEW_20261013.md",
       "sha256": "17ecca148d883c18064744b77dbe1a7a7b357a37dee545be0ae3673ed87fbe0a"
+    },
+    {
+      "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/N1_NODE_DECISION_ZH.md",
+      "sha256": "78725b09ba8f022de38513132cbbef8a3a5ac5b9efda3a6bd47057de11d5066b"
     },
     {
       "repository_relative_path": "experiments/ch2_disaster_relief_n01_v1/n1/formal_readonly_evidence_20261013/N1_READONLY_CAPTURE_TOOLS_INDEPENDENT_REVIEW_20261013.md",
@@ -126,13 +158,17 @@
       "sha256": "73ce7caea82e63a70fa006395f92b59b1cd66ecdf5f77d78f2013c917a2d2076"
     }
   ],
-  "hash_coverage": "SHA256SUMS.txt covers every file in this directory except itself, including this index. The public_files list omits this index and SHA256SUMS.txt.",
+  "hash_coverage": "SHA256SUMS.txt covers every file in this directory except itself, including this index. The public_files list covers every other public file except this index and SHA256SUMS.txt.",
   "excluded_materials": [
-    "raw_streams",
+    "full_capture_raw_streams",
     "session_records",
-    "keys",
+    "private_keys_and_key_contents",
     "approval_originals",
     "remote_diagnostic_file_originals",
     "retrieved_archive_contents"
-  ]
+  ],
+  "readback_time_range_utc": "2026-10-13T02:52:59Z/2026-10-13T02:53:01Z",
+  "readback_invocation_id": "fbdad1589e894466b62cf1785df0de47",
+  "current_unit_cgroup_status": "ControlGroup empty; previously recorded fixed cgroup path absent; MainPID=0; ControlPID=0",
+  "historical_formal_result": "failed_at_shutdown; formal_result_claimed=false"
 }

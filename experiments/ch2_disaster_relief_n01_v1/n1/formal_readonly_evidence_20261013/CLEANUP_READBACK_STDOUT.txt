@@ -1,0 +1,9 @@
+MainPID=0
+ControlPID=0
+Result=exit-code
+ExecMainStatus=1
+ControlGroup=
+ActiveState=failed
+SubState=failed
+InvocationID=fbdad1589e894466b62cf1785df0de47
+ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/n01-full-evaluation-r2-formal-repair-v1-20261012.service; cgroup-directory-absent
