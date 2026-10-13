@@ -1,0 +1,46 @@
+{
+  "schema": "n2-m0-m1-local-results/1",
+  "date": "2026-10-13",
+  "environment": {
+    "os": "Windows",
+    "python": "3.14.4",
+    "torch": "2.13.0+cpu",
+    "numpy": "2.5.0"
+  },
+  "runs": [
+    {
+      "id": "inherited-m0-m1-regressions",
+      "command": "python -m unittest tests.test_chapter1_adapter tests.test_relief_env tests.test_independent_audit tests.test_step_api -v",
+      "working_directory": "development/ch2_disaster_relief_graph_v2",
+      "tests": 27,
+      "passed": 27,
+      "failed": 0,
+      "result": "PASS",
+      "scope": "handoff/schema, synthetic civilian environment, C0/C1 step, NOOP, independent replay/conservation"
+    },
+    {
+      "id": "n2-snapshot-candidate-engineering-probe",
+      "command": "$env:PYTHONDONTWRITEBYTECODE='1'; python -B -m unittest -v",
+      "working_directory": "development/ch2_disaster_relief_n2_v1/preparation",
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "result": "PASS",
+      "scope": "synthetic public-input invariance under hidden entity attribute/ID/count, unreported failure and stock changes; t=8 NOOP-only snapshot; pending report restore; dynamic candidate catalog; source/sibling branch isolation",
+      "source_sha256": "BE874A8600820A607B7CC56C367DC39D7F3A7DB48A0A44BF29F796B7A2A5851E",
+      "local_final_rerun": {"date": "2026-10-13", "tests": 4, "passed": 4, "failed": 0, "elapsed_seconds": 0.041, "result": "PASS"},
+      "independent_review": {"status": "PASS", "reviewed_source_sha256": "BE874A8600820A607B7CC56C367DC39D7F3A7DB48A0A44BF29F796B7A2A5851E", "tests": 4, "passed": 4, "elapsed_seconds": 0.039}
+    }
+  ],
+  "research_trajectory_collection": false,
+  "model_training_or_prediction": false,
+  "server_or_ssh_work": false,
+  "branch_outcomes_saved_as_research_data": false,
+  "limitations": [
+    "The N2 sample uses only the synthetic control fixture and a separately named NOOP-held engineering opportunity fixture.",
+    "No t=16/24/32 C1 window collection, label generation, or 30-minute target evaluation was run.",
+    "The probe's Python pickle is an in-memory object snapshot serialization check, not a production collection, checkpoint, replay, RNG, or resume acceptance.",
+    "Dynamic per-task labels, unknown masks, NOOP global targets, critic/replay wiring, and optimizer/RNG next-update recovery remain untested and open.",
+    "The W7 world-model code was read only as a technical reference; its weights and datasets were not inspected or reused."
+  ]
+}

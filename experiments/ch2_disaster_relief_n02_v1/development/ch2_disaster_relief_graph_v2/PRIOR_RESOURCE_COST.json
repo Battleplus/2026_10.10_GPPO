@@ -1,0 +1,84 @@
+{
+  "schema": "resource-cost-carry-forward/1",
+  "status": "frozen",
+  "reason": "Carry all server runtime and cleanup costs from the failed v1 admission into the v2 cumulative pilot budget.",
+  "prior_identity": "ch2-disaster-relief-graph-v1-20261011-once",
+  "prior_package_path": "/home/user1/w1-pilot/packages/ch2-disaster-relief-graph-v1-20261011",
+  "prior_work_path": "/home/user1/w1-pilot/runs/ch2-disaster-relief-graph-v1-20261011-once",
+  "source_identity_sha256": "6b2395fca1af120f45d88f86123095903b99f264dd61930305e315002f185b14",
+  "deployed_package_archive_sha256": "cb896f1de7ae37831250b47322a8aa501263468237710f95bff029b52d661cf2",
+  "retrieved_evidence_archive_sha256": "81e5df4aa7cfcc4753ac880f36ba948aeb5b0582c8907af02b099ecc7f18bf1f",
+  "systemd_unit": "ch2-graph-v1-acceptance-20261011.service",
+  "systemd_invocation_id": "15e90e871dbe4de79aa989936191fb39",
+  "evidence_roles": {
+    "deployment_receipt": "diagnostics/prior-v1/server_admission_failure_v1_20261011/ch2-graph-deployment-receipt.json",
+    "resource_ledger": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/resource-ledger.jsonl",
+    "systemd_show": "diagnostics/prior-v1/server_admission_failure_v1_20261011/diagnostics/ch2-graph-v1-acceptance-20261011/systemd-show.txt"
+  },
+  "evidence_files": [
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/ch2-graph-deployment-receipt.json",
+      "sha256": "ae85c08fa96fd9da22d0ba21d15bc34c66baf34ab2da6f01c78a50b9c02b74a6"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/diagnostics/ch2-graph-v1-acceptance-20261011/journal.txt",
+      "sha256": "cba7f7f4daec6aa183262ccc4b4e68cf8a67e842e39a230bd3ef794df9ca232f"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/diagnostics/ch2-graph-v1-acceptance-20261011/systemd-show.txt",
+      "sha256": "de94e753dfd6e6dd03ace5859bca299cde11bb44ea77779a67a30d3d4a235192"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/guardians/01-admission.json",
+      "sha256": "ce98dd96aea216623c7906d4fc408f229a73d9540c27a767f0b96ebd789457f6"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/guardians/02-shutdown.json",
+      "sha256": "7a2a68a898ad6c1246cb20d24cd2ec1d86fee22f7967f197c07c590650bc9eee"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/receipts/01-admission.json",
+      "sha256": "09887726d8675da46b831329d60a25b4d2b64bdc09e4516504375c2a8147be73"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/receipts/02-shutdown.json",
+      "sha256": "22d3ff4f0201447fb1a0330ca7f2096ea101c7bef2390aaabff23cb260a65787"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/resource-ledger.jsonl",
+      "sha256": "6c3a3587e3ea807cd443fdd38b28c2a32dffd7794decef873ccb5e944ca9c2af"
+    },
+    {
+      "path": "diagnostics/prior-v1/server_admission_failure_v1_20261011/runs/ch2-disaster-relief-graph-v1-20261011-once/runtime_admission.json",
+      "sha256": "3f321669881d8d5f6b20e8c9d07cfa6b921e1116de2f8b3b7c203ba918b34aba"
+    }
+  ],
+  "ledger_stage_costs": {
+    "admission": {
+      "wall_seconds": 5.31248185178265,
+      "cpu_seconds": 2.711286834
+    },
+    "shutdown": {
+      "wall_seconds": 0.3769723977893591,
+      "cpu_seconds": 0.143187582
+    }
+  },
+  "systemd_total_wall_seconds": 5.734729,
+  "systemd_total_cpu_seconds": 2.914629,
+  "systemd_wrapper_overhead_assigned_to_admission": {
+    "wall_seconds": 0.045274750427991,
+    "cpu_seconds": 0.060154584
+  },
+  "stage_costs": {
+    "admission": {
+      "wall_seconds": 5.357756602210641,
+      "cpu_seconds": 2.771441418
+    },
+    "shutdown": {
+      "wall_seconds": 0.3769723977893591,
+      "cpu_seconds": 0.143187582
+    }
+  },
+  "total_wall_seconds": 5.734729,
+  "total_cpu_seconds": 2.914629
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "n2-m0-m1-source-hashes/1",
+  "date": "2026-10-13",
+  "scope": "read-only source identity inventory; reference files only",
+  "sources": [
+    {"path": "development/ch2_disaster_relief_graph_v2/chapter1_adapter.py", "sha256": "BB1F7C79F562BAC4C68CA038F3B2CEC69809D2FF86DD992497EA217520F9D6B6", "role": "civilian handoff"},
+    {"path": "development/ch2_disaster_relief_graph_v2/graph_policy.py", "sha256": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142", "role": "current actor input encoding reference"},
+    {"path": "development/ch2_disaster_relief_graph_v2/relief_env.py", "sha256": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D", "role": "civilian environment"},
+    {"path": "development/ch2_disaster_relief_graph_v2/scenario_schema.py", "sha256": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0", "role": "scenario contract"},
+    {"path": "development/ch2_disaster_relief_graph_v2/baselines.py", "sha256": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A", "role": "C0/C1"},
+    {"path": "development/ch2_disaster_relief_graph_v2/independent_audit.py", "sha256": "9BA61300A113A0D60988BFBCA28EDB6DB81581A956015607A98D26916863D1FC", "role": "independent replay/labels"},
+    {"path": "development/ch2_disaster_relief_graph_v2/stable_identity.py", "sha256": "812944F9F7CB4F16C9907C4D6CF6C552F5B0DC3F7EC8FA2E5CCBE859B04757EF", "role": "observation/catalog identity"},
+    {"path": "development/ch2_disaster_relief_graph_v2/fixtures/control.json", "sha256": "EB4946623237FD88C8464D54D974EB027335F2EAD1370B9D9AD0F8B37CECF4C0", "role": "synthetic engineering fixture"},
+    {"path": "development/ch2_disaster_relief_graph_v2/tests/test_relief_env.py", "sha256": "331E2D9AD99F080CD2656D9108F162BCF8D7DF8DDF2990A0A5BD7A8C92A751D1", "role": "M1 environment tests"},
+    {"path": "development/ch2_disaster_relief_graph_v2/tests/test_step_api.py", "sha256": "79C7BD3123D59DDD4A3F93DBEA132601B0D8670D160FAB1E121F1B8BDFC006B0", "role": "M1 C0/C1 step tests"},
+    {"path": "development/ch2_disaster_relief_graph_v2/tests/test_independent_audit.py", "sha256": "6D6D2484735D53907603FA5AF62671A5E74F8F1792AAA1E5BCA96BAD9F07EAA0", "role": "M1 independent audit tests"},
+    {"path": "development/ch2_disaster_relief_graph_v2/tests/test_chapter1_adapter.py", "sha256": "594D7F49B9CADA186F8498A9D194FAEE57857F91D78CF9A3983FE01FBF64232A", "role": "M0 handoff tests"},
+    {"path": "development/ch2_disaster_relief_graph_v2/EXECUTION_CONTRACT.md", "sha256": "39E4B442824C1D2AC409D462C3D9A6F525616CCF3D5E18346C6C88F40D411240", "role": "historical graph-v2 contract reference"},
+    {"path": "development/ch2_disaster_relief_graph_v2/REVIEW.md", "sha256": "21DF64E7EB697924CA00DB9909A017DCCCDE1D7D31A4654E1AD3F6BFF6254380", "role": "prior M0/M1 and graph-v2 acceptance evidence"},
+    {"path": "research-plans/ch2-disaster-relief-reuse-execution-v1/refine-logs/EXPERIMENT_PLAN-20261011.md", "sha256": "856845392D1F73C25AEBA253360A8C857AFB4BD51C370EDA929DB801E1A20EB8", "role": "approved M0-M5 stage order"},
+    {"path": "research-plans/ch2-disaster-relief-reuse-execution-v1/refine-logs/EXPERIMENT_TRACKER-20261011.md", "sha256": "2A80371779058171A1281ED9B4604939032BEEEE616A834E000F206ADB47F3F0", "role": "approved R01-R16 task tracker"},
+    {"path": "research-plans/ch2-disaster-relief-reuse-execution-v1/refine-logs/SOURCE_REUSE_MAP.md", "sha256": "66B9271151B73D305547DBA656211412D0D24542070E67823BD571C63A892772", "role": "approved reuse/deviation reference"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/candidate_keys.py", "sha256": "E799CDDEAF6FAFB206943D03FBD8886EC9BADC109BDCC24885A9BD6C884615F2", "role": "legacy technical reference only"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_contract.py", "sha256": "9FD4DA2353FAEA0677F79117D0D0A2F0980A6EE140E66B086D8C73D9DD40F79D", "role": "legacy technical reference only"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_features.py", "sha256": "FD1E4176FA2FEB5E8B4EBA7BA44F0481D2EBDD8D9ACF991765D5050DE0EB01DE", "role": "legacy technical reference only"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_model.py", "sha256": "B92B10FCAE979CBCE476C145480403263925FC69B02DD8D320440FDE63E409DD", "role": "legacy technical reference only"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_training.py", "sha256": "54D79991FC5E3E6E1ACA65AEDA9EEBD52B1C308478E84003C84228C744A837DE", "role": "legacy technical reference only"},
+    {"path": "research-plans/w1-drone-consequence-ranking-window-balanced-ablation-v7-input-reuse-stage-schedule-repair/package/consequence_collection.py", "sha256": "7E29913475F2EBC573063AFD2C6CB95FC71BB9D7841169748B8A4A0986AE503B", "role": "legacy technical reference only"},
+    {"path": "development/ch2_disaster_relief_n2_v1/preparation/test_branch_snapshot_contract.py", "sha256": "BE874A8600820A607B7CC56C367DC39D7F3A7DB48A0A44BF29F796B7A2A5851E", "role": "local N2 M0/M1 engineering probe"}
+  ],
+  "excluded": ["all checkpoints/weights", "all registered/recovery windows", "all labels and evaluation rows", "military scenario tapes"]
+}
