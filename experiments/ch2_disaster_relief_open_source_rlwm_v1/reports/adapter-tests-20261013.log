@@ -1,0 +1,15 @@
+test_candidate_order_permutation_does_not_change_action_identity_or_encoding (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_candidate_order_permutation_does_not_change_action_identity_or_encoding) ... ok
+test_capacity_is_fixed_configuration_not_hidden_task_total (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_capacity_is_fixed_configuration_not_hidden_task_total) ... ok
+test_fixed_float32_layout_and_hidden_task_padding (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_fixed_float32_layout_and_hidden_task_padding) ... ok
+test_hidden_future_task_and_event_perturbations_do_not_change_reset_input (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_hidden_future_task_and_event_perturbations_do_not_change_reset_input) ... ok
+test_selection_microsteps_then_commit_match_original_joint_batch (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_selection_microsteps_then_commit_match_original_joint_batch) ... ok
+test_task_slot_is_allocated_only_after_new_task_becomes_public (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_task_slot_is_allocated_only_after_new_task_becomes_public) ... ok
+test_dispatch_space_and_commit_index_are_fixed (test_replay_contract.ReplayContractTests.test_dispatch_space_and_commit_index_are_fixed) ... ok
+test_observation_stamps_incoming_transition_metadata (test_replay_contract.ReplayContractTests.test_observation_stamps_incoming_transition_metadata) ... ok
+test_only_commit_advances_physical_time (test_replay_contract.ReplayContractTests.test_only_commit_advances_physical_time) ... ok
+test_rejects_inconsistent_or_malformed_metadata (test_replay_contract.ReplayContractTests.test_rejects_inconsistent_or_malformed_metadata) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.051s
+
+OK

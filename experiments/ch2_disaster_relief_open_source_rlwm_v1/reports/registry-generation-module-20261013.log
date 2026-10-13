@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\relief_adapter\data\build_registry.py", line 274, in <module>
+    main()
+    ~~~~^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\relief_adapter\data\build_registry.py", line 269, in main
+    summary = build_registry(args.output_root, args.old_root, args.source_root)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\relief_adapter\data\build_registry.py", line 134, in build_registry
+    vendor_root = resolve_source_root(source_root)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\relief_adapter\vendor_source.py", line 38, in resolve_source_root
+    raise FileNotFoundError(
+        f"relief_env_v2 source root {root} missing required files: {missing}"
+    )
+FileNotFoundError: relief_env_v2 source root E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\relief_adapter\vendor\relief_env_v2 missing required files: ['__init__.py', 'baselines.py', 'chapter1_adapter.py', 'relief_env.py', 'scenario_schema.py', 'stable_identity.py', 'dataset_protocol.py', 'graph_policy.py', 'literal_graph_ops.py', 'ppo_trainer.py', 'independent_audit.py']

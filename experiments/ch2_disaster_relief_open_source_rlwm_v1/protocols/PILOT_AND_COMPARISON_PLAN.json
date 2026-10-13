@@ -1,0 +1,132 @@
+{
+  "document_type": "pilot_and_comparison_plan",
+  "version": "1.1.0",
+  "status": "DRAFT_NOT_AUTHORIZED_NOT_EXECUTED",
+  "objective": "On a civilian disaster-relief task-allocation environment, compare a transparent rule baseline, the existing Graph PPO learner, and a pinned open-source Dreamer implementation. The practical objective is to identify a useful method on the registered workload; this three-arm comparison does not identify a causal Graph-GPPO/world-model synergy effect.",
+  "source_pins": {
+    "dreamer": {
+      "repository": "https://github.com/NM512/r2dreamer",
+      "commit": "546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+      "license": "MIT",
+      "configuration": { "rep_loss": "dreamer" },
+      "provenance_records": [
+        "../upstream_audit/UPSTREAM_SOURCE_AUDIT.md",
+        "../upstream_audit/UPSTREAM_PROVENANCE.json"
+      ],
+      "capability_boundary": "The upstream pin supplies the RSSM, reward and continuation prediction, vector observation path, and actor/value components. Dynamic mask-head behavior, real/imagined action masking, and time-discount integration are project overlay work in integration/dreamer_relief.py, not native upstream capabilities. This plan does not claim candidate-consequence multi-head prediction or candidate-ranking supervision."
+    }
+  },
+  "methods": [
+    {
+      "id": "C1",
+      "role": "transparent rule-based reallocation baseline",
+      "training": false,
+      "training_seeds": [],
+      "heldout_trajectories_per_parent": 1
+    },
+    {
+      "id": "GPPO",
+      "role": "existing Graph PPO learner",
+      "training": true,
+      "seeds": [8201, 8202, 8203],
+      "expected_final_checkpoints": 3
+    },
+    {
+      "id": "Dreamer",
+      "role": "pinned open-source model-based RL learner",
+      "training": true,
+      "seeds": [8201, 8202, 8203],
+      "expected_final_checkpoints": 3,
+      "source_pin": "source_pins.dreamer"
+    }
+  ],
+  "scenario_registry": {
+    "total_parent_scenarios": 126,
+    "mechanisms": ["carrier_competition", "stock_constraint"],
+    "mechanism_balance": "Each split is balanced equally across the two registered mechanisms.",
+    "split_by_parent": { "train": 56, "development": 14, "heldout_confirmation": 56 },
+    "split_by_mechanism": {
+      "train": 28,
+      "development": 7,
+      "heldout_confirmation": 28
+    },
+    "leakage_rule": "A parent scenario belongs to exactly one split. Training and development parents are not confirmation evidence."
+  },
+  "training": {
+    "training_episode_cap_per_learning_seed": 128,
+    "pilot_training_episodes_per_learning_seed": 8,
+    "pilot_included_in_cap": true,
+    "learning_paths": 6,
+    "maximum_training_episodes_all_learning_paths": 768,
+    "training_parent_count": 56,
+    "training_seed_ids": [8201, 8202, 8203],
+    "rule": "The 128-episode limit applies to training episodes for each of the six learner-seed runs. The first 8 pilot episodes for each learner seed count toward that limit. Evaluation episodes do not consume this training-episode cap. No old military-scene data or old world-model weights are confirmation inputs."
+  },
+  "development_evaluation": {
+    "parent_count": 14,
+    "episodes_per_method_seed": null,
+    "total_evaluation_episodes": null,
+    "status": "TO_BE_FROZEN_AFTER_TARGET_RUNTIME_AND_RESOURCE_MEASUREMENT",
+    "rule": "Development evaluation keys and episode count must be frozen before the learning runs. Do not infer or silently assign an episode count from the training cap. Development parents cannot be reused as heldout confirmation parents."
+  },
+  "heldout_confirmation": {
+    "parent_count": 56,
+    "learning_checkpoints": 6,
+    "rule_baseline_trajectories_per_parent": 1,
+    "learner_trajectories_per_parent": 6,
+    "total_trajectories": 392,
+    "count_derivation": "56 parents * (1 C1 trajectory + 3 GPPO seed trajectories + 3 Dreamer seed trajectories) = 392",
+    "release_barrier": {
+      "required_final_checkpoints": 6,
+      "requirements": [
+        "All six final checkpoint files exist and pass hash verification.",
+        "Checkpoint metadata matches method, seed, configuration, source pin and training-data identity.",
+        "The complete checkpoint set passes strict restore validation before any heldout result is opened.",
+        "Only after the barrier passes may the fixed 392 heldout trajectory keys be evaluated."
+      ]
+    },
+    "confirmation_data_status": "SEALED_UNTIL_RELEASE_BARRIER"
+  },
+  "metrics": {
+    "primary": {
+      "name": "priority_weighted_on_time_delivery_rate",
+      "key": "weighted_on_time_delivery_rate",
+      "definition": "Sum of priority over delivered orders completed on time divided by the sum of priority over all delivery orders in the parent episode.",
+      "empty_order_case": null,
+      "analysis_unit": "parent scenario"
+    },
+    "secondary": [
+      { "key": "inspection_completion_rate", "source": "civilian environment evaluation record" },
+      { "key": "inspection_on_time_rate", "source": "civilian environment evaluation record" },
+      { "key": "delivered_orders", "source": "civilian environment evaluation record" },
+      { "key": "late_orders", "source": "civilian environment evaluation record" },
+      { "key": "unmet_orders", "source": "civilian environment evaluation record" },
+      { "key": "undiscovered_orders", "source": "civilian environment evaluation record" },
+      { "key": "energy_used", "source": "civilian environment evaluation record" },
+      {
+        "key": "reassignments",
+        "definition": "Number of tasks that were reassigned; not the total number of reassignment events.",
+        "source": "civilian environment evaluation record"
+      },
+      { "key": "new_assignments", "source": "civilian environment evaluation record" }
+    ],
+    "comparisons": ["GPPO versus C1", "Dreamer versus C1", "Dreamer versus GPPO"],
+    "analysis": "Compute paired differences on the same heldout parents. The parent is the sampling unit; aggregate the three learner seeds within parent for the primary method-level estimate and also report all seed-specific results. Report parent-paired bootstrap 95% intervals and raw parent-level values. Empty-order primary values remain null and are handled explicitly, not imputed.",
+    "scope_rule": "Real task outcomes are scored for evaluation and audit only; they are not actor inputs or hidden training-time labels. Do not add unregistered report-timeliness or candidate-ranking metrics."
+  },
+  "resource_plan": {
+    "status": "NOT_FROZEN",
+    "server_wall_seconds": null,
+    "server_cpu_seconds": null,
+    "rss_limit_bytes": null,
+    "storage_limits_bytes": null,
+    "development_evaluation_episode_count": null,
+    "freeze_rule": "Measure the target Linux runtime and systemd/cgroup accounting with a bounded pilot, record training, evaluation, checkpoint I/O and export costs separately, then freeze the full request before any authorized study run. Pilot training episodes count against the per-seed training cap."
+  },
+  "interpretation_limits": [
+    "The three-arm comparison can identify which tested method performs better on this registered workload; it cannot establish that Graph GPPO and a world model have synergistic effects.",
+    "Dreamer versus GPPO compares complete learning systems and does not isolate the causal contribution of a world-model component.",
+    "No heldout result exists until the six-checkpoint release barrier and the fixed confirmation evaluation are complete.",
+    "This draft is not an authorization, token, attempt, deployment receipt or claim of completed training."
+  ]
+}

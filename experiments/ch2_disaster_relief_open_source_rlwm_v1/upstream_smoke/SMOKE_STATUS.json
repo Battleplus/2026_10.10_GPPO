@@ -1,0 +1,22 @@
+{
+  "historical_initial_status": {
+    "status": "not_run_dependency_blocked",
+    "script": "upstream_dreamer_smoke.py",
+    "target": "Pinned NM512/r2dreamer DreamerV3 baseline, rep_loss=dreamer, CPU-only",
+    "planned_environment": "Gymnasium CartPole-v1, engineering smoke only",
+    "planned_replay": "upstream Buffer, batch_size=1, batch_length=8",
+    "planned_updates": 3,
+    "observed_python": "3.11.15",
+    "observed_torch": null,
+    "first_install_error": "CPU PyTorch 2.8.0 wheel download/extraction exceeded UV_HTTP_TIMEOUT=30s; no training process started",
+    "environment_steps": 0,
+    "model_forward_count": 0,
+    "dreamer_update_count": 0,
+    "checkpoint_created": false,
+    "formal_research": false
+  },
+  "latest_status": "COMPATIBILITY_CPU_FP32_PASS",
+  "latest_receipt": "results-r5-fp32/smoke-receipt.json",
+  "exact_upstream_reproduction": false,
+  "formal_research": false
+}

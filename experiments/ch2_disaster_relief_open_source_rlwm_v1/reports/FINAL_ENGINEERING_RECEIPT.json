@@ -1,0 +1,55 @@
+{
+  "schema": "rlwm-engineering-node/1",
+  "status": "LOCAL_COMPATIBILITY_SMOKES_PASSED_FORMAL_NOT_READY",
+  "tests": {
+    "count": 26,
+    "passed": 26,
+    "log": "reports/all-tests-compat-r3-20261014.log"
+  },
+  "p0": {
+    "receipt": "upstream_smoke/results-r5-fp32/smoke-receipt.json",
+    "status": "pass",
+    "updates": 3,
+    "environment_steps": 31,
+    "cpu_precision": "float32_overlay",
+    "checkpoint_scope": "model_optimizer_scheduler_scaler_only_not_exact_training_continuation"
+  },
+  "civilian": {
+    "receipt": "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json",
+    "status": "pass",
+    "resource": {
+      "adapter_step_calls": 128,
+      "physical_minutes_advanced": 120,
+      "dispatch_microsteps": 8,
+      "commit_steps": 120,
+      "replay_frames": 129,
+      "completed_updates": 3,
+      "illegal_action_count": 0,
+      "wall_seconds": 10.072600899999088,
+      "process_cpu_seconds": 9.953125,
+      "rss_after_bytes": null
+    },
+    "checkpoint_scope": {
+      "includes": [
+        "agent_model",
+        "optimizer",
+        "scheduler",
+        "scaler",
+        "counters",
+        "rng",
+        "adapter_metadata"
+      ],
+      "excludes": [
+        "replay_buffer",
+        "simulator_state"
+      ]
+    }
+  },
+  "formal_research_started": false,
+  "confirmation_evaluated": false,
+  "target_linux_preflight": "NOT_RUN",
+  "server_connection": "SSH_AUTHENTICATION_DENIED",
+  "rss_measurement": "UNAVAILABLE",
+  "engineering_total_cost": "NOT_SUMMED_INCOMPLETE_LIFECYCLE_MEASUREMENT",
+  "historical_failure_logs_preserved": true
+}

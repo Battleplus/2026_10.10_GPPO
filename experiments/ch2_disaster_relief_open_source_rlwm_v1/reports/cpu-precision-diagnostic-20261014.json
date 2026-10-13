@@ -1,0 +1,49 @@
+{
+  "run_kind": "engineering_fixed_batch_precision_diagnostic",
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "torch": "2.5.0+cpu",
+  "upstream_revision": "546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+  "environment_steps": 31,
+  "batch_hash": "588ab890f658473bb72eb1fe80c031999795a35cc61919478a9cf5b7c25a17bc",
+  "initial_model_hash": "2ccde7e14cea7acde6ef88b97f9dac4e331cafcc1aa48c8312b0fc27c022d175",
+  "only_changed_factor": "CPU autocast enabled float16 versus disabled float32",
+  "results": [
+    {
+      "mode": "cpu_float16_upstream",
+      "backward_attempts": 1,
+      "optimizer_steps": 0,
+      "status": "technical_stop",
+      "iterations": [],
+      "first_error": {
+        "type": "RuntimeError",
+        "message": "Function 'RsqrtBackward0' returned nan values in its 0th output.",
+        "traceback": "Traceback (most recent call last):\n  File \"E:\\Z\u535a\u58eb\\development\\ch2_disaster_relief_open_source_rlwm_v1\\upstream_smoke\\cpu_precision_diagnostic.py\", line 56, in run\n    _, metrics = agent._cal_grad(frozen_data.clone(), tuple(v.clone() for v in frozen_initial))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\Z\u535a\u58eb\\development\\ch2_disaster_relief_open_source_rlwm_v1\\upstream_r2\\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\\dreamer.py\", line 526, in _cal_grad\n    self._scaler.scale(total_loss).backward()\n  File \"D:\\anaconda\\Lib\\site-packages\\torch\\_tensor.py\", line 581, in backward\n    torch.autograd.backward(\n  File \"D:\\anaconda\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 347, in backward\n    _engine_run_backward(\n  File \"D:\\anaconda\\Lib\\site-packages\\torch\\autograd\\graph.py\", line 825, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Function 'RsqrtBackward0' returned nan values in its 0th output.\n"
+      },
+      "wall_seconds": 0.7321197999990545
+    },
+    {
+      "mode": "cpu_float32_diagnostic",
+      "backward_attempts": 2,
+      "optimizer_steps": 2,
+      "status": "pass_two_fixed_batch_updates",
+      "iterations": [
+        {
+          "iteration": 0,
+          "loss": 17.254661560058594,
+          "parameters_finite": true,
+          "gradients_finite": true
+        },
+        {
+          "iteration": 1,
+          "loss": 18.529008865356445,
+          "parameters_finite": true,
+          "gradients_finite": true
+        }
+      ],
+      "wall_seconds": 1.2280558999991626
+    }
+  ],
+  "target_torch_2_8_tested": false,
+  "formal_updates": 0,
+  "confirmation_evaluations": 0
+}

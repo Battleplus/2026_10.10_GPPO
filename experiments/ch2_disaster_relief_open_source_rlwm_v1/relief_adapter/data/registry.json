@@ -1,0 +1,1373 @@
+{
+  "condition_counts": {
+    "development": {
+      "carrier_competition": 7,
+      "stock_competition": 7
+    },
+    "heldout": {
+      "carrier_competition": 28,
+      "stock_competition": 28
+    },
+    "train": {
+      "carrier_competition": 28,
+      "stock_competition": 28
+    }
+  },
+  "old_parent_id_overlap_count": 0,
+  "old_semantic_hash_overlap_count": 0,
+  "policy_evaluation_performed": false,
+  "registry_version": "relief-n2-scenario-registry/1",
+  "scenarios": [
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "fa61b19c5a75d7fa86ba6d6dc13169826213efd7716817507e8c941926508934",
+      "parent_id": "relief-n2-train-carrier_competition-00",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-00.json",
+      "seed": 3228566105574031467,
+      "semantic_sha256": "2057bf8d6aa65f0bebae506f57d18406fff6c575e6d3ab2d482db56ece54c7ae",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "3350cde125b1ebb877a5b56d1409f8e1e9c6497af1d96bbef3d4da1508ad8546",
+      "parent_id": "relief-n2-train-carrier_competition-01",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-01.json",
+      "seed": 5331688938506196884,
+      "semantic_sha256": "cff11d05d3a09bdbcfc8c5769340624b29da40fc252a953c63ed7f190c32cd42",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "e1d74ad5f6ba322bc1925f8d5461416b7e72e23859fc08269f2e5244d9891c7f",
+      "parent_id": "relief-n2-train-carrier_competition-02",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-02.json",
+      "seed": 15645494094232264884,
+      "semantic_sha256": "f28ef45a26b281999f3215dae10844b42a83877d0682370a908ca1018d406682",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "61399c1b9e9e818ac6b2e0895003acd438d953be91e5c586cc27e0a58e43a229",
+      "parent_id": "relief-n2-train-carrier_competition-03",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-03.json",
+      "seed": 16697397903077233672,
+      "semantic_sha256": "222696f84e973410f87c18ec7bf98467301744dd013dfb3998b79ac6a49a12c8",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "259d26adf682d424ec7c65b66a3b0af4ecc19b078a511fda29230da766e0e349",
+      "parent_id": "relief-n2-train-carrier_competition-04",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-04.json",
+      "seed": 1783341434383523444,
+      "semantic_sha256": "cca01c3b39addac2157467cd94355031a54fc9e40be71222e7caa7f70ad4744f",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "e0beb391af8a8ac56c76ab650d866ffb92eb0f00fd9374b183d7a61fb65aadf6",
+      "parent_id": "relief-n2-train-carrier_competition-05",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-05.json",
+      "seed": 4890609926704635929,
+      "semantic_sha256": "e7e36d19c5228618778646e3b096adc104e8d3cc520febe88d68101b45e02bd7",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "3362ef94fe999797c071569197ce53b7c7b02564e78010d571823a6a8365c36c",
+      "parent_id": "relief-n2-train-carrier_competition-06",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-06.json",
+      "seed": 1684343077376758597,
+      "semantic_sha256": "b1ef90d3bcbbcd5c568ff6d9c56ddcef1ea6e9d92077dbdbf2480a1c3fdcf0ad",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "699eede391084140484053038b10cfb43e736578c850f235221fdc6db464580f",
+      "parent_id": "relief-n2-train-carrier_competition-07",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-07.json",
+      "seed": 2883200299560632748,
+      "semantic_sha256": "1cffe985bfa69800e57541b8a15e01038a954f8f9ceabc1369fd9af399dd7238",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "5f64e7828a9dc8a435f68becf547fbeef46cd9dd4cd9dc9f030d670a3bf6eafe",
+      "parent_id": "relief-n2-train-carrier_competition-08",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-08.json",
+      "seed": 15728130384233133755,
+      "semantic_sha256": "44d80ce8bbb6db39907537b0ccdb1bde0a77317fc184b6a4660bcbbd4124d78e",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "fe455f64eead5d404a4afdce1bed844ac29cc02e254e33cc01bb8c9727d79e2f",
+      "parent_id": "relief-n2-train-carrier_competition-09",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-09.json",
+      "seed": 12425657614270718525,
+      "semantic_sha256": "dfac7b754735a09869864a9c07aa800d92f496f1fe1c6757901fffa6dc255cbb",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "507244976a43b6f7b84d0dda806e54911b90ba5261162e97963f018b091855bd",
+      "parent_id": "relief-n2-train-carrier_competition-10",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-10.json",
+      "seed": 1136465267603061400,
+      "semantic_sha256": "9165d78bd1556bada85d63d839f445d8eaf460de52ec0c69d8ce23e107eca308",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "ebdbfae42f84fb31d015dfdf12e94a76eba4d0241ac839cf447b5063415f1042",
+      "parent_id": "relief-n2-train-carrier_competition-11",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-11.json",
+      "seed": 1512380658746488949,
+      "semantic_sha256": "83424e634aba2a56ac97adf2b261bbe3894c7dfd90b09f7b2160e4ece91238fe",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "a00ab1b8d8c76d4b934aefeae75582f39b471ea9ab49a533b360d56e898744ef",
+      "parent_id": "relief-n2-train-carrier_competition-12",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-12.json",
+      "seed": 11655089813539807349,
+      "semantic_sha256": "9b025994c0c20ccb02d8c4770cfff0a2c5c2201ba1e327fa5ebd13e7a71f6caa",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "c7250be669ba5c5df38525440340068beb5870e6fdf01c1735fb78f8d0e57bc9",
+      "parent_id": "relief-n2-train-carrier_competition-13",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-13.json",
+      "seed": 7518221400216060833,
+      "semantic_sha256": "7a70c826579c553a95f1105868ebc023699f08277b073dd4f2f2e8481d4ec747",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "7937c8470fda4ffadf05380909e476a3dda462b2f09a7e19c1295eec0d99dc29",
+      "parent_id": "relief-n2-train-carrier_competition-14",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-14.json",
+      "seed": 15308274042254806738,
+      "semantic_sha256": "4daff6307492b3fb6d13b1a61005ceddc1c7fd2d136f0e84ac87d6d8886cc8fa",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "7716c0c4ebc7f030967e9e241b4bc7f931000af354437127c2219e7f1ee80da0",
+      "parent_id": "relief-n2-train-carrier_competition-15",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-15.json",
+      "seed": 12974250557661897881,
+      "semantic_sha256": "8888d5148873c8040a88b5ba2cfa5f2b6148230f196f92139b1ea22112b636f7",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "1974ea73fe5fa6ffa9d8466c957c592029f2590c170fb71f55d53bb7db560cf5",
+      "parent_id": "relief-n2-train-carrier_competition-16",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-16.json",
+      "seed": 1206909311563854528,
+      "semantic_sha256": "6f259a02a42d396393a8b7bb12d1b4c2977061ee29b8499a1695582f9f81c000",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "8de7822494268d1f9f912de0b362777e623dae914b0ffa3d7b4309d5f1589b50",
+      "parent_id": "relief-n2-train-carrier_competition-17",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-17.json",
+      "seed": 5957776083773922375,
+      "semantic_sha256": "a73e562a785706afe5a4aebf7e68181e35c36fc6649a5e8148cfe63b554ad279",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "11045eea8c05eb8188b7526a0f6fc4e269c8e17756d04f8280ac8c7b3b5bff3b",
+      "parent_id": "relief-n2-train-carrier_competition-18",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-18.json",
+      "seed": 13246296378065243004,
+      "semantic_sha256": "63033914a3c64f9803ab97786b06472276bf68847c231d02a6bec08c7a59a6b9",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "65590bdf378fca4933c6f7fc94896de5545bea0692599a3dc4122dafc552172e",
+      "parent_id": "relief-n2-train-carrier_competition-19",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-19.json",
+      "seed": 12882440160322791719,
+      "semantic_sha256": "317519c837262c34ad3d096e57be9f2f61313586fe3792553c3ae2b342de8fe2",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "4d67211b928e404409b57d0ea140aef656cca610aec7a6c20ac9241370b48db8",
+      "parent_id": "relief-n2-train-carrier_competition-20",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-20.json",
+      "seed": 11344239534896125551,
+      "semantic_sha256": "7a6478c695779fbf2bbea59cb18fdcb8159c78b84787a013ee76ded34029c0cc",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "f1e1095586d3b4d66c5d6507554624908d3a39749ea52e070d7a77cf601a94ca",
+      "parent_id": "relief-n2-train-carrier_competition-21",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-21.json",
+      "seed": 1781206055623333217,
+      "semantic_sha256": "71ffabc0b9adc65229f20bd18218d8e63ec14b982cd06ee6d0f43676aef78ea2",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "a1bc540788246aa0bd86592084cce180d3c40c591f6f3d9111ff1f008669e010",
+      "parent_id": "relief-n2-train-carrier_competition-22",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-22.json",
+      "seed": 16363504184799998726,
+      "semantic_sha256": "5d6e6cc149b2043ad26300b334b0b880bf711b6466b1b2190e99750dc8d7005a",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "4200697605e74bd4e9d4eefc1aa223d217fc9fe26fd96a66633235542d371688",
+      "parent_id": "relief-n2-train-carrier_competition-23",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-23.json",
+      "seed": 10914272593365126924,
+      "semantic_sha256": "5c49ddc3e2ca179fc9ea31832e9623ed62fd1133fc295950b1dce592e779e57c",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "d5b4aab7c84de416c1ef01fa4fc5b6c0c803e783b1e7153eb8b831645bdec88f",
+      "parent_id": "relief-n2-train-carrier_competition-24",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-24.json",
+      "seed": 8046165299695793278,
+      "semantic_sha256": "ac8e336bd41240d766f59494fce1364bb7d38a9a88eac93ca8004f8e0e7dd4cd",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "c441b390309f91343f2f63da30dbd92b54d02bdaca02088c33029b89d5ec8703",
+      "parent_id": "relief-n2-train-carrier_competition-25",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-25.json",
+      "seed": 3327195537490851337,
+      "semantic_sha256": "05a70e092057b66cb23cee59e7494e77154a68b3e4c3ca2ff189f3f21ce000be",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "34ccff8d57c86df85586b23798ce3834385e581aa3b53c364ac76de7e8be3951",
+      "parent_id": "relief-n2-train-carrier_competition-26",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-26.json",
+      "seed": 15223470968047096599,
+      "semantic_sha256": "634e8f81b2425bfd3f2bafc0bf71c30e8ec806ecf82f6bb1b38bc5cb492007f6",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "55baef87ac8ebb9d15ae048f61ef6fcd6570613e893863dad2d1d7addd619ad4",
+      "parent_id": "relief-n2-train-carrier_competition-27",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-carrier_competition-27.json",
+      "seed": 17833220880410728353,
+      "semantic_sha256": "834ccd2f2d7a0a6d554c6b0d682b227ed6e0c47cf640062575f70d857cd30e37",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "4fb0b4d0853784e0beea599bf200503a43f35bbb71aa15771febbc742fef5ab8",
+      "parent_id": "relief-n2-train-stock_competition-00",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-00.json",
+      "seed": 8734708644987929690,
+      "semantic_sha256": "837364159031e39298b5fa7de5c66369e5e1e7668d510f8058eda142c4034ae8",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "40926c05d2fed1cfea2a5ae4170e51f4bc231be2a173417d76fb4de857990523",
+      "parent_id": "relief-n2-train-stock_competition-01",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-01.json",
+      "seed": 5389116840581308444,
+      "semantic_sha256": "04d00dd7139bb5c246c3abfb200cb5abcf3423d60e61fb6260f6da6d796a35f3",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "418df0a9e13bc2b17cae7a940ff51cfede4fd847dcb6891af651634e7b28c1b3",
+      "parent_id": "relief-n2-train-stock_competition-02",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-02.json",
+      "seed": 13935983272553954561,
+      "semantic_sha256": "2a022bcc1112b901109d0c55147d242c1de8162953f4403b003010ccbe6a6567",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "42cf52506bf1132fe869dbae0af41bfff0fd00998a67a2469972a18c9b40eb8e",
+      "parent_id": "relief-n2-train-stock_competition-03",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-03.json",
+      "seed": 9166754480691864647,
+      "semantic_sha256": "1c4b02cb8386e22c5b036ec57234d096d8c86fa2f0846902f88ca72d472c1740",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "895165efa5dc39834f104d344a6f8ad450b379c8426c58d45896b3294272b15f",
+      "parent_id": "relief-n2-train-stock_competition-04",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-04.json",
+      "seed": 7546718046720262041,
+      "semantic_sha256": "3f2d4176f6720a6060d3786ef29d3a4181880784b60108c83a33cdbfb6f2a422",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ee240106bfe3328c2ba8bd4d291f12fb2c2d601526d6b8f814232f53d5d15f20",
+      "parent_id": "relief-n2-train-stock_competition-05",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-05.json",
+      "seed": 1220147822489851528,
+      "semantic_sha256": "e14a5fe87da522ec18438c6465e2dde63f586b8609a05d72c8b0f9649481785b",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ca93f9f9df7ae78923cfac97a829daa1c38f6ed0db7c145c8d8b81465a8ecb01",
+      "parent_id": "relief-n2-train-stock_competition-06",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-06.json",
+      "seed": 10749267733065547984,
+      "semantic_sha256": "f2f357fe33863c8f58d1c08d7a402027184719c3e5859e2bbe0a21504bc23f6a",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "888aa17448381cb1a6ffba04327353a37c69d2997bf88b1a5c6d259671c82d75",
+      "parent_id": "relief-n2-train-stock_competition-07",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-07.json",
+      "seed": 12031091632058467223,
+      "semantic_sha256": "38919248d278b282a4a73fe2769b3a2ab56b0b0cca366805dec869c78461e921",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "434fe66346631d7537c15648b8df039c79e587cdb81a6b18599a2ce43834c446",
+      "parent_id": "relief-n2-train-stock_competition-08",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-08.json",
+      "seed": 11468330078916649310,
+      "semantic_sha256": "04ec4ad189027248718530ef5610c7057bb88910abaf8e63b102201b723058e3",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "5fc864ed6815e9a4a45831cc13b2bef4c1904a3bed254185e0081c09acce3939",
+      "parent_id": "relief-n2-train-stock_competition-09",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-09.json",
+      "seed": 15152301815436825120,
+      "semantic_sha256": "f73b2b89b160d16ed8ff3f617f3f369e115a92a0e9d7093da9f3837ed657f1ae",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "8a63ba8d9cc3e6b6a2ef6a55044074a9f30ced716a1c2bf628b9f862d8bf1ebe",
+      "parent_id": "relief-n2-train-stock_competition-10",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-10.json",
+      "seed": 11316995990787245380,
+      "semantic_sha256": "e0de44b115efaa8e47b12279848b19440a10d1be24cb1b00c19e2986bd6206a3",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "8745d322725f745a3a0f499d745fe5c9913ad1d1b1d995b1125ef8560cb8c133",
+      "parent_id": "relief-n2-train-stock_competition-11",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-11.json",
+      "seed": 321074766370210835,
+      "semantic_sha256": "852a1a55a86499c4832395e62b45d90b91533ee403e7917f7b705dc83303d55f",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "839f23699f7822df2eb74e7c42e9e7bdb703044c2231df3679fcea8a02f01c7f",
+      "parent_id": "relief-n2-train-stock_competition-12",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-12.json",
+      "seed": 8543644936538213798,
+      "semantic_sha256": "97884c314fa2de051140714bddec09f7adcbac211cb903b2bdcdac0699cc142b",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "7bfc805be26a4e02765b58c805762246b6aaf611af987af1456152a86a3ad9d0",
+      "parent_id": "relief-n2-train-stock_competition-13",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-13.json",
+      "seed": 2842166918522250782,
+      "semantic_sha256": "1b18922604fea2ea305d846ca86fa07d963b3b437b56ef66debd2811aef04c50",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "c45053a439793240200baee8cb41f754ae5e60105c68b67992749a263eb4075b",
+      "parent_id": "relief-n2-train-stock_competition-14",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-14.json",
+      "seed": 2766851809544386900,
+      "semantic_sha256": "870a66414b45d72108934c9bb3e92e48371e1f3c12c1f3307aeb3b29fcdb5150",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "bea0d857b369e5fc33ed37282a4915e34443dc78c0f9c35a40f1a4dbf81d1b53",
+      "parent_id": "relief-n2-train-stock_competition-15",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-15.json",
+      "seed": 4367802061040469601,
+      "semantic_sha256": "3490640ae3c096c524103f1158da6d0d72dcf99a90942c69735493fb7c93f56f",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "e7e3b30d0e60b272c8f8684d8266c7b5e2b0309cb5a8a50524a65cd77e8bd6f4",
+      "parent_id": "relief-n2-train-stock_competition-16",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-16.json",
+      "seed": 4767291886015358818,
+      "semantic_sha256": "8c5a8116774d84fae8988427a5a463541c5388f68568e007a643174bab12c6e9",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "cc10d92318b17becb0a35bdef33b28238e70c7c19862de5d45c46337a3ac17f4",
+      "parent_id": "relief-n2-train-stock_competition-17",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-17.json",
+      "seed": 8033715689166905465,
+      "semantic_sha256": "4fc35477183ba02860a3497eb3ace3360b4ac39e9be32c88b656863c86ceca78",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "feb806baee889514f5c0dc5b638ecf02a0e951e898fbea0d4f9bdeea4050ee81",
+      "parent_id": "relief-n2-train-stock_competition-18",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-18.json",
+      "seed": 13912123847473168113,
+      "semantic_sha256": "d8bb0aa6c8c96aab3b307d178137843de09427eadf7f9b706932a399d51b6179",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "df50a66a9042a6149d6d1da6dc637728410631129184f91ba11ae6f689439c1e",
+      "parent_id": "relief-n2-train-stock_competition-19",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-19.json",
+      "seed": 3010296023632076322,
+      "semantic_sha256": "0a063f15fe8821c7a3899547438831522c87ac16f2c069ee5e66ee5e6a554fea",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "e9c3c9da3be8110813ed2d89d5f6ae886ab4baade5c93c05cfceba114cdf5a83",
+      "parent_id": "relief-n2-train-stock_competition-20",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-20.json",
+      "seed": 2104275048534538353,
+      "semantic_sha256": "4e281b19d077960b71b89e04efd90b20fc8fbe0b3a585285f269a4152c97e4eb",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "01d74e02a8ace5e64eb4884797c0409a7a0adeba289bfdef0a871c7c54a61100",
+      "parent_id": "relief-n2-train-stock_competition-21",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-21.json",
+      "seed": 12864785034389549317,
+      "semantic_sha256": "d212e2aa574709feb9c5a5c88327db12be5d60c0da3ae83937c4f3fb4ed91682",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "4883d850b9e1ae429529666fb44d9355a68f3b4008f1fc9af921ad6fd41c4a60",
+      "parent_id": "relief-n2-train-stock_competition-22",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-22.json",
+      "seed": 17848804219262888715,
+      "semantic_sha256": "1c97f22d639eebe4d1d1837214ba216416eb5b8a8f6ae484bfdfa7b193b7233b",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "829458b2c1fbb2adc0cf345dafe854471555ef2718cc59f9f22db3dfe8483781",
+      "parent_id": "relief-n2-train-stock_competition-23",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-23.json",
+      "seed": 16401290185590714281,
+      "semantic_sha256": "c68d6d425049eaf4c9db2a796f2513ee77727264451e2540a2f39a0f1068b2f8",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ea14ee4dafa4398759b5f30db5449e90b8e4555fa8e5ed353f9a1b800857bd97",
+      "parent_id": "relief-n2-train-stock_competition-24",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-24.json",
+      "seed": 601683900762753610,
+      "semantic_sha256": "ddf4d124a2a7f8dd3b5650ac92b111749f9b2454d4d9ccfcb764c250317c0890",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "fd768e174b6823d963e884644ec0422d83484f4b449c1d0d1c11b190febef2a3",
+      "parent_id": "relief-n2-train-stock_competition-25",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-25.json",
+      "seed": 10378820769356719749,
+      "semantic_sha256": "a69e54062b0b61f2d617278af8c697653963e5dd491df7bbdcc76e4ddafa829d",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "95551ef7b4d93469f8ecccbedd9465a8b48c8dd30c14be69ff8ea35c65a99a4c",
+      "parent_id": "relief-n2-train-stock_competition-26",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-26.json",
+      "seed": 11935518460082144194,
+      "semantic_sha256": "5c7adc54c4432a91d3b5e12204f7a4fbac8ee385a2470a298a5b04dec8467ad2",
+      "split": "train"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "11ef69ec3f51a4d5387467bf3e80fd45154604636d9cc235c8521be1108fde13",
+      "parent_id": "relief-n2-train-stock_competition-27",
+      "repeat": 0,
+      "scenario_path": "train/relief-n2-train-stock_competition-27.json",
+      "seed": 8353296774580989184,
+      "semantic_sha256": "3d33e8671d4626a005111837588ff3c626e150fc1869cf986d52761441e4cf43",
+      "split": "train"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "0e60f0bc3704817787e80853cd90785430157444c0e5528a405be159199c5a4d",
+      "parent_id": "relief-n2-development-carrier_competition-00",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-00.json",
+      "seed": 11232738464303811641,
+      "semantic_sha256": "a0a21205dcd84d8d4ed6f3f0c82b91cb3f8649e6d96326b6ed4555800bc2d58a",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "b70095dd2e71ac47e94bec94fa5db44a8c44b3ed52a254a2d08b8bba71323889",
+      "parent_id": "relief-n2-development-carrier_competition-01",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-01.json",
+      "seed": 5361864604219341952,
+      "semantic_sha256": "0d9fec824115ec6472e4c54e8c4a514945d5d342ce219200856f2e7475a48a07",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "71f9ba99417c9dac82d942f51ae95fd041c082fc2818d886187ea2c83d0e37c9",
+      "parent_id": "relief-n2-development-carrier_competition-02",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-02.json",
+      "seed": 14802760071146238340,
+      "semantic_sha256": "f7c5fb664958e22e13192554bffae19a57a7b1a19afa647395f4e8909306d019",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "789439a66196f1195d105f4cfde481a7c7bf3e64ebd07e1490dcb408d100d029",
+      "parent_id": "relief-n2-development-carrier_competition-03",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-03.json",
+      "seed": 3824012731727439508,
+      "semantic_sha256": "c370de0fd966ff3be08f9bd41dd50f4e0e968d04b5a65c869c537c372a281ba5",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "36979f16c5df8cf74d160a3a5beaf4287859318dc93c0d3753a019ce94f33b5c",
+      "parent_id": "relief-n2-development-carrier_competition-04",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-04.json",
+      "seed": 9068600086876840043,
+      "semantic_sha256": "7a2b34935d222cfe041fad6a44f74dc6a478eea79e22260ef0b6cc8e2780dc49",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "cbe4c998da227490b5af131f9b671da3e2dcf423d6971c9c3f6f8ab2f803c0bb",
+      "parent_id": "relief-n2-development-carrier_competition-05",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-05.json",
+      "seed": 14987247518626817861,
+      "semantic_sha256": "2ca1bd81f10afa8e9ca6a5b2e49b09dd48021ec04ec8ea6e6f340b8641c13fa4",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "0c06cc44cd1719bff0b46e6670d6a4e13b9270ebab09cab3510ac2815face160",
+      "parent_id": "relief-n2-development-carrier_competition-06",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-carrier_competition-06.json",
+      "seed": 3543986264858151470,
+      "semantic_sha256": "27c0fbb45eb9290e43f88b0dcf699bec9639312d279ad0ec34fd81227a2c74db",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "5999e322a4065317593c3ca709509dddabf26a06224553504ee0fed2c80a2a4d",
+      "parent_id": "relief-n2-development-stock_competition-00",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-00.json",
+      "seed": 5746170869475644653,
+      "semantic_sha256": "c0087ee995e3f5a5c96027ab2ab5709ab55df8593f20eba2a35b191a8b440325",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "a2281841eb48b3944fa23aec08e06e5fd8c43e5a5b124a700d4414c64a7bb208",
+      "parent_id": "relief-n2-development-stock_competition-01",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-01.json",
+      "seed": 5407386563046889627,
+      "semantic_sha256": "549c7433084ca690c81913cd4b5dca84edf0aa5e8785b77ae6da7c7c2758c91d",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "5f6103aa10573d6fdb13ba561f5d435a5746158b89e2c9336bc883892f16c630",
+      "parent_id": "relief-n2-development-stock_competition-02",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-02.json",
+      "seed": 9804091632655995004,
+      "semantic_sha256": "a4246993828a41a3a08bac9869494782542cdda82de11ef186cb75493536c9a8",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "37c73e31d6e338950c8927d41264fa1af774f8ac0c7904bd9ec50df352b28538",
+      "parent_id": "relief-n2-development-stock_competition-03",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-03.json",
+      "seed": 4137129060783218653,
+      "semantic_sha256": "e78c1c68cd364fd8bcf4d1347516d3af5bea7d2a40498387daa9dd80bcf736a0",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "533ff560f07d7590406f2bc53a47c7e6f54a189677850ce7ced9496f35e7f60b",
+      "parent_id": "relief-n2-development-stock_competition-04",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-04.json",
+      "seed": 13904411473189258315,
+      "semantic_sha256": "032d6fe062a35891620e0cf3566d1b89ec9fcd591d576e574d41ac3659f0a58c",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "43e63eab764f7aec3121af3b1c7613b53576faf5c5f9c3016af3a266901fa2e1",
+      "parent_id": "relief-n2-development-stock_competition-05",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-05.json",
+      "seed": 12203792090587975816,
+      "semantic_sha256": "49c6a35ad9f50d781f0f8d631c6a08fcaa36f1472cec77212f7cb2b264a1b24c",
+      "split": "development"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "b0100c4cf7cad0131bc344b77aec5bfb67f795f600d15f7f1d67494003362048",
+      "parent_id": "relief-n2-development-stock_competition-06",
+      "repeat": 0,
+      "scenario_path": "development/relief-n2-development-stock_competition-06.json",
+      "seed": 17325368604529870283,
+      "semantic_sha256": "091a06fee677da0790de14c24c1c70c167f3e8337ad45f7af898e3a96398beea",
+      "split": "development"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "1dd5d1fce54fc7f5fae1d9252543cf883947db46db6ee6aea617202e837a5c31",
+      "parent_id": "relief-n2-heldout-carrier_competition-00",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-00.json",
+      "seed": 727990978539914768,
+      "semantic_sha256": "dee1abdfa7244056fbb1e2079b2458f4ea5e0f8bf3a8cc3a11a441edfe8926ec",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "7cb04591bca5279cf2972a35889bb8afc57f89d648059fd9888db70e51e4f56c",
+      "parent_id": "relief-n2-heldout-carrier_competition-01",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-01.json",
+      "seed": 3169762769348081796,
+      "semantic_sha256": "bcebc94b2ee48de4d54e0ac7f8c9178fd0f264d24ca4b10ddd162dd62a4bd338",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "7000e4766528c60116c86f7fb98e72655cc34cf5d718b9a380ecc0016853f127",
+      "parent_id": "relief-n2-heldout-carrier_competition-02",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-02.json",
+      "seed": 3531893716500923127,
+      "semantic_sha256": "188f88051539a0471af318c3a13dbd48cc388bd19ff68732bf94a60b41b0f649",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "de74ebb848a3cb14edc2fa1ff5fd0bbe9940c438641423eb0df9261dfb07b6ca",
+      "parent_id": "relief-n2-heldout-carrier_competition-03",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-03.json",
+      "seed": 11050626422249464016,
+      "semantic_sha256": "8d8865a958ef61a5339512ac304e6c91c20c5653a1d6be61dd114cda5f8c2e08",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "fc6c5a82790719de3fe006b8d5448ff3fd72af3c5f29c1c95bfad7df8c7eb627",
+      "parent_id": "relief-n2-heldout-carrier_competition-04",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-04.json",
+      "seed": 2513381410032490219,
+      "semantic_sha256": "f2f03076f7c7789e10ca8ea1c7c5a18c096807503fac8e3634b70f3f5f090a0a",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "c5c120109e1ed45419d470ce4b6c4dcd760b8bc141166b0b81c6d763550eaa8d",
+      "parent_id": "relief-n2-heldout-carrier_competition-05",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-05.json",
+      "seed": 15755523746273176656,
+      "semantic_sha256": "7520cadaf26d5a0ac56cf01d525147738e6d62f47dbc2bbd88d5b791f678c36f",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "a6668278c36bb7a23dfad49f57261a3b0d718615775e2f3836c82b94ed65e0e1",
+      "parent_id": "relief-n2-heldout-carrier_competition-06",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-06.json",
+      "seed": 14060966813442768921,
+      "semantic_sha256": "88b6b95a8073019a2e34c3ec9c272546819a73763c3d2c16bfeface419b6de5c",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "4c7783da4ac595fb60d9b5c09a2d99b0c77f5ee059b3c5f2304384e98b22e1f8",
+      "parent_id": "relief-n2-heldout-carrier_competition-07",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-07.json",
+      "seed": 2912302801116023010,
+      "semantic_sha256": "b5103ba9d5f2e8f183b83f2bca477d261642bfb67f77e9b835c1800d3cda7810",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "1d11b755b069c90641735bd0ecb80f6b5f2071a68295ed6bef07cbbafdb533ac",
+      "parent_id": "relief-n2-heldout-carrier_competition-08",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-08.json",
+      "seed": 3233892415663611063,
+      "semantic_sha256": "71f03b8cd217ac04ea63fe58903d349608e9bae1e54d39ff5d43961ab5b65496",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "20c4c6345333a50205a4449a65767139c975f323bfb81080af2ca5e043cf4679",
+      "parent_id": "relief-n2-heldout-carrier_competition-09",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-09.json",
+      "seed": 16234085030001513005,
+      "semantic_sha256": "20f2bdacd75f6f4a98db0ca8e682ba92b52915ae9a072fd8c0d041c994dea5aa",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "8e58a51006216345479c4d62667091668ce83bc3a7be71478147a07c1b174260",
+      "parent_id": "relief-n2-heldout-carrier_competition-10",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-10.json",
+      "seed": 17970402954073216932,
+      "semantic_sha256": "f9304e4708c35ac4acb66c4d85c81bcba008a58289b419c550b9c50dc509e4d4",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "16bccffa0fb8ab5b7c7b2775074bcf3a0d06c9a0e5f01f4ae8da2659190bdac1",
+      "parent_id": "relief-n2-heldout-carrier_competition-11",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-11.json",
+      "seed": 17729906770134357802,
+      "semantic_sha256": "d83e51475fe18bd75e5e44c1e66d46dd8a1dcb6b7cee1efbe39ff89c751b56bc",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "988331bbe9919b18a323fad051d4309b8bf2cfe32d4876651d51f0efda9fc0ef",
+      "parent_id": "relief-n2-heldout-carrier_competition-12",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-12.json",
+      "seed": 8022424191374667633,
+      "semantic_sha256": "cc9f6a5253a25ac2f37b2b0f1cde6aac879d62cfd30d24f4619965c00f0e23f8",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "38970931acc3b5613b412d00bc4a28d0ded726ef858574f869f07717acf0a08c",
+      "parent_id": "relief-n2-heldout-carrier_competition-13",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-13.json",
+      "seed": 5333285772966979183,
+      "semantic_sha256": "367c559e4ce6e102c488e9c057d4b01d48e53ee8037533b77ba7f81a9b5ba8c7",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "15336672663f1e22a7734bc9a1ecdd07c26bb17ab147c63f21175c9e5966bb24",
+      "parent_id": "relief-n2-heldout-carrier_competition-14",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-14.json",
+      "seed": 873065025607501085,
+      "semantic_sha256": "f8b6f98e8bde4c1a3a84ca548f1cbbaf1a5782f3c6034597b316eb9631d00815",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "83328468a0ab6e99678ca6326c09e2f9f1892a1cca44ec1c7c271b382b4a5507",
+      "parent_id": "relief-n2-heldout-carrier_competition-15",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-15.json",
+      "seed": 4286228251234256741,
+      "semantic_sha256": "98bcda3ef5123872545da83bfa1280387aa0eadeb61ba2e0b2c381cc9ed1d8b9",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "9ca055ca94779fd1526e937eec3e23b39dbed92e0dbedc3291d4930a8ea8cab0",
+      "parent_id": "relief-n2-heldout-carrier_competition-16",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-16.json",
+      "seed": 3370515609377571862,
+      "semantic_sha256": "0efb83947fb0061c75c017fc487f6d903799b68995b6d3a68128c319abc5feeb",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "62f4f16f04459630e8adb644570fb30f234745936b810bd9d069dd40a5017490",
+      "parent_id": "relief-n2-heldout-carrier_competition-17",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-17.json",
+      "seed": 15440150623517418881,
+      "semantic_sha256": "b874536244778ccfee25dc6339d7cac44e6a9d64d85c02253c22905b110d3613",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "bb95b28faea922f8e07669e462e27af54c9a96f087768c9e8fd51190dde2f3f1",
+      "parent_id": "relief-n2-heldout-carrier_competition-18",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-18.json",
+      "seed": 13502790836662861508,
+      "semantic_sha256": "3f28eb02174f2bfd8f5ae1a7811159200cbfd1c7970a7eb89857c75fc4683360",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "b5192d00c3853278247c43767c35811536b6f784cc7bc7092db9714b91463187",
+      "parent_id": "relief-n2-heldout-carrier_competition-19",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-19.json",
+      "seed": 17895259237719028481,
+      "semantic_sha256": "d812c769bfc0c9125e4bdffb8a888993bf1dbe1794849d53b4a5b04c3417e16c",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "467322d553caaa6651de9837046399c28802e2dc82a6431103c7602390d0ab6a",
+      "parent_id": "relief-n2-heldout-carrier_competition-20",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-20.json",
+      "seed": 2408543463661818102,
+      "semantic_sha256": "a92febf1149c45433800c813a2cce35cb0a796d55c56a1c7a18f66306d50a5f2",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "bd1e6c49b9abaf25921fbc8fe026967a81f2386b51972e451e7a83ad274a6633",
+      "parent_id": "relief-n2-heldout-carrier_competition-21",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-21.json",
+      "seed": 16086772019783342808,
+      "semantic_sha256": "3a5bad8e66230b76e5406359de17da0ea5005be958eff77442e687882a7c104a",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "6edc8f8e7e0c0dba592a9bf1c71532d1e30c76b739ebbd363ead1c5aa11b5c1b",
+      "parent_id": "relief-n2-heldout-carrier_competition-22",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-22.json",
+      "seed": 2923546315588150514,
+      "semantic_sha256": "d808506b92d67397209667dd9831674d65019125e450a0a74b492699bb6e7c10",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "97b2e3a18159bcad70ec9f611db43174f0cd5bba0cf86c3564becbcd05d63833",
+      "parent_id": "relief-n2-heldout-carrier_competition-23",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-23.json",
+      "seed": 17746558420998352485,
+      "semantic_sha256": "d3839687b0f235b242cbd77d00c37596484a356b51004e181e953e5f710d58ae",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "b46bbedcb104f5aaf1e6542c4b13226763ed5011a157dbdd46a8039d36502bd4",
+      "parent_id": "relief-n2-heldout-carrier_competition-24",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-24.json",
+      "seed": 7233014787331872640,
+      "semantic_sha256": "f63aca7b7b4b13d6d15ef080d6bec0d60acfcfb64ae48ff534e2b43e538ceaf3",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "3a629ab5120a9a511e18326e04b8e612e732d89d9045b56f443ff9dfe3ec6b0b",
+      "parent_id": "relief-n2-heldout-carrier_competition-25",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-25.json",
+      "seed": 5743203678960201505,
+      "semantic_sha256": "0c3fb2e98265c3659d1205fdbf64220028c55694c44a0ef8a13182c3aa39d611",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "6cbec193ecafa3e64e35affe5bfa46345cffa8e3a347cf9d9a523f6bc22a6747",
+      "parent_id": "relief-n2-heldout-carrier_competition-26",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-26.json",
+      "seed": 11307904552180724409,
+      "semantic_sha256": "a57b12085341eff34a52c630cc597b662b94a87945f21949e693e2960f2cb8ed",
+      "split": "heldout"
+    },
+    {
+      "condition": "carrier_competition",
+      "content_sha256": "e9a89ea1f6efbff0ea9a1fe154e43639ddf9595e9688f5fc785eae670f9ee0fd",
+      "parent_id": "relief-n2-heldout-carrier_competition-27",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-carrier_competition-27.json",
+      "seed": 16536139995623707571,
+      "semantic_sha256": "1590f1548f9e9f219c50cff74fd65781aec441badbfb885b322eb8c1bcc57d9c",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "2d4654833d52c5380f4c5f79a729e7a6639491c0b8b574adba69d8e35de0ab56",
+      "parent_id": "relief-n2-heldout-stock_competition-00",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-00.json",
+      "seed": 14108210722178189040,
+      "semantic_sha256": "8c1c91064e65cfa6c5debf65719337dec1a28dda290409db837f990aefdd4505",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "c1052e961a7c8d20e6046067104ee15d57b30b23d1ca9158d272833925469385",
+      "parent_id": "relief-n2-heldout-stock_competition-01",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-01.json",
+      "seed": 4606164979035885946,
+      "semantic_sha256": "866d818ad21049f89d74c9b09b7783c947eb91165e14d05b270770a2047c42b0",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "698e942ed22e21c436c84afdf3d407b6b8c68eb8e771810401cff431a170297a",
+      "parent_id": "relief-n2-heldout-stock_competition-02",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-02.json",
+      "seed": 10058498794744434562,
+      "semantic_sha256": "790776249459974924f63f31c210acd82f3d65c126b5d4a47ac7c930be5e1137",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "d792fef2148554c804c9901d3d5fc33cd7fd326bc4c9f50f448f85276559d563",
+      "parent_id": "relief-n2-heldout-stock_competition-03",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-03.json",
+      "seed": 16920328700903290919,
+      "semantic_sha256": "61be9fd867ea3b30684ef0abfe2a7462628299cb5b345289f575c5db9544ea1b",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ed7ba1715b3e442c934b7225c347e33fdbf4f31bc2c01d82f47da6136936c347",
+      "parent_id": "relief-n2-heldout-stock_competition-04",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-04.json",
+      "seed": 8524527570677857448,
+      "semantic_sha256": "22c998c003adaf7d5a2944d4ce1eb0fec3e3014d297afaf84eb168e9c0558cd7",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "61135041c175fe208f106c232a204305bb201ec2e73142addcb4c690bf124a12",
+      "parent_id": "relief-n2-heldout-stock_competition-05",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-05.json",
+      "seed": 3981707960044547113,
+      "semantic_sha256": "b228832dd7bd9eeb19ff504621ee9d708c491e3e94dac22704690a7e07937838",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ac442a451bb2933169cd57ad6f49053933d36b98bb52b67b43b7d0e3b6935947",
+      "parent_id": "relief-n2-heldout-stock_competition-06",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-06.json",
+      "seed": 3512461450236174066,
+      "semantic_sha256": "5b45300823411833d96dcb6100e1cefb2881d52078b1319307aaa9aee5dc86f9",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "7dc896476afbb0225e33985d0185719a70f9f78b99b8287d56664c76ddbef351",
+      "parent_id": "relief-n2-heldout-stock_competition-07",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-07.json",
+      "seed": 15907147598026035137,
+      "semantic_sha256": "dbe350b11374ff374ee90c58f2ba175c64ac8e68a2f4391f6dfff7f42b11e9d8",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "3fe0e78acadb8d70e6dbb371df7e1d16628dbc7fcef1c4a4e3072d40eb7202b8",
+      "parent_id": "relief-n2-heldout-stock_competition-08",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-08.json",
+      "seed": 10127096251698844387,
+      "semantic_sha256": "872d1586c25d0248a36b934457790cb051c40c9153a1dec2717ea6a2acfb0e25",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "8c50f910c1127e4240197686664bccf94be1ae82727246df0d44fb54405e9775",
+      "parent_id": "relief-n2-heldout-stock_competition-09",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-09.json",
+      "seed": 16727272078853014526,
+      "semantic_sha256": "f8490e72773d6f95096a3d26e4e2f046b92cdc08ff0dc09d514e70fa470bb9fd",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "809ac0f1c8008199cd98d1a80cbe8a169ef3e79a61926915cd56c5a8c030e5a9",
+      "parent_id": "relief-n2-heldout-stock_competition-10",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-10.json",
+      "seed": 11520159873749885893,
+      "semantic_sha256": "5c17a1e6690f62ddaf910d7bb714f1bf3e2d139690792adda9d1c15f31b640d3",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "3de024a9817b7879554280f3f54f115eff464f295eb5d9c54e7e08d2ecf2f857",
+      "parent_id": "relief-n2-heldout-stock_competition-11",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-11.json",
+      "seed": 16775427729943638957,
+      "semantic_sha256": "d1b477d497e19cb0f15f1b4cb62971933aa928addcb649ebda47fb190d16f3af",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "eacd4a889057d2c7facf15a5fb6f27502c0d818a9a4bad6ba7148ad879c5275e",
+      "parent_id": "relief-n2-heldout-stock_competition-12",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-12.json",
+      "seed": 1844437441270282619,
+      "semantic_sha256": "0a267a43a9eb8540ca2704bf8aa6286b925cd30e0534ef8332e17bbf84df2f71",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "7836f57b66b436f250db8bf01fd242be672be27ff2d806c7074d1766f44d9cf5",
+      "parent_id": "relief-n2-heldout-stock_competition-13",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-13.json",
+      "seed": 5093378375533383218,
+      "semantic_sha256": "8f7aafbdab3a512650f1feea19c1579927018fb8e5b27f8813476beb776c2fc4",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "480f72a927e630bf6f9ae447b02b0748547b2c5975d756fec76be718c928dccb",
+      "parent_id": "relief-n2-heldout-stock_competition-14",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-14.json",
+      "seed": 7889354194985634232,
+      "semantic_sha256": "9f8e45185cc509a3b9d74cc6114a7c3cf0e992d3443c6c2da2b44d284414baf1",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "d03747df1c33fb2a7fe53797498f447f4cae1c6aa215fef83eb24fd963cafeca",
+      "parent_id": "relief-n2-heldout-stock_competition-15",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-15.json",
+      "seed": 11799606138387572728,
+      "semantic_sha256": "0d151cc50ff0c28dd11fb41d94553d224d4ed5caf319e3082fc06b3126fe43c2",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "dc947199f827e58186400a73c6becf358c8344248ec4168dffcc3b118e898ae0",
+      "parent_id": "relief-n2-heldout-stock_competition-16",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-16.json",
+      "seed": 5843344242285827395,
+      "semantic_sha256": "015f7d3a41ad4a5bb6769ebe11e1e5046d12e872f624b61a04fc3af0dbb6b6bd",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "85b0f2c90df21009855e6afc54272bfcf3e4d547646966828f8017da2fd5fc55",
+      "parent_id": "relief-n2-heldout-stock_competition-17",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-17.json",
+      "seed": 13393060038059635086,
+      "semantic_sha256": "149e6f3652373f3ef07e9685fc93d7c0e677bd311b5e43b67306bc26fff60d3d",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "1793e61a3e637dfefc93151fa207836bf53ca011b9b55eb9eba92ac6eaa4e5f3",
+      "parent_id": "relief-n2-heldout-stock_competition-18",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-18.json",
+      "seed": 1103453778511601157,
+      "semantic_sha256": "bcaa6764e880a3f18bd30e5be3f8e73887008fcb0dee4e6564b6f640238d7312",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "6a06cd094b2edf95f36b74fb1fb24f8811b575f9b2ccd748e343d2844e10b98e",
+      "parent_id": "relief-n2-heldout-stock_competition-19",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-19.json",
+      "seed": 10552039230345951273,
+      "semantic_sha256": "3133807f831141235da61c7c780ef73586f03049448ef87c84c6c3136e88f3d0",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "996082079841d7909e454f958f0a07ec2cfd6f90fdc59270ac7802098b7ad1dd",
+      "parent_id": "relief-n2-heldout-stock_competition-20",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-20.json",
+      "seed": 7652643650926460511,
+      "semantic_sha256": "5ff1cb839fcbcbd18fedc27ab4400bd2875068e3420e66c60296b4b56a37584e",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "ff3d8153e5f6fe5190b6d492c8ecb755cf5ede7c7db2e670eba27d0f13c8cab5",
+      "parent_id": "relief-n2-heldout-stock_competition-21",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-21.json",
+      "seed": 522574601476782709,
+      "semantic_sha256": "d3dc17d296537f3297e08b2c17016fb7694d898f95d15f318165f42ed4796da1",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "d17ba76f85adb8f393dc179067a2b8bed6c6a628ab379d54770d77eb40407110",
+      "parent_id": "relief-n2-heldout-stock_competition-22",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-22.json",
+      "seed": 12550131691663211610,
+      "semantic_sha256": "a39366a5fd167b95636bd841d584152d46fd31760a6306443266fe3c9615a0f1",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "77b169c3e72e9e11e45087784e847ea9c6a916d491663713ff43701014c5c346",
+      "parent_id": "relief-n2-heldout-stock_competition-23",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-23.json",
+      "seed": 14110679582559771421,
+      "semantic_sha256": "4f8253a3c5f592b7331f56a1c189d34a435887fef647b2bcfd46ce75699ee4e9",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "d4ccfef5c48fbbdfedcf143835f9273659ce17e502be5f2532bc69f6380bce27",
+      "parent_id": "relief-n2-heldout-stock_competition-24",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-24.json",
+      "seed": 2219932224595550259,
+      "semantic_sha256": "1d174fd89feec0cb3c353c36663a8b568c65a4dbe4ec91a2aac9934e6f81ff72",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "a9adb8cc72bca346c5cd290597da26b753329e1d456ed56c3f7969c700683cc4",
+      "parent_id": "relief-n2-heldout-stock_competition-25",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-25.json",
+      "seed": 13153170113799236047,
+      "semantic_sha256": "9c538282dc7fa2ca91b8a5ed4caeaa098b610b9e9554e2dbf60a221cf012102a",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "bc5bdf8cb2b7f6dc7ccbd2213e19f076b94837d93877841570b1b8eebb37fe52",
+      "parent_id": "relief-n2-heldout-stock_competition-26",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-26.json",
+      "seed": 3092303420803306565,
+      "semantic_sha256": "99064e615b4af55a26e060c2046f7b903993f0f076618f668a128c0879710669",
+      "split": "heldout"
+    },
+    {
+      "condition": "stock_competition",
+      "content_sha256": "f43fed923aff23bf473f82817be34f509f4b864c04bbdfcc9c869dd520ed7cd3",
+      "parent_id": "relief-n2-heldout-stock_competition-27",
+      "repeat": 0,
+      "scenario_path": "heldout/relief-n2-heldout-stock_competition-27.json",
+      "seed": 10604942843914299742,
+      "semantic_sha256": "618d5ee222231f5586c49922fca7c0a29f1b7be7b62f6fc225c0a158f51d175a",
+      "split": "heldout"
+    }
+  ],
+  "seed_namespace": "ch2-disaster-relief-open-source-rlwm-v1/n2-fresh-20261013",
+  "source_fixture": "vendor/relief_env_v2/fixtures/control.json",
+  "source_protocol": "vendored relief_env_v2.dataset_protocol._apply_common_variation",
+  "source_provenance": [
+    {
+      "path": "__init__.py",
+      "sha256": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\__init__.py"
+    },
+    {
+      "path": "baselines.py",
+      "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\baselines.py"
+    },
+    {
+      "path": "chapter1_adapter.py",
+      "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\chapter1_adapter.py"
+    },
+    {
+      "path": "relief_env.py",
+      "sha256": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\relief_env.py"
+    },
+    {
+      "path": "scenario_schema.py",
+      "sha256": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\scenario_schema.py"
+    },
+    {
+      "path": "stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\stable_identity.py"
+    },
+    {
+      "path": "dataset_protocol.py",
+      "sha256": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\dataset_protocol.py"
+    },
+    {
+      "path": "graph_policy.py",
+      "sha256": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\graph_policy.py"
+    },
+    {
+      "path": "literal_graph_ops.py",
+      "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\literal_graph_ops.py"
+    },
+    {
+      "path": "ppo_trainer.py",
+      "sha256": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\ppo_trainer.py"
+    },
+    {
+      "path": "independent_audit.py",
+      "sha256": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\independent_audit.py"
+    }
+  ],
+  "source_provenance_sha256": "c3994b2fc6831e8e5ad619e9d9d080ce2aadab00dacda1cf0cb61a2dc83379de",
+  "split_counts": {
+    "development": 14,
+    "heldout": 56,
+    "train": 56
+  },
+  "total_scenarios": 126,
+  "vendor_file_sha256": {
+    "SOURCE_PROVENANCE.json": "c3994b2fc6831e8e5ad619e9d9d080ce2aadab00dacda1cf0cb61a2dc83379de",
+    "__init__.py": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa",
+    "baselines.py": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+    "chapter1_adapter.py": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+    "dataset_protocol.py": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+    "fixtures/combined.json": "de6a123b0ef8aeddad7bd4fe51a8d3ff54d684196bd92d36a074fae7bc15c66b",
+    "fixtures/control.json": "eb4946623237fd88c8464d54d974eb027335f2ead1370b9d9ad0f8b37cecf4c0",
+    "fixtures/energy_change.json": "e346bdc989a500d208bacc723fb6333a3d43562c9260af84c0d73575a4c06b0c",
+    "fixtures/external_commitment.json": "2ae3b507e817871186631809558940ed5950f202559199ecb3e2078bffd7115a",
+    "fixtures/failure.json": "879d5b986cd4b20194d6dc373c5c026c15400b4bad62b7f21635e0919c2ac0da",
+    "fixtures/report_delay.json": "ab717059858b22249b049bd86a6b43111aa9df8bdb88eb608bf572602ed9c0cb",
+    "fixtures/stock_loss.json": "b247756d597797982031c501eb17b4f1805c0e9287399e19abd1706d0bbe5106",
+    "graph_policy.py": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+    "independent_audit.py": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+    "literal_graph_ops.py": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+    "ppo_trainer.py": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891",
+    "protocol/preregistered_protocol.json": "62b58009959a66640a11e7ee06b9b684498431c817f13b884f74c553b68119a0",
+    "relief_env.py": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+    "scenario_schema.py": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+    "stable_identity.py": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef"
+  },
+  "vendor_source_tree_sha256": "fabd909ada277a73f12d18e1214c4407fc0024509ee78ec0a35254984950f07c",
+  "within_registry_semantic_duplicates": 0
+}

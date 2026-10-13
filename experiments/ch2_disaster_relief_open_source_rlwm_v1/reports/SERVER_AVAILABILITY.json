@@ -1,0 +1,16 @@
+{
+  "schema": "rlwm-server-availability/1",
+  "date": "2026-10-13",
+  "target": "user1@172.17.27.173",
+  "target_source": "n1/formal_transport_v1/attempts/formal-run-20261013-ssh1/session-record.json",
+  "hostname_alias_probe": "DNS_RESOLUTION_FAILED",
+  "default_identity_probe": "SSH_AUTHENTICATION_DENIED",
+  "existing_pem_identity_probe": "SSH_AUTHENTICATION_DENIED",
+  "remote_commands_executed": 0,
+  "remote_training_started": false,
+  "research_authorization_created": false,
+  "old_authorization_reused": false,
+  "secret_material_logged": false,
+  "next_requirement": "working configured SSH alias or identity-file path",
+  "scope": "read-only availability probes, no formal submission"
+}

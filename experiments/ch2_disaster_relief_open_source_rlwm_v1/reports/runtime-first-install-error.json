@@ -1,0 +1,11 @@
+{
+  "schema": "rlwm-engineering-install-failure/1",
+  "package": "torch==2.8.0+cpu",
+  "wheel": "cp311-cp311-win_amd64",
+  "exit_code": 1,
+  "first_error": "Failed to download distribution due to network timeout",
+  "original_timeout_seconds": 30,
+  "corrective_action": "single install with UV_HTTP_TIMEOUT=180 and UV_HTTP_RETRIES=0",
+  "formal_attempt_created": false,
+  "neural_updates_at_failure": 0
+}

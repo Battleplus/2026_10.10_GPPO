@@ -1,0 +1,106 @@
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+2026-10-14 00:08:45.309981: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:08:46.061448: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (4,)}
+Traceback (most recent call last):
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 311, in <module>
+    main()
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 306, in main
+    result = run(args.repo_root.resolve(), args.output_dir.resolve(), args.updates, args.length, args.seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 225, in run
+    agent = Dreamer(config.model, obs_space, act_space).to("cpu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\dreamer.py", line 45, in __init__
+    config.actor.shape = (act_space.n,) if hasattr(act_space, "n") else tuple(map(int, act_space.shape))
+    ^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 337, in __setattr__
+    raise e
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 334, in __setattr__
+    self.__set_impl(key, value)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 318, in __set_impl
+    self._set_item_impl(key, value)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 620, in _set_item_impl
+    self._wrap_value_and_set(key, value, target_type_hint)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 636, in _wrap_value_and_set
+    self._format_and_raise(key=key, value=val, cause=e)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 819, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 628, in _wrap_value_and_set
+    wrapped = _maybe_wrap(
+              ^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\omegaconf.py", line 1105, in _maybe_wrap
+    return _node_wrap(
+           ^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\omegaconf.py", line 1017, in _node_wrap
+    node = ListConfig(
+           ^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 82, in __init__
+    format_and_raise(node=None, key=key, value=None, cause=ex, msg=str(ex))
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 819, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 80, in __init__
+    self._set_value(value=content, flags=flags)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 618, in _set_value
+    raise e
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 614, in _set_value
+    self._set_value_impl(value, flags)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 659, in _set_value_impl
+    self.append(item)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 301, in append
+    self._format_and_raise(key=index, value=item, cause=e)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 819, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\listconfig.py", line 298, in append
+    self._set_item_impl(index, item)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 620, in _set_item_impl
+    self._wrap_value_and_set(key, value, target_type_hint)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 636, in _wrap_value_and_set
+    self._format_and_raise(key=key, value=val, cause=e)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 628, in _wrap_value_and_set
+    wrapped = _maybe_wrap(
+              ^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\omegaconf.py", line 1105, in _maybe_wrap
+    return _node_wrap(
+           ^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\omegaconf.py", line 1045, in _node_wrap
+    node = AnyNode(value=value, key=key, parent=parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\nodes.py", line 135, in __init__
+    super().__init__(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\nodes.py", line 29, in __init__
+    self._set_value(value)  # lgtm [py/init-calls-subclass]
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\nodes.py", line 46, in _set_value
+    self._val = self.validate_and_convert(value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\nodes.py", line 76, in validate_and_convert
+    return self._validate_and_convert_impl(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\nodes.py", line 154, in _validate_and_convert_impl
+    raise UnsupportedValueType(
+omegaconf.errors.UnsupportedValueType: Value 'int64' is not a supported primitive type
+    full_key: model.actor.shape[0]
+    object_type=list

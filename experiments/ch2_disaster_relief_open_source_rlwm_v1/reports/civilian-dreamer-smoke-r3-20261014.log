@@ -1,0 +1,56 @@
+2026-10-14 00:23:34.994752: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:23:35.758590: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+D:\anaconda\Lib\site-packages\torch\amp\grad_scaler.py:132: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+D:\anaconda\Lib\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\optim\laprop.py:88: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value = 1) (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\python_arg_parser.cpp:1642.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+D:\anaconda\Lib\site-packages\torch\optim\lr_scheduler.py:382: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (1415,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (1415,)}
+        52,480: rssm
+        20,993: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+        99,136: encoder
+       108,743: decoder
+Optimizer has: 347975 parameters.
+{
+  "status": "technical_stop",
+  "run_kind": "engineering_smoke_not_study",
+  "first_error": {
+    "type": "FloatingPointError",
+    "message": "non-finite Dreamer gradients: ['rssm._deter_net._dyn_in0.0.weight', 'rssm._deter_net._dyn_in0.0.bias', 'rssm._deter_net._dyn_in0.1.weight', 'rssm._deter_net._dyn_in1.0.weight', 'rssm._deter_net._dyn_in1.0.bias', 'rssm._deter_net._dyn_in1.1.weight', 'rssm._deter_net._dyn_in2.0.weight', 'rssm._deter_net._dyn_in2.0.bias']",
+    "sha256": "21d9ef7bfd9acd342982ec27a79bb5d73e9d0f33acd632e62ba3b48fc43b7d55",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\integration\\civilian_dreamer_smoke.py\", line 321, in run\n    metrics = agent.update(replay)\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\upstream_r2\\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\\dreamer.py\", line 331, in update\n    self._agc(self._named_params.values())  # clipping\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\integration\\dreamer_relief.py\", line 609, in _checked_agc\n    raise FloatingPointError(f\"non-finite Dreamer gradients: {bad[:8]}\")\nFloatingPointError: non-finite Dreamer gradients: ['rssm._deter_net._dyn_in0.0.weight', 'rssm._deter_net._dyn_in0.0.bias', 'rssm._deter_net._dyn_in0.1.weight', 'rssm._deter_net._dyn_in1.0.weight', 'rssm._deter_net._dyn_in1.0.bias', 'rssm._deter_net._dyn_in1.1.weight', 'rssm._deter_net._dyn_in2.0.weight', 'rssm._deter_net._dyn_in2.0.bias']\n"
+  },
+  "formal_training": false,
+  "formal_evaluation": false,
+  "formal_updates": 0,
+  "policy_updates": 0,
+  "evaluation_episodes": 0,
+  "checkpoint_path": null,
+  "resource": {
+    "adapter_step_calls": 128,
+    "physical_minutes_advanced": 120,
+    "dispatch_microsteps": 8,
+    "commit_steps": 120,
+    "replay_frames": 129,
+    "completed_updates": 1,
+    "illegal_action_count": 0,
+    "wall_seconds": 8.7162313000008,
+    "process_cpu_seconds": 9.125,
+    "rss_after_bytes": null
+  },
+  "receipt_path": "E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\reports\\civilian-dreamer-smoke-20261014-r3\\civilian-dreamer-smoke-receipt.json"
+}

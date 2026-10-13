@@ -1,0 +1,149 @@
+{
+  "audit_skill": "experiment-audit",
+  "schema_version": 1,
+  "audit_id": "rlwm-stage01-20261014-codex-luna-review",
+  "verdict": "WARN",
+  "reason_code": "engineering_smoke_only_target_runtime_not_verified",
+  "summary": "No fake-ground-truth, self-normalized-score, or phantom-artifact issue was found in the bounded evidence. Local engineering smokes passed with a CPU float32 project overlay, but formal training, target-runtime validation, and heldout evaluation have not occurred.",
+  "project": "Open-source RL + world-model civilian migration v1",
+  "scope": "Bounded review of project tests, r3 failure artifacts, fixed-batch precision diagnostic, civilian r4 and upstream CartPole r5 smoke receipts, scoped old-data scan, source provenance, and draft pilot plan.",
+  "audited_input_hashes": {
+    "reports/ENGINEERING_NODE_20261014.md": "sha256:378ac0252231d084c7269dbb8a0d5f730ef2fe0727d7a476b53e8e51bf140f62",
+    "reports/all-tests-compat-r3-20261014.log": "sha256:87997d55f6bb0cd1fbc4e32334ceab7eeb48a25b757fdf98e437b3de7dda33d2",
+    "reports/upstream-smoke-compat-r3-20261014.log": "sha256:b1c1cf6b22dcfa873255e2c25dde2074f9dfaf17736c58de1e45e09eae5ae3d1",
+    "reports/civilian-dreamer-smoke-20261014-r3/civilian-dreamer-smoke-receipt.json": "sha256:5723db3fa3b92b0f214efec6927be1c68c4770c59eb5872fac5151ff0c9bfa9c",
+    "reports/cpu-precision-diagnostic-20261014.json": "sha256:b4a6904e1441c6bae7329c0be74268bb568ce0ef19c06ce2e0cf8f1fbd4300fb",
+    "reports/cpu-precision-diagnostic-20261014.log": "sha256:8d42c0861630b8a52d1f6de66fb8e32c0407e3dce410ef9f0beb0533f568041e",
+    "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json": "sha256:c142b2a3e5670a0b1b9d3123e102d56db7c7cbdd3d9cadf56f940d24711ced9f",
+    "reports/civilian-dreamer-smoke-r4-fp32-20261014.log": "sha256:9cc2f5478c842d1389b974d980e321e4eaf05d6193528976d7c924857d242630",
+    "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian_dreamer_smoke.pt": "sha256:d810b0b1457ab20d02e43a26f7d9129c928195acbb1c71d137733a40fda4c3cf",
+    "reports/upstream-smoke-compat-r4-fp32-20261014.log": "sha256:ad4851dd329e41a438a430a3e522fcb2c3cb650e91594f7602c5cf746ca3de27",
+    "upstream_smoke/results-r5-fp32/smoke-receipt.json": "sha256:f65e4c773ec04327db2d7347d8e2f6b572f8d69f3c1cad11251d9624a6f46783",
+    "upstream_smoke/results-r5-fp32/dreamer_cartpole_smoke.pt": "sha256:15858832bb5eb4b8392b5f3192b3e707f9fec00cb580159b6fb9cf6398986d3d",
+    "upstream_smoke/cpu_precision_diagnostic.py": "sha256:6e23989971ea9bacc352ca517011b44280ce448bc9ca858c1d82508f0a771cc1",
+    "upstream_smoke/upstream_dreamer_smoke.py": "sha256:214a06b30cc365e30270403db4848de64b1db919e7d75bc59c2eba33acd9db62",
+    "integration/cpu_precision.py": "sha256:0ccc95d2cdbf107689542efc25aaa90dcf035757833553c58fe4cd715f05eb6d",
+    "integration/dreamer_relief.py": "sha256:dfe135288fe54888132cbaf0672121d92e2bc53bac46f761a27053fbec1b0661",
+    "integration/civilian_dreamer_smoke.py": "sha256:b8caf9ed605898cdefcef7b1f51d672ba40edef534d1bd91f4d412feded82d35",
+    "tests/test_dreamer_time_mask.py": "sha256:05a4387e01c5f14587f43cff9f4fa0b0b9eecf1faf28d09a5bcc12cf867ffd1e",
+    "reports/old-data-scan-receipt.json": "sha256:6d037a1665b08ee737fb3425b305c2376c5696f4babfb4e25c74ceb79c8d1b0e",
+    "reports/registry-generation-final-20261013.log": "sha256:585fc29b89ab57400da5564bcbba674a54ef56a4cceceb4c2f2c416d82228e66",
+    "relief_adapter/data/registry.json": "sha256:3f96d6ad8a421d9d2890c4df34d3bdba2a81999fa76976e68d33492958bd161a",
+    "upstream_audit/UPSTREAM_PROVENANCE.json": "sha256:32164862b99ac6303cc498bc1a75986001e7345845d77565577b23276b5945b8",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f.zip": "sha256:68c3502d9575e8f7ee8eb96a9203112da4957296473f9e9bf54bc3ec72104b3d",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/buffer.py": "sha256:3299fe6a9548000769a4ff9605dcf371e3e75758f2b62f0c7542415030756bf3",
+    "protocols/PILOT_AND_COMPARISON_PLAN.md": "sha256:b2d9c64b8839de621c0557a8bb7958dc41dbc68d78c1306628a6ef96eaace5b4",
+    "EXECUTION_STATUS.md": "sha256:ca5c933e58633385aaed79f3f3bc8c0a88764083ea68f4af56416bbd3d3b636a",
+    "reports/SERVER_AVAILABILITY.json": "sha256:667df513a13cee81ced3d744b377cc1528214f29e0189ce27a8df9a73199afa4"
+  },
+  "trace_path": ".aris/traces/experiment-audit/2026-10-14_stage01/",
+  "agent_id": "/root/luna_rlwm_independent_review",
+  "verdict_id": "rlwm-stage01-20261014-codex-luna-review",
+  "executor_model": "GPT-6 Codex parent; exact variant not exposed",
+  "executor_family": "openai",
+  "reviewer_model": "GPT-6 Codex subagent; exact variant not exposed",
+  "reviewer_family": "openai",
+  "reviewer_reasoning": "not exposed in task metadata",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "generated_at": "2026-10-13T16:34:04Z",
+  "date": "2026-10-14",
+  "auditor": "gpt-6-codex-subagent",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "No performance evaluation or ground-truth claim was made. Training smokes consume simulator transitions; the planned task outcome was not evaluated.",
+      "evidence": [
+        "protocols/PILOT_AND_COMPARISON_PLAN.md:3,51",
+        "upstream_smoke/upstream_dreamer_smoke.py:225,238",
+        "integration/civilian_dreamer_smoke.py:293,322",
+        "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json:5-7"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "No evaluation score was produced and no output-derived denominator was found. The precision receipt reports raw loss and finite-value diagnostics.",
+      "evidence": [
+        "reports/cpu-precision-diagnostic-20261014.json:28",
+        "protocols/PILOT_AND_COMPARISON_PLAN.md:51"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Cited logs, receipts and smoke checkpoints exist; failure and success artifacts remain distinct.",
+      "evidence": [
+        "reports/all-tests-compat-r3-20261014.log:35,37",
+        "reports/upstream-smoke-compat-r3-20261014.log:61",
+        "reports/upstream-smoke-compat-r4-fp32-20261014.log:71",
+        "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json:2,305-310",
+        "upstream_smoke/results-r5-fp32/smoke-receipt.json:2,25-26,158"
+      ]
+    },
+    "dead_code": {
+      "status": "warn",
+      "details": "Smoke update methods are called and their metrics are recorded. No evaluation pipeline ran, so planned metric evaluator call coverage cannot yet be checked.",
+      "evidence": [
+        "integration/civilian_dreamer_smoke.py:322",
+        "upstream_smoke/upstream_dreamer_smoke.py:238",
+        "protocols/PILOT_AND_COMPARISON_PLAN.md:51"
+      ]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "26 engineering tests and two small, one-seed smoke runs produced no formal learner updates or confirmation episodes. Scope does not support performance or generalization claims.",
+      "evidence": [
+        "reports/ENGINEERING_NODE_20261014.md:11,15-18,26,34,38",
+        "upstream_smoke/results-r5-fp32/smoke-receipt.json:10,19",
+        "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json:7,333-338",
+        "protocols/PILOT_AND_COMPARISON_PLAN.md:3,47,75"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "classification": [
+        {
+          "type": "simulation_only",
+          "evidence": [
+            "upstream_smoke/results-r5-fp32/smoke-receipt.json:10",
+            "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json:2,11-12"
+          ]
+        },
+        {
+          "type": "self_supervised_proxy",
+          "evidence": [
+            "reports/cpu-precision-diagnostic-20261014.json:2,28"
+          ]
+        }
+      ],
+      "details": "These are engineering smoke/precision diagnostics, not performance evaluations. No real_gt or human_eval result is present."
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "The local Torch 2.5 CPU engineering path completed bounded learner smokes and checkpoint restoration with the CPU float32 overlay.",
+      "impact": "needs_qualifier"
+    },
+    {
+      "id": "C2",
+      "claim": "The fixed-batch precision diagnostic establishes CPU float32 stability for the target Torch 2.8 runtime.",
+      "impact": "unsupported"
+    },
+    {
+      "id": "C3",
+      "claim": "The world model improves civilian disaster-relief performance or outperforms another method.",
+      "impact": "unsupported"
+    }
+  ],
+  "blockers": [
+    "Target Torch 2.8/Linux runtime has not been tested; available smoke runtime is Torch 2.5.0+cpu.",
+    "Current smokes use a CPU float32 project overlay and are not exact upstream reproduction.",
+    "Formal training and heldout evaluation have not started; the plan remains draft and the six-checkpoint release barrier is unmet.",
+    "Server SSH authentication was rejected; target resource measurement and budget freeze remain unavailable.",
+    "RSS collection is null in the successful civilian smoke; peak memory is unknown.",
+    "The old-data receipt covers only three supplied roots and JSON/CSV; structural semantic hashes do not count independent episodes.",
+    "The upstream commit label is recorded in provenance, but no Git/remote evidence verifies the snapshot against that commit."
+  ]
+}

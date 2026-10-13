@@ -1,0 +1,9 @@
+runtime/
+github_archive/
+upstream/.git/
+upstream_r2/*.zip
+reference/graph_paper.txt
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/

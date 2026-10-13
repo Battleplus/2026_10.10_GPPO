@@ -1,0 +1,73 @@
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+2026-10-14 00:28:35.222465: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:28:36.034566: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+D:\anaconda\Lib\site-packages\torch\amp\grad_scaler.py:132: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+D:\anaconda\Lib\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\optim\laprop.py:88: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value = 1) (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\python_arg_parser.cpp:1642.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+D:\anaconda\Lib\site-packages\torch\optim\lr_scheduler.py:382: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Traceback (most recent call last):
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (4,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (4,)}
+        48,448: rssm
+        16,898: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+         8,832: encoder
+        17,028: decoder
+Optimizer has: 157829 parameters.
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (4,)}
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 322, in <module>
+    main()
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 317, in main
+    result = run(args.repo_root.resolve(), args.output_dir.resolve(), args.updates, args.length, args.seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 254, in run
+    restored = Dreamer(restored_config, obs_space, act_space).to("cpu")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\dreamer.py", line 51, in __init__
+    config.actor.dist = config.actor.dist.disc
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 359, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 819, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 442, in _get_impl
+    node = self._get_child(
+           ^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\basecontainer.py", line 73, in _get_child
+    child = self._get_node(
+            ^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 475, in _get_node
+    self._validate_get(key)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\dictconfig.py", line 164, in _validate_get
+    self._format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\omegaconf\_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+omegaconf.errors.ConfigAttributeError: Key 'disc' is not in struct
+    full_key: model.actor.dist.disc
+    object_type=dict

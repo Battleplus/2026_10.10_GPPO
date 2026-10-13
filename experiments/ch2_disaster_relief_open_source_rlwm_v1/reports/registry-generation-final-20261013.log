@@ -1,0 +1,113 @@
+{
+  "condition_counts": {
+    "development": {
+      "carrier_competition": 7,
+      "stock_competition": 7
+    },
+    "heldout": {
+      "carrier_competition": 28,
+      "stock_competition": 28
+    },
+    "train": {
+      "carrier_competition": 28,
+      "stock_competition": 28
+    }
+  },
+  "old_parent_id_overlap_count": 0,
+  "old_semantic_hash_overlap_count": 0,
+  "policy_evaluation_performed": false,
+  "registry_sha256": "18168de200a5549dda3f4a0f270c368a9e480fd3991a87203c2621024493fea3",
+  "registry_version": "relief-n2-scenario-registry/1",
+  "scenario_content_sha256": "9523328f310ef869f46c8358b39e2c97a751009376f9258874e2dd5ef5b3bdc4",
+  "seed_namespace": "ch2-disaster-relief-open-source-rlwm-v1/n2-fresh-20261013",
+  "source_fixture": "vendor/relief_env_v2/fixtures/control.json",
+  "source_protocol": "vendored relief_env_v2.dataset_protocol._apply_common_variation",
+  "source_provenance": [
+    {
+      "path": "__init__.py",
+      "sha256": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\__init__.py"
+    },
+    {
+      "path": "baselines.py",
+      "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\baselines.py"
+    },
+    {
+      "path": "chapter1_adapter.py",
+      "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\chapter1_adapter.py"
+    },
+    {
+      "path": "relief_env.py",
+      "sha256": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\relief_env.py"
+    },
+    {
+      "path": "scenario_schema.py",
+      "sha256": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\scenario_schema.py"
+    },
+    {
+      "path": "stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\stable_identity.py"
+    },
+    {
+      "path": "dataset_protocol.py",
+      "sha256": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\dataset_protocol.py"
+    },
+    {
+      "path": "graph_policy.py",
+      "sha256": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\graph_policy.py"
+    },
+    {
+      "path": "literal_graph_ops.py",
+      "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\literal_graph_ops.py"
+    },
+    {
+      "path": "ppo_trainer.py",
+      "sha256": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\ppo_trainer.py"
+    },
+    {
+      "path": "independent_audit.py",
+      "sha256": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+      "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\independent_audit.py"
+    }
+  ],
+  "source_provenance_sha256": "c3994b2fc6831e8e5ad619e9d9d080ce2aadab00dacda1cf0cb61a2dc83379de",
+  "split_counts": {
+    "development": 14,
+    "heldout": 56,
+    "train": 56
+  },
+  "total_scenarios": 126,
+  "vendor_file_sha256": {
+    "SOURCE_PROVENANCE.json": "c3994b2fc6831e8e5ad619e9d9d080ce2aadab00dacda1cf0cb61a2dc83379de",
+    "__init__.py": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa",
+    "baselines.py": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+    "chapter1_adapter.py": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+    "dataset_protocol.py": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf",
+    "fixtures/combined.json": "de6a123b0ef8aeddad7bd4fe51a8d3ff54d684196bd92d36a074fae7bc15c66b",
+    "fixtures/control.json": "eb4946623237fd88c8464d54d974eb027335f2ead1370b9d9ad0f8b37cecf4c0",
+    "fixtures/energy_change.json": "e346bdc989a500d208bacc723fb6333a3d43562c9260af84c0d73575a4c06b0c",
+    "fixtures/external_commitment.json": "2ae3b507e817871186631809558940ed5950f202559199ecb3e2078bffd7115a",
+    "fixtures/failure.json": "879d5b986cd4b20194d6dc373c5c026c15400b4bad62b7f21635e0919c2ac0da",
+    "fixtures/report_delay.json": "ab717059858b22249b049bd86a6b43111aa9df8bdb88eb608bf572602ed9c0cb",
+    "fixtures/stock_loss.json": "b247756d597797982031c501eb17b4f1805c0e9287399e19abd1706d0bbe5106",
+    "graph_policy.py": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142",
+    "independent_audit.py": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc",
+    "literal_graph_ops.py": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+    "ppo_trainer.py": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891",
+    "protocol/preregistered_protocol.json": "62b58009959a66640a11e7ee06b9b684498431c817f13b884f74c553b68119a0",
+    "relief_env.py": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d",
+    "scenario_schema.py": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0",
+    "stable_identity.py": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef"
+  },
+  "vendor_source_tree_sha256": "fabd909ada277a73f12d18e1214c4407fc0024509ee78ec0a35254984950f07c",
+  "within_registry_semantic_duplicates": 0
+}

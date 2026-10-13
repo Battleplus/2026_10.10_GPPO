@@ -1,0 +1,28 @@
+{
+  "status": "technical_stop",
+  "run_kind": "engineering_smoke_not_study",
+  "first_error": {
+    "type": "FloatingPointError",
+    "message": "non-finite Dreamer gradients: ['rssm._deter_net._dyn_in0.0.weight', 'rssm._deter_net._dyn_in0.0.bias', 'rssm._deter_net._dyn_in0.1.weight', 'rssm._deter_net._dyn_in1.0.weight', 'rssm._deter_net._dyn_in1.0.bias', 'rssm._deter_net._dyn_in1.1.weight', 'rssm._deter_net._dyn_in2.0.weight', 'rssm._deter_net._dyn_in2.0.bias']",
+    "sha256": "21d9ef7bfd9acd342982ec27a79bb5d73e9d0f33acd632e62ba3b48fc43b7d55",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\integration\\civilian_dreamer_smoke.py\", line 321, in run\n    metrics = agent.update(replay)\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\upstream_r2\\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\\dreamer.py\", line 331, in update\n    self._agc(self._named_params.values())  # clipping\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\integration\\dreamer_relief.py\", line 609, in _checked_agc\n    raise FloatingPointError(f\"non-finite Dreamer gradients: {bad[:8]}\")\nFloatingPointError: non-finite Dreamer gradients: ['rssm._deter_net._dyn_in0.0.weight', 'rssm._deter_net._dyn_in0.0.bias', 'rssm._deter_net._dyn_in0.1.weight', 'rssm._deter_net._dyn_in1.0.weight', 'rssm._deter_net._dyn_in1.0.bias', 'rssm._deter_net._dyn_in1.1.weight', 'rssm._deter_net._dyn_in2.0.weight', 'rssm._deter_net._dyn_in2.0.bias']\n"
+  },
+  "formal_training": false,
+  "formal_evaluation": false,
+  "formal_updates": 0,
+  "policy_updates": 0,
+  "evaluation_episodes": 0,
+  "checkpoint_path": null,
+  "resource": {
+    "adapter_step_calls": 128,
+    "physical_minutes_advanced": 120,
+    "dispatch_microsteps": 8,
+    "commit_steps": 120,
+    "replay_frames": 129,
+    "completed_updates": 1,
+    "illegal_action_count": 0,
+    "wall_seconds": 8.7162313000008,
+    "process_cpu_seconds": 9.125,
+    "rss_after_bytes": null
+  }
+}

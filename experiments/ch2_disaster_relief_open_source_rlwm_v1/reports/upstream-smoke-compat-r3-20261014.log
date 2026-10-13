@@ -1,0 +1,69 @@
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+2026-10-14 00:23:10.627145: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:23:11.476841: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+D:\anaconda\Lib\site-packages\torch\amp\grad_scaler.py:132: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+D:\anaconda\Lib\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\optim\laprop.py:88: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value = 1) (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\python_arg_parser.cpp:1642.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+D:\anaconda\Lib\site-packages\torch\optim\lr_scheduler.py:382: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (4,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (4,)}
+        48,448: rssm
+        16,898: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+         8,832: encoder
+        17,028: decoder
+Optimizer has: 157829 parameters.
+Traceback (most recent call last):
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 320, in <module>
+    main()
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 315, in main
+    result = run(args.repo_root.resolve(), args.output_dir.resolve(), args.updates, args.length, args.seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_smoke\upstream_dreamer_smoke.py", line 238, in run
+    update_results.append(_jsonable(agent.update(replay)))
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\dreamer.py", line 320, in update
+    (stoch, deter), mets = self._cal_grad(p_data, initial)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\dreamer.py", line 369, in _cal_grad
+    post_stoch, post_deter, post_logit = self.rssm.observe(embed, data["action"], initial, data["is_first"])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\rssm.py", line 148, in observe
+    stoch, deter, logit = self.obs_step(stoch, deter, action[:, i], embed[:, i], reset[:, i])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\rssm.py", line 177, in obs_step
+    stoch = self.get_dist(logit).rsample()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\rssm.py", line 220, in get_dist
+    return torchd.independent.Independent(dists.OneHotDist(logit, unimix_ratio=self._unimix_ratio), 1)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\distributions.py", line 23, in __init__
+    super().__init__(logits=logits)
+  File "D:\anaconda\Lib\site-packages\torch\distributions\one_hot_categorical.py", line 46, in __init__
+    self._categorical = Categorical(probs, logits)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\torch\distributions\categorical.py", line 72, in __init__
+    super().__init__(batch_shape, validate_args=validate_args)
+  File "D:\anaconda\Lib\site-packages\torch\distributions\distribution.py", line 71, in __init__
+    raise ValueError(
+ValueError: Expected parameter logits (Tensor of shape (1, 8, 8)) of distribution Categorical(logits: torch.Size([1, 8, 8])) to satisfy the constraint IndependentConstraint(Real(), 1), but found invalid values:
+tensor([[[nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan],
+         [nan, nan, nan, nan, nan, nan, nan, nan]]], grad_fn=<SubBackward0>)

@@ -1,0 +1,41 @@
+test_replay_adapter_wrapper (unittest.loader._FailedTest.test_replay_adapter_wrapper) ... ERROR
+test_replay_contract (unittest.loader._FailedTest.test_replay_contract) ... ERROR
+
+======================================================================
+ERROR: test_replay_adapter_wrapper (unittest.loader._FailedTest.test_replay_adapter_wrapper)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_replay_adapter_wrapper
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\tests\test_replay_adapter_wrapper.py", line 3, in <module>
+    from development.ch2_disaster_relief_open_source_rlwm_v1.relief_adapter.replay_adapter import (
+        ReplayReliefAdapter,
+    )
+ModuleNotFoundError: No module named 'development'
+
+
+======================================================================
+ERROR: test_replay_contract (unittest.loader._FailedTest.test_replay_contract)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_replay_contract
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 426, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python314\Lib\unittest\loader.py", line 367, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\tests\test_replay_contract.py", line 3, in <module>
+    from development.ch2_disaster_relief_open_source_rlwm_v1.relief_adapter.replay_contract import (
+    ...<9 lines>...
+    )
+ModuleNotFoundError: No module named 'development'
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (errors=2)

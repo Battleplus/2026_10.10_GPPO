@@ -1,0 +1,64 @@
+2026-10-14 00:08:44.382396: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:08:45.660667: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+test_candidate_order_permutation_does_not_change_action_identity_or_encoding (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_candidate_order_permutation_does_not_change_action_identity_or_encoding) ... ok
+test_capacity_is_fixed_configuration_not_hidden_task_total (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_capacity_is_fixed_configuration_not_hidden_task_total) ... ok
+test_fixed_float32_layout_and_hidden_task_padding (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_fixed_float32_layout_and_hidden_task_padding) ... ok
+test_hidden_future_task_and_event_perturbations_do_not_change_reset_input (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_hidden_future_task_and_event_perturbations_do_not_change_reset_input) ... ok
+test_selection_microsteps_then_commit_match_original_joint_batch (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_selection_microsteps_then_commit_match_original_joint_batch) ... ok
+test_task_slot_is_allocated_only_after_new_task_becomes_public (test_decision_repeat_adapter.DecisionRepeatAdapterTests.test_task_slot_is_allocated_only_after_new_task_becomes_public) ... ok
+test_actual_adapter_frames_and_r2_buffer_keep_action_dt_and_mask_alignment (test_dreamer_time_mask.DreamerMaskTimeTests.test_actual_adapter_frames_and_r2_buffer_keep_action_dt_and_mask_alignment) ... D:\anaconda\Lib\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+FAIL
+test_checkpoint_metadata_binds_model_to_adapter_layout_and_rejects_mismatch (test_dreamer_time_mask.DreamerMaskTimeTests.test_checkpoint_metadata_binds_model_to_adapter_layout_and_rejects_mismatch) ... ok
+test_imagination_mask_uses_only_prediction_and_forces_commit_fallback (test_dreamer_time_mask.DreamerMaskTimeTests.test_imagination_mask_uses_only_prediction_and_forces_commit_fallback) ... ok
+test_lambda_returns_distinguish_terminal_from_truncated_end (test_dreamer_time_mask.DreamerMaskTimeTests.test_lambda_returns_distinguish_terminal_from_truncated_end) ... ok
+test_physical_discount_and_lambda_use_dt_zero_or_one (test_dreamer_time_mask.DreamerMaskTimeTests.test_physical_discount_and_lambda_use_dt_zero_or_one) ... ok
+test_real_actor_distribution_never_assigns_probability_to_masked_actions (test_dreamer_time_mask.DreamerMaskTimeTests.test_real_actor_distribution_never_assigns_probability_to_masked_actions) ... ok
+test_upstream_is_pinned_and_dreamer_overlay_does_not_query_simulator (test_dreamer_time_mask.DreamerMaskTimeTests.test_upstream_is_pinned_and_dreamer_overlay_does_not_query_simulator) ... ok
+test_zero_time_microsteps_have_no_reward_or_weight_decay (test_dreamer_time_mask.DreamerMaskTimeTests.test_zero_time_microsteps_have_no_reward_or_weight_decay) ... FAIL
+test_default_vendor_factory_replay_metadata (test_factory_replay_smoke.FactoryReplaySmokeTests.test_default_vendor_factory_replay_metadata) ... ok
+test_full_platform_batch_leaves_only_commit_legal (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_full_platform_batch_leaves_only_commit_legal) ... ok
+test_rejects_time_or_terminal_contract_mismatch (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_rejects_time_or_terminal_contract_mismatch) ... ok
+test_stamps_metadata_without_changing_encoder_vector (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_stamps_metadata_without_changing_encoder_vector) ... ok
+test_dispatch_space_and_commit_index_are_fixed (test_replay_contract.ReplayContractTests.test_dispatch_space_and_commit_index_are_fixed) ... ok
+test_observation_stamps_incoming_transition_metadata (test_replay_contract.ReplayContractTests.test_observation_stamps_incoming_transition_metadata) ... ok
+test_only_commit_advances_physical_time (test_replay_contract.ReplayContractTests.test_only_commit_advances_physical_time) ... ok
+test_rejects_inconsistent_or_malformed_metadata (test_replay_contract.ReplayContractTests.test_rejects_inconsistent_or_malformed_metadata) ... ok
+test_carrier_condition_creates_equal_known_and_hidden_food_loads (test_scenario_registry.ScenarioRegistryTests.test_carrier_condition_creates_equal_known_and_hidden_food_loads) ... ok
+test_seed_namespace_is_stable_and_split_condition_specific (test_scenario_registry.ScenarioRegistryTests.test_seed_namespace_is_stable_and_split_condition_specific) ... ok
+test_semantic_hash_ignores_only_scenario_id (test_scenario_registry.ScenarioRegistryTests.test_semantic_hash_ignores_only_scenario_id) ... ok
+test_stock_condition_sets_each_depot_to_sixty_percent_demand (test_scenario_registry.ScenarioRegistryTests.test_stock_condition_sets_each_depot_to_sixty_percent_demand) ... ok
+
+======================================================================
+FAIL: test_actual_adapter_frames_and_r2_buffer_keep_action_dt_and_mask_alignment (test_dreamer_time_mask.DreamerMaskTimeTests.test_actual_adapter_frames_and_r2_buffer_keep_action_dt_and_mask_alignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\tests\test_dreamer_time_mask.py", line 212, in test_actual_adapter_frames_and_r2_buffer_keep_action_dt_and_mask_alignment
+    self.assertEqual(data["action"].argmax(-1).tolist(), [[first_action, COMMIT, COMMIT, COMMIT]])
+AssertionError: Lists differ: [[64, 64, 64, 64]] != [[0, 64, 64, 64]]
+
+First differing element 0:
+[64, 64, 64, 64]
+[0, 64, 64, 64]
+
+- [[64, 64, 64, 64]]
+?          ----
+
++ [[0, 64, 64, 64]]
+?   +++
+
+
+======================================================================
+FAIL: test_zero_time_microsteps_have_no_reward_or_weight_decay (test_dreamer_time_mask.DreamerMaskTimeTests.test_zero_time_microsteps_have_no_reward_or_weight_decay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\tests\test_dreamer_time_mask.py", line 150, in test_zero_time_microsteps_have_no_reward_or_weight_decay
+    self.assertAlmostEqual(float(weights[0, 2, 0]), 0.9, places=6)
+AssertionError: 0.22499999403953552 != 0.9 within 6 places (0.6750000059604645 difference)
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.318s
+
+FAILED (failures=2)

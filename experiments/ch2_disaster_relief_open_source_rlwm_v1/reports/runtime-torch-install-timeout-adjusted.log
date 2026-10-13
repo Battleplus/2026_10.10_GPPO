@@ -1,0 +1,12 @@
+Using Python 3.11.15 environment at: development\ch2_disaster_relief_open_source_rlwm_v1\runtime\venv
+Resolved 9 packages in 4.20s
+Downloading torch (590.7MiB)
+WARN Streaming failed for torch==2.8.0+cpu; downloading wheel to disk (I/O operation failed during extraction)
+Downloading torch (590.7MiB)
+  × Failed to download `torch==2.8.0+cpu`
+  ├─▶ Failed to write to the distribution cache
+  ├─▶ error decoding response body
+  ├─▶ request or response body error
+  ├─▶ error reading a body from connection
+  ╰─▶ peer closed connection without sending TLS close_notify:
+      https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof

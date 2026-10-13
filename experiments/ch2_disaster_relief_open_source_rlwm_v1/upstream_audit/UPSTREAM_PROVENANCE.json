@@ -1,0 +1,43 @@
+{
+  "audit_date": "2026-10-13",
+  "purpose": "static source audit and isolated upstream learner smoke preparation",
+  "selected_baseline": {
+    "repository": "NM512/r2dreamer",
+    "commit": "546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+    "snapshot_path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+    "license": "MIT",
+    "configuration": "DreamerV3 baseline with rep_loss=dreamer"
+  },
+  "legacy_reference": {
+    "repository": "NM512/dreamerv3-torch",
+    "commit": "6ef8646d807cd10ce0c88e10a7e943211e7fc44c",
+    "snapshot_path": "upstream",
+    "license": "MIT",
+    "readme_status": "README describes implementation as outdated and points to r2dreamer"
+  },
+  "key_source_files": [
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/pyproject.toml",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/train.py",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/dreamer.py",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/buffer.py",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/configs.yaml",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/_base_.yaml",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size12M.yaml"
+  ],
+  "runtime_attempt": {
+    "python": "3.11.15",
+    "python_isolated_runtime_installed": true,
+    "cpu_torch": "2.8.0",
+    "cpu_torch_installed": false,
+    "first_install_failure": "UV default 30-second HTTP timeout while downloading/extracting the 590.7 MiB wheel",
+    "bounded_retry": "parent run setting UV_HTTP_TIMEOUT=180 and UV_HTTP_RETRIES=0"
+  },
+  "smoke": {
+    "script": "upstream_smoke/upstream_dreamer_smoke.py",
+    "status": "prepared_not_run",
+    "neural_forward_count": 0,
+    "dreamer_update_count": 0,
+    "environment_step_count": 0,
+    "formal_research_started": false
+  }
+}

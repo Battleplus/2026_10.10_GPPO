@@ -1,0 +1,44 @@
+{
+  "trace_version": 1,
+  "audit_id": "rlwm-stage01-20261014-codex-luna-review",
+  "created_at": "2026-10-13T16:34:04Z",
+  "reviewer": {
+    "agent_id": "/root/luna_rlwm_independent_review",
+    "model": "GPT-6 Codex subagent; exact variant not exposed",
+    "family": "openai",
+    "independence": "same-family",
+    "acceptance_status": "provisional"
+  },
+  "review_mode": "read-only evidence review; no source or result artifacts were modified by the reviewer",
+  "scope": [
+    "r3 regression and failure evidence",
+    "fixed-batch CPU precision diagnostic",
+    "civilian r4-fp32 and upstream CartPole r5-fp32 smoke receipts and checkpoints",
+    "scoped historical-data scan and scenario registry",
+    "upstream source snapshot and local ZIP consistency",
+    "draft pilot plan and target availability record"
+  ],
+  "observations": [
+    "The r3 regression log reports 26 tests passed.",
+    "The fixed-batch Torch 2.5 CPU diagnostic reports FP16 RsqrtBackward0 NaN with zero optimizer steps and two finite FP32 diagnostic updates.",
+    "The civilian r4 engineering smoke reports three updates, 128 adapter calls, 120 simulated physical minutes, zero illegal actions, and successful strict restore flags; formal updates and evaluations are zero.",
+    "The upstream CartPole r5 engineering smoke reports three updates, restored model hash and optimizer, but uses float32_overlay, marks exact_upstream_reproduction false, and has partial training-continuation scope.",
+    "The extracted upstream buffer.py SHA-256 matches its entry in the local ZIP; this does not verify remote commit identity.",
+    "The historical scan reports three explicit roots and zero registry intersections; its structural hash count is not an episode count.",
+    "No formal performance evaluation exists in the reviewed receipts; overall verdict is WARN for scope and runtime readiness, not a detected fraud pattern."
+  ],
+  "input_hashes": {
+    "reports/ENGINEERING_NODE_20261014.md": "sha256:378ac0252231d084c7269dbb8a0d5f730ef2fe0727d7a476b53e8e51bf140f62",
+    "reports/all-tests-compat-r3-20261014.log": "sha256:87997d55f6bb0cd1fbc4e32334ceab7eeb48a25b757fdf98e437b3de7dda33d2",
+    "reports/cpu-precision-diagnostic-20261014.json": "sha256:b4a6904e1441c6bae7329c0be74268bb568ce0ef19c06ce2e0cf8f1fbd4300fb",
+    "reports/civilian-dreamer-smoke-20261014-r4-fp32/civilian-dreamer-smoke-receipt.json": "sha256:c142b2a3e5670a0b1b9d3123e102d56db7c7cbdd3d9cadf56f940d24711ced9f",
+    "upstream_smoke/results-r5-fp32/smoke-receipt.json": "sha256:f65e4c773ec04327db2d7347d8e2f6b572f8d69f3c1cad11251d9624a6f46783",
+    "reports/old-data-scan-receipt.json": "sha256:6d037a1665b08ee737fb3425b305c2376c5696f4babfb4e25c74ceb79c8d1b0e",
+    "relief_adapter/data/registry.json": "sha256:3f96d6ad8a421d9d2890c4df34d3bdba2a81999fa76976e68d33492958bd161a",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f.zip": "sha256:68c3502d9575e8f7ee8eb96a9203112da4957296473f9e9bf54bc3ec72104b3d",
+    "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/buffer.py": "sha256:3299fe6a9548000769a4ff9605dcf371e3e75758f2b62f0c7542415030756bf3"
+  },
+  "report_path": "reports/EXPERIMENT_AUDIT.md",
+  "machine_report_path": "reports/EXPERIMENT_AUDIT.json",
+  "verdict": "WARN"
+}

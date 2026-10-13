@@ -1,0 +1,384 @@
+2026-10-14 00:28:32.171222: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-14 00:28:32.933611: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\runtime\compat-venv\Lib\site-packages\torchrl\data\replay_buffers\samplers.py:36: UserWarning: Failed to import torchrl C++ binaries. Some modules (eg, prioritized replay buffers) may not work with your installation. This is likely due to a discrepancy between your package version and the PyTorch version. Make sure both are compatible. Usually, torchrl majors follow the pytorch majors within a few days around the release. For instance, TorchRL 0.5 requires PyTorch 2.4.0, and TorchRL 0.6 requires PyTorch 2.5.0.
+  warnings.warn(EXTENSION_WARNING)
+D:\anaconda\Lib\site-packages\torch\amp\grad_scaler.py:132: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+D:\anaconda\Lib\site-packages\torch\functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3596.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+E:\Z博士\development\ch2_disaster_relief_open_source_rlwm_v1\upstream_r2\r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f\optim\laprop.py:88: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value = 1) (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\utils\python_arg_parser.cpp:1642.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+D:\anaconda\Lib\site-packages\torch\optim\lr_scheduler.py:382: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (1415,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (1415,)}
+        52,480: rssm
+        20,993: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+        99,136: encoder
+       108,743: decoder
+Optimizer has: 347975 parameters.
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (1415,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (1415,)}
+        52,480: rssm
+        20,993: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+        99,136: encoder
+       108,743: decoder
+Optimizer has: 347975 parameters.
+{
+  "status": "pass",
+  "run_kind": "engineering_smoke_not_study",
+  "first_error": null,
+  "formal_training": false,
+  "formal_evaluation": false,
+  "formal_updates": 0,
+  "policy_updates": 0,
+  "evaluation_episodes": 0,
+  "checkpoint_path": "E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\reports\\civilian-dreamer-smoke-20261014-r4-fp32\\civilian_dreamer_smoke.pt",
+  "cpu_precision": "float32_overlay",
+  "exact_upstream_reproduction": false,
+  "python": "3.11.5",
+  "torch": "2.5.0+cpu",
+  "gymnasium": "1.2.0",
+  "numpy": "1.26.0",
+  "device": "cpu",
+  "cuda_initialized": false,
+  "torch_threads": 1,
+  "upstream_revision": "546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+  "scenario_id": "relief-n2-train-carrier_competition-00",
+  "scenario_sha256": "fa61b19c5a75d7fa86ba6d6dc13169826213efd7716817507e8c941926508934",
+  "adapter_signature_sha256": "c7a43c9c178ed96a3618d262aed5e9ecf2f5d6eca6c6e995a58c230df5d9a6a6",
+  "feature_layout_sha256": "fcb8c27328a3f14831f1aeac1b30bc2bd4ecb4814659bdccde253e5954f47bab",
+  "action_size": 65,
+  "commit_action_index": 64,
+  "batch_size": 1,
+  "batch_length": 4,
+  "minimum_replay_episode_frames": 5,
+  "usable_episode_frame_counts": {
+    "0": 65,
+    "1": 64
+  },
+  "update_metrics": [
+    {
+      "mask/precision": 0.015384615398943424,
+      "mask/recall": 1.0,
+      "mask/false_negative_count": 0.0,
+      "dyn_entropy": 15.44139575958252,
+      "rep_entropy": 15.328985214233398,
+      "ret": 0.0,
+      "ret_005": 0.0,
+      "ret_095": 0.0,
+      "adv": 0.0,
+      "adv_std": 0.0,
+      "con": 1.0,
+      "rew": 0.0,
+      "val": 0.0,
+      "tar": 0.0,
+      "slowval": 0.0,
+      "weight": 1.0,
+      "action_entropy": 4.174373149871826,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 65.0,
+      "mask/imag_commit_fraction": 0.0,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": 0.0,
+      "ret_replay_std": 0.0,
+      "ret_replay_min": 0.0,
+      "ret_replay_max": 0.0,
+      "value_replay_mean": 0.0,
+      "value_replay_std": 0.0,
+      "value_replay_min": 0.0,
+      "value_replay_max": 0.0,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 2.9752137660980225,
+      "loss/rep": 2.9752137660980225,
+      "loss/vector": 555.6494140625,
+      "loss/legal_mask": 0.6931471824645996,
+      "loss/rew": 5.541263580322266,
+      "loss/con": 0.6289294362068176,
+      "loss/policy": -0.0012523120967671275,
+      "loss/value": 11.082527160644531,
+      "loss/repval": 11.082527160644531,
+      "opt/loss": 580.1914672851562
+    },
+    {
+      "mask/precision": 1.0,
+      "mask/recall": 0.3333333432674408,
+      "mask/false_negative_count": 8.0,
+      "dyn_entropy": 15.80896282196045,
+      "rep_entropy": 15.326520919799805,
+      "ret": 0.0,
+      "ret_005": 0.0,
+      "ret_095": 0.0,
+      "adv": 0.0,
+      "adv_std": 0.0,
+      "con": 0.6698816418647766,
+      "rew": 0.0,
+      "val": 0.0,
+      "tar": 0.0,
+      "slowval": 0.0,
+      "weight": 0.44492149353027344,
+      "action_entropy": 0.0,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 1.0,
+      "mask/imag_commit_fraction": 1.0,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": -0.1574999988079071,
+      "ret_replay_std": 0.0,
+      "ret_replay_min": -0.1574999988079071,
+      "ret_replay_max": -0.1574999988079071,
+      "value_replay_mean": 0.0,
+      "value_replay_std": 0.0,
+      "value_replay_min": 0.0,
+      "value_replay_max": 0.0,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 2.533400535583496,
+      "loss/rep": 2.533400535583496,
+      "loss/vector": 557.3272094726562,
+      "loss/legal_mask": 0.6931469440460205,
+      "loss/rew": 5.541262626647949,
+      "loss/con": 0.7302049994468689,
+      "loss/policy": 0.0,
+      "loss/value": 6.148565292358398,
+      "loss/repval": 11.082526206970215,
+      "opt/loss": 576.5519409179688
+    },
+    {
+      "mask/precision": 0.3333333432674408,
+      "mask/recall": 0.3636363744735718,
+      "mask/false_negative_count": 7.0,
+      "dyn_entropy": 15.473347663879395,
+      "rep_entropy": 15.527383804321289,
+      "ret": -7.148332481499153e-10,
+      "ret_005": -1.105945543478093e-11,
+      "ret_095": -2.6727242381091587e-12,
+      "adv": 1.278196853915503e-10,
+      "adv_std": 4.076842197164865e-10,
+      "con": 0.8693303465843201,
+      "rew": -7.275957614183426e-11,
+      "val": -8.549250196665525e-10,
+      "tar": -7.258926792985676e-10,
+      "slowval": 0.0,
+      "weight": 0.692971408367157,
+      "action_entropy": 1.2901691198349,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 4.25,
+      "mask/imag_commit_fraction": 0.5,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": 0.11478972434997559,
+      "ret_replay_std": 0.043591152876615524,
+      "ret_replay_min": 0.0812937468290329,
+      "ret_replay_max": 0.16407543420791626,
+      "value_replay_mean": -9.74978320300579e-10,
+      "value_replay_std": 2.7042038053259887e-10,
+      "value_replay_min": -1.3387762010097504e-09,
+      "value_replay_max": -6.984919309616089e-10,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 2.76033616065979,
+      "loss/rep": 2.76033616065979,
+      "loss/vector": 526.6151733398438,
+      "loss/legal_mask": 0.6931467652320862,
+      "loss/rew": 5.541261672973633,
+      "loss/con": 0.6182860136032104,
+      "loss/policy": -0.0002765928802546114,
+      "loss/value": 8.4196195602417,
+      "loss/repval": 11.082523345947266,
+      "opt/loss": 548.2483520507812
+    }
+  ],
+  "update_wall_seconds": [
+    0.11488130000361707,
+    0.042329600000812206,
+    0.035918400004447903
+  ],
+  "parameter_hash_before": "e16059836e74f9bcdc05d90a68f56107f2d957ef3b1567c53db98c3ed8b2abb3",
+  "parameter_hash_after": "13eacff40d25cedcbb3db3144b11ad722f6a4d4e87c0cfb981004698122e2282",
+  "checkpoint_model_restore_hash": "13eacff40d25cedcbb3db3144b11ad722f6a4d4e87c0cfb981004698122e2282",
+  "replay_overlay": "relief-replay-clone-before-action-shift/1",
+  "replay_alignment_trace": [
+    {
+      "sample_index": 0,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          15,
+          16,
+          17,
+          18
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          16,
+          17,
+          18,
+          19
+        ]
+      ],
+      "source_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ]
+    },
+    {
+      "sample_index": 1,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          65,
+          66,
+          67,
+          68
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          66,
+          67,
+          68,
+          69
+        ]
+      ],
+      "source_action_indices": [
+        [
+          51,
+          16,
+          33,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          51,
+          16,
+          33,
+          64
+        ]
+      ]
+    },
+    {
+      "sample_index": 2,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          71,
+          72,
+          73,
+          74
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          72,
+          73,
+          74,
+          75
+        ]
+      ],
+      "source_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ]
+    }
+  ],
+  "checkpoint_optimizer_restored": true,
+  "checkpoint_scheduler_restored": true,
+  "checkpoint_scaler_restored": true,
+  "checkpoint_counters_restored": true,
+  "checkpoint_rng_restored": true,
+  "checkpoint_metadata_restored": true,
+  "checkpoint_scope": {
+    "includes": [
+      "agent_model",
+      "optimizer",
+      "scheduler",
+      "scaler",
+      "counters",
+      "rng",
+      "adapter_metadata"
+    ],
+    "excludes": [
+      "replay_buffer",
+      "simulator_state"
+    ]
+  },
+  "checkpoint_bytes": 4574560,
+  "rss_before_bytes": null,
+  "formal_environment_steps": 0,
+  "formal_world_model_updates": 0,
+  "formal_policy_updates": 0,
+  "formal_evaluation_episodes": 0,
+  "resource": {
+    "adapter_step_calls": 128,
+    "physical_minutes_advanced": 120,
+    "dispatch_microsteps": 8,
+    "commit_steps": 120,
+    "replay_frames": 129,
+    "completed_updates": 3,
+    "illegal_action_count": 0,
+    "wall_seconds": 10.072600899999088,
+    "process_cpu_seconds": 9.953125,
+    "rss_after_bytes": null
+  },
+  "receipt_path": "E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\reports\\civilian-dreamer-smoke-20261014-r4-fp32\\civilian-dreamer-smoke-receipt.json"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "technical_stop",
+  "run_kind": "engineering_smoke_not_study",
+  "first_error": {
+    "type": "RuntimeError",
+    "message": "adapter binding changed during the smoke episode",
+    "sha256": "24c9740faf6566fc68ba4513975227fc45cc9481d3dc3499219d9c795ce741bc",
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\Z博士\\development\\ch2_disaster_relief_open_source_rlwm_v1\\integration\\civilian_dreamer_smoke.py\", line 272, in run\n    raise RuntimeError(\"adapter binding changed during the smoke episode\")\nRuntimeError: adapter binding changed during the smoke episode\n"
+  },
+  "formal_training": false,
+  "formal_evaluation": false,
+  "formal_updates": 0,
+  "policy_updates": 0,
+  "evaluation_episodes": 0,
+  "checkpoint_path": null,
+  "resource": {
+    "adapter_step_calls": 2,
+    "physical_minutes_advanced": 1,
+    "dispatch_microsteps": 1,
+    "commit_steps": 1,
+    "replay_frames": 2,
+    "completed_updates": 0,
+    "illegal_action_count": 0,
+    "wall_seconds": 11.072285399997781,
+    "process_cpu_seconds": 8.953125,
+    "rss_after_bytes": null
+  }
+}

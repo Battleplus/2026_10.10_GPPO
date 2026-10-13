@@ -1,0 +1,57 @@
+[
+  {
+    "path": "__init__.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\__init__.py",
+    "sha256": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa"
+  },
+  {
+    "path": "baselines.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\baselines.py",
+    "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a"
+  },
+  {
+    "path": "chapter1_adapter.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\chapter1_adapter.py",
+    "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6"
+  },
+  {
+    "path": "relief_env.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\relief_env.py",
+    "sha256": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d"
+  },
+  {
+    "path": "scenario_schema.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\scenario_schema.py",
+    "sha256": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0"
+  },
+  {
+    "path": "stable_identity.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\stable_identity.py",
+    "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef"
+  },
+  {
+    "path": "dataset_protocol.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\dataset_protocol.py",
+    "sha256": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf"
+  },
+  {
+    "path": "graph_policy.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\graph_policy.py",
+    "sha256": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142"
+  },
+  {
+    "path": "literal_graph_ops.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\literal_graph_ops.py",
+    "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e"
+  },
+  {
+    "path": "ppo_trainer.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\ppo_trainer.py",
+    "sha256": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891"
+  },
+  {
+    "path": "independent_audit.py",
+    "source": "E:\\Z博士\\research-executions\\ch2-disaster-relief-graph-v2-20261011\\source\\package\\independent_audit.py",
+    "sha256": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc"
+  }
+]
