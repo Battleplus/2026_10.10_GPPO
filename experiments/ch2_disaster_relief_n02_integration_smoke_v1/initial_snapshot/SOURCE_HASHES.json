@@ -1,0 +1,70 @@
+{
+  "schema": "n2-integration-smoke-v1-source-snapshot/1",
+  "status": "initial_static_snapshot",
+  "taskbook_sha256": "347AEF850C3A4EBCB6DA37E82AC871EB83A6054089E4E0953ADEBEC496FDC2A3",
+  "source_files": {
+    "development/ch2_disaster_relief_graph_v2/relief_env.py": {
+      "sha256": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D",
+      "role": "civilian minute-stepped public-only simulator, candidate catalog, reward"
+    },
+    "development/ch2_disaster_relief_graph_v2/graph_policy.py": {
+      "sha256": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142",
+      "role": "graph actor and autoregressive candidate masking"
+    },
+    "development/ch2_disaster_relief_graph_v2/ppo_trainer.py": {
+      "sha256": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891",
+      "role": "PPO rollout, GAE, replay and update base"
+    },
+    "development/ch2_disaster_relief_graph_v2/baselines.py": {
+      "sha256": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A",
+      "role": "C1/C0 public baseline action selection"
+    },
+    "development/ch2_disaster_relief_graph_v2/stable_identity.py": {
+      "sha256": "812944F9F7CB4F16C9907C4D6CF6C552F5B0DC3F7EC8FA2E5CCBE859B04757EF",
+      "role": "stable observation and catalog identity binding"
+    },
+    "development/ch2_disaster_relief_graph_v2/scenario_schema.py": {
+      "sha256": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0",
+      "role": "scenario units and structural validation"
+    },
+    "development/ch2_disaster_relief_graph_v2/chapter1_adapter.py": {
+      "sha256": "BB1F7C79F562BAC4C68CA038F3B2CEC69809D2FF86DD992497EA217520F9D6B6",
+      "role": "initial Chapter 1 handoff normalization only"
+    },
+    "development/ch2_disaster_relief_n2_v1/engineering/world_model.py": {
+      "sha256": "EA90196934A77F2A09A3FD0F5EFDED8F96B65DECDED1F70DBC0BE7007120BCAF",
+      "role": "multi-head consequence model, masked losses, critic adapter, restore"
+    },
+    "development/ch2_disaster_relief_n2_v1/engineering/branching.py": {
+      "sha256": "65711D9F1D9F86766339708148075F2A72FDba1BB5D7227961B7D810BCBF975B",
+      "role": "historical synthetic branch/label helper; reuse requires new snapshot contract"
+    },
+    "development/ch2_disaster_relief_n2_v1/engineering/ppo_integration.py": {
+      "sha256": "BF4305AE8D775A6B706C36C849C6AF0CA165A527F83E2826BAEA0E2D04AAEA",
+      "role": "critic-only PPO restore adapter"
+    },
+    "development/ch2_disaster_relief_n2_v1/engineering/n2_linux_runner.py": {
+      "sha256": "935BBB31966F21F5DBD77F186BF0C99EAE4394E0B42347D136CD508F3C0E3C4",
+      "role": "historical bounded Linux engineering runner; not new service entry"
+    },
+    "development/ch2_disaster_relief_n2_v1/engineering/package_n2_linux_acceptance.py": {
+      "sha256": "5FD5ACB68398FE06C8497D19ECE6955E629CBB7D576093351B1C31C12EFD1C18",
+      "role": "historical r2 acceptance helper; not new authorization or Request"
+    }
+  },
+  "excluded_inputs": [
+    "old military data",
+    "old world-model weights",
+    "prior N1 labels or heldout records",
+    "prior N2 synthetic engineering results",
+    "credentials or tokens from historical chat/evidence"
+  ],
+  "archive": {
+    "remote": "https://github.com/Battleplus/2026_10.10_GPPO.git",
+    "base_ref": "refs/remotes/origin/main",
+    "base_sha256": "4c1ffe1e7832e2b3570d754a7db0e7462e432cb4",
+    "branch": "archive/ch2-n02-integration-smoke-v1-20261014",
+    "worktree": "E:/Z博士/.codex-tmp/n2-integration-archive-20261014",
+    "unrelated_n1_local_state_included": false
+  }
+}
