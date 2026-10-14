@@ -1,0 +1,147 @@
+{
+  "schema": "n2-research-operation-budget/1",
+  "status": "UNFROZEN",
+  "authorization_created": false,
+  "scope": "Deterministic operation counts and formulas only; no execution authorization or empirical cost projection.",
+  "protocol": {
+    "formal_horizon_minutes": null,
+    "reference_civil_horizon_minutes": 60,
+    "parent_counts": {
+      "train": 56,
+      "development": 14,
+      "confirmation": 24,
+      "status": "user protocol; confirmation identities and new split are not yet frozen",
+      "conflict": {
+        "source": "n2-development/revisions/stage-a-followup-r1/references/civil/protocol/preregistered_protocol.json",
+        "source_sha256": "62B58009959A66640A11E7EE06B9B684498431C817F13B884F74C553B68119A0",
+        "value": {
+          "train": 56,
+          "development": 14,
+          "heldout": 56
+        },
+        "resolution": "Use 24 as the requested planning count for confirmation formulas. The frozen 56-parent civilian protocol is an older engineering reference and does not define the new research split. Freeze new identities before use."
+      }
+    },
+    "windows": {
+      "minutes": [8, 16, 24, 32],
+      "maximum_nominal_windows": {
+        "train": 224,
+        "development": 56,
+        "confirmation": 96
+      },
+      "actual_usable_windows": null,
+      "status": "nominal parent x four slots; retain each window outcome and reason, including no-opportunity and unknown; formal training admission rule is not frozen"
+    },
+    "branching": {
+      "candidate_count_definition": "K_i is the count of legal candidate actions in window i, including NOOP when legal",
+      "branch_count_formula": "sum_i K_i over opportunity windows where every legal candidate branch is executed",
+      "candidate_continuation_step_cap_formula": "sum_i K_i * min(30, max(0, H - t_i)); candidate-continuation paths only; excludes NOOP-reference and restore/prefix work",
+      "candidate_continuation_step_formula": "sum over executed candidate-continuation paths of observed minute transitions; this is not the complete B ledger environment-step count",
+      "window_step_caps_at_60_minute_reference": [30, 30, 30, 28],
+      "candidate_count_by_window": null,
+      "context_scan_formula_if_one_c1_scan_per_parent": "sum(parent_counts) context trajectories; minute steps = context_trajectory_count * H",
+      "conditional_context_scan_count": 94,
+      "conditional_context_scan_steps_at_60_minute_reference": 5640,
+      "actual_branch_runs": null,
+      "actual_candidate_continuation_steps": null,
+      "complete_b_ledger_environment_steps": null,
+      "noop_reference_and_restore_prefix_steps": null,
+      "actual_context_scan_steps": null,
+      "status": "No branch-count ceiling is asserted because candidate counts and the formal horizon are unresolved."
+    },
+    "world_model": {
+      "seeds": [8201, 8202, 8203],
+      "epochs_per_seed": 40,
+      "batch_size": 8,
+      "batch_unit": "unique training window row (parent, repeat, window_id); legal candidate rows are concatenated within each window for forward/scoring",
+      "formula": "updates_per_seed = epochs * ceil(actual_usable_training_windows / batch_size)",
+      "candidate_sample_visits_formula": "epochs * sum_over_admitted_training_windows(legal_candidate_count_in_window)",
+      "all_seed_candidate_sample_visits_formula": "3 * epochs * sum_over_admitted_training_windows(legal_candidate_count_in_window)",
+      "development_candidate_prediction_rows_formula": "3 * sum_over_development_windows(legal_candidate_count_in_window), if every seed model scores every development candidate catalog",
+      "reference_target_forwards_formula": "3 * epochs * actual_usable_training_windows; source-referenced only",
+      "reference_update_evidence_rows_formula": "all_seed_optimizer_updates; source-referenced only",
+      "formal_candidate_model_evaluations": null,
+      "formal_forward_call_count": null,
+      "nominal_complete_window_updates_per_seed": 1120,
+      "nominal_complete_window_updates_all_seeds": 3360,
+      "nominal_complete_window_candidate_sample_visits_all_seeds": null,
+      "reference_final_checkpoint_operations_if_this_trainer_is_adopted": {
+        "writes": 3,
+        "readbacks": 3,
+        "strict_recovery_overhead": null,
+        "bytes": null
+      },
+      "implementation_status": "planned semantics referenced by new consequence_training.py; not included as a trainer in the frozen hosted civilian package"
+    },
+    "combination": {
+      "methods": ["G", "G+WM"],
+      "seeds_per_method": 3,
+      "episodes_per_round_per_seed": 4,
+      "ppo_updates_per_round": 16,
+      "smoke_rounds": 8,
+      "total_rounds": 32,
+      "smoke_updates_all_runs": 768,
+      "total_updates_all_runs": 3072,
+      "post_smoke_updates_all_runs": 2304,
+      "smoke_episodes_all_runs": 192,
+      "total_episodes_all_runs": 768,
+      "formal_horizon_minutes": null,
+      "smoke_environment_steps": null,
+      "total_environment_steps": null,
+      "environment_step_formula": "episodes * H_run when each PPO episode covers the full formal horizon",
+      "smoke_environment_steps_at_60_minute_reference": 11520,
+      "total_environment_steps_at_60_minute_reference": 46080,
+      "basis": "PPO updates count optimizer updates; environment steps count minute transitions; the new formal horizon is unresolved"
+    },
+    "confirmation": {
+      "parents": 24,
+      "policy_trajectories_per_parent": 7,
+      "trajectory_formula": "parents * (3 G seeds + 3 G+WM seeds + 1 C1)",
+      "trajectories": 168,
+      "minute_step_upper_bound_formula": "168 * H_confirmation",
+      "formal_minute_step_upper_bound": null,
+      "minute_step_upper_bound_at_60_minute_reference": 10080,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261014,
+      "logical_parent_draws": 240000,
+      "trajectory_slots_across_resamples": 1680000
+    },
+    "other_required_counts": {
+      "branch_runs": null,
+      "branch_environment_steps": null,
+      "world_model_prediction_forwards": null,
+      "world_model_prediction_candidate_evaluations": null,
+      "usable_training_window_rows": null,
+      "candidate_count_by_window": null,
+      "checkpoint_read_write_counts_and_bytes": null,
+      "export_file_count_and_bytes": null,
+      "actual_cpu_wall_rss_and_storage": null
+    }
+  },
+  "not_estimated": [
+    "Candidate counts vary by legal action mask and must be counted from retained window records, including NOOP when legal.",
+    "Branch-step totals depend on retained window outcomes, candidate catalogs, formal horizon, branch duration and termination.",
+    "No Linux whole-cgroup runtime measurement is available; CPU, wall time, RSS and storage remain null.",
+    "No formal dataset materialization, prediction workload, checkpoint bytes, or export bytes are substituted from the small local calibration."
+  ],
+  "local_calibration_context_only": {
+    "source": "n2-development/hosted-preparation-evidence/LOCAL_BUDGET_CALIBRATION_LIMITS_R1_20261014.json",
+    "source_sha256": "C21B7BABC3E9BB2A8FFBA29C268E89C52530062722C093BD0BB8F9A77E975EC8",
+    "status": "OBSERVATIONS_ONLY_NOT_RESEARCH_BUDGET",
+    "measured_fixture_candidate_count_including_noop": 7,
+    "measured_branch_steps": 596,
+    "measured_retained_output_bytes": 13127542,
+    "use": "provenance only; do not scale or extrapolate into B/C/D"
+  },
+  "source_hashes": {
+    "n2-governance/USER_HANDOFF_20261014.md": "4A967E619735B0C870AA868F9DEA0EB8E11E4880FB227F26E4981DB414E71DBE",
+    "n2-development/revisions/stage-a-followup-r1/references/civil/protocol/preregistered_protocol.json": "62B58009959A66640A11E7EE06B9B684498431C817F13B884F74C553B68119A0",
+    "n2-development/revisions/stage-a-followup-r1/references/civil/EXECUTION_CONTRACT.md": "39E4B442824C1D2AC409D462C3D9A6F525616CCF3D5E18346C6C88F40D411240",
+    "n2-development/revisions/stage-a-followup-r1/references/civil/ppo_trainer.py": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891",
+    "n2-development/references/world_model/consequence_training.py": "54D79991FC5E3E6E1ACA65AEDA9EEBD52B1C308478E84003C84228C744A837DE",
+    "n2-development/references/world_model/consequence_contract.py": "9FD4DA2353FAEA0677F79117D0D0A2F0980A6EE140E66B086D8C73D9DD40F79D",
+    "n2-development/references/world_model/candidate_keys.py": "E799CDDEAF6FAFB206943D03FBD8886EC9BADC109BDCC24885A9BD6C884615F2",
+    "n2-development/hosted-engineering-package-r1-20261014/manifest.json": "661C80171B56DA0C45A072AA6699EE9D21032C2B3BB63D639286894D5655B05E",
+    "n2-development/hosted-preparation-evidence/LOCAL_BUDGET_CALIBRATION_LIMITS_R1_20261014.json": "C21B7BABC3E9BB2A8FFBA29C268E89C52530062722C093BD0BB8F9A77E975EC8"
+  }
+}

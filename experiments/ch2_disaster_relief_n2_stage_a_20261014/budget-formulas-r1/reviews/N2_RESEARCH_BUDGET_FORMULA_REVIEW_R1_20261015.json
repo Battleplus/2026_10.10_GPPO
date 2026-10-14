@@ -1,0 +1,136 @@
+{
+  "artifact_sha256": {
+    "REPORT.md": "6D5E99815B15F5234700B1D25C8AD21B2DFE209E6D7B34A2EEFC91541457EA15",
+    "calculate_operation_budget.py": "05927FDB851DAB8B120B53837926C69B10273C4B891B8024E020898F26F44533",
+    "operation_budget_r1.json": "946C7DA3BD8E5FDB3A4468C5A4FA0BFA848AC606FD9AC52FB00FCC7F0480B844"
+  },
+  "b_candidate_continuation_only_complete_ledger_unknown": true,
+  "candidate_sample_visits_probe": 1200,
+  "coordinator_mechanical_correction_disclosed": true,
+  "default_calculator_output": {
+    "authorization_created": false,
+    "combination": {
+      "environment_step_formula": "episode_count * H_run; formal H_run is unresolved",
+      "formal_horizon_minutes": null,
+      "formal_smoke_environment_steps": null,
+      "formal_total_environment_steps": null,
+      "post_smoke_updates": 2304,
+      "smoke_environment_steps_at_60_minute_reference": 11520,
+      "smoke_episodes": 192,
+      "smoke_updates": 768,
+      "total_environment_steps_at_60_minute_reference": 46080,
+      "total_episodes": 768,
+      "total_updates_including_smoke": 3072
+    },
+    "confirmation": {
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261014,
+      "formal_minute_step_upper_bound": null,
+      "logical_parent_draws": 240000,
+      "minute_step_upper_bound_at_60_minute_reference": 10080,
+      "minute_step_upper_bound_formula": "trajectory_count * H_confirmation; formal horizon is unresolved",
+      "parents": 24,
+      "trajectories": 168,
+      "trajectory_slots_across_resamples": 1680000
+    },
+    "empirical_costs": {
+      "checkpoint_bytes": null,
+      "export_bytes": null,
+      "linux_cpu_seconds": null,
+      "linux_wall_seconds": null,
+      "peak_rss_bytes": null
+    },
+    "stage_b": {
+      "actual_candidate_continuation_steps": null,
+      "actual_context_scan_steps": null,
+      "branch_count_by_split": null,
+      "candidate_continuation_step_formula": "sum(candidate_count * min(30, max(0, H - window_minute))) over executed opportunity windows; excludes NOOP-reference and restore/prefix work",
+      "candidate_continuation_step_upper_bound_by_split": null,
+      "complete_b_ledger_environment_steps": null,
+      "context_scan_count_if_one_per_parent": 94,
+      "context_scan_steps_if_one_per_parent": null,
+      "formal_horizon_minutes": null,
+      "nominal_window_slots_by_split": {
+        "confirmation": 96,
+        "development": 56,
+        "train": 224
+      },
+      "noop_reference_and_restore_prefix_steps": null
+    },
+    "status": "UNFROZEN",
+    "unresolved_counts": [
+      "usable windows after termination/no-opportunity/admission",
+      "candidate catalogs per window",
+      "branch environment steps",
+      "prediction forwards and candidate evaluations",
+      "checkpoint and export operations/bytes",
+      "target-runtime empirical resource costs"
+    ],
+    "world_model": {
+      "batch_size_window_rows": 8,
+      "candidate_sample_visits_all_three_seeds": null,
+      "development_candidate_prediction_rows": null,
+      "epochs": 40,
+      "final_checkpoint_readbacks_if_reference_trainer_adopted": 3,
+      "final_checkpoint_writes_if_reference_trainer_adopted": 3,
+      "formal_candidate_model_evaluations": null,
+      "formal_forward_call_count": null,
+      "target_forwards_all_three_seeds_reference": null,
+      "update_evidence_rows_reference": null,
+      "updates_all_three_seeds": null,
+      "updates_per_seed": null,
+      "usable_training_windows": null
+    }
+  },
+  "default_counts_and_costs_unresolved": true,
+  "development_prediction_rows_probe": 12,
+  "explicit_horizon_probe_is_conditional_not_frozen": true,
+  "formal_trainer_absent_from_hosted_manifest": true,
+  "input_rejections": {
+    "boolean_window_count": true,
+    "window_count_mismatch": true,
+    "zero_horizon": true,
+    "zero_noop_catalog": true
+  },
+  "no_torch_training_remote_or_authorization": true,
+  "protocol_parent_counts": {
+    "confirmation": 24,
+    "development": 14,
+    "train": 56
+  },
+  "schema": "n2-independent-research-budget-formula-review/1",
+  "source_hash_matches": {
+    "n2-development/hosted-engineering-package-r1-20261014/manifest.json": true,
+    "n2-development/hosted-preparation-evidence/LOCAL_BUDGET_CALIBRATION_LIMITS_R1_20261014.json": true,
+    "n2-development/references/world_model/candidate_keys.py": true,
+    "n2-development/references/world_model/consequence_contract.py": true,
+    "n2-development/references/world_model/consequence_training.py": true,
+    "n2-development/revisions/stage-a-followup-r1/references/civil/EXECUTION_CONTRACT.md": true,
+    "n2-development/revisions/stage-a-followup-r1/references/civil/ppo_trainer.py": true,
+    "n2-development/revisions/stage-a-followup-r1/references/civil/protocol/preregistered_protocol.json": true,
+    "n2-governance/USER_HANDOFF_20261014.md": true
+  },
+  "status": "PASS_BOUNDED_FORMULA_REVIEW_NOT_RESOURCE_APPROVAL",
+  "wm_window_count_probes": {
+    "0": {
+      "updates_all_three_seeds": 0,
+      "updates_per_seed": 0
+    },
+    "1": {
+      "updates_all_three_seeds": 120,
+      "updates_per_seed": 40
+    },
+    "224": {
+      "updates_all_three_seeds": 3360,
+      "updates_per_seed": 1120
+    },
+    "8": {
+      "updates_all_three_seeds": 120,
+      "updates_per_seed": 40
+    },
+    "9": {
+      "updates_all_three_seeds": 240,
+      "updates_per_seed": 80
+    }
+  }
+}
