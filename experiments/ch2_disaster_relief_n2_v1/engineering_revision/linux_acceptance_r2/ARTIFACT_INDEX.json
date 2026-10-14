@@ -1,0 +1,57 @@
+{
+  "schema": "n2-linux-acceptance-archive-index/1",
+  "generated": "2026-10-13",
+  "redaction": "Raw transcript, authorization record and location, endpoint IP, host-key fingerprint, and process/affinity details are excluded.",
+  "files": [
+    {
+      "name": "AFFINITYFIX_EXECUTION_RECORD.md",
+      "bytes": 1236,
+      "sha256": "770C0D0C0EACE81A50513D51C17DBAA0797CFE0209C714301052B77489E02404"
+    },
+    {
+      "name": "AFFINITYFIX_REVIEW.md",
+      "bytes": 1105,
+      "sha256": "6C5CA541265AF83E2FAE8ACF2BF62FD26E2639D0B3F45B178C5D1616D63987E6"
+    },
+    {
+      "name": "AFFINITYFIX_REVISION.md",
+      "bytes": 1110,
+      "sha256": "3D394BB391EACF379AAC559C26B4CB2EEF76D11391B99B028F3154CF176BEE28"
+    },
+    {
+      "name": "INDEPENDENT_STOP_REVIEW.md",
+      "bytes": 975,
+      "sha256": "4E3B5DDA495EA5929CDD6CF8F1AE4D57A693C9AC546FD72434CE1DC97E3013C9"
+    },
+    {
+      "name": "LAUNCHER_REVIEW.md",
+      "bytes": 1990,
+      "sha256": "D3E7D29755DF1BA935FA16DFF66F682645329B3BD085CF358E2B14C0B9B8F79E"
+    },
+    {
+      "name": "package-manifest.json",
+      "bytes": 7964,
+      "sha256": "C90FA16A70158E77FBF1EF56C35D9E511F4579F8CE926F35B9458963AAF5ACCA"
+    },
+    {
+      "name": "PREFLIGHT_STOP_REPORT.md",
+      "bytes": 1182,
+      "sha256": "A12292C4B311C5C4396BF2FC5E9CEDF210A5E0A2E889824F606098FB0252165D"
+    },
+    {
+      "name": "r2_once_launcher_affinityfix.py",
+      "bytes": 19454,
+      "sha256": "6905455158F576785875697C0A26C7717FA01DBF0414119D839763AF8CB6DE6E"
+    },
+    {
+      "name": "r2_once_launcher.py",
+      "bytes": 19170,
+      "sha256": "06F14C351C02B7DD8E388F16A814928E85A1E65D24E36D2BDC1EC24E5D35CDE2"
+    },
+    {
+      "name": "STOP_SETTLEMENT.json",
+      "bytes": 1706,
+      "sha256": "C872380ED9DBF67C516A02A7A52B73B095107636AB8CEE6ECD0DA34A82AE0073"
+    }
+  ]
+}

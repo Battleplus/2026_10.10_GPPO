@@ -1,0 +1,47 @@
+{
+  "schema": "n2-linux-engineering-acceptance-stop/1",
+  "status": "stopped_before_package_transfer_and_systemd_submission",
+  "package_identity": "n2-local-synthetic-engineering-linux-acceptance-r2",
+  "package_manifest_sha256": "C90FA16A70158E77FBF1EF56C35D9E511F4579F8CE926F35B9458963AAF5ACCA",
+  "run_identity": "n2-engineering-acceptance-r2-20261013-once",
+  "target_identity": {
+    "host": "ru-server-MS-1",
+    "user": "user1"
+  },
+  "connection_count": 1,
+  "reconnect_count": 0,
+  "first_error": "SSH_SHELL_AFFINITY_NOT_REPORTED",
+  "taskset_command_exit": 0,
+  "taskset_output_locale": "localized (Chinese)",
+  "taskset_output_redacted": true,
+  "remote_effects": {
+    "package_files_uploaded": 0,
+    "package_bytes_uploaded": 0,
+    "remote_run_directory_created": false,
+    "systemd_submissions": 0,
+    "systemd_unit": "n2-engineering-acceptance-r2-20261013-once.service",
+    "invocation_id": null,
+    "invocation_not_created_basis": "submission was not reached",
+    "engineering_updates": 0,
+    "tests_or_smoke_started": 0,
+    "pending_paths": []
+  },
+  "measurements": {
+    "acceptance_runner_started": false,
+    "wall_seconds": null,
+    "cpu_seconds": null,
+    "rss_bytes": null,
+    "storage_bytes": null,
+    "caps_evaluated": false
+  },
+  "authorization_disposition": "the one-time authorization was consumed by this connection attempt; no retry or resubmission is authorized by this record",
+  "private_transcript": {
+    "archived": false,
+    "sha256": "CDCCC380981914E1C956AC40D553D968A4DC0EC349239EC9B36C03439242C0C3"
+  },
+  "private_authorization_record": {
+    "archived": false,
+    "contents_and_location_omitted": true
+  },
+  "formal_research_or_n3": "not run"
+}
