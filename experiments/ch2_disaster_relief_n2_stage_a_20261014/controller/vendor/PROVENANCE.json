@@ -1,0 +1,28 @@
+{
+  "schema": "n2-w7-vendor-provenance/1",
+  "sources": {
+    "budget_ledger.py": {
+      "source": "n2-development/references/infrastructure/budget_ledger.py",
+      "sha256": "739A7A09B980CD612BB528F983B81DAFA662EC9CDA02E992F800FD60E1AE28A4"
+    },
+    "linux_process_scope.py": {
+      "source": "n2-development/references/infrastructure/linux_process_scope.py",
+      "sha256": "3CC229BD1D64971A029F6D1F37EA5F63E708224A04D9ED11537A9F2F8D4C0F21"
+    },
+    "phase_handshake.py": {
+      "source": "n2-development/references/infrastructure/phase_handshake.py",
+      "sha256": "CBA29223018BEC26972BD3F3352CF400CFA94FB98EF22CEC2851291646817B43"
+    },
+    "stage_contract.py": {
+      "source": "n2-development/references/infrastructure/stage_contract.py",
+      "sha256": "CCA3888D510988E96437F227E51CA11D9C8B0E0F6417247CA793A5B00B20E154"
+    }
+  },
+  "compatibility_modules": {
+    "infra_io.py": {
+      "reason": "Imported by the supplied W7 sources but absent from references/infrastructure.",
+      "contract": "durable_append_jsonl with one JSON object per line, append mode, flush, and fsync.",
+      "sha256": "96F60CB7EE8A3096940D1B28B3634E5591230F54F793EFE6C6739A4194E42AC0"
+    }
+  }
+}

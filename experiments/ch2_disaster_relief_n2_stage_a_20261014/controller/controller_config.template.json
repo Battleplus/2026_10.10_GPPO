@@ -1,0 +1,27 @@
+{
+  "package_root": "E:/REPLACE_WITH_PACKAGE_DIRECTORY",
+  "manifest_rel": "manifest.json",
+  "package_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "expected_identity": "REPLACE_WITH_PACKAGE_IDENTITY",
+  "run_identity": "REPLACE_WITH_NEW_ONE_TIME_RUN_IDENTITY",
+  "unit": "REPLACE_WITH_RUN_IDENTITY.service",
+  "target_host": "REPLACE_WITH_APPROVED_HOSTNAME",
+  "target_user": "REPLACE_WITH_APPROVED_TARGET_USER",
+  "connect_host": "REPLACE_WITH_APPROVED_CONNECT_HOST",
+  "remote_root": "/REPLACE_WITH_APPROVED_UNIQUE_REMOTE_ROOT",
+  "python": "/usr/bin/python3",
+  "worker_entry": "worker.py",
+  "worker_args": [],
+  "ssh_key_file": "C:/Users/ASUS/.ssh/REPLACE_WITH_PRIVATE_KEY_REFERENCE",
+  "known_hosts": "C:/Users/ASUS/.ssh/REPLACE_WITH_KNOWN_HOSTS_REFERENCE",
+  "evidence_root": "E:/10.14/REPLACE_WITH_NEW_EVIDENCE_DIRECTORY",
+  "budget": {
+    "status": "NOT_APPROVED",
+    "wall_seconds_total_including_settlement": 180,
+    "settlement_reserve_seconds": 30,
+    "systemd_runtime_max_seconds": 180,
+    "cpu_quota_percent": 100,
+    "cgroup_memory_max_bytes": 1073741824
+  },
+  "consumption_root": "E:/10.14/REPLACE_WITH_PERSISTENT_CONSUMPTION_DIRECTORY"
+}

@@ -1,0 +1,6 @@
+duplicate_key: ACCEPTED
+saved_catalog_tamper: ACCEPTED
+context_time_tamper: ACCEPTED
+t8_restore: PASS time=8 candidates=1
+unknown_nan_loss_equal: True
+unknown_nan_gradient_equal: True

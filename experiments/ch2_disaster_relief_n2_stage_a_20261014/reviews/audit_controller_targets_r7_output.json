@@ -1,0 +1,75 @@
+{
+  "bundle_sha256": "A265DE1455368433C9B2B38AED3B8EB8CE372B763B0AB2792BD0406FDAD11AD2",
+  "collector_cases": [
+    {
+      "mode": "valid",
+      "status": "complete"
+    },
+    {
+      "error": "MANAGED_CGROUP_CONFIGURATION_OR_SETTLEMENT_INVALID",
+      "mode": "quota_nan",
+      "status": "rejected"
+    },
+    {
+      "error": "MANAGED_CGROUP_COUNTER_LIMIT_INVALID",
+      "mode": "cpu_nan",
+      "status": "rejected"
+    }
+  ],
+  "guard_rejections": [
+    {
+      "error": "GUARD_BUDGET_FIELD_INVALID:complete_process_cpu_seconds_total_including_descendants_and_settlement",
+      "name": "cpu_nan"
+    },
+    {
+      "error": "GUARD_BUDGET_FIELD_INVALID:complete_process_cpu_seconds_total_including_descendants_and_settlement",
+      "name": "cpu_inf"
+    },
+    {
+      "error": "GUARD_BUDGET_FIELD_INVALID:cgroup_memory_max_bytes",
+      "name": "memory_float"
+    },
+    {
+      "error": "GUARD_INTERVAL_INVALID",
+      "name": "interval_nan"
+    }
+  ],
+  "normal_stage_operations": [
+    {
+      "amounts": {
+        "world_model_candidate_sample_evaluations": 7,
+        "world_model_forwards": 1
+      },
+      "effect": [
+        1
+      ],
+      "stage": "offline_prediction"
+    },
+    {
+      "amounts": {
+        "output_write_operations": 1
+      },
+      "effect": [
+        1
+      ],
+      "stage": "paired_collection"
+    }
+  ],
+  "scope": "local finite admission probes only",
+  "source_sha256": {
+    "exact_record_authorization.py": "E1517CF516388064863C28DC47A58E4DCEB3467B9522CE910EDC9AEE60F58441",
+    "managed_runtime.py": "94EB6796BE523122F51A567A7F4A8E846C0D6F3ABAB43A215FAC2529053D406B",
+    "managed_stage_supervisor.py": "7E4A8CF78F9D09246A3878DB60D09D3AD1AC219BE43E2A907333BBE8E425511F",
+    "managed_worker_entry.py": "4756459C9E3552B9A8E221ACE36D40D46C413440DE4312EE7901513D4697A696",
+    "n2_controller.py": "57034297008E9CBC31D381C25B93F1867E84090C50FFB3E61CF74A61C1E372B4",
+    "standalone_controller.py": "D8F12D042597FF8BF4301791F05A49F6A46476517FAA3E7D75D1A1F81AC7D225",
+    "test_managed_runtime.py": "C1C8B6FC800F97C9D691674628B78E7652F2C0786377F6F0CB79F1E94D06FBBF",
+    "test_managed_stage_supervisor.py": "E63F6E060F39E7DD50A68B37E1DC58283B95631D6646CEEAF49C9DCC7CAB1BC7",
+    "test_n2_controller.py": "7CD47BA4C2B85A4D3AB4A2B0E0BD40D3826DECB583789723ED9105D6006232C6"
+  },
+  "stage_allocations": {
+    "paired_constructions": 1011,
+    "total_constructions": 1024
+  },
+  "status": "TARGETED_LOCAL_PROBES_PASS"
+}

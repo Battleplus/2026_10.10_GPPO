@@ -1,0 +1,157 @@
+{
+  "schema": "n2-first-local-real-learning-archive/1",
+  "status": "LOCAL_ENGINEERING_COMPLETED_AWAITING_INDEPENDENT_REVIEW",
+  "file_count": 30,
+  "files": [
+    {
+      "path": "frozen-source/n2_contracts.py",
+      "bytes": 9022,
+      "sha256": "270F4C94F2A063E841A1891A34D79C9B7BEE61C82F383F39B5AF1F0750E809ED"
+    },
+    {
+      "path": "frozen-source/references/civil/baselines.py",
+      "bytes": 5740,
+      "sha256": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A"
+    },
+    {
+      "path": "frozen-source/references/civil/fixtures/control.json",
+      "bytes": 4706,
+      "sha256": "EB4946623237FD88C8464D54D974EB027335F2EAD1370B9D9AD0F8B37CECF4C0"
+    },
+    {
+      "path": "frozen-source/references/civil/graph_policy.py",
+      "bytes": 34652,
+      "sha256": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142"
+    },
+    {
+      "path": "frozen-source/references/civil/ppo_trainer.py",
+      "bytes": 27897,
+      "sha256": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891"
+    },
+    {
+      "path": "frozen-source/references/civil/relief_env.py",
+      "bytes": 53796,
+      "sha256": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D"
+    },
+    {
+      "path": "frozen-source/references/civil/scenario_schema.py",
+      "bytes": 13417,
+      "sha256": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0"
+    },
+    {
+      "path": "frozen-source/references/existing_n2/branching.py",
+      "bytes": 25628,
+      "sha256": "56ACCA9AFC744FB4E0F3D4F112EA84C234E6679F36776E804391984F3E5223FC"
+    },
+    {
+      "path": "frozen-source/references/existing_n2/ppo_integration.py",
+      "bytes": 876,
+      "sha256": "BF4305AE8D775A6B706C36C849C6AF0CA165A527F83E2826BAEA0A0E2D04AAEA"
+    },
+    {
+      "path": "frozen-source/references/existing_n2/tests/test_branching.py",
+      "bytes": 12561,
+      "sha256": "DAA03ADEBE3210B7FD752E3038F6962F20A93EE63AFD680DC3C21F97224119FF"
+    },
+    {
+      "path": "frozen-source/references/existing_n2/world_model.py",
+      "bytes": 48282,
+      "sha256": "CEE1B2083383213CB50272A49CA819F4EA523E9D9E80D6073C96DBBFDBABE9FF"
+    },
+    {
+      "path": "frozen-source/run_local_engineering_watchdog.py",
+      "bytes": 11622,
+      "sha256": "95C7F57E21DB4D611CDE00DE1A8183C861FBDC832689B7B918AB30EA5EB4330F"
+    },
+    {
+      "path": "frozen-source/run_local_engineering.py",
+      "bytes": 19508,
+      "sha256": "9073DF6FADE8DBBB4675A1AB934819CC3AE5E787A5ACF458C89654C99FCC7DAF"
+    },
+    {
+      "path": "LOCAL_ENGINEERING_BUDGET.json",
+      "bytes": 2339,
+      "sha256": "E868BF157118116FCCBA0DE1BCDE5A1D56CBAF38FFD9A96228F10246271EDC98"
+    },
+    {
+      "path": "N2_LOCAL_BOUNDED_ADMISSION_REVIEW_R5_20261014.md",
+      "bytes": 6084,
+      "sha256": "DE176B034E4B476654E10161C7A75C70107ADC9EEF1E675F03514A2423F6C798"
+    },
+    {
+      "path": "RUN_ARCHIVE_STATUS_ZH.md",
+      "bytes": 1177,
+      "sha256": "DDE28FECDCA16C5B9BDE4E6BDFE341A6268967FCFFEAA37B4EA6E885E6FAD2BF"
+    },
+    {
+      "path": "run/artifacts/branch_records.jsonl",
+      "bytes": 2351038,
+      "sha256": "66EEC02F22CDFFF51186182797BC8E6815A1EE86EA7646CDB8E8884B20A5628C"
+    },
+    {
+      "path": "run/artifacts/LOCAL_ENGINEERING_RECEIPT.json",
+      "bytes": 5652,
+      "sha256": "BCDC98E8B84DE53B71D18BB17AFF901AFDB7A0F2F4CA8A6D2D4329B7661B600B"
+    },
+    {
+      "path": "run/artifacts/ppo-original/checkpoints/round_0001.pt",
+      "bytes": 1184303,
+      "sha256": "45A8F394D5FE20DEA80C88617025D298A414478D064CF5C8097589EC7DAA7760"
+    },
+    {
+      "path": "run/artifacts/ppo-original/checkpoints/round_0002.pt",
+      "bytes": 1184303,
+      "sha256": "26824758F1D363A1C7956665CE362B23087B2FF3CFF9221CC06F5E6A8EA112A5"
+    },
+    {
+      "path": "run/artifacts/ppo-original/learning_curve.jsonl",
+      "bytes": 6719,
+      "sha256": "EE66FD7A50FEED4545708ABE824025099CC78248C8D89F01417E05ABEA83BE33"
+    },
+    {
+      "path": "run/artifacts/ppo-original/rollouts/round_0001.jsonl",
+      "bytes": 2370656,
+      "sha256": "B8DC83CBA63446C17D1DF53CF1A9061AE09EF71B634F6AD6E5FDD2306BAEE9EA"
+    },
+    {
+      "path": "run/artifacts/ppo-original/rollouts/round_0002.jsonl",
+      "bytes": 2386844,
+      "sha256": "3EE97EB7971F0E4E469EC43E0B1339FC819DF1931649ED2C8B086AA14EE089CD"
+    },
+    {
+      "path": "run/artifacts/ppo-restored/checkpoints/round_0002.pt",
+      "bytes": 1184303,
+      "sha256": "26824758F1D363A1C7956665CE362B23087B2FF3CFF9221CC06F5E6A8EA112A5"
+    },
+    {
+      "path": "run/artifacts/ppo-restored/learning_curve.jsonl",
+      "bytes": 3363,
+      "sha256": "38289DB4D73153218941C922D5E1A1A143987E14CAA5287DB4DD30786FB98BB5"
+    },
+    {
+      "path": "run/artifacts/ppo-restored/rollouts/round_0002.jsonl",
+      "bytes": 2386844,
+      "sha256": "3EE97EB7971F0E4E469EC43E0B1339FC819DF1931649ED2C8B086AA14EE089CD"
+    },
+    {
+      "path": "run/artifacts/wm-checkpoint.pt",
+      "bytes": 29536,
+      "sha256": "D79638FB16849BB22A7604DD6FD5BB51C9038C1D35576FD699543A5AC1DFAA62"
+    },
+    {
+      "path": "run/artifacts/wm-frozen-checkpoint.pt",
+      "bytes": 29536,
+      "sha256": "27BA7C52BAAC1B1C17BA88815B9E0B17D8296DEC8F4BD8C2023321228D5C2D23"
+    },
+    {
+      "path": "run/WATCHDOG_RECEIPT.json",
+      "bytes": 3769,
+      "sha256": "19D0A49CF134C97838D159BE9F0BC92501394A6089BB5E401A76C7B37EAD4E5B"
+    },
+    {
+      "path": "run/worker.stdout.log",
+      "bytes": 676,
+      "sha256": "57B84A4C65B6E64B4FD15D872FA1D0DBE99983EC5FC27691A9C45F2C2A53AEC0"
+    }
+  ]
+}

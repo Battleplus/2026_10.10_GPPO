@@ -1,0 +1,282 @@
+{
+  "schema": "n2-github-progress-archive/1",
+  "status": "STAGE_A_NOT_PASSED",
+  "prefix": "experiments/ch2_disaster_relief_n2_stage_a_20261014",
+  "files": [
+    {
+      "path": "controller/controller_config.template.json",
+      "bytes": 1198,
+      "sha256": "DB038A1C1DC1504903C8CE968586D5F65793813EBF51F0213E5F7B823651D358"
+    },
+    {
+      "path": "controller/CONTROLLER_REPORT.md",
+      "bytes": 10466,
+      "sha256": "2D15C3A4E0B97592CACCAFFCEE685C349137B8B610D2686CCA7BD33CF4367D7D"
+    },
+    {
+      "path": "controller/exact_record_authorization.py",
+      "bytes": 2674,
+      "sha256": "E1517CF516388064863C28DC47A58E4DCEB3467B9522CE910EDC9AEE60F58441"
+    },
+    {
+      "path": "controller/local-tests.txt",
+      "bytes": 3169,
+      "sha256": "4463DC653DD0FAD8EF9983CF93A614CF7172EA7A88448C96390A4E7451923315"
+    },
+    {
+      "path": "controller/managed_runtime.py",
+      "bytes": 10600,
+      "sha256": "94EB6796BE523122F51A567A7F4A8E846C0D6F3ABAB43A215FAC2529053D406B"
+    },
+    {
+      "path": "controller/managed_stage_supervisor.py",
+      "bytes": 30147,
+      "sha256": "7E4A8CF78F9D09246A3878DB60D09D3AD1AC219BE43E2A907333BBE8E425511F"
+    },
+    {
+      "path": "controller/managed_worker_entry.py",
+      "bytes": 1137,
+      "sha256": "4756459C9E3552B9A8E221ACE36D40D46C413440DE4312EE7901513D4697A696"
+    },
+    {
+      "path": "controller/n2_controller.py",
+      "bytes": 38097,
+      "sha256": "57034297008E9CBC31D381C25B93F1867E84090C50FFB3E61CF74A61C1E372B4"
+    },
+    {
+      "path": "controller/standalone_controller.py",
+      "bytes": 8925,
+      "sha256": "4C6E78A0E4E1943016813B1CF13D9B12B0BD6CF49B4C0E00DF62DAE3B6F96B7F"
+    },
+    {
+      "path": "controller/test_managed_runtime.py",
+      "bytes": 3968,
+      "sha256": "C1C8B6FC800F97C9D691674628B78E7652F2C0786377F6F0CB79F1E94D06FBBF"
+    },
+    {
+      "path": "controller/test_managed_stage_supervisor.py",
+      "bytes": 6401,
+      "sha256": "E63F6E060F39E7DD50A68B37E1DC58283B95631D6646CEEAF49C9DCC7CAB1BC7"
+    },
+    {
+      "path": "controller/test_n2_controller.py",
+      "bytes": 24542,
+      "sha256": "7CD47BA4C2B85A4D3AB4A2B0E0BD40D3826DECB583789723ED9105D6006232C6"
+    },
+    {
+      "path": "controller/test_standalone_controller.py",
+      "bytes": 7530,
+      "sha256": "F4F4CA7F493A2B8B97EE8F5B30465CED148EBB88C30CF1BC7153322EDF8859DD"
+    },
+    {
+      "path": "controller/vendor/budget_ledger.py",
+      "bytes": 13506,
+      "sha256": "739A7A09B980CD612BB528F983B81DAFA662EC9CDA02E992F800FD60E1AE28A4"
+    },
+    {
+      "path": "controller/vendor/infra_io.py",
+      "bytes": 974,
+      "sha256": "96F60CB7EE8A3096940D1B28B3634E5591230F54F793EFE6C6739A4194E42AC0"
+    },
+    {
+      "path": "controller/vendor/linux_process_scope.py",
+      "bytes": 14027,
+      "sha256": "3CC229BD1D64971A029F6D1F37EA5F63E708224A04D9ED11537A9F2F8D4C0F21"
+    },
+    {
+      "path": "controller/vendor/phase_handshake.py",
+      "bytes": 32952,
+      "sha256": "CBA29223018BEC26972BD3F3352CF400CFA94FB98EF22CEC2851291646817B43"
+    },
+    {
+      "path": "controller/vendor/PROVENANCE.json",
+      "bytes": 1199,
+      "sha256": "CB180D74F8C330A065F93DB3DA3738D4D5E9A86290E7EAD35970385038B39E1F"
+    },
+    {
+      "path": "controller/vendor/stage_contract.py",
+      "bytes": 1157,
+      "sha256": "CCA3888D510988E96437F227E51CA11D9C8B0E0F6417247CA793A5B00B20E154"
+    },
+    {
+      "path": "FIRST_LOCAL_RUN.zip",
+      "bytes": 3557924,
+      "sha256": "459C1403F1ACC995138E48C739B147C5090610ECCA93832385D29B89E3E4E912"
+    },
+    {
+      "path": "first_local_run/frozen-source/n2_contracts.py",
+      "bytes": 9022,
+      "sha256": "270F4C94F2A063E841A1891A34D79C9B7BEE61C82F383F39B5AF1F0750E809ED"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/baselines.py",
+      "bytes": 5740,
+      "sha256": "13B2A84662022B7ED6A56A19629AD3ABE2AD954C46926EB1A72CAA326039115A"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/fixtures/control.json",
+      "bytes": 4706,
+      "sha256": "EB4946623237FD88C8464D54D974EB027335F2EAD1370B9D9AD0F8B37CECF4C0"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/graph_policy.py",
+      "bytes": 34652,
+      "sha256": "E1A8E56DA7F6BE9B75F2C48AFAE54ABECF71445BCE3AF94724F50713A005D142"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/ppo_trainer.py",
+      "bytes": 27897,
+      "sha256": "C0AC1C57AE1A06D8DADF94DE80CA4E35F5B136F0879064AAC0E0618ABB2FC891"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/relief_env.py",
+      "bytes": 53796,
+      "sha256": "EA9B2605CF529E5331F9479B62F7E5504005177AF902343743E6FE7D0838955D"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/civil/scenario_schema.py",
+      "bytes": 13417,
+      "sha256": "5E18A62D251D2D4A9CCF1CA429E2CA41B8CE6430D6571A0F3897079C3E7D08C0"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/existing_n2/branching.py",
+      "bytes": 25628,
+      "sha256": "56ACCA9AFC744FB4E0F3D4F112EA84C234E6679F36776E804391984F3E5223FC"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/existing_n2/ppo_integration.py",
+      "bytes": 876,
+      "sha256": "BF4305AE8D775A6B706C36C849C6AF0CA165A527F83E2826BAEA0A0E2D04AAEA"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/existing_n2/tests/test_branching.py",
+      "bytes": 12561,
+      "sha256": "DAA03ADEBE3210B7FD752E3038F6962F20A93EE63AFD680DC3C21F97224119FF"
+    },
+    {
+      "path": "first_local_run/frozen-source/references/existing_n2/world_model.py",
+      "bytes": 48282,
+      "sha256": "CEE1B2083383213CB50272A49CA819F4EA523E9D9E80D6073C96DBBFDBABE9FF"
+    },
+    {
+      "path": "first_local_run/frozen-source/run_local_engineering_watchdog.py",
+      "bytes": 11622,
+      "sha256": "95C7F57E21DB4D611CDE00DE1A8183C861FBDC832689B7B918AB30EA5EB4330F"
+    },
+    {
+      "path": "first_local_run/frozen-source/run_local_engineering.py",
+      "bytes": 19508,
+      "sha256": "9073DF6FADE8DBBB4675A1AB934819CC3AE5E787A5ACF458C89654C99FCC7DAF"
+    },
+    {
+      "path": "FIRST_RUN_MANIFEST.json",
+      "bytes": 5708,
+      "sha256": "150EF9545075B8D3F5BF3174CFE84A563BB267C3D82BA4203B62E01130B7CDE2"
+    },
+    {
+      "path": "NODE_A_DELIVERY_ZH_R1.md",
+      "bytes": 5798,
+      "sha256": "4129C1EB321BFA99C79AF68FA07381028B034AB1EAF692B92F379A7AA9B159B6"
+    },
+    {
+      "path": "R6_INDEPENDENT_REVIEW.zip",
+      "bytes": 12551,
+      "sha256": "E05500E032D615FF4C5C66278E17ABD5791107CEE5C0F7E2C40A1B42DCDAD3DC"
+    },
+    {
+      "path": "README_ZH.md",
+      "bytes": 1527,
+      "sha256": "02A0AFC8659905C731705EA693A9F1B1FCC8826A655037D1DA65CC346C65F95D"
+    },
+    {
+      "path": "reviews/audit_contract_counterexamples_r2_output.txt",
+      "bytes": 190,
+      "sha256": "03051FB6329012E55293A5978B4E3D3CAAC3A215DA1CB32C78F8F7CBC2873F4B"
+    },
+    {
+      "path": "reviews/audit_contract_counterexamples_r2.py",
+      "bytes": 2781,
+      "sha256": "C65255E892C5109AD63B206C3D0C7A1D4DB09F3445A9645B36112671D32FF2AA"
+    },
+    {
+      "path": "reviews/audit_controller_targets_r7_output.json",
+      "bytes": 2538,
+      "sha256": "8BE9E0FD4402AADE8D934C49889435A2851AE198FB092BFE8BE45E50CF2B6BB2"
+    },
+    {
+      "path": "reviews/audit_controller_targets_r7.py",
+      "bytes": 5112,
+      "sha256": "2D008D87E67C3112E9143330EDC11182BB64D7113B8EC1710BE7BC185312502B"
+    },
+    {
+      "path": "reviews/audit_local_run_r6_output.json",
+      "bytes": 7330,
+      "sha256": "AE19A49A6F8B942CA965A38C41C4609C18668029E3B91936ABAAFE19D82B301C"
+    },
+    {
+      "path": "reviews/audit_local_run_r6_stdout.txt",
+      "bytes": 4279,
+      "sha256": "00EE6385C6B9519BE5ACAA19134C8863BB683427129F573AD96BDC3D55E5C071"
+    },
+    {
+      "path": "reviews/audit_local_run_r6.py",
+      "bytes": 9242,
+      "sha256": "8F11770EDDA2C790C0460D8C75F972CD0744962C88F4FD6E13406B13F10B8901"
+    },
+    {
+      "path": "reviews/controller_r7_final_tests.txt",
+      "bytes": 3156,
+      "sha256": "ACC2C4DBAA87063FEBD99B0DB599CD77D98F0266A9510DF169CF109E998B6E13"
+    },
+    {
+      "path": "reviews/N2_CONTRACT_REVISION_AND_REUSE_CHAIN_REVIEW_R2_20261014.md",
+      "bytes": 5669,
+      "sha256": "22265E8E4AF209DFEF80756D7076C358D336EAD979B192257E4FB4F0AB19DA38"
+    },
+    {
+      "path": "reviews/N2_CONTRACTS_AND_BUDGET_V2_INITIAL_REVIEW_R1_20261014.md",
+      "bytes": 5305,
+      "sha256": "E40EB39B9E3161A39F43514081B9E3E5F11A4C93459A5A427E7E59E7E2515CF8"
+    },
+    {
+      "path": "reviews/N2_CONTROLLER_EARLY_BOUNDARY_REVIEW_R3_20261014.md",
+      "bytes": 4949,
+      "sha256": "D6E9AAA4AB91B0665185D65192E9705CC3B408FCBFAC8E2BEC6823F5EA4EF010"
+    },
+    {
+      "path": "reviews/N2_CONTROLLER_TARGETED_REVIEW_R7_20261014.md",
+      "bytes": 5114,
+      "sha256": "93E8DD6EEBF41145DE27C59B1980FA4C879081A2D5C3120C93AF993E86E51D61"
+    },
+    {
+      "path": "reviews/N2_ENGINEERING_BUDGET_REVIEW_R0_20261014.md",
+      "bytes": 3505,
+      "sha256": "D75C060D2A5CD7324655FAB21E65F47172D4AD20CD9A9028115100620DBF9B10"
+    },
+    {
+      "path": "reviews/N2_LATEST_STOP_AND_AUTHORIZATION_REVIEW_20261014.md",
+      "bytes": 5935,
+      "sha256": "4E08150E46E206AFF4C5836E531C3597B3EA22C38CD1E8F365A58E37AA72F2EA"
+    },
+    {
+      "path": "reviews/N2_LOCAL_BOUNDED_ADMISSION_REVIEW_R5_20261014.md",
+      "bytes": 6084,
+      "sha256": "DE176B034E4B476654E10161C7A75C70107ADC9EEF1E675F03514A2423F6C798"
+    },
+    {
+      "path": "reviews/N2_LOCAL_ENTRY_EARLY_ADMISSION_REVIEW_R4_20261014.md",
+      "bytes": 5584,
+      "sha256": "6C547DA8B7CD80FA42A53A73B8012F7B9A83FB1E3557A544C39B93EEE2D0B93B"
+    },
+    {
+      "path": "reviews/N2_LOCAL_RUN_FINAL_INDEPENDENT_REVIEW_R6_20261014.md",
+      "bytes": 10258,
+      "sha256": "947EE9683CE1EF60D71D9AEA46E591BA132B85EAD533DA70AE155F99D0C7E215"
+    },
+    {
+      "path": "reviews/N2_STAGE_A_INITIAL_INDEPENDENT_REVIEW_20261014.md",
+      "bytes": 9069,
+      "sha256": "520CCD3EAC57A87F427BADDB8973403F06A6D577F303D3BDCD8B8663A42BD870"
+    }
+  ]
+}
