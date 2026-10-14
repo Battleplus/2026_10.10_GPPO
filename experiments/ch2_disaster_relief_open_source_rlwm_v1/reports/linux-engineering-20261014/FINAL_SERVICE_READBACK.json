@@ -1,0 +1,15 @@
+{
+  "schema": "rlwm-engineering-final-service-readback/1",
+  "unit": "rlwm-engineering-20261014-02",
+  "transport": "authenticated_ssh_read_only_rpc",
+  "exit_code": 0,
+  "properties": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "LoadState": "not-found",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "interpretation": "No active main process after recorded explicit cleanup; success is established by the retained pre-cleanup invocation receipt, not by unit disappearance."
+}

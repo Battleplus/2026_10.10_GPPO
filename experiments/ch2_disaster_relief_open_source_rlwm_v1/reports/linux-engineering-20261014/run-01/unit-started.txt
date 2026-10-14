@@ -1,0 +1,15 @@
+Restart=no
+RuntimeMaxUSec=10min
+RemainAfterExit=yes
+Result=success
+ExecMainPID=322261
+ExecMainStatus=0
+ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/rlwm-engineering-20261014-01.service
+CPUQuotaPerSecUSec=1s
+MemoryMax=4294967296
+CPUAffinity=0
+KillMode=control-group
+LoadState=loaded
+ActiveState=activating
+SubState=start
+InvocationID=41d334003f8844b0a78205a81bf54073

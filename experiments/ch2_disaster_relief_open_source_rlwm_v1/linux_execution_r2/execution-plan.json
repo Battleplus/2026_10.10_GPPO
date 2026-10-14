@@ -1,0 +1,17 @@
+{
+  "schema": "rlwm-linux-engineering-execution/1",
+  "environment_spec_sha256": "e3a397648bcecf7f8fa556cf6d20df21b54c82fe6b3c5b7f5fa1076026f60230",
+  "allowed_optimizer_steps": {
+    "upstream_cartpole": 3,
+    "civilian_adapter": 3,
+    "precision_diagnostic_fp16_control": 2,
+    "precision_diagnostic_fp32_control": 2
+  },
+  "maximum_total_optimizer_steps": 10,
+  "automatic_retries": 0,
+  "formal_training": false,
+  "heldout_evaluation": false,
+  "source_commit": "c8b705effe6c314d5740be89112e5dd5a0547a40",
+  "revision": "r2_import_dependency_and_fixture_portability",
+  "supersedes_engineering_run": "linux-eng-20261014-01"
+}

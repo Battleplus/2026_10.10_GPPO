@@ -1,0 +1,91 @@
+{
+  "algorithm": "sha256",
+  "artifacts": [
+    {
+      "path": "01-seeded-cpu-witness.log",
+      "bytes": 295,
+      "sha256": "3c0863101ca434bb7bcb4642f6872aee2ce0598d085b7aa6e11252138f0f556c"
+    },
+    {
+      "path": "02-unittest-26.log",
+      "bytes": 5039,
+      "sha256": "5e3d385bc6cd1801a611b1a7a41ffdd5e567a4082234c11a7360850861ef916d"
+    },
+    {
+      "path": "03-upstream-cartpole-3-updates.log",
+      "bytes": 8168,
+      "sha256": "ca9526acac8ae1eaf01ad7855ef1980367900837139bcf99a6fb303cf64bcdab"
+    },
+    {
+      "path": "04-civilian-3-updates.log",
+      "bytes": 11966,
+      "sha256": "a30dbf39fe3dff44a7c6c060f642496f312329b4b2b433515107d23d3b741423"
+    },
+    {
+      "path": "05-precision-diagnostic.log",
+      "bytes": 4083,
+      "sha256": "79ee12a826fb791b08df6492829d9ea5cf74bf227d888feb3a94f7ea8cd5f75f"
+    },
+    {
+      "path": "civilian/civilian-dreamer-smoke-receipt.json",
+      "bytes": 9720,
+      "sha256": "97b831124665a1eb6d3097ea887fd478e0822e1d0a139369f9578cc73c879c49"
+    },
+    {
+      "path": "civilian/civilian_dreamer_smoke.pt",
+      "bytes": 4579982,
+      "sha256": "71a8a14b4c210cee4b2bc568e5e4be851d714fb8a8c2c2d8e9f8a4a98fcf94b2"
+    },
+    {
+      "path": "precision-diagnostic.json",
+      "bytes": 1707,
+      "sha256": "eb7ce0e9298391c8f6d1ce70a995a1cb4a9f8bcbe3fbddff0a13196bb10a3c7f"
+    },
+    {
+      "path": "run-started.json",
+      "bytes": 85,
+      "sha256": "040ae0f6187e8043174adaef2036a2029a384fddeac452082ea0c02c6c9ee703"
+    },
+    {
+      "path": "runner-console.log",
+      "bytes": 10866,
+      "sha256": "7663a6529401c67a5232aa928c4039deba55dfa401ffdfda27e6d5a1ebd0375d"
+    },
+    {
+      "path": "source-hashes.json",
+      "bytes": 40327,
+      "sha256": "ce63e52fcf7bd796f51dcf04c92af83eb36e386991e34e3a7e29679305cbd3ad"
+    },
+    {
+      "path": "systemd-run.log",
+      "bytes": 54,
+      "sha256": "361687bd176fe493fa33e5af950c200c2a045b10d1de3163bd991cf0f992b88f"
+    },
+    {
+      "path": "systemd-status.txt",
+      "bytes": 368,
+      "sha256": "70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85"
+    },
+    {
+      "path": "unit-cleanup.json",
+      "bytes": 151,
+      "sha256": "b608505d31cc77d563b38bb812094b6d99f8b2ce2a016d85b4e97d97581d241f"
+    },
+    {
+      "path": "unit-started.txt",
+      "bytes": 403,
+      "sha256": "23b2a1b8b6655418ca7c55532e3ed9b8a0dc397cf5456d9c9125200be8271085"
+    },
+    {
+      "path": "upstream/dreamer_cartpole_smoke.pt",
+      "bytes": 2127294,
+      "sha256": "321bcc44ea3726f691811c3d3252ece73923d81c12838108d81d30bdefb47d06"
+    },
+    {
+      "path": "upstream/smoke-receipt.json",
+      "bytes": 6099,
+      "sha256": "b44c7d9ca851d66b7f1b542b9ed7f3b4eddd3226ea85d0e21efeae6799d0affc"
+    }
+  ],
+  "run_receipt_sha256": "0449033931a122dbbf7f7cf2ea5298cd7cd326f6515bced9913a20d947cb66f7"
+}

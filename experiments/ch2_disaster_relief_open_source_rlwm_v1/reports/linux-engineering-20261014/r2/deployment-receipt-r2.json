@@ -1,0 +1,10 @@
+{
+  "revision": "r2",
+  "files_verified": 314,
+  "mismatches": [],
+  "patched_parent_files": [
+    "tests/test_decision_repeat_adapter.py"
+  ],
+  "manifest_sha256": "62553282bd69a851c83f3db3a3463c9f64e70323dfb93b6820a3c6ea8f644340",
+  "old_source_preserved": true
+}

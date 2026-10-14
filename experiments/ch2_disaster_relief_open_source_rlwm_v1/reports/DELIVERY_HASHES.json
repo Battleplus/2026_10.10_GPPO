@@ -2,6 +2,10 @@
   "schema": "rlwm-delivery-hashes/1",
   "scope": "engineering_artifacts_not_formal_results",
   "files": {
+    ".aris/compute/ru-server-MS-1-linux-engineering-r2.md": {
+      "sha256": "c7a6abb532632df61a6901c70fbdc2e9aa8228a957acac0be8a41ba842dc4f24",
+      "bytes": 1817
+    },
     ".aris/traces/experiment-audit/2026-10-14_stage01/reviewer-trace.json": {
       "sha256": "8f3823eaec8d6b56399c467e5e851e6f6666cc03d3eb29ef8091b116a0071f24",
       "bytes": 3269
@@ -34,6 +38,90 @@
       "sha256": "dfe135288fe54888132cbaf0672121d92e2bc53bac46f761a27053fbec1b0661",
       "bytes": 41934
     },
+    "linux_execution/cpu_witness.py": {
+      "sha256": "923d7731f2b5614e518368043217ab289969780e5f86fda77ba5c99610b9dc5e",
+      "bytes": 1145
+    },
+    "linux_execution/environment-spec.json": {
+      "sha256": "1ce2d18e623f7651b8e983b03ff1f27b9104515988a44d4a25484b89fb3963ef",
+      "bytes": 4120
+    },
+    "linux_execution/execution-plan.json": {
+      "sha256": "178393aa5eddfc9e228843b544b8d7cafd982d8a5ec0ebd890ca82d829bd21e4",
+      "bytes": 515
+    },
+    "linux_execution/finalize_systemd_run.py": {
+      "sha256": "6275f328d1306d0c64b23614a2e225240c434de3362bb2dc44f554f7ba558ede",
+      "bytes": 7580
+    },
+    "linux_execution/launch_systemd_run.sh": {
+      "sha256": "1a1a90cc2c9b7e33e62dbd8adad15150ae284df2bc72568660b6f176693bd3ba",
+      "bytes": 4484
+    },
+    "linux_execution/provider-ledger.md": {
+      "sha256": "91e0d7f9419780fbf922ffd660d62b64a9d2e485e33cb7cdb007586edcafd186",
+      "bytes": 1989
+    },
+    "linux_execution/run_linux_engineering.py": {
+      "sha256": "035dafe3c064c9f88892f7c00d6aebb51d7509150876442b848e9e508d68ff9c",
+      "bytes": 26731
+    },
+    "linux_execution/run_precision_diagnostic.py": {
+      "sha256": "f713ffe4ce31d5f55dfc94901fcd39da4c9b1878e5d3800076997c9a8fc0e5a9",
+      "bytes": 1526
+    },
+    "linux_execution_r2/bootstrap_linux_r2.py": {
+      "sha256": "4d082285116911c37d64deadda57d0d00af91d45a9b587251406bb67883d1a95",
+      "bytes": 2357
+    },
+    "linux_execution_r2/cpu_witness.py": {
+      "sha256": "9316e1a87a09338566c2a38b8491c462345f8340229fc1306f0d42a832148ff4",
+      "bytes": 1180
+    },
+    "linux_execution_r2/environment-spec.json": {
+      "sha256": "d177df84752887d4552272acd5bcfdf098b99e804f21f72a0de44c03ebb5a1c2",
+      "bytes": 4593
+    },
+    "linux_execution_r2/execution-plan.json": {
+      "sha256": "de7482ac9c0b805055a1a694fe7b0d88c2de924a324b002073d87e9f568b2927",
+      "bytes": 634
+    },
+    "linux_execution_r2/finalize_systemd_run.py": {
+      "sha256": "71e80b9feb5e9e99120e4d3e3afccdacf8da317c6d3a96b22d134a7198814c66",
+      "bytes": 7630
+    },
+    "linux_execution_r2/launch_systemd_run.sh": {
+      "sha256": "a088929e95748e2faea755cf4e3408fd249f033b6493fd9ccad6741fb7b234dc",
+      "bytes": 4492
+    },
+    "linux_execution_r2/LINUX_RELEASE_MANIFEST.json": {
+      "sha256": "62553282bd69a851c83f3db3a3463c9f64e70323dfb93b6820a3c6ea8f644340",
+      "bytes": 56382
+    },
+    "linux_execution_r2/provider-ledger.md": {
+      "sha256": "c5db8382eb25d7cfac25bae0478df82a8be0872f84e7ae32c57a253c51e1de88",
+      "bytes": 2133
+    },
+    "linux_execution_r2/RECONSTRUCTION.md": {
+      "sha256": "09d82d9691bd92d0c7d4e861a873ab9e79302d5e864b50c66db4433bfc551f56",
+      "bytes": 1625
+    },
+    "linux_execution_r2/repair-scope.json": {
+      "sha256": "3404564766951259fe7abc536727fb56d1ab87b2c5e66ede0378515083eda096",
+      "bytes": 615
+    },
+    "linux_execution_r2/run_linux_engineering.py": {
+      "sha256": "a3a4e02be0eaaaf47bd95c61e9385784a0a14542497f4bab6453c722e3ba0380",
+      "bytes": 27081
+    },
+    "linux_execution_r2/run_precision_diagnostic.py": {
+      "sha256": "f713ffe4ce31d5f55dfc94901fcd39da4c9b1878e5d3800076997c9a8fc0e5a9",
+      "bytes": 1526
+    },
+    "linux_execution_r2/test-path-portability.patch": {
+      "sha256": "3c529cddb7d87ef19ca95bed2dc8e21c09f653c5e796a2710666f37d8d4aff55",
+      "bytes": 455
+    },
     "protocols/PILOT_AND_COMPARISON_PLAN.json": {
       "sha256": "1ca4e515a170f8844546c7e2d58f9d83d973b1865c5feea7252b81d51d1f3e28",
       "bytes": 7621
@@ -43,8 +131,8 @@
       "bytes": 6455
     },
     "README.md": {
-      "sha256": "2fdc81f64ce8416e6fda3f9ee0eb31860e69c858d9889d6b86a62402e734c10e",
-      "bytes": 1583
+      "sha256": "ddaa895116c0c061ea05643e0d64186a95f5421cebc4b929843ff158ca828c9f",
+      "bytes": 1895
     },
     "reference/PAPER_TRANSFER_NOTES_ZH.md": {
       "sha256": "fb17081055c74b9bfbc4957c0a9b54cff6631d8b0c188450f95f9e45e35be960",
@@ -674,6 +762,218 @@
       "sha256": "f859f11dc667dc588b61eb3ef1da209d1eb615f6c56ac1d81dcb8023e4df01c1",
       "bytes": 1665
     },
+    "reports/linux-engineering-20261014/ACCEPTANCE.md": {
+      "sha256": "a994e62815afba0fc89353ec14b0a65c881d55f90b277dca5cebf79061a2dc23",
+      "bytes": 5437
+    },
+    "reports/linux-engineering-20261014/agent-follows-doc-result-r2.json": {
+      "sha256": "8457dc64b136a14639828169499bbe8e411eb8176312bd330e504d59d05c81cb",
+      "bytes": 4079
+    },
+    "reports/linux-engineering-20261014/agent-follows-doc-result.json": {
+      "sha256": "1002baed9fa77ce45af1e72a5f79f7ef3ef5a92629a7c5e03db34f9fc3261516",
+      "bytes": 4023
+    },
+    "reports/linux-engineering-20261014/deployment-receipt.json": {
+      "sha256": "932a677275b3476c4177950134b04e9f4cc0b54bf2ef33367118f3b3d64e374d",
+      "bytes": 235
+    },
+    "reports/linux-engineering-20261014/FINAL_SERVICE_READBACK.json": {
+      "sha256": "b38ef9b621f2315c445d96d413cd469d7297541d6703fd1c86bdca86bd283346",
+      "bytes": 526
+    },
+    "reports/linux-engineering-20261014/independent-review/review.json": {
+      "sha256": "68dfc2604e5513b209fe4516700d2e73a139b91c0c556f3add0c9e94a3709446",
+      "bytes": 14769
+    },
+    "reports/linux-engineering-20261014/independent-review/REVIEW.md": {
+      "sha256": "6c2eaec2dfc31f00f60f72b07a4770246a54212ba0d182cfecea0628a0651ebf",
+      "bytes": 9293
+    },
+    "reports/linux-engineering-20261014/LINUX_NODE_REPORT_ZH.md": {
+      "sha256": "24fd77a0c1e230b80da7d2ce5ad7d79f8fff41c4b64ccbb7c5e35a30e2cc09fd",
+      "bytes": 4393
+    },
+    "reports/linux-engineering-20261014/PRIMARY_BYTE_VERIFICATION.json": {
+      "sha256": "39bb5fbb0e42c7a935127bfe75b4be8cb5064d77bfa4bd9d35a75dd8875a309a",
+      "bytes": 381
+    },
+    "reports/linux-engineering-20261014/r2/ACCEPTANCE.md": {
+      "sha256": "fa6b371a5bd0bc03a0b431ffa1a728092a982620157e30b43c84a83b0a20ecab",
+      "bytes": 6109
+    },
+    "reports/linux-engineering-20261014/r2/deployment-receipt-r2.json": {
+      "sha256": "e649bfc801bd55fcbc863f0876fd318241aab9e056bb2102dc86fbf96779fdf8",
+      "bytes": 265
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/create-venv.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-0.log": {
+      "sha256": "2cbc677f3df9419f42cac8581d90ad94ddf318418cec6c904ee1ded2b145db52",
+      "bytes": 568
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-1.log": {
+      "sha256": "568100fed9768748d7c82dc2da5b7107bf4287a9560b29d7e77adf6a899daf60",
+      "bytes": 208
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-2.log": {
+      "sha256": "045f6ec2d9b4f3bd3bd39bd62e489d7bab0834da1339b9ac53a00a433046306a",
+      "bytes": 2814
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-3.log": {
+      "sha256": "a8128cc1f288b35300815dc82cafe11792c0ee49e96245dc385bf31841f9f90c",
+      "bytes": 483
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-4.log": {
+      "sha256": "2bf6aeeb54b5606a9d3944eab9b7ba520ed2c5afde1d5eeb133b9c0eb3250cf1",
+      "bytes": 768
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/install-phase-5.log": {
+      "sha256": "ab9a106f2b567901fa332de7c7fcf66f265c33829dc6345e042924b4a16a8420",
+      "bytes": 2866
+    },
+    "reports/linux-engineering-20261014/r2/setup-logs/pip-check.log": {
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "bytes": 30
+    },
+    "reports/linux-engineering-20261014/r2/setup-status.json": {
+      "sha256": "51faccd18ba5554c8f6098461f943fd7fa461ae305a522fdd22abf9e3a061e8f",
+      "bytes": 4201
+    },
+    "reports/linux-engineering-20261014/r2/SETUP_LOG_BYTE_VERIFICATION.json": {
+      "sha256": "666a4c2a52a4872250633af8bf859f70268467e95813a2786421d30222e5e9eb",
+      "bytes": 1266
+    },
+    "reports/linux-engineering-20261014/run-01/01-seeded-cpu-witness.log": {
+      "sha256": "d62f08be1d05966a2709d7e2f6c4b8e1469c57fb1618c41773e0da30fde7d6ec",
+      "bytes": 254
+    },
+    "reports/linux-engineering-20261014/run-01/02-unittest-26.log": {
+      "sha256": "d750f0a89b20c9e30e0923b994e79e7655a80a52808b2c6cfc7dbbaaa7bfde9f",
+      "bytes": 5505
+    },
+    "reports/linux-engineering-20261014/run-01/artifact-hashes.json": {
+      "sha256": "0f2a8b21ab341ae3c9eadd27ff3397016e00660fbce075afe5277a60e31ec664",
+      "bytes": 1511
+    },
+    "reports/linux-engineering-20261014/run-01/run-receipt.json": {
+      "sha256": "26346823777bb416f63f58e707bee65c5893f9850b3ac6cafa1b403b8c6e7d78",
+      "bytes": 14421
+    },
+    "reports/linux-engineering-20261014/run-01/run-started.json": {
+      "sha256": "26e411fa13d82d1df777852098a86db8c4cac0658661ac8842df70804c6f5abb",
+      "bytes": 85
+    },
+    "reports/linux-engineering-20261014/run-01/runner-console.log": {
+      "sha256": "ecba2441c23d1e4e0c8dfbc0e9bd456e65875d864eaf00320399519fb8fc34ac",
+      "bytes": 11715
+    },
+    "reports/linux-engineering-20261014/run-01/source-hashes.json": {
+      "sha256": "42856f33973b8700f9025eab77cd9faa10de07d24968add52c3261f7b91becfd",
+      "bytes": 40180
+    },
+    "reports/linux-engineering-20261014/run-01/systemd-run.log": {
+      "sha256": "bbe883e8cf7f82a47279e73bcae9acbd8da28093e81366ae099eecee7af1898d",
+      "bytes": 54
+    },
+    "reports/linux-engineering-20261014/run-01/systemd-status.txt": {
+      "sha256": "c357f9294eadc3dbc8b8066ca646d46296985f02b214fe98244a12e99a937d41",
+      "bytes": 359
+    },
+    "reports/linux-engineering-20261014/run-01/unit-cleanup.json": {
+      "sha256": "acc1f3e11333eb663b8a310813a6e1f7047ca8384b0b036aec1968e985a3deae",
+      "bytes": 151
+    },
+    "reports/linux-engineering-20261014/run-01/unit-started.txt": {
+      "sha256": "a78fd4d1d666dd8ab8fb818d6ad7187961f5d4abb3a2eb20750211f5a685f344",
+      "bytes": 390
+    },
+    "reports/linux-engineering-20261014/run-02/01-seeded-cpu-witness.log": {
+      "sha256": "3c0863101ca434bb7bcb4642f6872aee2ce0598d085b7aa6e11252138f0f556c",
+      "bytes": 295
+    },
+    "reports/linux-engineering-20261014/run-02/02-unittest-26.log": {
+      "sha256": "5e3d385bc6cd1801a611b1a7a41ffdd5e567a4082234c11a7360850861ef916d",
+      "bytes": 5039
+    },
+    "reports/linux-engineering-20261014/run-02/03-upstream-cartpole-3-updates.log": {
+      "sha256": "ca9526acac8ae1eaf01ad7855ef1980367900837139bcf99a6fb303cf64bcdab",
+      "bytes": 8168
+    },
+    "reports/linux-engineering-20261014/run-02/04-civilian-3-updates.log": {
+      "sha256": "a30dbf39fe3dff44a7c6c060f642496f312329b4b2b433515107d23d3b741423",
+      "bytes": 11966
+    },
+    "reports/linux-engineering-20261014/run-02/05-precision-diagnostic.log": {
+      "sha256": "79ee12a826fb791b08df6492829d9ea5cf74bf227d888feb3a94f7ea8cd5f75f",
+      "bytes": 4083
+    },
+    "reports/linux-engineering-20261014/run-02/artifact-hashes.json": {
+      "sha256": "4359f166af9024d9149a3f7bf1d9c2f75a9fc25d69d0aaeceb89ef0016322915",
+      "bytes": 2848
+    },
+    "reports/linux-engineering-20261014/run-02/civilian/civilian-dreamer-smoke-receipt.json": {
+      "sha256": "97b831124665a1eb6d3097ea887fd478e0822e1d0a139369f9578cc73c879c49",
+      "bytes": 9720
+    },
+    "reports/linux-engineering-20261014/run-02/civilian/civilian_dreamer_smoke.pt": {
+      "sha256": "71a8a14b4c210cee4b2bc568e5e4be851d714fb8a8c2c2d8e9f8a4a98fcf94b2",
+      "bytes": 4579982
+    },
+    "reports/linux-engineering-20261014/run-02/precision-diagnostic.json": {
+      "sha256": "eb7ce0e9298391c8f6d1ce70a995a1cb4a9f8bcbe3fbddff0a13196bb10a3c7f",
+      "bytes": 1707
+    },
+    "reports/linux-engineering-20261014/run-02/run-receipt.json": {
+      "sha256": "0449033931a122dbbf7f7cf2ea5298cd7cd326f6515bced9913a20d947cb66f7",
+      "bytes": 13598
+    },
+    "reports/linux-engineering-20261014/run-02/run-started.json": {
+      "sha256": "040ae0f6187e8043174adaef2036a2029a384fddeac452082ea0c02c6c9ee703",
+      "bytes": 85
+    },
+    "reports/linux-engineering-20261014/run-02/runner-console.log": {
+      "sha256": "7663a6529401c67a5232aa928c4039deba55dfa401ffdfda27e6d5a1ebd0375d",
+      "bytes": 10866
+    },
+    "reports/linux-engineering-20261014/run-02/source-hashes.json": {
+      "sha256": "ce63e52fcf7bd796f51dcf04c92af83eb36e386991e34e3a7e29679305cbd3ad",
+      "bytes": 40327
+    },
+    "reports/linux-engineering-20261014/run-02/systemd-run.log": {
+      "sha256": "361687bd176fe493fa33e5af950c200c2a045b10d1de3163bd991cf0f992b88f",
+      "bytes": 54
+    },
+    "reports/linux-engineering-20261014/run-02/systemd-status.txt": {
+      "sha256": "70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85",
+      "bytes": 368
+    },
+    "reports/linux-engineering-20261014/run-02/unit-cleanup.json": {
+      "sha256": "b608505d31cc77d563b38bb812094b6d99f8b2ce2a016d85b4e97d97581d241f",
+      "bytes": 151
+    },
+    "reports/linux-engineering-20261014/run-02/unit-started.txt": {
+      "sha256": "23b2a1b8b6655418ca7c55532e3ed9b8a0dc397cf5456d9c9125200be8271085",
+      "bytes": 403
+    },
+    "reports/linux-engineering-20261014/run-02/upstream/dreamer_cartpole_smoke.pt": {
+      "sha256": "321bcc44ea3726f691811c3d3252ece73923d81c12838108d81d30bdefb47d06",
+      "bytes": 2127294
+    },
+    "reports/linux-engineering-20261014/run-02/upstream/smoke-receipt.json": {
+      "sha256": "b44c7d9ca851d66b7f1b542b9ed7f3b4eddd3226ea85d0e21efeae6799d0affc",
+      "bytes": 6099
+    },
+    "reports/linux-engineering-20261014/setup/status.json": {
+      "sha256": "a5cbaa2284f66e5af1167aa01050a7fccede64e970a451ff9f301dc46bb95a88",
+      "bytes": 3533
+    },
+    "reports/linux-engineering-20261014/transport-auth-receipt.json": {
+      "sha256": "7c872e92d1c34a07284ab9b0e228d98ab438054475968fb4c4ca0637baa3f434",
+      "bytes": 411
+    },
     "reports/old-data-scan-20261014.log": {
       "sha256": "0ceb081d8104cf14a37d47159bdfd5ad12c0a73971f9036916497de5923e3464",
       "bytes": 173
@@ -683,8 +983,8 @@
       "bytes": 1826380
     },
     "reports/prepare_github_archive.py": {
-      "sha256": "8f0ec6c291d4c36c59229732c7559645b35a44d3d260553e0cfe7f9f60cc390b",
-      "bytes": 2821
+      "sha256": "fd7563efbe75372b060cd33eed20d58dffaa242b8136fac5230f0a71ede795b4",
+      "bytes": 2862
     },
     "reports/registry-generation-20261013.log": {
       "sha256": "29064679e3660ff37af9ba191d0b970275613ee2298c5cb047d955d5d860e2a1",

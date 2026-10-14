@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "run_id": "linux-eng-20261014-02",
+  "run_kind": "linux_engineering_compatibility_not_study",
+  "status": "pass",
+  "first_error": null,
+  "started_at": "2026-10-14T04:16:27+00:00",
+  "repo_root": "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2",
+  "source_identity_declared": "c8b705e+linux-engineering-r2",
+  "runtime": {
+    "python": "3.11.16",
+    "python_executable": "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+    "venv_prefix": "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2",
+    "read_only_runtime_site_packages": "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages",
+    "torch_cuda_build": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "versions": {
+      "torch": "2.7.0+cu128",
+      "numpy": "1.26.0",
+      "gymnasium": "1.2.0",
+      "tensordict": "0.9.1",
+      "torchrl": "0.9.2",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "einops": "0.3.0",
+      "ruamel.yaml": "0.17.4",
+      "antlr4-python3-runtime": "4.9.3",
+      "cloudpickle": "3.1.2",
+      "packaging": "25.0",
+      "importlib-metadata": "8.6.1",
+      "zipp": "3.21.0",
+      "orjson": "3.10.18",
+      "pyvers": "0.1.0",
+      "psutil": "6.1.1",
+      "PyYAML": "6.0.2",
+      "setuptools": "77.0.3",
+      "wheel": "0.45.1",
+      "typing_extensions": "4.15.0",
+      "Farama-Notifications": "0.0.4",
+      "farama-notifications": "0.0.4",
+      "tensorboard": "2.20.0",
+      "absl-py": "2.1.0",
+      "grpcio": "1.65.4",
+      "Markdown": "3.8.2",
+      "protobuf": "4.25.4",
+      "tensorboard-data-server": "0.7.2",
+      "Werkzeug": "3.1.3",
+      "MarkupSafe": "2.1.5",
+      "Pillow": "11.3.0"
+    },
+    "exact_upstream_torch_reproduction": false,
+    "upstream_declared_torch": "2.8.0",
+    "cuda_disabled_by_environment": true
+  },
+  "source_manifest_sha256": "099539b6d44b996e93cb173f69f644ac7b3dd845d3a00a99d56d0099dc0be39f",
+  "stages": [
+    {
+      "name": "seeded-cpu-witness",
+      "status": "pass",
+      "argv": [
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2/bin/python",
+        "-m",
+        "linux_execution.cpu_witness"
+      ],
+      "started_at": "2026-10-14T04:16:27+00:00",
+      "log_path": "01-seeded-cpu-witness.log",
+      "timeout_seconds": 480,
+      "return_code": 0,
+      "wall_seconds": 4.188961640989874,
+      "finished_at": "2026-10-14T04:16:32+00:00",
+      "process_tree_peak_rss_bytes_sampled": 656703488,
+      "child_user_cpu_seconds": 3.120761,
+      "child_system_cpu_seconds": 0.268754,
+      "log_bytes": 295,
+      "log_sha256": "3c0863101ca434bb7bcb4642f6872aee2ce0598d085b7aa6e11252138f0f556c"
+    },
+    {
+      "name": "unittest-26",
+      "status": "pass",
+      "argv": [
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_at": "2026-10-14T04:16:32+00:00",
+      "log_path": "02-unittest-26.log",
+      "timeout_seconds": 480,
+      "return_code": 0,
+      "wall_seconds": 4.522370382997906,
+      "finished_at": "2026-10-14T04:16:36+00:00",
+      "process_tree_peak_rss_bytes_sampled": 681955328,
+      "child_user_cpu_seconds": 3.2162379999999997,
+      "child_system_cpu_seconds": 0.274553,
+      "log_bytes": 5039,
+      "log_sha256": "5e3d385bc6cd1801a611b1a7a41ffdd5e567a4082234c11a7360850861ef916d"
+    },
+    {
+      "name": "upstream-cartpole-3-updates",
+      "status": "pass",
+      "argv": [
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2/bin/python",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/upstream_smoke/upstream_dreamer_smoke.py",
+        "--repo-root",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+        "--output-dir",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02/upstream",
+        "--updates",
+        "3",
+        "--length",
+        "8",
+        "--seed",
+        "8201"
+      ],
+      "started_at": "2026-10-14T04:16:36+00:00",
+      "log_path": "03-upstream-cartpole-3-updates.log",
+      "timeout_seconds": 480,
+      "return_code": 0,
+      "wall_seconds": 8.726705679000588,
+      "finished_at": "2026-10-14T04:16:45+00:00",
+      "process_tree_peak_rss_bytes_sampled": 733519872,
+      "child_user_cpu_seconds": 5.908092000000001,
+      "child_system_cpu_seconds": 0.44574099999999994,
+      "log_bytes": 8168,
+      "log_sha256": "ca9526acac8ae1eaf01ad7855ef1980367900837139bcf99a6fb303cf64bcdab"
+    },
+    {
+      "name": "civilian-3-updates",
+      "status": "pass",
+      "argv": [
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2/bin/python",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/integration/civilian_dreamer_smoke.py",
+        "--repo-root",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2",
+        "--output-dir",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02/civilian",
+        "--updates",
+        "3",
+        "--seed",
+        "8201"
+      ],
+      "started_at": "2026-10-14T04:16:45+00:00",
+      "log_path": "04-civilian-3-updates.log",
+      "timeout_seconds": 480,
+      "return_code": 0,
+      "wall_seconds": 8.906301869006711,
+      "finished_at": "2026-10-14T04:16:54+00:00",
+      "process_tree_peak_rss_bytes_sampled": 741642240,
+      "child_user_cpu_seconds": 6.594744,
+      "child_system_cpu_seconds": 0.41541700000000015,
+      "log_bytes": 11966,
+      "log_sha256": "a30dbf39fe3dff44a7c6c060f642496f312329b4b2b433515107d23d3b741423"
+    },
+    {
+      "name": "precision-diagnostic",
+      "status": "pass",
+      "argv": [
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2/bin/python",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/linux_execution/run_precision_diagnostic.py",
+        "--repo-root",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2",
+        "--output",
+        "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02/precision-diagnostic.json"
+      ],
+      "started_at": "2026-10-14T04:16:54+00:00",
+      "log_path": "05-precision-diagnostic.log",
+      "timeout_seconds": 480,
+      "return_code": 0,
+      "wall_seconds": 8.656451103990548,
+      "finished_at": "2026-10-14T04:17:02+00:00",
+      "process_tree_peak_rss_bytes_sampled": 840663040,
+      "child_user_cpu_seconds": 6.673282999999998,
+      "child_system_cpu_seconds": 0.4145889999999999,
+      "log_bytes": 4083,
+      "log_sha256": "79ee12a826fb791b08df6492829d9ea5cf74bf227d888feb3a94f7ea8cd5f75f"
+    }
+  ],
+  "formal_training": false,
+  "heldout_confirmation": false,
+  "six_path_study_training": false,
+  "resource": {
+    "scope": "runner and child commands inside the transient systemd service; excludes SSH, code deployment, and environment installation",
+    "cpu_affinity_requested": [
+      0
+    ],
+    "gpu_enabled": false,
+    "automatic_retries": 0,
+    "cpu_affinity_effective": [
+      0
+    ],
+    "wall_seconds": 35.04672315699281,
+    "runner_process_cpu_seconds": 3.096295499,
+    "child_user_cpu_seconds": 25.513118,
+    "child_system_cpu_seconds": 1.819054,
+    "children_peak_rss_bytes": 829440000,
+    "children_peak_rss_source": "Linux getrusage(RUSAGE_CHILDREN): maximum single-child RSS, not aggregate service memory; process-tree samples are separate",
+    "systemd_cgroup_cpu_usage_seconds": 30.636219,
+    "systemd_cgroup_memory_peak_bytes": null,
+    "systemd_cgroup_memory_max_bytes": 4294967296,
+    "systemd_cgroup_tasks_current_at_collection": null
+  },
+  "execution_plan_sha256": "971f9c30f7eed96a9954b585274972caa82700721de4332f46f4cb998b19f188",
+  "maximum_engineering_optimizer_steps": 10,
+  "environment_spec_path": "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/linux_execution/environment-spec.json",
+  "environment_spec_sha256": "e3a397648bcecf7f8fa556cf6d20df21b54c82fe6b3c5b7f5fa1076026f60230",
+  "source_file_count": 224,
+  "completed_engineering_optimizer_steps": {
+    "upstream_cartpole": 3,
+    "civilian_adapter": 3,
+    "precision_diagnostic_fp16_control": 2,
+    "precision_diagnostic_fp32_control": 2
+  },
+  "completed_engineering_optimizer_steps_total": 10,
+  "completed_at": "2026-10-14T04:17:02+00:00",
+  "artifact_hashes": [
+    {
+      "path": "01-seeded-cpu-witness.log",
+      "bytes": 295,
+      "sha256": "3c0863101ca434bb7bcb4642f6872aee2ce0598d085b7aa6e11252138f0f556c"
+    },
+    {
+      "path": "02-unittest-26.log",
+      "bytes": 5039,
+      "sha256": "5e3d385bc6cd1801a611b1a7a41ffdd5e567a4082234c11a7360850861ef916d"
+    },
+    {
+      "path": "03-upstream-cartpole-3-updates.log",
+      "bytes": 8168,
+      "sha256": "ca9526acac8ae1eaf01ad7855ef1980367900837139bcf99a6fb303cf64bcdab"
+    },
+    {
+      "path": "04-civilian-3-updates.log",
+      "bytes": 11966,
+      "sha256": "a30dbf39fe3dff44a7c6c060f642496f312329b4b2b433515107d23d3b741423"
+    },
+    {
+      "path": "05-precision-diagnostic.log",
+      "bytes": 4083,
+      "sha256": "79ee12a826fb791b08df6492829d9ea5cf74bf227d888feb3a94f7ea8cd5f75f"
+    },
+    {
+      "path": "civilian/civilian-dreamer-smoke-receipt.json",
+      "bytes": 9720,
+      "sha256": "97b831124665a1eb6d3097ea887fd478e0822e1d0a139369f9578cc73c879c49"
+    },
+    {
+      "path": "civilian/civilian_dreamer_smoke.pt",
+      "bytes": 4579982,
+      "sha256": "71a8a14b4c210cee4b2bc568e5e4be851d714fb8a8c2c2d8e9f8a4a98fcf94b2"
+    },
+    {
+      "path": "precision-diagnostic.json",
+      "bytes": 1707,
+      "sha256": "eb7ce0e9298391c8f6d1ce70a995a1cb4a9f8bcbe3fbddff0a13196bb10a3c7f"
+    },
+    {
+      "path": "run-started.json",
+      "bytes": 85,
+      "sha256": "040ae0f6187e8043174adaef2036a2029a384fddeac452082ea0c02c6c9ee703"
+    },
+    {
+      "path": "runner-console.log",
+      "bytes": 10866,
+      "sha256": "7663a6529401c67a5232aa928c4039deba55dfa401ffdfda27e6d5a1ebd0375d"
+    },
+    {
+      "path": "source-hashes.json",
+      "bytes": 40327,
+      "sha256": "ce63e52fcf7bd796f51dcf04c92af83eb36e386991e34e3a7e29679305cbd3ad"
+    },
+    {
+      "path": "systemd-run.log",
+      "bytes": 54,
+      "sha256": "361687bd176fe493fa33e5af950c200c2a045b10d1de3163bd991cf0f992b88f"
+    },
+    {
+      "path": "systemd-status.txt",
+      "bytes": 368,
+      "sha256": "70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85"
+    },
+    {
+      "path": "unit-cleanup.json",
+      "bytes": 151,
+      "sha256": "b608505d31cc77d563b38bb812094b6d99f8b2ce2a016d85b4e97d97581d241f"
+    },
+    {
+      "path": "unit-started.txt",
+      "bytes": 403,
+      "sha256": "23b2a1b8b6655418ca7c55532e3ed9b8a0dc397cf5456d9c9125200be8271085"
+    },
+    {
+      "path": "upstream/dreamer_cartpole_smoke.pt",
+      "bytes": 2127294,
+      "sha256": "321bcc44ea3726f691811c3d3252ece73923d81c12838108d81d30bdefb47d06"
+    },
+    {
+      "path": "upstream/smoke-receipt.json",
+      "bytes": 6099,
+      "sha256": "b44c7d9ca851d66b7f1b542b9ed7f3b4eddd3226ea85d0e21efeae6799d0affc"
+    }
+  ],
+  "artifact_index": "artifact-hashes.json",
+  "systemd": {
+    "unit": "rlwm-engineering-20261014-02",
+    "query_argv": [
+      "systemctl",
+      "--user",
+      "show",
+      "--no-pager",
+      "--property=LoadState,InvocationID,ControlGroup,ExecMainPID,MainPID,RemainAfterExit,ActiveState,SubState,Result,ExecMainCode,ExecMainStatus,CPUUsageNSec,MemoryPeak,MemoryMax,TasksCurrent,Restart,KillMode,CPUAffinity,CPUQuotaPerSecUSec,RuntimeMaxUSec",
+      "rlwm-engineering-20261014-02"
+    ],
+    "query_return_code": 0,
+    "service_exit_code_from_systemd_run": 0,
+    "properties": {
+      "Restart": "no",
+      "RuntimeMaxUSec": "10min",
+      "RemainAfterExit": "yes",
+      "MainPID": "0",
+      "Result": "success",
+      "ExecMainPID": "324825",
+      "ExecMainCode": "1",
+      "ExecMainStatus": "0",
+      "ControlGroup": "",
+      "CPUUsageNSec": "30636219000",
+      "TasksCurrent": "[not set]",
+      "CPUQuotaPerSecUSec": "1s",
+      "MemoryMax": "4294967296",
+      "CPUAffinity": "0",
+      "KillMode": "control-group",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "exited",
+      "InvocationID": "8c332cc30ff748ab81b06bc7df1dba7d"
+    },
+    "status_path": "systemd-status.txt",
+    "status_sha256": "70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85",
+    "acceptance_checks": {
+      "systemd query": true,
+      "retained loaded unit": true,
+      "invocation present": true,
+      "main process exited": true,
+      "retained after exit": true,
+      "source identity": true,
+      "service exit": true,
+      "service result": true,
+      "restart disabled": true,
+      "kill mode": true,
+      "CPU affinity": true,
+      "one-core quota": true,
+      "runtime limit": true,
+      "memory limit": true,
+      "CPU counter": true
+    },
+    "bounded_service_checks_pass": true,
+    "accounting_status": "bounded_service_counters_only",
+    "full_system_accounting": false,
+    "limitations": [
+      "SSH, installation, deployment and finalizer are outside service counters",
+      "MemoryPeak may be unavailable on systemd 249; sampled RSS and single-child max RSS are separate"
+    ],
+    "cleanup_stop_exit_code": 0
+  },
+  "systemd_finalized_at": "2026-10-14T04:17:03+00:00"
+}

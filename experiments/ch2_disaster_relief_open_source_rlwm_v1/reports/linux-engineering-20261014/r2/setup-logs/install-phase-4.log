@@ -1,0 +1,14 @@
+Collecting einops==0.3.0
+  Using cached einops-0.3.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting gymnasium==1.2.0
+  Using cached gymnasium-1.2.0-py3-none-any.whl.metadata (9.9 kB)
+Collecting hydra-core==1.3.2
+  Using cached hydra_core-1.3.2-py3-none-any.whl.metadata (5.5 kB)
+Collecting ruamel.yaml==0.17.4
+  Using cached ruamel.yaml-0.17.4-py3-none-any.whl.metadata (10.0 kB)
+Using cached einops-0.3.0-py2.py3-none-any.whl (25 kB)
+Using cached gymnasium-1.2.0-py3-none-any.whl (944 kB)
+Using cached hydra_core-1.3.2-py3-none-any.whl (154 kB)
+Using cached ruamel.yaml-0.17.4-py3-none-any.whl (101 kB)
+Installing collected packages: hydra-core, einops, ruamel.yaml, gymnasium
+Successfully installed einops-0.3.0 gymnasium-1.2.0 hydra-core-1.3.2 ruamel.yaml-0.17.4

@@ -1,0 +1,36 @@
+Collecting tensorboard==2.20.0
+  Using cached tensorboard-2.20.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting absl-py==2.1.0
+  Using cached absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting grpcio==1.65.4
+  Downloading grpcio-1.65.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.3 kB)
+Collecting Markdown==3.8.2
+  Using cached markdown-3.8.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting protobuf==4.25.4
+  Downloading protobuf-4.25.4-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting tensorboard-data-server==0.7.2
+  Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+Collecting Werkzeug==3.1.3
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting MarkupSafe==2.1.5
+  Downloading MarkupSafe-2.1.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting Pillow==11.3.0
+  Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Using cached tensorboard-2.20.0-py3-none-any.whl (5.5 MB)
+Using cached absl_py-2.1.0-py3-none-any.whl (133 kB)
+Downloading grpcio-1.65.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 6.7 MB/s eta 0:00:00
+Using cached markdown-3.8.2-py3-none-any.whl (106 kB)
+Downloading protobuf-4.25.4-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 11.2 MB/s eta 0:00:00
+Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Downloading MarkupSafe-2.1.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 9.9 MB/s eta 0:00:00
+Installing collected packages: Werkzeug, tensorboard-data-server, tensorboard, protobuf, Pillow, MarkupSafe, Markdown, grpcio, absl-py
+  Attempting uninstall: MarkupSafe
+    Found existing installation: MarkupSafe 3.0.3
+    Not uninstalling markupsafe at /home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages, outside environment /home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2
+    Can't uninstall 'MarkupSafe'. No files were found to uninstall.
+Successfully installed Markdown-3.8.2 MarkupSafe-2.1.5 Pillow-11.3.0 Werkzeug-3.1.3 absl-py-2.1.0 grpcio-1.65.4 protobuf-4.25.4 tensorboard-2.20.0 tensorboard-data-server-0.7.2

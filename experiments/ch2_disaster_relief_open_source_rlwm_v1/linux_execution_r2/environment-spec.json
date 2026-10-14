@@ -1,0 +1,203 @@
+{
+  "name": "rlwm-linux-cpu-engineering-r2-20261014",
+  "provider_shape": "direct-ssh-host-venv",
+  "purpose": "bounded engineering compatibility run; not a study run",
+  "base": {
+    "python": "3.11.16",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "torch_source": "read-only existing runtime site-packages referenced by a .pth file in the new venv",
+    "numpy_source": "read-only existing runtime site-packages referenced by a .pth file in the new venv",
+    "upstream_declared_torch": "2.8.0",
+    "exact_upstream_torch_reproduction": false
+  },
+  "system_pkgs": [],
+  "pip_phases": [
+    {
+      "name": "local source-build tools",
+      "options": [
+        "--no-deps",
+        "--only-binary=:all:",
+        "--no-input"
+      ],
+      "packages": [
+        "setuptools==77.0.3",
+        "wheel==0.45.1"
+      ]
+    },
+    {
+      "name": "antlr4 pure-Python source package",
+      "options": [
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-input"
+      ],
+      "packages": [
+        "antlr4-python3-runtime==4.9.3"
+      ]
+    },
+    {
+      "name": "pinned shared and direct dependencies",
+      "options": [
+        "--no-deps",
+        "--only-binary=:all:",
+        "--no-input"
+      ],
+      "packages": [
+        "cloudpickle==3.1.2",
+        "farama-notifications==0.0.4",
+        "importlib-metadata==8.6.1",
+        "omegaconf==2.3.0",
+        "orjson==3.10.18",
+        "packaging==25.0",
+        "PyYAML==6.0.2",
+        "psutil==6.1.1",
+        "pyvers==0.1.0",
+        "typing_extensions==4.15.0",
+        "zipp==3.21.0"
+      ]
+    },
+    {
+      "name": "source-pinned learning stack",
+      "options": [
+        "--no-deps",
+        "--only-binary=:all:",
+        "--no-input"
+      ],
+      "packages": [
+        "tensordict==0.9.1",
+        "torchrl==0.9.2"
+      ]
+    },
+    {
+      "name": "smoke and configuration packages",
+      "options": [
+        "--no-deps",
+        "--only-binary=:all:",
+        "--no-input"
+      ],
+      "packages": [
+        "einops==0.3.0",
+        "gymnasium==1.2.0",
+        "hydra-core==1.3.2",
+        "ruamel.yaml==0.17.4"
+      ]
+    },
+    {
+      "name": "required upstream TensorBoard import dependencies",
+      "options": [
+        "--no-deps",
+        "--only-binary=:all:",
+        "--no-input"
+      ],
+      "packages": [
+        "tensorboard==2.20.0",
+        "absl-py==2.1.0",
+        "grpcio==1.65.4",
+        "Markdown==3.8.2",
+        "protobuf==4.25.4",
+        "tensorboard-data-server==0.7.2",
+        "Werkzeug==3.1.3",
+        "MarkupSafe==2.1.5",
+        "Pillow==11.3.0"
+      ]
+    }
+  ],
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "8201",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "resource_shape": {
+    "cpu_affinity": [
+      0
+    ],
+    "cpu_quota_percent": 100,
+    "memory_max_bytes": 4294967296,
+    "runtime_max_seconds": 600,
+    "torch_threads": 1,
+    "gpu_enabled": false
+  },
+  "run_commands": [
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    [
+      "python",
+      "upstream_smoke/upstream_dreamer_smoke.py",
+      "--updates",
+      "3",
+      "--length",
+      "8",
+      "--seed",
+      "8201"
+    ],
+    [
+      "python",
+      "integration/civilian_dreamer_smoke.py",
+      "--updates",
+      "3",
+      "--seed",
+      "8201"
+    ],
+    [
+      "python",
+      "linux_execution/run_precision_diagnostic.py"
+    ]
+  ],
+  "weight_dirs": {},
+  "smoke": {
+    "import_names": [
+      "torch",
+      "numpy",
+      "gymnasium",
+      "tensordict",
+      "torchrl",
+      "hydra",
+      "einops",
+      "ruamel.yaml",
+      "psutil"
+    ],
+    "cpu_tests": [
+      {
+        "seed": 8201,
+        "cmd_argv": [
+          "python",
+          "-m",
+          "linux_execution.cpu_witness"
+        ],
+        "expect": "^WITNESS seed=8201 device=cpu shape=2x2 finite=true$"
+      }
+    ],
+    "gpu_tests": [],
+    "gpu_disabled_assertions": [
+      "CUDA_VISIBLE_DEVICES is empty",
+      "torch.cuda.is_available() is false",
+      "torch.cuda.is_initialized() is false"
+    ]
+  },
+  "run_policy": {
+    "stop_on_first_failure": true,
+    "automatic_retries": 0,
+    "formal_training": false,
+    "heldout_confirmation": false,
+    "six_path_study_training": false,
+    "allowed_updates": {
+      "upstream_cartpole": 3,
+      "civilian_adapter": 3,
+      "precision_diagnostic_fp32_control": 2
+    }
+  }
+}

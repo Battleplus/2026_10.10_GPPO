@@ -1,0 +1,15 @@
+{
+  "revision": "r2",
+  "environment_spec_sha256": "e3a397648bcecf7f8fa556cf6d20df21b54c82fe6b3c5b7f5fa1076026f60230",
+  "first_error_evidence_preserved": "reports/linux-engineering-20261014/run-01",
+  "algorithm_changes": 0,
+  "test_assertion_changes": 0,
+  "fixture_locator_change": {
+    "path": "tests/test_decision_repeat_adapter.py",
+    "before_sha256": "a7cc398d518c5398411695edfc4e1816d29637536d018a00ded04f6ea4467c8f",
+    "after_sha256": "ff70464866c4b6a26226d0afd24eba3190f46dbb3e43282300e25df2a8db7734"
+  },
+  "vendor_files_unchanged": true,
+  "formal_training": false,
+  "heldout_evaluation": false
+}

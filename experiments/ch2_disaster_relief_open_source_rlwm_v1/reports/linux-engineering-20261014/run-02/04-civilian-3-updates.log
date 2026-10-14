@@ -1,0 +1,380 @@
+/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages/torch/amp/grad_scaler.py:136: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  warnings.warn(
+/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages/torch/functional.py:554: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4314.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/optim/laprop.py:88: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value = 1) (Triggered internally at /pytorch/torch/csrc/utils/python_arg_parser.cpp:1691.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages/torch/optim/lr_scheduler.py:332: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  _warn_get_lr_called_within_step(self)
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (1415,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (1415,)}
+        52,480: rssm
+        20,993: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+        99,136: encoder
+       108,743: decoder
+Optimizer has: 347975 parameters.
+Encoder CNN shapes: {}
+Encoder MLP shapes: {'vector': (1415,)}
+Decoder CNN shapes: {}
+Decoder MLP shapes: {'vector': (1415,)}
+        52,480: rssm
+        20,993: actor
+        33,343: value
+        24,895: reward
+         8,385: cont
+        99,136: encoder
+       108,743: decoder
+Optimizer has: 347975 parameters.
+{
+  "status": "pass",
+  "run_kind": "engineering_smoke_not_study",
+  "first_error": null,
+  "formal_training": false,
+  "formal_evaluation": false,
+  "formal_updates": 0,
+  "policy_updates": 0,
+  "evaluation_episodes": 0,
+  "checkpoint_path": "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02/civilian/civilian_dreamer_smoke.pt",
+  "cpu_precision": "float32_overlay",
+  "exact_upstream_reproduction": false,
+  "python": "3.11.16",
+  "torch": "2.7.0+cu128",
+  "gymnasium": "1.2.0",
+  "numpy": "1.26.0",
+  "device": "cpu",
+  "cuda_initialized": false,
+  "torch_threads": 1,
+  "upstream_revision": "546e4fab8146ea4b14e1d7726bbc1a8a1d50322f",
+  "scenario_id": "relief-n2-train-carrier_competition-00",
+  "scenario_sha256": "fa61b19c5a75d7fa86ba6d6dc13169826213efd7716817507e8c941926508934",
+  "adapter_signature_sha256": "c7a43c9c178ed96a3618d262aed5e9ecf2f5d6eca6c6e995a58c230df5d9a6a6",
+  "feature_layout_sha256": "fcb8c27328a3f14831f1aeac1b30bc2bd4ecb4814659bdccde253e5954f47bab",
+  "action_size": 65,
+  "commit_action_index": 64,
+  "batch_size": 1,
+  "batch_length": 4,
+  "minimum_replay_episode_frames": 5,
+  "usable_episode_frame_counts": {
+    "0": 65,
+    "1": 64
+  },
+  "update_metrics": [
+    {
+      "mask/precision": 0.015384615398943424,
+      "mask/recall": 1.0,
+      "mask/false_negative_count": 0.0,
+      "dyn_entropy": 15.306337356567383,
+      "rep_entropy": 15.373824119567871,
+      "ret": 0.0,
+      "ret_005": 0.0,
+      "ret_095": 0.0,
+      "adv": 0.0,
+      "adv_std": 0.0,
+      "con": 1.0,
+      "rew": 0.0,
+      "val": 0.0,
+      "tar": 0.0,
+      "slowval": 0.0,
+      "weight": 1.0,
+      "action_entropy": 4.174374103546143,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 65.0,
+      "mask/imag_commit_fraction": 0.0,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": -0.0011422461830079556,
+      "ret_replay_std": 0.0007806303328834474,
+      "ret_replay_min": -0.0020111133344471455,
+      "ret_replay_max": -0.0005000000237487257,
+      "value_replay_mean": 0.0,
+      "value_replay_std": 0.0,
+      "value_replay_min": 0.0,
+      "value_replay_max": 0.0,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 3.2892906665802,
+      "loss/rep": 3.2892906665802,
+      "loss/vector": 503.011962890625,
+      "loss/legal_mask": 0.6931471824645996,
+      "loss/rew": 5.541263580322266,
+      "loss/con": 0.6318013072013855,
+      "loss/policy": -0.0012523120967671275,
+      "loss/value": 11.082527160644531,
+      "loss/repval": 11.082527160644531,
+      "opt/loss": 527.9024047851562
+    },
+    {
+      "mask/precision": 1.0,
+      "mask/recall": 1.0,
+      "mask/false_negative_count": 0.0,
+      "dyn_entropy": 15.375972747802734,
+      "rep_entropy": 15.284910202026367,
+      "ret": -4.717036206081104e-10,
+      "ret_005": -7.737633450632941e-12,
+      "ret_095": -2.2036428671406982e-12,
+      "adv": -5.085450394126667e-10,
+      "adv_std": 2.1531700034049805e-10,
+      "con": 0.7261056900024414,
+      "rew": -2.582964953035116e-10,
+      "val": 3.637978807091713e-11,
+      "tar": -4.79441208955933e-10,
+      "slowval": 0.0,
+      "weight": 0.5134525299072266,
+      "action_entropy": 0.0,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 1.0,
+      "mask/imag_commit_fraction": 1.0,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": -7.416960379202919e-10,
+      "ret_replay_std": 1.1267022037575458e-10,
+      "ret_replay_min": -8.563951769957612e-10,
+      "ret_replay_max": -6.311707267947497e-10,
+      "value_replay_mean": 1.4551915228366852e-11,
+      "value_replay_std": 2.9103830456733704e-11,
+      "value_replay_min": 0.0,
+      "value_replay_max": 5.820766091346741e-11,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 3.1189355850219727,
+      "loss/rep": 3.1189355850219727,
+      "loss/vector": 462.8202819824219,
+      "loss/legal_mask": 0.6931467056274414,
+      "loss/rew": 5.541262626647949,
+      "loss/con": 0.7997153997421265,
+      "loss/policy": 0.0,
+      "loss/value": 6.949477672576904,
+      "loss/repval": 11.082524299621582,
+      "opt/loss": 483.5594482421875
+    },
+    {
+      "mask/precision": 1.0,
+      "mask/recall": 1.0,
+      "mask/false_negative_count": 0.0,
+      "dyn_entropy": 15.300472259521484,
+      "rep_entropy": 15.567863464355469,
+      "ret": -5.837944017095253e-10,
+      "ret_005": -1.631212526165271e-11,
+      "ret_095": -4.583364070220863e-12,
+      "adv": -7.359242659710219e-10,
+      "adv_std": 2.3022503348180123e-10,
+      "con": 0.68185955286026,
+      "rew": -3.383320290595293e-10,
+      "val": 1.0186340659856796e-10,
+      "tar": -6.001063534988305e-10,
+      "slowval": 0.0,
+      "weight": 0.4400904178619385,
+      "action_entropy": 0.0,
+      "mask/imag_fallbacks": 0.0,
+      "mask/imag_mean_legal_actions": 1.0,
+      "mask/imag_commit_fraction": 1.0,
+      "action_mean": 0.015384615398943424,
+      "action_std": 0.12313614040613174,
+      "action_min": 0.0,
+      "action_max": 1.0,
+      "ret_replay_mean": -6.115224437941436e-10,
+      "ret_replay_std": 7.865646328708564e-11,
+      "ret_replay_min": -6.91058155144475e-10,
+      "ret_replay_max": -5.337757458256931e-10,
+      "value_replay_mean": 1.3096723705530167e-10,
+      "value_replay_std": 5.572959108079978e-11,
+      "value_replay_min": 5.820766091346741e-11,
+      "value_replay_max": 1.7462298274040222e-10,
+      "slow_value_replay_mean": 0.0,
+      "slow_value_replay_std": 0.0,
+      "slow_value_replay_min": 0.0,
+      "slow_value_replay_max": 0.0,
+      "loss/dyn": 2.373138666152954,
+      "loss/rep": 2.373138666152954,
+      "loss/vector": 538.1369018554688,
+      "loss/legal_mask": 0.6931458711624146,
+      "loss/rew": 5.541260719299316,
+      "loss/con": 0.848239004611969,
+      "loss/policy": 0.0,
+      "loss/value": 6.049156665802002,
+      "loss/repval": 11.082518577575684,
+      "opt/loss": 557.2039794921875
+    }
+  ],
+  "update_wall_seconds": [
+    0.10164154699305072,
+    0.05660892301239073,
+    0.06656974300858565
+  ],
+  "parameter_hash_before": "640de46d241872befe598895022d41df8cd05cc88a01a4ad5ee51d320a9ede7c",
+  "parameter_hash_after": "d334282985aac04a9aa175b15979c4640dd33a098a65aa7611a78875c567e1a9",
+  "checkpoint_model_restore_hash": "d334282985aac04a9aa175b15979c4640dd33a098a65aa7611a78875c567e1a9",
+  "replay_overlay": "relief-replay-clone-before-action-shift/1",
+  "replay_alignment_trace": [
+    {
+      "sample_index": 0,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          77,
+          78,
+          79,
+          80
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          78,
+          79,
+          80,
+          81
+        ]
+      ],
+      "source_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ]
+    },
+    {
+      "sample_index": 1,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          95,
+          96,
+          97,
+          98
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          96,
+          97,
+          98,
+          99
+        ]
+      ],
+      "source_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ]
+    },
+    {
+      "sample_index": 2,
+      "action_shift_applied": true,
+      "sampled_source_unchanged": true,
+      "frame_identity_checked": true,
+      "source_frame_ids": [
+        [
+          36,
+          37,
+          38,
+          39
+        ]
+      ],
+      "target_frame_ids": [
+        [
+          37,
+          38,
+          39,
+          40
+        ]
+      ],
+      "source_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ],
+      "shifted_action_indices": [
+        [
+          64,
+          64,
+          64,
+          64
+        ]
+      ]
+    }
+  ],
+  "checkpoint_optimizer_restored": true,
+  "checkpoint_scheduler_restored": true,
+  "checkpoint_scaler_restored": true,
+  "checkpoint_counters_restored": true,
+  "checkpoint_rng_restored": true,
+  "checkpoint_metadata_restored": true,
+  "checkpoint_scope": {
+    "includes": [
+      "agent_model",
+      "optimizer",
+      "scheduler",
+      "scaler",
+      "counters",
+      "rng",
+      "adapter_metadata"
+    ],
+    "excludes": [
+      "replay_buffer",
+      "simulator_state"
+    ]
+  },
+  "checkpoint_bytes": 4579982,
+  "rss_before_bytes": 658935808,
+  "formal_environment_steps": 0,
+  "formal_world_model_updates": 0,
+  "formal_policy_updates": 0,
+  "formal_evaluation_episodes": 0,
+  "resource": {
+    "adapter_step_calls": 128,
+    "physical_minutes_advanced": 120,
+    "dispatch_microsteps": 8,
+    "commit_steps": 120,
+    "replay_frames": 129,
+    "completed_updates": 3,
+    "illegal_action_count": 0,
+    "wall_seconds": 7.690092570002889,
+    "process_cpu_seconds": 6.080718555,
+    "rss_after_bytes": 724221952
+  },
+  "receipt_path": "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02/civilian/civilian-dreamer-smoke-receipt.json"
+}

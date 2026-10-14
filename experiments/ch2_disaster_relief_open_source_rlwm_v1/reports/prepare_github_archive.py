@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'github_archive' / 'experiments' / ROOT.name
-INCLUDE = ['README.md', 'EXECUTION_STATUS.md', '.gitignore', '.gitattributes', '.aris', 'integration', 'relief_adapter', 'tests', 'vendor', 'upstream', 'upstream_r2', 'upstream_audit', 'upstream_smoke', 'reference', 'reports', 'protocols']
+INCLUDE = ['README.md', 'EXECUTION_STATUS.md', '.gitignore', '.gitattributes', '.aris', 'integration', 'relief_adapter', 'tests', 'vendor', 'upstream', 'upstream_r2', 'upstream_audit', 'upstream_smoke', 'reference', 'reports', 'protocols', 'linux_execution', 'linux_execution_r2']
 OMIT_DIRS = {'.git', '__pycache__', '.pytest_cache'}
 OMIT_FILES = {'graph_paper.txt'}
 OMIT_SUFFIXES = {'.pyc', '.pyo', '.zip', '.pdf'}

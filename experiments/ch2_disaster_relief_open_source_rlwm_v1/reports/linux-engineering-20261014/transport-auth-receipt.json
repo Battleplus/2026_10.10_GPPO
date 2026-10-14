@@ -1,0 +1,11 @@
+{
+  "schema": "rlwm-linux-connection/1",
+  "client_date": "2026-10-14",
+  "host": "ru-server-MS-1",
+  "target": "user1@172.17.27.173",
+  "ssh_authenticated": true,
+  "credential_channel": "transient non-echo terminal input held only in local connection process memory",
+  "credential_in_script_log_archive": false,
+  "historical_audit_input_hashes_unchanged": true,
+  "formal_study_started": false
+}

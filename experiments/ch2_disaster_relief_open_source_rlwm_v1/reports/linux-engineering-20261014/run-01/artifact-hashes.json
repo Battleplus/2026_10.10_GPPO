@@ -1,0 +1,51 @@
+{
+  "algorithm": "sha256",
+  "artifacts": [
+    {
+      "path": "01-seeded-cpu-witness.log",
+      "bytes": 254,
+      "sha256": "d62f08be1d05966a2709d7e2f6c4b8e1469c57fb1618c41773e0da30fde7d6ec"
+    },
+    {
+      "path": "02-unittest-26.log",
+      "bytes": 5505,
+      "sha256": "d750f0a89b20c9e30e0923b994e79e7655a80a52808b2c6cfc7dbbaaa7bfde9f"
+    },
+    {
+      "path": "run-started.json",
+      "bytes": 85,
+      "sha256": "26e411fa13d82d1df777852098a86db8c4cac0658661ac8842df70804c6f5abb"
+    },
+    {
+      "path": "runner-console.log",
+      "bytes": 11715,
+      "sha256": "ecba2441c23d1e4e0c8dfbc0e9bd456e65875d864eaf00320399519fb8fc34ac"
+    },
+    {
+      "path": "source-hashes.json",
+      "bytes": 40180,
+      "sha256": "42856f33973b8700f9025eab77cd9faa10de07d24968add52c3261f7b91becfd"
+    },
+    {
+      "path": "systemd-run.log",
+      "bytes": 54,
+      "sha256": "bbe883e8cf7f82a47279e73bcae9acbd8da28093e81366ae099eecee7af1898d"
+    },
+    {
+      "path": "systemd-status.txt",
+      "bytes": 359,
+      "sha256": "c357f9294eadc3dbc8b8066ca646d46296985f02b214fe98244a12e99a937d41"
+    },
+    {
+      "path": "unit-cleanup.json",
+      "bytes": 151,
+      "sha256": "acc1f3e11333eb663b8a310813a6e1f7047ca8384b0b036aec1968e985a3deae"
+    },
+    {
+      "path": "unit-started.txt",
+      "bytes": 390,
+      "sha256": "a78fd4d1d666dd8ab8fb818d6ad7187961f5d4abb3a2eb20750211f5a685f344"
+    }
+  ],
+  "run_receipt_sha256": "26346823777bb416f63f58e707bee65c5893f9850b3ac6cafa1b403b8c6e7d78"
+}

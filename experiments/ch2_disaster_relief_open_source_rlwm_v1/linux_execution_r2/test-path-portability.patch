@@ -1,0 +1,11 @@
+--- a/tests/test_decision_repeat_adapter.py
++++ b/tests/test_decision_repeat_adapter.py
+@@ -10,7 +10,7 @@
+ 
+ 
+ DEV_ROOT = pathlib.Path(__file__).resolve().parents[1]
+-SOURCE_ROOT = DEV_ROOT.parents[1] / "research-executions" / "ch2-disaster-relief-graph-v2-20261011" / "source" / "package"
++SOURCE_ROOT = DEV_ROOT / "vendor" / "relief_env_v2"
+ if str(DEV_ROOT) not in sys.path:
+     sys.path.insert(0, str(DEV_ROOT))
+ if str(SOURCE_ROOT) not in sys.path:

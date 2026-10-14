@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/bin/bash",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source/linux_execution/launch_systemd_run.sh",
+    "--repo-root",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source",
+    "--venv-path",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv",
+    "--output-dir",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source/reports/linux-engineering-20261014/run-01",
+    "--unit",
+    "rlwm-engineering-20261014-01",
+    "--run-id",
+    "linux-eng-20261014-01",
+    "--source-identity",
+    "c8b705e"
+  ],
+  "exit_code": 1,
+  "stdout": "{\n  \"status\": \"technical_stop\",\n  \"systemd\": {\n    \"unit\": \"rlwm-engineering-20261014-01\",\n    \"query_argv\": [\n      \"systemctl\",\n      \"--user\",\n      \"show\",\n      \"--no-pager\",\n      \"--property=LoadState,InvocationID,ControlGroup,ExecMainPID,RemainAfterExit,ActiveState,SubState,Result,ExecMainCode,ExecMainStatus,CPUUsageNSec,MemoryPeak,MemoryMax,TasksCurrent,Restart,KillMode,CPUAffinity,CPUQuotaPerSecUSec,RuntimeMaxUSec\",\n      \"rlwm-engineering-20261014-01\"\n    ],\n    \"query_return_code\": 0,\n    \"service_exit_code_from_systemd_run\": 1,\n    \"properties\": {\n      \"Restart\": \"no\",\n      \"RuntimeMaxUSec\": \"10min\",\n      \"RemainAfterExit\": \"yes\",\n      \"Result\": \"exit-code\",\n      \"ExecMainPID\": \"322261\",\n      \"ExecMainCode\": \"1\",\n      \"ExecMainStatus\": \"1\",\n      \"ControlGroup\": \"\",\n      \"CPUUsageNSec\": \"7489746000\",\n      \"TasksCurrent\": \"[not set]\",\n      \"CPUQuotaPerSecUSec\": \"1s\",\n      \"MemoryMax\": \"4294967296\",\n      \"CPUAffinity\": \"0\",\n      \"KillMode\": \"control-group\",\n      \"LoadState\": \"loaded\",\n      \"ActiveState\": \"failed\",\n      \"SubState\": \"failed\",\n      \"InvocationID\": \"41d334003f8844b0a78205a81bf54073\"\n    },\n    \"status_path\": \"systemd-status.txt\",\n    \"status_sha256\": \"c357f9294eadc3dbc8b8066ca646d46296985f02b214fe98244a12e99a937d41\",\n    \"acceptance_checks\": {\n      \"systemd query\": true,\n      \"retained loaded unit\": true,\n      \"invocation present\": true,\n      \"main process exited\": false,\n      \"retained after exit\": true,\n      \"source identity\": true,\n      \"service exit\": false,\n      \"service result\": false,\n      \"restart disabled\": true,\n      \"kill mode\": true,\n      \"CPU affinity\": true,\n      \"one-core quota\": true,\n      \"runtime limit\": true,\n      \"memory limit\": true,\n      \"CPU counter\": true\n    },\n    \"bounded_service_checks_pass\": false,\n    \"accounting_status\": \"bounded_service_counters_only\",\n    \"full_system_accounting\": false,\n    \"limitations\": [\n      \"SSH, installation, deployment and finalizer are outside service counters\",\n      \"MemoryPeak may be unavailable on systemd 249; sampled RSS and single-child max RSS are separate\"\n    ],\n    \"cleanup_stop_exit_code\": 0\n  },\n  \"resource\": {\n    \"scope\": \"runner and child commands inside the transient systemd service; excludes SSH, code deployment, and environment installation\",\n    \"cpu_affinity_requested\": [\n      0\n    ],\n    \"gpu_enabled\": false,\n    \"automatic_retries\": 0,\n    \"cpu_affinity_effective\": [\n      0\n    ],\n    \"wall_seconds\": 9.30307563500537,\n    \"runner_process_cpu_seconds\": 0.844907069,\n    \"child_user_cpu_seconds\": 5.932676,\n    \"child_system_cpu_seconds\": 0.636353,\n    \"children_peak_rss_bytes\": 740552704,\n    \"children_peak_rss_source\": \"Linux getrusage(RUSAGE_CHILDREN): maximum single-child RSS, not aggregate service memory; process-tree samples are separate\",\n    \"systemd_cgroup_cpu_usage_seconds\": 7.489746,\n    \"systemd_cgroup_memory_peak_bytes\": null,\n    \"systemd_cgroup_memory_max_bytes\": 4294967296,\n    \"systemd_cgroup_tasks_current_at_collection\": null\n  }\n}\nservice_exit_code=1\nfinalize_exit_code=1\n",
+  "stderr": "",
+  "transport_wrapper_wall_seconds": 9.824244281000574
+}

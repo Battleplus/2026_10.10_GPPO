@@ -1,0 +1,903 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "integration/__init__.py",
+      "sha256": "90f23ef6fa4eea7f537f1a0a43b177afe93b3499ff19cb11abfc28681fbd7edb"
+    },
+    {
+      "path": "integration/civilian_dreamer_smoke.py",
+      "sha256": "b8caf9ed605898cdefcef7b1f51d672ba40edef534d1bd91f4d412feded82d35"
+    },
+    {
+      "path": "integration/cpu_precision.py",
+      "sha256": "0ccc95d2cdbf107689542efc25aaa90dcf035757833553c58fe4cd715f05eb6d"
+    },
+    {
+      "path": "integration/dreamer_relief.py",
+      "sha256": "dfe135288fe54888132cbaf0672121d92e2bc53bac46f761a27053fbec1b0661"
+    },
+    {
+      "path": "linux_execution/cpu_witness.py",
+      "sha256": "9316e1a87a09338566c2a38b8491c462345f8340229fc1306f0d42a832148ff4"
+    },
+    {
+      "path": "linux_execution/environment-spec.json",
+      "sha256": "d177df84752887d4552272acd5bcfdf098b99e804f21f72a0de44c03ebb5a1c2"
+    },
+    {
+      "path": "linux_execution/execution-plan.json",
+      "sha256": "de7482ac9c0b805055a1a694fe7b0d88c2de924a324b002073d87e9f568b2927"
+    },
+    {
+      "path": "linux_execution/finalize_systemd_run.py",
+      "sha256": "71e80b9feb5e9e99120e4d3e3afccdacf8da317c6d3a96b22d134a7198814c66"
+    },
+    {
+      "path": "linux_execution/launch_systemd_run.sh",
+      "sha256": "a088929e95748e2faea755cf4e3408fd249f033b6493fd9ccad6741fb7b234dc"
+    },
+    {
+      "path": "linux_execution/repair-scope.json",
+      "sha256": "3404564766951259fe7abc536727fb56d1ab87b2c5e66ede0378515083eda096"
+    },
+    {
+      "path": "linux_execution/run_linux_engineering.py",
+      "sha256": "a3a4e02be0eaaaf47bd95c61e9385784a0a14542497f4bab6453c722e3ba0380"
+    },
+    {
+      "path": "linux_execution/run_precision_diagnostic.py",
+      "sha256": "f713ffe4ce31d5f55dfc94901fcd39da4c9b1878e5d3800076997c9a8fc0e5a9"
+    },
+    {
+      "path": "relief_adapter/__init__.py",
+      "sha256": "1ebf6488ab8a1e9ba394bbe58fd48839e17a328835a894d9944a95b9ad9f8f72"
+    },
+    {
+      "path": "relief_adapter/data/audit_old_data_scan.py",
+      "sha256": "45bcb0b67f61d74b8ca4cac17fce4c06f6972cce430bee6c4c1cfedba506dff3"
+    },
+    {
+      "path": "relief_adapter/data/build_registry.py",
+      "sha256": "72962bcaf9d36f2c2611e7aa987fd3aa91289e4a6560110d81af72a9ca9d12dc"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-00.json",
+      "sha256": "0e60f0bc3704817787e80853cd90785430157444c0e5528a405be159199c5a4d"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-01.json",
+      "sha256": "b70095dd2e71ac47e94bec94fa5db44a8c44b3ed52a254a2d08b8bba71323889"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-02.json",
+      "sha256": "71f9ba99417c9dac82d942f51ae95fd041c082fc2818d886187ea2c83d0e37c9"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-03.json",
+      "sha256": "789439a66196f1195d105f4cfde481a7c7bf3e64ebd07e1490dcb408d100d029"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-04.json",
+      "sha256": "36979f16c5df8cf74d160a3a5beaf4287859318dc93c0d3753a019ce94f33b5c"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-05.json",
+      "sha256": "cbe4c998da227490b5af131f9b671da3e2dcf423d6971c9c3f6f8ab2f803c0bb"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-carrier_competition-06.json",
+      "sha256": "0c06cc44cd1719bff0b46e6670d6a4e13b9270ebab09cab3510ac2815face160"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-00.json",
+      "sha256": "5999e322a4065317593c3ca709509dddabf26a06224553504ee0fed2c80a2a4d"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-01.json",
+      "sha256": "a2281841eb48b3944fa23aec08e06e5fd8c43e5a5b124a700d4414c64a7bb208"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-02.json",
+      "sha256": "5f6103aa10573d6fdb13ba561f5d435a5746158b89e2c9336bc883892f16c630"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-03.json",
+      "sha256": "37c73e31d6e338950c8927d41264fa1af774f8ac0c7904bd9ec50df352b28538"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-04.json",
+      "sha256": "533ff560f07d7590406f2bc53a47c7e6f54a189677850ce7ced9496f35e7f60b"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-05.json",
+      "sha256": "43e63eab764f7aec3121af3b1c7613b53576faf5c5f9c3016af3a266901fa2e1"
+    },
+    {
+      "path": "relief_adapter/data/development/relief-n2-development-stock_competition-06.json",
+      "sha256": "b0100c4cf7cad0131bc344b77aec5bfb67f795f600d15f7f1d67494003362048"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-00.json",
+      "sha256": "1dd5d1fce54fc7f5fae1d9252543cf883947db46db6ee6aea617202e837a5c31"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-01.json",
+      "sha256": "7cb04591bca5279cf2972a35889bb8afc57f89d648059fd9888db70e51e4f56c"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-02.json",
+      "sha256": "7000e4766528c60116c86f7fb98e72655cc34cf5d718b9a380ecc0016853f127"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-03.json",
+      "sha256": "de74ebb848a3cb14edc2fa1ff5fd0bbe9940c438641423eb0df9261dfb07b6ca"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-04.json",
+      "sha256": "fc6c5a82790719de3fe006b8d5448ff3fd72af3c5f29c1c95bfad7df8c7eb627"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-05.json",
+      "sha256": "c5c120109e1ed45419d470ce4b6c4dcd760b8bc141166b0b81c6d763550eaa8d"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-06.json",
+      "sha256": "a6668278c36bb7a23dfad49f57261a3b0d718615775e2f3836c82b94ed65e0e1"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-07.json",
+      "sha256": "4c7783da4ac595fb60d9b5c09a2d99b0c77f5ee059b3c5f2304384e98b22e1f8"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-08.json",
+      "sha256": "1d11b755b069c90641735bd0ecb80f6b5f2071a68295ed6bef07cbbafdb533ac"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-09.json",
+      "sha256": "20c4c6345333a50205a4449a65767139c975f323bfb81080af2ca5e043cf4679"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-10.json",
+      "sha256": "8e58a51006216345479c4d62667091668ce83bc3a7be71478147a07c1b174260"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-11.json",
+      "sha256": "16bccffa0fb8ab5b7c7b2775074bcf3a0d06c9a0e5f01f4ae8da2659190bdac1"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-12.json",
+      "sha256": "988331bbe9919b18a323fad051d4309b8bf2cfe32d4876651d51f0efda9fc0ef"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-13.json",
+      "sha256": "38970931acc3b5613b412d00bc4a28d0ded726ef858574f869f07717acf0a08c"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-14.json",
+      "sha256": "15336672663f1e22a7734bc9a1ecdd07c26bb17ab147c63f21175c9e5966bb24"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-15.json",
+      "sha256": "83328468a0ab6e99678ca6326c09e2f9f1892a1cca44ec1c7c271b382b4a5507"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-16.json",
+      "sha256": "9ca055ca94779fd1526e937eec3e23b39dbed92e0dbedc3291d4930a8ea8cab0"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-17.json",
+      "sha256": "62f4f16f04459630e8adb644570fb30f234745936b810bd9d069dd40a5017490"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-18.json",
+      "sha256": "bb95b28faea922f8e07669e462e27af54c9a96f087768c9e8fd51190dde2f3f1"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-19.json",
+      "sha256": "b5192d00c3853278247c43767c35811536b6f784cc7bc7092db9714b91463187"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-20.json",
+      "sha256": "467322d553caaa6651de9837046399c28802e2dc82a6431103c7602390d0ab6a"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-21.json",
+      "sha256": "bd1e6c49b9abaf25921fbc8fe026967a81f2386b51972e451e7a83ad274a6633"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-22.json",
+      "sha256": "6edc8f8e7e0c0dba592a9bf1c71532d1e30c76b739ebbd363ead1c5aa11b5c1b"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-23.json",
+      "sha256": "97b2e3a18159bcad70ec9f611db43174f0cd5bba0cf86c3564becbcd05d63833"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-24.json",
+      "sha256": "b46bbedcb104f5aaf1e6542c4b13226763ed5011a157dbdd46a8039d36502bd4"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-25.json",
+      "sha256": "3a629ab5120a9a511e18326e04b8e612e732d89d9045b56f443ff9dfe3ec6b0b"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-26.json",
+      "sha256": "6cbec193ecafa3e64e35affe5bfa46345cffa8e3a347cf9d9a523f6bc22a6747"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-carrier_competition-27.json",
+      "sha256": "e9a89ea1f6efbff0ea9a1fe154e43639ddf9595e9688f5fc785eae670f9ee0fd"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-00.json",
+      "sha256": "2d4654833d52c5380f4c5f79a729e7a6639491c0b8b574adba69d8e35de0ab56"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-01.json",
+      "sha256": "c1052e961a7c8d20e6046067104ee15d57b30b23d1ca9158d272833925469385"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-02.json",
+      "sha256": "698e942ed22e21c436c84afdf3d407b6b8c68eb8e771810401cff431a170297a"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-03.json",
+      "sha256": "d792fef2148554c804c9901d3d5fc33cd7fd326bc4c9f50f448f85276559d563"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-04.json",
+      "sha256": "ed7ba1715b3e442c934b7225c347e33fdbf4f31bc2c01d82f47da6136936c347"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-05.json",
+      "sha256": "61135041c175fe208f106c232a204305bb201ec2e73142addcb4c690bf124a12"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-06.json",
+      "sha256": "ac442a451bb2933169cd57ad6f49053933d36b98bb52b67b43b7d0e3b6935947"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-07.json",
+      "sha256": "7dc896476afbb0225e33985d0185719a70f9f78b99b8287d56664c76ddbef351"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-08.json",
+      "sha256": "3fe0e78acadb8d70e6dbb371df7e1d16628dbc7fcef1c4a4e3072d40eb7202b8"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-09.json",
+      "sha256": "8c50f910c1127e4240197686664bccf94be1ae82727246df0d44fb54405e9775"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-10.json",
+      "sha256": "809ac0f1c8008199cd98d1a80cbe8a169ef3e79a61926915cd56c5a8c030e5a9"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-11.json",
+      "sha256": "3de024a9817b7879554280f3f54f115eff464f295eb5d9c54e7e08d2ecf2f857"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-12.json",
+      "sha256": "eacd4a889057d2c7facf15a5fb6f27502c0d818a9a4bad6ba7148ad879c5275e"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-13.json",
+      "sha256": "7836f57b66b436f250db8bf01fd242be672be27ff2d806c7074d1766f44d9cf5"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-14.json",
+      "sha256": "480f72a927e630bf6f9ae447b02b0748547b2c5975d756fec76be718c928dccb"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-15.json",
+      "sha256": "d03747df1c33fb2a7fe53797498f447f4cae1c6aa215fef83eb24fd963cafeca"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-16.json",
+      "sha256": "dc947199f827e58186400a73c6becf358c8344248ec4168dffcc3b118e898ae0"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-17.json",
+      "sha256": "85b0f2c90df21009855e6afc54272bfcf3e4d547646966828f8017da2fd5fc55"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-18.json",
+      "sha256": "1793e61a3e637dfefc93151fa207836bf53ca011b9b55eb9eba92ac6eaa4e5f3"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-19.json",
+      "sha256": "6a06cd094b2edf95f36b74fb1fb24f8811b575f9b2ccd748e343d2844e10b98e"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-20.json",
+      "sha256": "996082079841d7909e454f958f0a07ec2cfd6f90fdc59270ac7802098b7ad1dd"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-21.json",
+      "sha256": "ff3d8153e5f6fe5190b6d492c8ecb755cf5ede7c7db2e670eba27d0f13c8cab5"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-22.json",
+      "sha256": "d17ba76f85adb8f393dc179067a2b8bed6c6a628ab379d54770d77eb40407110"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-23.json",
+      "sha256": "77b169c3e72e9e11e45087784e847ea9c6a916d491663713ff43701014c5c346"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-24.json",
+      "sha256": "d4ccfef5c48fbbdfedcf143835f9273659ce17e502be5f2532bc69f6380bce27"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-25.json",
+      "sha256": "a9adb8cc72bca346c5cd290597da26b753329e1d456ed56c3f7969c700683cc4"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-26.json",
+      "sha256": "bc5bdf8cb2b7f6dc7ccbd2213e19f076b94837d93877841570b1b8eebb37fe52"
+    },
+    {
+      "path": "relief_adapter/data/heldout/relief-n2-heldout-stock_competition-27.json",
+      "sha256": "f43fed923aff23bf473f82817be34f509f4b864c04bbdfcc9c869dd520ed7cd3"
+    },
+    {
+      "path": "relief_adapter/data/registry.json",
+      "sha256": "3f96d6ad8a421d9d2890c4df34d3bdba2a81999fa76976e68d33492958bd161a"
+    },
+    {
+      "path": "relief_adapter/data/summary.json",
+      "sha256": "585fc29b89ab57400da5564bcbba674a54ef56a4cceceb4c2f2c416d82228e66"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-00.json",
+      "sha256": "fa61b19c5a75d7fa86ba6d6dc13169826213efd7716817507e8c941926508934"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-01.json",
+      "sha256": "3350cde125b1ebb877a5b56d1409f8e1e9c6497af1d96bbef3d4da1508ad8546"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-02.json",
+      "sha256": "e1d74ad5f6ba322bc1925f8d5461416b7e72e23859fc08269f2e5244d9891c7f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-03.json",
+      "sha256": "61399c1b9e9e818ac6b2e0895003acd438d953be91e5c586cc27e0a58e43a229"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-04.json",
+      "sha256": "259d26adf682d424ec7c65b66a3b0af4ecc19b078a511fda29230da766e0e349"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-05.json",
+      "sha256": "e0beb391af8a8ac56c76ab650d866ffb92eb0f00fd9374b183d7a61fb65aadf6"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-06.json",
+      "sha256": "3362ef94fe999797c071569197ce53b7c7b02564e78010d571823a6a8365c36c"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-07.json",
+      "sha256": "699eede391084140484053038b10cfb43e736578c850f235221fdc6db464580f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-08.json",
+      "sha256": "5f64e7828a9dc8a435f68becf547fbeef46cd9dd4cd9dc9f030d670a3bf6eafe"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-09.json",
+      "sha256": "fe455f64eead5d404a4afdce1bed844ac29cc02e254e33cc01bb8c9727d79e2f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-10.json",
+      "sha256": "507244976a43b6f7b84d0dda806e54911b90ba5261162e97963f018b091855bd"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-11.json",
+      "sha256": "ebdbfae42f84fb31d015dfdf12e94a76eba4d0241ac839cf447b5063415f1042"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-12.json",
+      "sha256": "a00ab1b8d8c76d4b934aefeae75582f39b471ea9ab49a533b360d56e898744ef"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-13.json",
+      "sha256": "c7250be669ba5c5df38525440340068beb5870e6fdf01c1735fb78f8d0e57bc9"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-14.json",
+      "sha256": "7937c8470fda4ffadf05380909e476a3dda462b2f09a7e19c1295eec0d99dc29"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-15.json",
+      "sha256": "7716c0c4ebc7f030967e9e241b4bc7f931000af354437127c2219e7f1ee80da0"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-16.json",
+      "sha256": "1974ea73fe5fa6ffa9d8466c957c592029f2590c170fb71f55d53bb7db560cf5"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-17.json",
+      "sha256": "8de7822494268d1f9f912de0b362777e623dae914b0ffa3d7b4309d5f1589b50"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-18.json",
+      "sha256": "11045eea8c05eb8188b7526a0f6fc4e269c8e17756d04f8280ac8c7b3b5bff3b"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-19.json",
+      "sha256": "65590bdf378fca4933c6f7fc94896de5545bea0692599a3dc4122dafc552172e"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-20.json",
+      "sha256": "4d67211b928e404409b57d0ea140aef656cca610aec7a6c20ac9241370b48db8"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-21.json",
+      "sha256": "f1e1095586d3b4d66c5d6507554624908d3a39749ea52e070d7a77cf601a94ca"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-22.json",
+      "sha256": "a1bc540788246aa0bd86592084cce180d3c40c591f6f3d9111ff1f008669e010"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-23.json",
+      "sha256": "4200697605e74bd4e9d4eefc1aa223d217fc9fe26fd96a66633235542d371688"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-24.json",
+      "sha256": "d5b4aab7c84de416c1ef01fa4fc5b6c0c803e783b1e7153eb8b831645bdec88f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-25.json",
+      "sha256": "c441b390309f91343f2f63da30dbd92b54d02bdaca02088c33029b89d5ec8703"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-26.json",
+      "sha256": "34ccff8d57c86df85586b23798ce3834385e581aa3b53c364ac76de7e8be3951"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-carrier_competition-27.json",
+      "sha256": "55baef87ac8ebb9d15ae048f61ef6fcd6570613e893863dad2d1d7addd619ad4"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-00.json",
+      "sha256": "4fb0b4d0853784e0beea599bf200503a43f35bbb71aa15771febbc742fef5ab8"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-01.json",
+      "sha256": "40926c05d2fed1cfea2a5ae4170e51f4bc231be2a173417d76fb4de857990523"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-02.json",
+      "sha256": "418df0a9e13bc2b17cae7a940ff51cfede4fd847dcb6891af651634e7b28c1b3"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-03.json",
+      "sha256": "42cf52506bf1132fe869dbae0af41bfff0fd00998a67a2469972a18c9b40eb8e"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-04.json",
+      "sha256": "895165efa5dc39834f104d344a6f8ad450b379c8426c58d45896b3294272b15f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-05.json",
+      "sha256": "ee240106bfe3328c2ba8bd4d291f12fb2c2d601526d6b8f814232f53d5d15f20"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-06.json",
+      "sha256": "ca93f9f9df7ae78923cfac97a829daa1c38f6ed0db7c145c8d8b81465a8ecb01"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-07.json",
+      "sha256": "888aa17448381cb1a6ffba04327353a37c69d2997bf88b1a5c6d259671c82d75"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-08.json",
+      "sha256": "434fe66346631d7537c15648b8df039c79e587cdb81a6b18599a2ce43834c446"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-09.json",
+      "sha256": "5fc864ed6815e9a4a45831cc13b2bef4c1904a3bed254185e0081c09acce3939"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-10.json",
+      "sha256": "8a63ba8d9cc3e6b6a2ef6a55044074a9f30ced716a1c2bf628b9f862d8bf1ebe"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-11.json",
+      "sha256": "8745d322725f745a3a0f499d745fe5c9913ad1d1b1d995b1125ef8560cb8c133"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-12.json",
+      "sha256": "839f23699f7822df2eb74e7c42e9e7bdb703044c2231df3679fcea8a02f01c7f"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-13.json",
+      "sha256": "7bfc805be26a4e02765b58c805762246b6aaf611af987af1456152a86a3ad9d0"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-14.json",
+      "sha256": "c45053a439793240200baee8cb41f754ae5e60105c68b67992749a263eb4075b"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-15.json",
+      "sha256": "bea0d857b369e5fc33ed37282a4915e34443dc78c0f9c35a40f1a4dbf81d1b53"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-16.json",
+      "sha256": "e7e3b30d0e60b272c8f8684d8266c7b5e2b0309cb5a8a50524a65cd77e8bd6f4"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-17.json",
+      "sha256": "cc10d92318b17becb0a35bdef33b28238e70c7c19862de5d45c46337a3ac17f4"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-18.json",
+      "sha256": "feb806baee889514f5c0dc5b638ecf02a0e951e898fbea0d4f9bdeea4050ee81"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-19.json",
+      "sha256": "df50a66a9042a6149d6d1da6dc637728410631129184f91ba11ae6f689439c1e"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-20.json",
+      "sha256": "e9c3c9da3be8110813ed2d89d5f6ae886ab4baade5c93c05cfceba114cdf5a83"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-21.json",
+      "sha256": "01d74e02a8ace5e64eb4884797c0409a7a0adeba289bfdef0a871c7c54a61100"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-22.json",
+      "sha256": "4883d850b9e1ae429529666fb44d9355a68f3b4008f1fc9af921ad6fd41c4a60"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-23.json",
+      "sha256": "829458b2c1fbb2adc0cf345dafe854471555ef2718cc59f9f22db3dfe8483781"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-24.json",
+      "sha256": "ea14ee4dafa4398759b5f30db5449e90b8e4555fa8e5ed353f9a1b800857bd97"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-25.json",
+      "sha256": "fd768e174b6823d963e884644ec0422d83484f4b449c1d0d1c11b190febef2a3"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-26.json",
+      "sha256": "95551ef7b4d93469f8ecccbedd9465a8b48c8dd30c14be69ff8ea35c65a99a4c"
+    },
+    {
+      "path": "relief_adapter/data/train/relief-n2-train-stock_competition-27.json",
+      "sha256": "11ef69ec3f51a4d5387467bf3e80fd45154604636d9cc235c8521be1108fde13"
+    },
+    {
+      "path": "relief_adapter/decision_repeat.py",
+      "sha256": "a03eef3b61a074b6c47c5e7a1cd3730771c215d32828c6f691c90f79f1d3781a"
+    },
+    {
+      "path": "relief_adapter/factory.py",
+      "sha256": "f1351d571300473431a7b50acaf3c6b28e9fe82f2de86b384f4486c12f37bae2"
+    },
+    {
+      "path": "relief_adapter/replay_adapter.py",
+      "sha256": "54ea15821b41270f60917794f6045eee684c8506b6275d90d070b248f24c923a"
+    },
+    {
+      "path": "relief_adapter/replay_contract.py",
+      "sha256": "95aeac4bcf73656d543ebebffa622d64f69959467104c45259b604c9de8d82c2"
+    },
+    {
+      "path": "relief_adapter/vendor_source.py",
+      "sha256": "cec2149df595f5a290333589b5fb8593634d8911ed3b82d72df3b79d253f950c"
+    },
+    {
+      "path": "tests/test_decision_repeat_adapter.py",
+      "sha256": "ff70464866c4b6a26226d0afd24eba3190f46dbb3e43282300e25df2a8db7734"
+    },
+    {
+      "path": "tests/test_dreamer_time_mask.py",
+      "sha256": "05a4387e01c5f14587f43cff9f4fa0b0b9eecf1faf28d09a5bcc12cf867ffd1e"
+    },
+    {
+      "path": "tests/test_factory_replay_smoke.py",
+      "sha256": "0f56c23e97e531fd863387965413d9841de818cb5ffbb84ee9faf8573f6bbe0b"
+    },
+    {
+      "path": "tests/test_replay_adapter_wrapper.py",
+      "sha256": "ee5ae2d31acef3046a73990c3b0caa2667eccd9a56a10520acbda40ddf424ab8"
+    },
+    {
+      "path": "tests/test_replay_contract.py",
+      "sha256": "61b30f6272635738a3540b29ad3cbefcc34837c45e89744390139acc330850ea"
+    },
+    {
+      "path": "tests/test_scenario_registry.py",
+      "sha256": "29752dc85d49b4ada8d60553a4cc2a13ee8fac6f32d95f6c0feab59d9d132590"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/.pre-commit-config.yaml",
+      "sha256": "34531dd19c3fdb6247cafbea9625a31d4d966c98f1897f6886350a4098f62dd2"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/buffer.py",
+      "sha256": "3299fe6a9548000769a4ff9605dcf371e3e75758f2b62f0c7542415030756bf3"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/configs.yaml",
+      "sha256": "46c8805285ee7a525092cce7abfde731ec51d5dd3464abb4e6d8cc9332855852"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/atari100k.yaml",
+      "sha256": "a476d59100447a2b1f77b4372d211c3afb1bbded8b82a83e04bc86a67cd54531"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/crafter.yaml",
+      "sha256": "2f9cead753904749e30e7f5d9514ed21764c3adad89d0b3a88efc65636f469ba"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/dmc_proprio.yaml",
+      "sha256": "4c91108a704c639cf71640b0aa82ea3c12fca6cb8c76ff6bbd158c354b0d2e2d"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/dmc_vision.yaml",
+      "sha256": "a17bd234a7d710f38f69e72d1ba063024af5df447c925b760cfed011bb3828b0"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/isaaclab_proprio.yaml",
+      "sha256": "a34403e581b21c87c312a0603ea2c317a3952af225d99f00751fa8b4ba67d49f"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/isaaclab_vision.yaml",
+      "sha256": "b6590b3ab895f9a33b00dc0e95a10a1062a0276cb2558b2461b3a5463c1449a3"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/memorymaze.yaml",
+      "sha256": "ca41e6e6332b6ef98dd845bd8f0be0facd49f795712bdad2237064e379c41478"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/env/metaworld.yaml",
+      "sha256": "a007508010a369168467a7a87ae2cbe73a1d7d1074b8806597010a3609a719ae"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/_base_.yaml",
+      "sha256": "ef3ca28fae346f4751b28aa64986b834ac4d68b9df58c40e1d76750d6fe5eae9"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size100M.yaml",
+      "sha256": "d6192b2cd88590abac76d6a31cb6993c0ddacbc18b86b33469ea19ef56d09b43"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size12M.yaml",
+      "sha256": "464475444f3652d04ab17f427aa22b0572b6c8e458d25494c116c759828bfe24"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size200M.yaml",
+      "sha256": "b0cfb11ebc430e3080c1bd6fb3f6e958820c7ba2bce6ee5cf778343cf81bfe5f"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size25M.yaml",
+      "sha256": "fa233fa3d58d90368bf11b308ea670b15756d701c55cd104f4f784aa53c881ed"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size400M.yaml",
+      "sha256": "99d1a7ed406513822e7d97c18b53fa462d5ac5de61b717318ce029861a47972e"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/configs/model/size50M.yaml",
+      "sha256": "bd6dfc562f63d9a5c76c6b03dd7eb5612d551450d85d8f889b043f0dea6a4498"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/distributions.py",
+      "sha256": "adf1107fc999e2f61a92609b7c00c0db3e7fc7cf488e5f1e42d6150a58c3543d"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/dreamer.py",
+      "sha256": "7114e03ce5a0d4abe500823de7d7f7bedddfbd0fff5323c19251ba8e0d4a7547"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/__init__.py",
+      "sha256": "17d5c6acb5c8103e8a1e2627e07792a882ef017a578cf0043cc4c36a0ef2700f"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/atari.py",
+      "sha256": "3d14bf4019250c6e27c9ab250b20597a8411912978eb703e3090aa19a0b5ad5e"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/crafter.py",
+      "sha256": "4501d89ebcda64a615cb02d6154888d756fac7f8fda2639330509becebe9c88a"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/dmc.py",
+      "sha256": "5c55fe20dfeb4988e8a0bfde2a1f86fb99d0a101ca2190712de3a60158d621d4"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/dmc_subtle.py",
+      "sha256": "12cdd8f8dcddb025337ca3af090a62b4fe13c1bea70fc43129c3d129dd98b6c9"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/isaaclab.py",
+      "sha256": "10d67a175c860eddebea3a78d8ae1f1c659f7b680727846b53acf302f2e2579d"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/memorymaze.py",
+      "sha256": "45c371e101bad8bc4815e93999a483605363ded388c8bd0d4699e5e00358f3c8"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/metaworld.py",
+      "sha256": "4877487bb1e4f21877349fb15fe1d0a7b6f590dc54ad875753975e36f1d03978"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/parallel.py",
+      "sha256": "dec5590732136287d586c936c8724cadbf86ca2c7adc8619e3caa85eb928f598"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/envs/wrappers.py",
+      "sha256": "d413ec35b027993bc191b012a5018091dda1074ad269ed9559a0ec10424869a3"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/networks.py",
+      "sha256": "14a440a237fc0a2f1e386d9496202009e81804a97b3c79a6c4136784e61cd04c"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/optim/__init__.py",
+      "sha256": "64fd47e3c2c5ce891644e87fa9a2e97506a747ca8775cfc052cc2861d355c957"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/optim/agc.py",
+      "sha256": "467b656733a8a5265368c3542455e6972c167a0f343487069fd20babfdba64fa"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/optim/laprop.py",
+      "sha256": "cc3e32a7eb3ffe013f325769ded7116ab7fd52a2089be10bc85222fe3c4dc579"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/pyproject.toml",
+      "sha256": "4c55eca55934159f45112b96e000b47e5a2fa1b5cc035cc612137ea314f73666"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/rssm.py",
+      "sha256": "9fd1171c39cad2faa7edb3065bdd36b5d39fad343a00e358636a72c8473001f6"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/atari.sh",
+      "sha256": "378a7f785a3c7867b5c6d1bdb76d3bb52d133d855b7e33eebd926a5670e451c4"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/crafter.sh",
+      "sha256": "3f5a9273ea0ae1e3e137041b6fa3573e3656155c77026223c3fef74e859fa77b"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/dmc.sh",
+      "sha256": "9620f6a557edd6a0c30968a5b118e93779a47b67315d1f21191d77dc640dc584"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/dmc_subtle.sh",
+      "sha256": "c84320044b08697a828a52a0411f21d3997b391e70d499b7403623d1d2573402"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/isaaclab.sh",
+      "sha256": "f1426aca9c3f01170f8d5ab7e131fdd560d37b13a17d30554fc21220fb95389c"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/memorymaze.sh",
+      "sha256": "6272df833264f9d0770478411c118bfa3e046890b688fb69f7537f2424e9ba51"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/runs/metaworld.sh",
+      "sha256": "4c47beaa75071a664447a24ffc454d15bfa41dfc0e29b807b3ca730ac379915f"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/tools.py",
+      "sha256": "b91a12e9d03d803ed40545b9bf957c293c4008bfcd6b5b48ea98ad3bca999350"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/train.py",
+      "sha256": "d5d008927f0c50ada24e691da3e7c396bdcbcdd7d8a9222c0890de17f8e9e11b"
+    },
+    {
+      "path": "upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/trainer.py",
+      "sha256": "46dac17400b6b4884db0274aa1aa3f23713eb85df6800a89c050b015086f3b34"
+    },
+    {
+      "path": "upstream_smoke/SMOKE_STATUS.json",
+      "sha256": "4ef4f3003d02e4961dc74d2f1d228c7f4ff1a0aaf2ee46e4da92ef66237dc393"
+    },
+    {
+      "path": "upstream_smoke/cpu_precision_diagnostic.py",
+      "sha256": "6e23989971ea9bacc352ca517011b44280ce448bc9ca858c1d82508f0a771cc1"
+    },
+    {
+      "path": "upstream_smoke/results-r5-fp32/smoke-receipt.json",
+      "sha256": "f65e4c773ec04327db2d7347d8e2f6b572f8d69f3c1cad11251d9624a6f46783"
+    },
+    {
+      "path": "upstream_smoke/upstream_dreamer_smoke.py",
+      "sha256": "214a06b30cc365e30270403db4848de64b1db919e7d75bc59c2eba33acd9db62"
+    },
+    {
+      "path": "vendor/relief_env_v2/SOURCE_PROVENANCE.json",
+      "sha256": "c3994b2fc6831e8e5ad619e9d9d080ce2aadab00dacda1cf0cb61a2dc83379de"
+    },
+    {
+      "path": "vendor/relief_env_v2/__init__.py",
+      "sha256": "dae6a7e9754e542fbfd12485c601a18d8d3e3c024915ad651420a87b380782fa"
+    },
+    {
+      "path": "vendor/relief_env_v2/baselines.py",
+      "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a"
+    },
+    {
+      "path": "vendor/relief_env_v2/chapter1_adapter.py",
+      "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6"
+    },
+    {
+      "path": "vendor/relief_env_v2/dataset_protocol.py",
+      "sha256": "582d300580500d0382142a0da28c5ede8644534e4dd064083fbb1cb4b1b28dbf"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/combined.json",
+      "sha256": "de6a123b0ef8aeddad7bd4fe51a8d3ff54d684196bd92d36a074fae7bc15c66b"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/control.json",
+      "sha256": "eb4946623237fd88c8464d54d974eb027335f2ead1370b9d9ad0f8b37cecf4c0"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/energy_change.json",
+      "sha256": "e346bdc989a500d208bacc723fb6333a3d43562c9260af84c0d73575a4c06b0c"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/external_commitment.json",
+      "sha256": "2ae3b507e817871186631809558940ed5950f202559199ecb3e2078bffd7115a"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/failure.json",
+      "sha256": "879d5b986cd4b20194d6dc373c5c026c15400b4bad62b7f21635e0919c2ac0da"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/report_delay.json",
+      "sha256": "ab717059858b22249b049bd86a6b43111aa9df8bdb88eb608bf572602ed9c0cb"
+    },
+    {
+      "path": "vendor/relief_env_v2/fixtures/stock_loss.json",
+      "sha256": "b247756d597797982031c501eb17b4f1805c0e9287399e19abd1706d0bbe5106"
+    },
+    {
+      "path": "vendor/relief_env_v2/graph_policy.py",
+      "sha256": "e1a8e56da7f6be9b75f2c48afae54abecf71445bce3af94724f50713a005d142"
+    },
+    {
+      "path": "vendor/relief_env_v2/independent_audit.py",
+      "sha256": "9ba61300a113a0d60988bfbca28edb6db81581a956015607a98d26916863d1fc"
+    },
+    {
+      "path": "vendor/relief_env_v2/literal_graph_ops.py",
+      "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e"
+    },
+    {
+      "path": "vendor/relief_env_v2/ppo_trainer.py",
+      "sha256": "c0ac1c57ae1a06d8dadf94de80ca4e35f5b136f0879064aac0e0618abb2fc891"
+    },
+    {
+      "path": "vendor/relief_env_v2/protocol/preregistered_protocol.json",
+      "sha256": "62b58009959a66640a11e7ee06b9b684498431c817f13b884f74c553b68119a0"
+    },
+    {
+      "path": "vendor/relief_env_v2/relief_env.py",
+      "sha256": "ea9b2605cf529e5331f9479b62f7e5504005177af902343743e6fe7d0838955d"
+    },
+    {
+      "path": "vendor/relief_env_v2/scenario_schema.py",
+      "sha256": "5e18a62d251d2d4a9ccf1ca429e2ca41b8ce6430d6571a0f3897079c3e7d08c0"
+    },
+    {
+      "path": "vendor/relief_env_v2/stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef"
+    }
+  ],
+  "file_count": 224,
+  "manifest_sha256": "099539b6d44b996e93cb173f69f644ac7b3dd845d3a00a99d56d0099dc0be39f"
+}

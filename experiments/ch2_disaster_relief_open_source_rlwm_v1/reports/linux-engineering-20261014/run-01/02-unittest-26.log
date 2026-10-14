@@ -1,0 +1,64 @@
+test_decision_repeat_adapter (unittest.loader._FailedTest.test_decision_repeat_adapter) ... ERROR
+test_dreamer_time_mask (unittest.loader._FailedTest.test_dreamer_time_mask) ... ERROR
+test_default_vendor_factory_replay_metadata (test_factory_replay_smoke.FactoryReplaySmokeTests.test_default_vendor_factory_replay_metadata) ... ok
+test_full_platform_batch_leaves_only_commit_legal (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_full_platform_batch_leaves_only_commit_legal) ... ok
+test_rejects_time_or_terminal_contract_mismatch (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_rejects_time_or_terminal_contract_mismatch) ... ok
+test_stamps_metadata_without_changing_encoder_vector (test_replay_adapter_wrapper.ReplayAdapterWrapperTests.test_stamps_metadata_without_changing_encoder_vector) ... ok
+test_dispatch_space_and_commit_index_are_fixed (test_replay_contract.ReplayContractTests.test_dispatch_space_and_commit_index_are_fixed) ... ok
+test_observation_stamps_incoming_transition_metadata (test_replay_contract.ReplayContractTests.test_observation_stamps_incoming_transition_metadata) ... ok
+test_only_commit_advances_physical_time (test_replay_contract.ReplayContractTests.test_only_commit_advances_physical_time) ... ok
+test_rejects_inconsistent_or_malformed_metadata (test_replay_contract.ReplayContractTests.test_rejects_inconsistent_or_malformed_metadata) ... ok
+test_carrier_condition_creates_equal_known_and_hidden_food_loads (test_scenario_registry.ScenarioRegistryTests.test_carrier_condition_creates_equal_known_and_hidden_food_loads) ... ok
+test_seed_namespace_is_stable_and_split_condition_specific (test_scenario_registry.ScenarioRegistryTests.test_seed_namespace_is_stable_and_split_condition_specific) ... ok
+test_semantic_hash_ignores_only_scenario_id (test_scenario_registry.ScenarioRegistryTests.test_semantic_hash_ignores_only_scenario_id) ... ok
+test_stock_condition_sets_each_depot_to_sixty_percent_demand (test_scenario_registry.ScenarioRegistryTests.test_stock_condition_sets_each_depot_to_sixty_percent_demand) ... ok
+
+======================================================================
+ERROR: test_decision_repeat_adapter (unittest.loader._FailedTest.test_decision_repeat_adapter)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_decision_repeat_adapter
+Traceback (most recent call last):
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/tests/test_decision_repeat_adapter.py", line 20, in <module>
+    from relief_env import ReliefEnv
+ModuleNotFoundError: No module named 'relief_env'
+
+
+======================================================================
+ERROR: test_dreamer_time_mask (unittest.loader._FailedTest.test_dreamer_time_mask)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_dreamer_time_mask
+Traceback (most recent call last):
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/tests/test_dreamer_time_mask.py", line 17, in <module>
+    from integration.dreamer_relief import (
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/integration/__init__.py", line 3, in <module>
+    from .dreamer_relief import (
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/integration/dreamer_relief.py", line 47, in <module>
+    from dreamer import Dreamer as R2Dreamer  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/dreamer.py", line 12, in <module>
+    import networks
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/networks.py", line 9, in <module>
+    import distributions as dists
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/distributions.py", line 5, in <module>
+    from tools import to_f32, to_i32
+  File "/home/user1/w1-pilot/rlwm-engineering-20261014/source/upstream_r2/r2dreamer-546e4fab8146ea4b14e1d7726bbc1a8a1d50322f/tools.py", line 12, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/lib/python3.11/site-packages/torch/utils/tensorboard/__init__.py", line 1, in <module>
+    import tensorboard
+ModuleNotFoundError: No module named 'tensorboard'
+
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.091s
+
+FAILED (errors=2)

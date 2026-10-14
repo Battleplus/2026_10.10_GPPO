@@ -1,0 +1,38 @@
+{
+  "scope": "server_install_logs_downloaded_and_compared_with_remote_read_only_hashes",
+  "status": "pass",
+  "files": {
+    "create-venv.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "install-phase-0.log": {
+      "sha256": "2cbc677f3df9419f42cac8581d90ad94ddf318418cec6c904ee1ded2b145db52",
+      "bytes": 568
+    },
+    "install-phase-1.log": {
+      "sha256": "568100fed9768748d7c82dc2da5b7107bf4287a9560b29d7e77adf6a899daf60",
+      "bytes": 208
+    },
+    "install-phase-2.log": {
+      "sha256": "045f6ec2d9b4f3bd3bd39bd62e489d7bab0834da1339b9ac53a00a433046306a",
+      "bytes": 2814
+    },
+    "install-phase-3.log": {
+      "sha256": "a8128cc1f288b35300815dc82cafe11792c0ee49e96245dc385bf31841f9f90c",
+      "bytes": 483
+    },
+    "install-phase-4.log": {
+      "sha256": "2bf6aeeb54b5606a9d3944eab9b7ba520ed2c5afde1d5eeb133b9c0eb3250cf1",
+      "bytes": 768
+    },
+    "install-phase-5.log": {
+      "sha256": "ab9a106f2b567901fa332de7c7fcf66f265c33829dc6345e042924b4a16a8420",
+      "bytes": 2866
+    },
+    "pip-check.log": {
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "bytes": 30
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "artifact_count": 17,
+  "run_receipt_sha256": "0449033931a122dbbf7f7cf2ea5298cd7cd326f6515bced9913a20d947cb66f7",
+  "original_audit_inputs_verified": 27,
+  "mismatches": [],
+  "formal_training": false,
+  "heldout_confirmation": false,
+  "deployment_files_verified": 313,
+  "run_source_files_verified": 224,
+  "smoke_restore_checks_pass": true
+}

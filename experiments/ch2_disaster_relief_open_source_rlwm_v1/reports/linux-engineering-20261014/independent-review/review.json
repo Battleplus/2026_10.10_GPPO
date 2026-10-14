@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "scope": "Independent engineering review of the bounded Linux compatibility run and proposed r2 repair; no algorithm-superiority or study-result claim.",
+  "review_context": {
+    "remote_ssh_session_held_by_reviewer": false,
+    "remote_execution_transport_holder": "parent agent",
+    "local_evidence_reviewed": true,
+    "reviewer_model_family": "same-family as parent; provisional with respect to model-family independence",
+    "r2_remote_deployment_and_installation": "locally reviewed setup and deployment receipts; remote operations were performed by parent",
+    "run_02": "parent held SSH; reviewer checked saved receipt, logs, status, and all indexed artifact hashes locally"
+  },
+  "run_01": {
+    "run_id": "linux-eng-20261014-01",
+    "status": "technical_stop",
+    "first_error_stage": "unittest-26",
+    "cpu_witness": "passed",
+    "unittest_summary": {
+      "discovered_entries": 14,
+      "passed": 12,
+      "import_errors": 2,
+      "acceptance_required": 26,
+      "acceptance_met": false
+    },
+    "import_errors": [
+      {
+        "test_module": "test_decision_repeat_adapter",
+        "cause": "legacy SOURCE_ROOT points outside the deployed source tree; relief_env import fails",
+        "classification": "source-layout portability"
+      },
+      {
+        "test_module": "test_dreamer_time_mask",
+        "cause": "torch.utils.tensorboard import fails because tensorboard is absent",
+        "classification": "missing pinned runtime dependency"
+      }
+    ],
+    "later_stages_started": false,
+    "formal_training": false,
+    "heldout_confirmation": false,
+    "six_path_study_training": false,
+    "optimizer_updates_evidenced": 0,
+    "resource_counters": {
+      "wall_seconds": 9.30307563500537,
+      "systemd_cgroup_cpu_seconds": 7.489746,
+      "single_child_peak_rss_bytes": 740552704,
+      "memory_max_bytes": 4294967296,
+      "cpu_affinity_effective": [0],
+      "runtime_max_seconds": 600,
+      "automatic_retries": 0,
+      "cgroup_memory_peak_available": false,
+      "accounting_scope_excludes": ["SSH", "deployment", "environment installation"]
+    },
+    "systemd_observation": {
+      "unit_active_state": "failed",
+      "control_group": "",
+      "historical_exec_main_pid": "322261",
+      "old_exec_main_pid_zero_check_is_liveness_test": false,
+      "old_finalizer_main_process_exited_check": false,
+      "r2_uses_current_main_pid_and_substate": true
+    },
+    "run_receipt_sha256": "26346823777bb416f63f58e707bee65c5893f9850b3ac6cafa1b403b8c6e7d78",
+    "artifact_index_sha256": "0f2a8b21ab341ae3c9eadd27ff3397016e00660fbce075afe5277a60e31ec664",
+    "artifacts_verified": [
+      {"path": "01-seeded-cpu-witness.log", "bytes": 254, "sha256": "d62f08be1d05966a2709d7e2f6c4b8e1469c57fb1618c41773e0da30fde7d6ec", "verified": true},
+      {"path": "02-unittest-26.log", "bytes": 5505, "sha256": "d750f0a89b20c9e30e0923b994e79e7655a80a52808b2c6cfc7dbbaaa7bfde9f", "verified": true},
+      {"path": "run-started.json", "bytes": 85, "sha256": "26e411fa13d82d1df777852098a86db8c4cac0658661ac8842df70804c6f5abb", "verified": true},
+      {"path": "runner-console.log", "bytes": 11715, "sha256": "ecba2441c23d1e4e0c8dfbc0e9bd456e65875d864eaf00320399519fb8fc34ac", "verified": true},
+      {"path": "source-hashes.json", "bytes": 40180, "sha256": "42856f33973b8700f9025eab77cd9faa10de07d24968add52c3261f7b91becfd", "verified": true},
+      {"path": "systemd-run.log", "bytes": 54, "sha256": "bbe883e8cf7f82a47279e73bcae9acbd8da28093e81366ae099eecee7af1898d", "verified": true},
+      {"path": "systemd-status.txt", "bytes": 359, "sha256": "c357f9294eadc3dbc8b8066ca646d46296985f02b214fe98244a12e99a937d41", "verified": true},
+      {"path": "unit-cleanup.json", "bytes": 151, "sha256": "acc1f3e11333eb663b8a310813a6e1f7047ca8384b0b036aec1968e985a3deae", "verified": true},
+      {"path": "unit-started.txt", "bytes": 390, "sha256": "a78fd4d1d666dd8ab8fb818d6ad7187961f5d4abb3a2eb20750211f5a685f344", "verified": true}
+    ]
+  },
+  "r2_pre_run_review": {
+    "decision": "go_for_one_documented_invocation",
+    "reviewed_invocation": [
+      "/bin/bash",
+      "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/linux_execution/launch_systemd_run.sh",
+      "--repo-root", "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2",
+      "--venv-path", "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2",
+      "--output-dir", "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02",
+      "--unit", "rlwm-engineering-20261014-02",
+      "--run-id", "linux-eng-20261014-02",
+      "--source-identity", "c8b705e+linux-engineering-r2"
+    ],
+    "path_portability_assessment": {
+      "classification": "fixture-path portability repair",
+      "only_test_source_root_changed": true,
+      "source_root_also_defines_fixture_root": true,
+      "assertions_changed": false,
+      "algorithm_source_changed": false,
+      "original_source_test_modified": false,
+      "vendor_byte_identity": "deployment records verify 313 manifest-listed files plus the manifest itself (314 files total) with no mismatches; remote verification was performed by parent",
+      "assessment": "does not change the evaluation target if the recorded vendor identity is preserved"
+    },
+    "dependency_repair": {
+      "tensorboard_pinned": true,
+      "torch_utils_tensorboard_in_cpu_witness": true,
+      "remote_install_and_pip_check": "local setup receipt records every phase and pip check at exit 0; remote operation performed by parent"
+    },
+    "nonblocking_documentation_issue": "r2 acceptance environment-spec relative link resolves to missing reports/linux_execution/environment-spec.json; the local r2 spec is linux_execution_r2/environment-spec.json",
+    "reviewed_source_hashes": {
+      "r2_acceptance_document": "fa6b371a5bd0bc03a0b431ffa1a728092a982620157e30b43c84a83b0a20ecab",
+      "test_path_patch": "3c529cddb7d87ef19ca95bed2dc8e21c09f653c5e796a2710666f37d8d4aff55",
+      "environment_spec_file": "d177df84752887d4552272acd5bcfdf098b99e804f21f72a0de44c03ebb5a1c2",
+      "cpu_witness": "9316e1a87a09338566c2a38b8491c462345f8340229fc1306f0d42a832148ff4",
+      "finalizer": "71e80b9feb5e9e99120e4d3e3afccdacf8da317c6d3a96b22d134a7198814c66",
+      "launcher": "a088929e95748e2faea755cf4e3408fd249f033b6493fd9ccad6741fb7b234dc",
+      "release_manifest_file": "62553282bd69a851c83f3db3a3463c9f64e70323dfb93b6820a3c6ea8f644340",
+      "r2_test_copy": "ff70464866c4b6a26226d0afd24eba3190f46dbb3e43282300e25df2a8db7734",
+      "original_test_copy": "a7cc398d518c5398411695edfc4e1816d29637536d018a00ded04f6ea4467c8f"
+    }
+  },
+  "run_02": {
+    "run_id": "linux-eng-20261014-02",
+    "status": "pass",
+    "first_error": null,
+    "source_identity": "c8b705e+linux-engineering-r2",
+    "source_file_count": 224,
+    "source_manifest_sha256": "099539b6d44b996e93cb173f69f644ac7b3dd845d3a00a99d56d0099dc0be39f",
+    "runtime": {
+      "python": "3.11.16",
+      "torch": "2.7.0+cu128",
+      "numpy": "1.26.0",
+      "upstream_declared_torch": "2.8.0",
+      "exact_upstream_torch_reproduction": false,
+      "cuda_disabled": true
+    },
+    "stages": [
+      {"name": "seeded-cpu-witness", "status": "pass"},
+      {"name": "unittest-26", "status": "pass", "tests_run": 26},
+      {"name": "upstream-cartpole-3-updates", "status": "pass", "updates": 3},
+      {"name": "civilian-3-updates", "status": "pass", "updates": 3},
+      {"name": "precision-diagnostic", "status": "pass", "fp16_steps": 2, "fp16_finite": true, "fp32_steps": 2, "fp32_finite": true}
+    ],
+    "civilian_smoke": {
+      "scenario_id": "relief-n2-train-carrier_competition-00",
+      "scenario_split": "train",
+      "adapter_steps": 128,
+      "physical_minutes_advanced": 120,
+      "illegal_actions": 0,
+      "formal_policy_updates": 0,
+      "formal_evaluation_episodes": 0,
+      "last_two_imagined_updates_only_commit_legal": true,
+      "last_two_actor_loss_zero": true,
+      "usable_policy_established": false,
+      "follow_up": "monitor mask behavior in any separately authorized real pilot"
+    },
+    "completed_engineering_optimizer_steps": {
+      "upstream_cartpole": 3,
+      "civilian_adapter": 3,
+      "precision_diagnostic_fp16_control": 2,
+      "precision_diagnostic_fp32_control": 2,
+      "total": 10
+    },
+    "formal_training": false,
+    "heldout_confirmation": false,
+    "six_path_study_training": false,
+    "systemd": {
+      "unit": "rlwm-engineering-20261014-02",
+      "service_exit_code": 0,
+      "cleanup_stop_exit_code": 0,
+      "result": "success",
+      "main_pid": "0",
+      "sub_state": "exited",
+      "historical_exec_main_pid": "324825",
+      "cpu_affinity": [0],
+      "cpu_quota_per_second_usec": "1s",
+      "memory_max_bytes": 4294967296,
+      "runtime_max_usec": "10min",
+      "restart": "no",
+      "kill_mode": "control-group",
+      "post_cleanup_readback": {
+        "load_state": "not-found",
+        "active_state": "inactive",
+        "sub_state": "dead",
+        "interpretation": "no active process after explicit cleanup; not evidence of successful execution",
+        "success_evidence_source": "pre-cleanup invocation receipt records MainPID=0, SubState=exited, Result=success, and service exit code 0"
+      }
+    },
+    "resource": {
+      "wall_seconds": 35.04672315699281,
+      "systemd_cgroup_cpu_seconds": 30.636219,
+      "single_child_peak_rss_bytes": 829440000,
+      "systemd_cgroup_memory_peak_bytes": null,
+      "accounting_scope_excludes": ["SSH", "deployment", "environment installation"]
+    },
+    "receipt_sha256": "0449033931a122dbbf7f7cf2ea5298cd7cd326f6515bced9913a20d947cb66f7",
+    "artifact_index_sha256": "4359f166af9024d9149a3f7bf1d9c2f75a9fc25d69d0aaeceb89ef0016322915",
+    "source_hash_index_sha256": "ce63e52fcf7bd796f51dcf04c92af83eb36e386991e34e3a7e29679305cbd3ad",
+    "agent_follows_doc_result_sha256": "8457dc64b136a14639828169499bbe8e411eb8176312bd330e504d59d05c81cb",
+    "artifacts_verified": [
+      {"path": "01-seeded-cpu-witness.log", "bytes": 295, "sha256": "3c0863101ca434bb7bcb4642f6872aee2ce0598d085b7aa6e11252138f0f556c", "verified": true},
+      {"path": "02-unittest-26.log", "bytes": 5039, "sha256": "5e3d385bc6cd1801a611b1a7a41ffdd5e567a4082234c11a7360850861ef916d", "verified": true},
+      {"path": "03-upstream-cartpole-3-updates.log", "bytes": 8168, "sha256": "ca9526acac8ae1eaf01ad7855ef1980367900837139bcf99a6fb303cf64bcdab", "verified": true},
+      {"path": "04-civilian-3-updates.log", "bytes": 11966, "sha256": "a30dbf39fe3dff44a7c6c060f642496f312329b4b2b433515107d23d3b741423", "verified": true},
+      {"path": "05-precision-diagnostic.log", "bytes": 4083, "sha256": "79ee12a826fb791b08df6492829d9ea5cf74bf227d888feb3a94f7ea8cd5f75f", "verified": true},
+      {"path": "civilian/civilian-dreamer-smoke-receipt.json", "bytes": 9720, "sha256": "97b831124665a1eb6d3097ea887fd478e0822e1d0a139369f9578cc73c879c49", "verified": true},
+      {"path": "civilian/civilian_dreamer_smoke.pt", "bytes": 4579982, "sha256": "71a8a14b4c210cee4b2bc568e5e4be851d714fb8a8c2c2d8e9f8a4a98fcf94b2", "verified": true},
+      {"path": "precision-diagnostic.json", "bytes": 1707, "sha256": "eb7ce0e9298391c8f6d1ce70a995a1cb4a9f8bcbe3fbddff0a13196bb10a3c7f", "verified": true},
+      {"path": "run-started.json", "bytes": 85, "sha256": "040ae0f6187e8043174adaef2036a2029a384fddeac452082ea0c02c6c9ee703", "verified": true},
+      {"path": "runner-console.log", "bytes": 10866, "sha256": "7663a6529401c67a5232aa928c4039deba55dfa401ffdfda27e6d5a1ebd0375d", "verified": true},
+      {"path": "source-hashes.json", "bytes": 40327, "sha256": "ce63e52fcf7bd796f51dcf04c92af83eb36e386991e34e3a7e29679305cbd3ad", "verified": true},
+      {"path": "systemd-run.log", "bytes": 54, "sha256": "361687bd176fe493fa33e5af950c200c2a045b10d1de3163bd991cf0f992b88f", "verified": true},
+      {"path": "systemd-status.txt", "bytes": 368, "sha256": "70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85", "verified": true},
+      {"path": "unit-cleanup.json", "bytes": 151, "sha256": "b608505d31cc77d563b38bb812094b6d99f8b2ce2a016d85b4e97d97581d241f", "verified": true},
+      {"path": "unit-started.txt", "bytes": 403, "sha256": "23b2a1b8b6655418ca7c55532e3ed9b8a0dc397cf5456d9c9125200be8271085", "verified": true},
+      {"path": "upstream/dreamer_cartpole_smoke.pt", "bytes": 2127294, "sha256": "321bcc44ea3726f691811c3d3252ece73923d81c12838108d81d30bdefb47d06", "verified": true},
+      {"path": "upstream/smoke-receipt.json", "bytes": 6099, "sha256": "b44c7d9ca851d66b7f1b542b9ed7f3b4eddd3226ea85d0e21efeae6799d0affc", "verified": true}
+    ]
+  },
+  "run_02_review": {
+    "status": "complete",
+    "invocation_submitted_unchanged_once": "parent-reported and matches local agent-follows-doc result",
+    "receipt_and_artifacts_independently_reviewed": true,
+    "all_17_indexed_artifacts_hash_and_byte_checks_pass": true
+  },
+  "primary_byte_verification": {
+    "status": "pass",
+    "artifact_count": 17,
+    "run_receipt_sha256": "0449033931a122dbbf7f7cf2ea5298cd7cd326f6515bced9913a20d947cb66f7",
+    "original_audit_inputs_verified": 27,
+    "mismatches": [],
+    "formal_training": false,
+    "heldout_confirmation": false,
+    "deployment_manifest_entries": 313,
+    "manifest_file_included_in_deployment_total": true,
+    "deployment_files_verified": 314,
+    "run_source_files_verified": 224,
+    "smoke_restore_checks_pass": true
+  },
+  "other_bound_hashes": {
+    "run_01_acceptance_document": "a994e62815afba0fc89353ec14b0a65c881d55f90b277dca5cebf79061a2dc23",
+    "agent_follows_doc_result": "1002baed9fa77ce45af1e72a5f79f7ef3ef5a92629a7c5e03db34f9fc3261516",
+    "old_environment_spec_file": "1ce2d18e623f7651b8e983b03ff1f27b9104515988a44d4a25484b89fb3963ef",
+    "old_finalizer": "6275f328d1306d0c64b23614a2e225240c434de3362bb2dc44f554f7ba558ede",
+    "old_launcher": "1a1a90cc2c9b7e33e62dbd8adad15150ae284df2bc72568660b6f176693bd3ba",
+    "old_runner": "035dafe3c064c9f88892f7c00d6aebb51d7509150876442b848e9e508d68ff9c",
+    "run_02_artifact_index": "4359f166af9024d9149a3f7bf1d9c2f75a9fc25d69d0aaeceb89ef0016322915",
+    "run_02_agent_follows_doc_result": "8457dc64b136a14639828169499bbe8e411eb8176312bd330e504d59d05c81cb",
+    "r2_setup_status": "51faccd18ba5554c8f6098461f943fd7fa461ae305a522fdd22abf9e3a061e8f",
+    "r2_deployment_receipt": "e649bfc801bd55fcbc863f0876fd318241aab9e056bb2102dc86fbf96779fdf8",
+    "primary_byte_verification": "39bb5fbb0e42c7a935127bfe75b4be8cb5064d77bfa4bd9d35a75dd8875a309a",
+    "final_service_readback": "b38ef9b621f2315c445d96d413cd469d7297541d6703fd1c86bdca86bd283346",
+    "linux_node_report": "24fd77a0c1e230b80da7d2ce5ad7d79f8fff41c4b64ccbb7c5e35a30e2cc09fd"
+  }
+}

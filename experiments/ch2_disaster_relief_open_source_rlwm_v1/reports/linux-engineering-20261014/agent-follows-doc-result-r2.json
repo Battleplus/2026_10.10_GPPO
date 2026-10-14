@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/bin/bash",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/linux_execution/launch_systemd_run.sh",
+    "--repo-root",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2",
+    "--venv-path",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/runtime/venv-r2",
+    "--output-dir",
+    "/home/user1/w1-pilot/rlwm-engineering-20261014/source-r2/reports/linux-engineering-20261014/run-02",
+    "--unit",
+    "rlwm-engineering-20261014-02",
+    "--run-id",
+    "linux-eng-20261014-02",
+    "--source-identity",
+    "c8b705e+linux-engineering-r2"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"pass\",\n  \"systemd\": {\n    \"unit\": \"rlwm-engineering-20261014-02\",\n    \"query_argv\": [\n      \"systemctl\",\n      \"--user\",\n      \"show\",\n      \"--no-pager\",\n      \"--property=LoadState,InvocationID,ControlGroup,ExecMainPID,MainPID,RemainAfterExit,ActiveState,SubState,Result,ExecMainCode,ExecMainStatus,CPUUsageNSec,MemoryPeak,MemoryMax,TasksCurrent,Restart,KillMode,CPUAffinity,CPUQuotaPerSecUSec,RuntimeMaxUSec\",\n      \"rlwm-engineering-20261014-02\"\n    ],\n    \"query_return_code\": 0,\n    \"service_exit_code_from_systemd_run\": 0,\n    \"properties\": {\n      \"Restart\": \"no\",\n      \"RuntimeMaxUSec\": \"10min\",\n      \"RemainAfterExit\": \"yes\",\n      \"MainPID\": \"0\",\n      \"Result\": \"success\",\n      \"ExecMainPID\": \"324825\",\n      \"ExecMainCode\": \"1\",\n      \"ExecMainStatus\": \"0\",\n      \"ControlGroup\": \"\",\n      \"CPUUsageNSec\": \"30636219000\",\n      \"TasksCurrent\": \"[not set]\",\n      \"CPUQuotaPerSecUSec\": \"1s\",\n      \"MemoryMax\": \"4294967296\",\n      \"CPUAffinity\": \"0\",\n      \"KillMode\": \"control-group\",\n      \"LoadState\": \"loaded\",\n      \"ActiveState\": \"active\",\n      \"SubState\": \"exited\",\n      \"InvocationID\": \"8c332cc30ff748ab81b06bc7df1dba7d\"\n    },\n    \"status_path\": \"systemd-status.txt\",\n    \"status_sha256\": \"70b8b1efe188386b50a2dc465380e0e1ce4e9cdadb1c581a2d1ffded077adc85\",\n    \"acceptance_checks\": {\n      \"systemd query\": true,\n      \"retained loaded unit\": true,\n      \"invocation present\": true,\n      \"main process exited\": true,\n      \"retained after exit\": true,\n      \"source identity\": true,\n      \"service exit\": true,\n      \"service result\": true,\n      \"restart disabled\": true,\n      \"kill mode\": true,\n      \"CPU affinity\": true,\n      \"one-core quota\": true,\n      \"runtime limit\": true,\n      \"memory limit\": true,\n      \"CPU counter\": true\n    },\n    \"bounded_service_checks_pass\": true,\n    \"accounting_status\": \"bounded_service_counters_only\",\n    \"full_system_accounting\": false,\n    \"limitations\": [\n      \"SSH, installation, deployment and finalizer are outside service counters\",\n      \"MemoryPeak may be unavailable on systemd 249; sampled RSS and single-child max RSS are separate\"\n    ],\n    \"cleanup_stop_exit_code\": 0\n  },\n  \"resource\": {\n    \"scope\": \"runner and child commands inside the transient systemd service; excludes SSH, code deployment, and environment installation\",\n    \"cpu_affinity_requested\": [\n      0\n    ],\n    \"gpu_enabled\": false,\n    \"automatic_retries\": 0,\n    \"cpu_affinity_effective\": [\n      0\n    ],\n    \"wall_seconds\": 35.04672315699281,\n    \"runner_process_cpu_seconds\": 3.096295499,\n    \"child_user_cpu_seconds\": 25.513118,\n    \"child_system_cpu_seconds\": 1.819054,\n    \"children_peak_rss_bytes\": 829440000,\n    \"children_peak_rss_source\": \"Linux getrusage(RUSAGE_CHILDREN): maximum single-child RSS, not aggregate service memory; process-tree samples are separate\",\n    \"systemd_cgroup_cpu_usage_seconds\": 30.636219,\n    \"systemd_cgroup_memory_peak_bytes\": null,\n    \"systemd_cgroup_memory_max_bytes\": 4294967296,\n    \"systemd_cgroup_tasks_current_at_collection\": null\n  }\n}\nservice_exit_code=0\nfinalize_exit_code=0\n",
+  "stderr": "",
+  "transport_wrapper_wall_seconds": 35.89391325999168
+}

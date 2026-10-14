@@ -1,0 +1,15 @@
+{
+  "schema": "rlwm-linux-engineering-execution/1",
+  "environment_spec_sha256": "dc3e904245fe3c5abe92b33dd02e91fc393bb6a54cdcff020eb70ccfd62084d3",
+  "allowed_optimizer_steps": {
+    "upstream_cartpole": 3,
+    "civilian_adapter": 3,
+    "precision_diagnostic_fp16_control": 2,
+    "precision_diagnostic_fp32_control": 2
+  },
+  "maximum_total_optimizer_steps": 10,
+  "automatic_retries": 0,
+  "formal_training": false,
+  "heldout_evaluation": false,
+  "source_commit": "c8b705effe6c314d5740be89112e5dd5a0547a40"
+}

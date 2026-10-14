@@ -1,0 +1,11 @@
+{
+  "command": [
+    "systemctl",
+    "--user",
+    "stop",
+    "rlwm-engineering-20261014-01"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}
