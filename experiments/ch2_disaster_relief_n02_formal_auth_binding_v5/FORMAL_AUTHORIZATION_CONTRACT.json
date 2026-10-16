@@ -1,0 +1,42 @@
+{
+  "schema": "n02-v5-formal-authorization-contract/1",
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "static_candidate": {
+    "authorized": false,
+    "request_frozen": false,
+    "request_scope": "candidate_target_runtime_preflight_only",
+    "budget": null,
+    "candidate_request_identity_sha256": "bf81982fafa28ebf84224fd610b978cadb89ff938739d1519af18a210cd7ca79",
+    "candidate_attempt_identity_sha256": "778ca33f3347d3afc1e01beb520c099d564e524ffe3639fbd4f9601615ff8b07",
+    "release_manifest_sha256": "dc5755a2cb7ecb6c82599ae9297155f1b9fd6cce256ca24050b0dad5127be6b1",
+    "hash_bundle_sha256": "f53854570c452b9e8d21badcf3e72ee1d5747a193c28a7e66d63779103a561e5"
+  },
+  "formal_upgrade": {
+    "schema": "n02-v5-formal-authorization-upgrade/1",
+    "state": "approved",
+    "authorized": true,
+    "request_frozen": true,
+    "scope": "n02-v5-full-pipeline-once",
+    "budget": {
+      "server_wall_seconds": 1800,
+      "server_cpu_seconds": 900,
+      "rss_bytes": 4294967296,
+      "work_storage_bytes": 1073741824,
+      "export_storage_bytes": 1073741824,
+      "environment_steps": 4000,
+      "candidate_branches": 128,
+      "world_model_updates": 8,
+      "ppo_updates": 16,
+      "policy_training_episodes": 4,
+      "development_evaluation_episodes": 2,
+      "world_model_forward_batches": 512,
+      "world_model_candidate_evaluations": 2048
+    }
+  },
+  "rules": [
+    "The package sidecars remain candidate-only and are never rewritten after preflight.",
+    "The external one-time envelope must bind all four static digests exactly.",
+    "The external request, attempt, and formal_upgrade must carry the same formal scope and budget.",
+    "Any digest, scope, budget, state, or candidate flag mismatch is rejected before systemd submission."
+  ]
+}
