@@ -1,0 +1,32 @@
+--- a/package/civilian/n2_stage_pipeline.py
++++ b/package/civilian/n2_stage_pipeline.py
+@@ -1458,8 +1458,8 @@
+         data_identity=training_receipt["data_identity"],
+         component="graph_policy_training",
+     )
+-    base_g = build_policy("L0", WM_SEED, device="cpu")
+-    base_gwm = build_policy("L0", WM_SEED, device="cpu")
++    base_g = build_policy("L1", WM_SEED, device="cpu")
++    base_gwm = build_policy("L1", WM_SEED, device="cpu")
+     policy_g = CriticAugmentedGraphPolicy(base_g, world_model, CriticOnlyGppoAdapter(), wm_enabled=False)
+     policy_gwm = CriticAugmentedGraphPolicy(base_gwm, world_model, CriticOnlyGppoAdapter(), wm_enabled=True)
+     first_env = ReliefEnv(scenarios[0])
+@@ -1538,7 +1538,7 @@
+         "status": "complete",
+         "variants": list(PPO_BUDGET["variants"]),
+         "fresh_actor_initialization": True,
+-        "actor_pairing": "same L0 initialization seed 8201 for G and G-WM",
++        "actor_pairing": "same L1 initialization seed 8201 for G and G-WM",
+         "rounds_per_variant": PPO_BUDGET["rounds_per_variant"],
+         "episodes_per_round": PPO_BUDGET["episodes_per_round"],
+         "optimizer_updates": PPO_BUDGET["total_updates"],
+@@ -1593,8 +1593,8 @@
+             work_root / entry[0]["checkpoint_path"],
+             component=f"development_evaluation:{variant}",
+         )
+-        base = build_policy("L0", WM_SEED, device="cpu")
++        base = build_policy("L1", WM_SEED, device="cpu")
+         wrapper = CriticAugmentedGraphPolicy(base, model, CriticOnlyGppoAdapter(), wm_enabled=variant == "G-WM")
+         wrapper.load_state_dict(payload["policy_state"], strict=True)
+         wrapper.eval()
+         policies[variant] = wrapper
