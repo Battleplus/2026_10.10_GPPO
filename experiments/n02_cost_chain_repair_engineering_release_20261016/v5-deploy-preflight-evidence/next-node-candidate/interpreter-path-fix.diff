@@ -1,0 +1,7 @@
+--- a/engineering_cost_bootstrap.py
++++ b/engineering_cost_bootstrap.py
+@@
+-    python_path = Path(driver.TARGET_PYTHON_PATH).resolve(strict=True)
++    python_path = Path(driver.TARGET_PYTHON_PATH)
++    if not python_path.is_file():
++        raise FileNotFoundError("fixed target Python path is unavailable")

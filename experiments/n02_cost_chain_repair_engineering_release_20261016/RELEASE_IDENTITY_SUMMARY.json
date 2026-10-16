@@ -1,0 +1,13 @@
+{
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "manifest_sha256": "dc5755a2cb7ecb6c82599ae9297155f1b9fd6cce256ca24050b0dad5127be6b1",
+  "manifest_file_sha256": "99aa0fc40c2147594dcc4e37629b067247b992779aabd04b40952fdbf35cf34a",
+  "hash_bundle_sha256": "f53854570c452b9e8d21badcf3e72ee1d5747a193c28a7e66d63779103a561e5",
+  "hash_bundle_file_sha256": "9baf58894f7b3c7108e5b7b61664988a14402a6edf860f66536263d68fa91e98",
+  "candidate_request_identity_sha256": "bf81982fafa28ebf84224fd610b978cadb89ff938739d1519af18a210cd7ca79",
+  "candidate_attempt_identity_sha256": "778ca33f3347d3afc1e01beb520c099d564e524ffe3639fbd4f9601615ff8b07",
+  "formal_attempt_id": "n02-v5-formal-auth-binding-once",
+  "authorized": false,
+  "request_frozen": false,
+  "execution_started": false
+}

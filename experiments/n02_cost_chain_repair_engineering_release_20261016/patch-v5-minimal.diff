@@ -1,0 +1,47 @@
+--- a/package/civilian/resource_supervisor.py
++++ b/package/civilian/resource_supervisor.py
+@@ -31,3 +31,3 @@
+ )
+-STAGE_PROTOCOL_ID = "n02-integration-smoke-v4/seven-stage"
++STAGE_PROTOCOL_ID = "n02-integration-smoke-v4-100x100/seven-stage"
+ RESOURCE_LEDGER_SCHEMA = "resource-ledger-entry/2"
+--- a/package/civilian/PRIOR_RESOURCE_COST.json
++++ b/package/civilian/PRIOR_RESOURCE_COST.json
+@@ -2,3 +2,3 @@
+   "schema": "prior-resource-cost-status/1",
+-  "stage_protocol": "n02-integration-smoke-v4/seven-stage",
++  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+   "status": "no_current_engineering_runs",
+--- a/package/civilian/driver.py
++++ b/package/civilian/driver.py
+@@ -1806,7 +1806,30 @@
+         if args.work_root is not None or args._submission_receipt is not None:
+             print("formal attempt path is derived from its authorization", file=sys.stderr)
+             return 2
++        prior_cost = _read_prior_resource_cost(
++            package / CARRY_FORWARD_RECEIPT_NAME,
++            required=True,
++        )
++        if not prior_cost["execution_allowed"]:
++            print(
++                json.dumps(
++                    {
++                        "schema": "n02-pre-submit-cost-gate/1",
++                        "status": "blocked_pending_prior_resource_cost",
++                        "stage_protocol": STAGE_PROTOCOL_ID,
++                        "measurement_status": prior_cost["measurement_status"],
++                        "prior_status_sha256": prior_cost["status_sha256"],
++                        "authorization_state": "validated_external",
++                        "systemd_submission_attempted": False,
++                        "training_started": False,
++                    },
++                    ensure_ascii=False,
++                    sort_keys=True,
++                ),
++                file=sys.stderr,
++            )
++            return 2
+         systemd_result = systemd_preflight(
+             package,
+             Path(__file__).resolve(),
+             preflight["engineering_id"],

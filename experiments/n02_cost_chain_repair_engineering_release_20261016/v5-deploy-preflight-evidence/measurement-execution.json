@@ -1,0 +1,17 @@
+{
+  "authorization_created": false,
+  "deployment_archive_sha256": "512f2a5eafb7b5b891197b94b12717e699b1f98cb89b11b6405556252d4e707a",
+  "deployment_receipt_sha256": "36ffb6c614a82979cc4757a44e32e827263f85d5fbd131691d44387968446b5b",
+  "formal_attempt_created": false,
+  "host": "172.17.27.173",
+  "launch_exit_code": 1,
+  "launch_submissions": 1,
+  "remote_measurement_root_downloaded": true,
+  "run_id": "n02-cost-measurement-20261016-r1",
+  "source_identity_sha256": "76249c0c9de6ac5a32446638542ae278e214075ce201258eb85f0980f3776c20",
+  "status": "launch_failed_first_attempt",
+  "training_started": false,
+  "unit_name": "n02-cost-repair-20261016-r1.service",
+  "user": "user1",
+  "work_root": "/home/user1/w1-pilot/diagnostics/n02-cost-measurement-20261016-r1"
+}

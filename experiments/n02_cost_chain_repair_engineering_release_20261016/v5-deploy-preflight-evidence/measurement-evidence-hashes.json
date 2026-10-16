@@ -1,0 +1,49 @@
+{
+  "schema": "n02-cost-measurement-failure-evidence/1",
+  "status": "failed_before_stage_measurement",
+  "unit_name": "n02-cost-repair-20261016-r1.service",
+  "systemd_invocation_id": "dfcad74b0b304318b4ba11d44741a577",
+  "systemd_result": "exit-code",
+  "systemd_exit_status": 2,
+  "systemd_wall_seconds": 0.086337,
+  "systemd_cpu_seconds": 0.085698,
+  "first_error": "ModuleNotFoundError: No module named 'numpy'",
+  "writer_invoked": false,
+  "measurement_receipt_created": false,
+  "training_started": false,
+  "formal_attempt_created": false,
+  "authorization_created": false,
+  "remote_pending_reread_after_failure": false,
+  "retrieved_remote_measurement_files": [
+    "deployment_receipt.json",
+    "measurement-request.json",
+    "systemd-show.txt",
+    "systemd-terminal.json"
+  ],
+  "stage_evidence_not_present": [
+    "measurement-context.json",
+    "resource-ledger.jsonl",
+    "receipts/01-input_admission.json",
+    "guardians/01-input_admission.json"
+  ],
+  "scope_note": "Systemd wall/CPU totals describe only the failed bootstrap unit. No input_admission ledger row or accepted stage measurement was produced. The candidate fix is an isolated local copy and was not deployed.",
+  "hash_algorithm": "SHA-256",
+  "hashes_exclude": "This inventory itself.",
+  "files": [
+    {"path": "engineering_cost_bootstrap.py", "size_bytes": 16033, "sha256": "e78573e76ba9130a6bd709e929ca77bddb4a78d46c51fea46dbf2823c3722154"},
+    {"path": "package/civilian/PRIOR_RESOURCE_COST.json", "size_bytes": 782, "sha256": "603dffa8e9998089fa4641d50d4dbf21fe4fc816901112ec5a258d779eee2044"},
+    {"path": "v5-deploy-preflight-evidence/authorized_measurement_once.py", "size_bytes": 9865, "sha256": "225926ecb7ad307ebe723bb24f3be0adb56a18a459761036b5af16011ec387a6"},
+    {"path": "v5-deploy-preflight-evidence/deployment-package.zip", "size_bytes": 223615, "sha256": "512f2a5eafb7b5b891197b94b12717e699b1f98cb89b11b6405556252d4e707a"},
+    {"path": "v5-deploy-preflight-evidence/deployment_receipt.json", "size_bytes": 473, "sha256": "36ffb6c614a82979cc4757a44e32e827263f85d5fbd131691d44387968446b5b"},
+    {"path": "v5-deploy-preflight-evidence/measurement-execution.json", "size_bytes": 785, "sha256": "2518f55a23dda5add958771044963cccbfdab446d5a067af902546c2bea06df6"},
+    {"path": "v5-deploy-preflight-evidence/measurement-launch.stdout.txt", "size_bytes": 1253, "sha256": "e72620a760c4b37d80806a0759d3b0cf11dd6610b1f613d59ec3ccebff9c72e4"},
+    {"path": "v5-deploy-preflight-evidence/measurement-launch.stderr.txt", "size_bytes": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {"path": "v5-deploy-preflight-evidence/measurement-journal.txt", "size_bytes": 1676, "sha256": "7b26069bd97b18fa33387a23be47ac5f73fc32f2c574afa47feb806580a3568f"},
+    {"path": "v5-deploy-preflight-evidence/n02-cost-measurement-20261016-r1/deployment_receipt.json", "size_bytes": 473, "sha256": "36ffb6c614a82979cc4757a44e32e827263f85d5fbd131691d44387968446b5b"},
+    {"path": "v5-deploy-preflight-evidence/n02-cost-measurement-20261016-r1/measurement-request.json", "size_bytes": 1145, "sha256": "4a42558c47b1bfd5ad2cf995350cc89f5d2ad38dcdff007661c0fe177c2c7980"},
+    {"path": "v5-deploy-preflight-evidence/n02-cost-measurement-20261016-r1/systemd-show.txt", "size_bytes": 433, "sha256": "93b6f5d8f52a82ee7053ff371ce5c51739cc1edadf802045bbde867f3d9e1ccc"},
+    {"path": "v5-deploy-preflight-evidence/n02-cost-measurement-20261016-r1/systemd-terminal.json", "size_bytes": 1398, "sha256": "b25d0d001aeed4b44b94de3d17ce8c21d107c9138f16ed8dca4b1a7633673959"},
+    {"path": "v5-deploy-preflight-evidence/next-node-candidate/engineering_cost_bootstrap.py", "size_bytes": 16121, "sha256": "3b1fd20c73deabfa8436229b5f070232421e5ff38dbb29561147442ae2b54ace"},
+    {"path": "v5-deploy-preflight-evidence/next-node-candidate/interpreter-path-fix.diff", "size_bytes": 309, "sha256": "ca49536a6fce2d95609a298952842a90476aa3d4b6ce6ac5693eca882b163d78"}
+  ]
+}

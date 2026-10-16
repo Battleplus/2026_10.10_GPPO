@@ -1,0 +1,19 @@
+{
+  "schema": "n02-cost-repair-engineering-file-hashes/1",
+  "hash_algorithm": "SHA-256",
+  "scope": "This inventory covers the regenerated static identity files and engineering/helper files. The package file set and package hashes are authoritative in V4_RELEASE_MANIFEST.json and V4_HASH_BUNDLE.json. This inventory and ENGINEERING_RELEASE.md are excluded to avoid a self-hash cycle.",
+  "files": [
+    {"path": "V4_RELEASE_MANIFEST.json", "size_bytes": 10064, "sha256": "d505881675d9146d2fc5b909fb55543ce4aca7e5cc6642d6a63fe1a575a23197"},
+    {"path": "V4_RELEASE_SHA256SUMS.txt", "size_bytes": 4984, "sha256": "d97bcca7c1a902fb1b68ab9417531c18330dfd7311ced0ad59a70fff1736b98b"},
+    {"path": "V4_HASH_BUNDLE.json", "size_bytes": 10050, "sha256": "5cba6f801db89bc59cd933e11031f85cd1fdd55055a21660fe56a33f7d6c7bd5"},
+    {"path": "V4_STATIC_REQUEST_IDENTITY.json", "size_bytes": 1610, "sha256": "a1c27d2f0e1ec871e76be5d34a0c8d1017835d8d88305f9ceff9f93a0a7af2a4"},
+    {"path": "V4_STATIC_ATTEMPT_IDENTITY.json", "size_bytes": 865, "sha256": "3370cedc5b54722ba04e1d02ea97e58ad0240474586040bdf3f7d55a5a883d75"},
+    {"path": "deploy_preflight_once.py", "size_bytes": 8315, "sha256": "2320658ba97a3ee92e6600a5ad44cbbc275d8df294f5d79a2a0753483299a084"},
+    {"path": "deployment_identity.py", "size_bytes": 2505, "sha256": "079e99c5eba857191d7e1dc0b4d8c606e4e7a2ab951ef0903c7e4c06f4ce4cf8"},
+    {"path": "engineering_cost_bootstrap.py", "size_bytes": 16033, "sha256": "e78573e76ba9130a6bd709e929ca77bddb4a78d46c51fea46dbf2823c3722154"},
+    {"path": "build_prior_resource_cost.py", "size_bytes": 15643, "sha256": "60927aef0ae26e953f93eca15726259b4096c5cac1067dcd344490c1f100d91e"},
+    {"path": "REPAIR_PREPARATION.md", "size_bytes": 5598, "sha256": "29afb01b0d2f5ef7934d4af5034c8c71987c2e6f92e6999a1ab722e11ba880c1"},
+    {"path": "patch-v5-minimal.diff", "size_bytes": 2054, "sha256": "bca4b9c9d233a3177aa73157998f5bede429276de2a7775e670e695ce439b8ca"},
+    {"path": "REVIEW.md", "size_bytes": 7272, "sha256": "87ab660ca8725c47f5fc422384195f697ebd804cf3e71a8da1102c5b36a27c18"}
+  ]
+}

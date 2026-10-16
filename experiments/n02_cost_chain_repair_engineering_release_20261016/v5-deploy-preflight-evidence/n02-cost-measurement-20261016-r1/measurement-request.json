@@ -1,0 +1,27 @@
+{
+  "authorization_created": false,
+  "budget_proposal": {
+    "cpu_seconds": 100,
+    "rss_bytes": 4294967296,
+    "systemd_cpu_quota_percent": 36,
+    "systemd_cpu_quota_period_seconds": 0.1,
+    "systemd_runtime_max_seconds": 270,
+    "systemd_timeout_start_seconds": 270,
+    "wall_seconds": 270
+  },
+  "budget_source": "v5 target-runtime preflight plan; fresh engineering authorization required",
+  "deployment_receipt_sha256": "36ffb6c614a82979cc4757a44e32e827263f85d5fbd131691d44387968446b5b",
+  "formal_attempt_created": false,
+  "measurement_scope": [
+    "input_admission",
+    "same-unit systemd shutdown tail"
+  ],
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "prior_status_sha256": "603dffa8e9998089fa4641d50d4dbf21fe4fc816901112ec5a258d779eee2044",
+  "schema": "n02-engineering-cost-measurement/1",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "status": "requested_pending_authorized_engineering_measurement",
+  "training_started": false,
+  "unit_name": "n02-cost-repair-20261016-r1.service",
+  "work_root": "/home/user1/w1-pilot/diagnostics/n02-cost-measurement-20261016-r1"
+}
