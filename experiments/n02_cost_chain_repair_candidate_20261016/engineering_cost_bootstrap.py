@@ -20,6 +20,7 @@ WALL_BUDGET_SECONDS = 270
 CPU_BUDGET_SECONDS = 100
 CPU_QUOTA_PERCENT = 36
 SYSTEMD_SHOW_PROPERTIES = (
+    "Id",
     "LoadState",
     "InvocationID",
     "ActiveState",
@@ -30,6 +31,7 @@ SYSTEMD_SHOW_PROPERTIES = (
     "ExecMainExitTimestampMonotonic",
     "CPUUsageNSec",
     "Restart",
+    "RemainAfterExit",
     "KillMode",
     "CPUAccounting",
     "MemoryAccounting",
@@ -238,6 +240,7 @@ def launch(
             "wall_seconds": WALL_BUDGET_SECONDS,
             "cpu_seconds": CPU_BUDGET_SECONDS,
             "systemd_runtime_max_seconds": WALL_BUDGET_SECONDS,
+            "systemd_timeout_start_seconds": WALL_BUDGET_SECONDS,
             "systemd_cpu_quota_percent": CPU_QUOTA_PERCENT,
             "systemd_cpu_quota_period_seconds": 0.1,
             "rss_bytes": 4 * 1024**3,
@@ -252,13 +255,17 @@ def launch(
         "systemd-run",
         "--user",
         f"--unit={unit_name}",
+        "--service-type=oneshot",
+        "--no-block",
         "--property=Restart=no",
+        "--property=RemainAfterExit=yes",
         "--property=KillMode=control-group",
         "--property=CPUAccounting=yes",
         "--property=MemoryAccounting=yes",
         "--property=MemoryMax=4G",
         "--property=TasksMax=64",
         f"--property=RuntimeMaxSec={WALL_BUDGET_SECONDS}s",
+        f"--property=TimeoutStartSec={WALL_BUDGET_SECONDS}s",
         f"--property=CPUQuota={CPU_QUOTA_PERCENT}%",
         "--property=CPUQuotaPeriodSec=100ms",
         f"--property=WorkingDirectory={package_root}",
@@ -282,6 +289,7 @@ def launch(
             unit_name,
         ]
     )
+    submitted_at = time.monotonic()
     submit = subprocess.run(command, check=False, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if submit.returncode != 0:
         result = {
@@ -305,25 +313,35 @@ def launch(
     while time.monotonic() < deadline:
         terminal_text, terminal_fields = _show_unit(unit_name)
         invocation_id = terminal_fields.get("InvocationID", "")
-        active = terminal_fields.get("ActiveState") == "active"
-        terminal = (
-            terminal_fields.get("LoadState") == "loaded"
-            and terminal_fields.get("ActiveState") in {"inactive", "failed"}
+        active_state = terminal_fields.get("ActiveState")
+        active = active_state in {"active", "activating"}
+        retained_terminal = (
+            terminal_fields.get("ActiveState") == "active"
+            and terminal_fields.get("SubState") == "exited"
+        )
+        terminal = terminal_fields.get("LoadState") == "loaded" and (
+            terminal_fields.get("ActiveState") in {"inactive", "failed"}
+            or retained_terminal
         )
         if terminal:
             break
-        if not invocation_id:
-            time.sleep(0.5)
-            continue
         start_us = int(terminal_fields.get("ExecMainStartTimestampMonotonic", "0") or 0)
         cpu_ns = int(terminal_fields.get("CPUUsageNSec", "0") or 0)
         now_us = time.clock_gettime_ns(time.CLOCK_MONOTONIC) // 1000
+        elapsed_wall_us = (
+            now_us - start_us
+            if start_us
+            else int((time.monotonic() - submitted_at) * 1_000_000)
+        )
         if active and (
             cpu_ns >= CPU_BUDGET_SECONDS * 1_000_000_000
-            or (start_us and now_us - start_us >= WALL_BUDGET_SECONDS * 1_000_000)
+            or elapsed_wall_us >= WALL_BUDGET_SECONDS * 1_000_000
         ):
             budget_exceeded = True
             _stop_unit(unit_name)
+        if not invocation_id:
+            time.sleep(0.5)
+            continue
         time.sleep(1.0)
     else:
         budget_exceeded = True
@@ -343,10 +361,15 @@ def launch(
     )
     if not within_budget:
         budget_exceeded = True
+    invocation_id = terminal_fields.get("InvocationID", "")
     succeeded = (
         not budget_exceeded
         and terminal_fields.get("Result") == "success"
         and terminal_fields.get("ExecMainStatus") == "0"
+        and terminal_fields.get("ActiveState") == "active"
+        and terminal_fields.get("SubState") == "exited"
+        and terminal_fields.get("RemainAfterExit") == "yes"
+        and terminal_fields.get("Id") == unit_name
         and bool(invocation_id)
     )
     result = {

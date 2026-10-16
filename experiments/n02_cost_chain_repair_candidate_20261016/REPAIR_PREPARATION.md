@@ -12,9 +12,9 @@ v5 目前没有一条可由公开 CLI 启动的成本测量 bootstrap。`--prefl
 
 ## 工程测量入口
 
-后续单独获准后，在修复候选 release 上部署 helper，以目标 Python 运行 `engineering_cost_bootstrap.py --launch`。helper 为新鲜 diagnostics work root 创建一个新的 systemd user unit，设置 `Restart=no`、`KillMode=control-group`、CPU/内存 accounting、`MemoryMax=4G`、`TasksMax=64`、270 秒 wall 上限及 36% CPU quota。随后由这个 systemd unit 调用已有 `run_guarded_pipeline(preflight_only=True)`；worker 只运行 `input_admission`，随后正常退出。36% quota × 270 秒给出约 97.2 CPU 秒的服务上界，留在拟申请的 100 CPU 秒以内。若 systemd 不接受该配置、超限、未成功退出或证据缺失，receipt writer 拒绝生成 measured 收据并保留首错材料。
+后续单独获准后，在修复候选 release 上部署 helper，以目标 Python 运行 `engineering_cost_bootstrap.py --launch`。helper 为新鲜 diagnostics work root 创建一个新的 systemd user oneshot unit，使用 `--no-block` 让 launcher 持续监控额度，设置 `Restart=no`、`RemainAfterExit=yes`、`KillMode=control-group`、CPU/内存 accounting、`MemoryMax=4G`、`TasksMax=64`、`RuntimeMaxSec=270s`、`TimeoutStartSec=270s` 及 36% CPU quota。`RuntimeMaxSec` 对 `Type=oneshot` 不提供有效运行时上限，因此实际 wall 限制由 `TimeoutStartSec` 和 launcher 对 `activating`/`active` 两态的单调时钟检查共同执行；CPU 检查也覆盖这两态，超限时 launcher 停止 unit。worker 只运行 `run_guarded_pipeline(preflight_only=True)` 的 `input_admission` 阶段。成功 unit 留在 `active/exited`，便于在 receipt 写入前读取同一 `InvocationID`、unit `Id`、单调时钟起止值和 CPU 计量；失败或被停止的 unit 不会通过 receipt writer 的成功终态校验。36% quota × 270 秒给出约 97.2 CPU 秒的服务上界，留在拟申请的 100 CPU 秒以内。若 systemd 不接受该配置、超限、未成功退出或证据缺失，receipt writer 拒绝生成 measured 收据并保留首错材料。
 
-receipt writer 只接受同一 unit 的 `InvocationID`、成功终态、`ExecMainStartTimestampMonotonic`、`ExecMainExitTimestampMonotonic`、`CPUUsageNSec`，以及 guardian 生成的真实 `resource-ledger.jsonl`、stage receipt、guardian receipt 和部署 receipt。它按 v5 `/2` 校验器要求把 systemd wall/CPU 与 ledger 差额记入 `input_admission`，然后调用原校验器复核生成的 `/2` receipt。当前校验器允许 ledger stage 子集；最终收据显式标注只覆盖 `input_admission` 和同一 systemd unit 的退出尾部，不能说成测得七阶段成本。
+receipt writer 要求当前 pending 状态哈希等于 `measurement-context.json` 中记录的 `pending_status_sha256`，并核对 context 与 terminal 的 `unit_name`、systemd `Id`、`InvocationID` 及整组终态属性一致。它只接受保留的 `active/exited` 成功 unit，以及 `ExecMainStartTimestampMonotonic`、`ExecMainExitTimestampMonotonic`、`CPUUsageNSec` 和 guardian 生成的真实 `resource-ledger.jsonl`、stage receipt、guardian receipt、部署 receipt。writer 将完整 package（包括新证据）复制到系统临时目录，在 staging canonical 根放入候选收据并用隔离 Python 进程调用 v5 `/2` 校验器；只有 staging 校验成功且正式 pending 哈希仍未改变，才用同目录 `os.replace` 原子提交。校验失败时 pending 文件保持原样。它按校验器要求把 systemd wall/CPU 与 ledger 差额记入 `input_admission`。当前校验器允许 ledger stage 子集；最终收据显式标注只覆盖 `input_admission` 和同一 systemd unit 的退出尾部，不能说成测得七阶段成本。
 
 后续申请的 workload 上限建议为 wall 270 秒、CPU 100 秒、RSS 4 GiB；这是 preflight 工程测量申请值，不是已授权额度或已经消耗额度。该单元不做模型 forward、训练、checkpoint、正式 attempt 或授权创建。现有正式 attempt 已消费，不能复用；该测量需新的工程运行授权和独立预算核定。
 
@@ -26,4 +26,4 @@ receipt writer 只接受同一 unit 的 `InvocationID`、成功终态、`ExecMai
 
 ## 验证与限制
 
-源文件哈希见 [source-hashes.json](source-hashes.json)。候选 helper 仅做语法检查和 CLI help 检查；不连接服务器、不提交 systemd unit、不构造模拟 measured receipt、不创建 authorization/token、不启动训练。`v5`、`v4` 和既有正式 attempt 均未修改。
+原始输入与候选文件哈希见 [source-hashes.json](source-hashes.json)；清单区分冻结输入哈希和本地候选输出哈希。候选 helper 仅做语法检查、CLI help 与静态 diff 检查；不连接服务器、不提交 systemd unit、不构造模拟 measured receipt、不创建 authorization/token、不启动训练。`v5`、`v4` 和既有正式 attempt 均未修改。

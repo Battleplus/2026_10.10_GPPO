@@ -8,7 +8,9 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -52,6 +54,57 @@ def _require_sha(value: Any, name: str) -> str:
     return value
 
 
+_STAGED_VALIDATOR = """
+import json
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1]).resolve(strict=True)
+sys.path.insert(0, str(root))
+import resource_supervisor
+
+result = resource_supervisor._read_prior_resource_cost(
+    root / resource_supervisor.CARRY_FORWARD_RECEIPT_NAME,
+    required=True,
+)
+if not result.get("execution_allowed") or result.get("measurement_status") != "measured":
+    raise PermissionError("v5 validator did not accept the generated measured receipt")
+print(json.dumps({
+    "receipt_sha256": result["receipt_sha256"],
+    "measurement_status": result["measurement_status"],
+    "total_wall_seconds": result["total_wall_seconds"],
+    "total_cpu_seconds": result["total_cpu_seconds"],
+}, sort_keys=True))
+"""
+
+
+def _validate_staged_receipt(package_root: Path, receipt_bytes: bytes) -> dict[str, Any]:
+    with tempfile.TemporaryDirectory(prefix="n02-cost-receipt-validation-") as temporary_root:
+        staged_root = Path(temporary_root) / "civilian"
+        shutil.copytree(
+            package_root,
+            staged_root,
+            ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
+        )
+        (staged_root / "PRIOR_RESOURCE_COST.json").write_bytes(receipt_bytes)
+        validation = subprocess.run(
+            [sys.executable, "-B", "-c", _STAGED_VALIDATOR, str(staged_root)],
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        if validation.returncode != 0:
+            raise PermissionError(
+                "staged v5 receipt validation failed: " + validation.stderr.strip()
+            )
+        result = json.loads(validation.stdout)
+        if result.get("receipt_sha256") != hashlib.sha256(receipt_bytes).hexdigest():
+            raise ValueError("staged validator returned a different receipt hash")
+        return result
+
+
 def build(package_root: Path, measurement_root: Path, run_id: str) -> dict[str, Any]:
     if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,63}", run_id) is None:
         raise ValueError("run id must be a simple path component")
@@ -90,9 +143,14 @@ def build(package_root: Path, measurement_root: Path, run_id: str) -> dict[str, 
         terminal.get("schema") != "n02-engineering-cost-measurement/1"
         or terminal.get("status") != "completed"
         or terminal.get("systemd_invocation_id") != invocation_id
+        or not isinstance(context.get("unit_name"), str)
+        or re.fullmatch(r"[A-Za-z0-9_.@:-]+\.service", context.get("unit_name", "")) is None
+        or terminal.get("unit_name") != context.get("unit_name")
+        or terminal.get("systemd_properties") != show
         or context.get("schema") != "n02-engineering-cost-measurement/1"
         or context.get("status") != "completed"
         or context.get("systemd_invocation_id") != invocation_id.lower()
+        or context.get("pending_status_sha256") != pending.get("status_sha256")
         or context.get("preflight_only") is not True
         or context.get("measured_stage_scope") != ["input_admission"]
         or context.get("stage_protocol") != STAGE_PROTOCOL_ID
@@ -105,11 +163,13 @@ def build(package_root: Path, measurement_root: Path, run_id: str) -> dict[str, 
         raise PermissionError("measurement context does not prove a completed preflight-only systemd run")
     if (
         show.get("LoadState") != "loaded"
-        or show.get("ActiveState") != "inactive"
-        or show.get("SubState") != "dead"
+        or show.get("Id") != context.get("unit_name")
+        or show.get("ActiveState") != "active"
+        or show.get("SubState") != "exited"
         or show.get("Result") != "success"
         or show.get("ExecMainStatus") != "0"
         or show.get("Restart") != "no"
+        or show.get("RemainAfterExit") != "yes"
         or show.get("KillMode") != "control-group"
         or show.get("CPUAccounting") != "yes"
         or show.get("MemoryAccounting") != "yes"
@@ -234,14 +294,25 @@ def build(package_root: Path, measurement_root: Path, run_id: str) -> dict[str, 
             "The final release hashes this receipt and copied evidence afterward; its full manifest is not embedded here."
         ),
     }
+    receipt_bytes = json.dumps(
+        receipt,
+        ensure_ascii=False,
+        sort_keys=True,
+        indent=2,
+    ).encode("utf-8") + b"\n"
+    validated = _validate_staged_receipt(package_root, receipt_bytes)
+
     temporary = prior_path.with_name(prior_path.name + ".candidate.tmp")
     if temporary.exists():
         raise FileExistsError("receipt temp path already exists; preserve it")
-    temporary.write_text(json.dumps(receipt, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+    temporary.write_bytes(receipt_bytes)
+    current_pending = resource_supervisor._read_prior_resource_cost(prior_path, required=True)
+    if (
+        current_pending.get("measurement_status") != "pending"
+        or current_pending.get("status_sha256") != pending.get("status_sha256")
+    ):
+        raise PermissionError("pending resource-cost status changed during receipt validation")
     os.replace(temporary, prior_path)
-    validated = resource_supervisor._read_prior_resource_cost(prior_path, required=True)
-    if not validated.get("execution_allowed") or validated.get("measurement_status") != "measured":
-        raise PermissionError("v5 validator did not accept the generated measured receipt")
     return {
         "status": "receipt_validated",
         "receipt_sha256": validated["receipt_sha256"],
