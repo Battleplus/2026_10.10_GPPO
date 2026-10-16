@@ -1,0 +1,51 @@
+{
+  "schema": "n02-cost-chain-repair-source-hashes/1",
+  "hash_algorithm": "SHA-256",
+  "scope": "Read-only inputs inspected to prepare this candidate; hashes are of the original files before any candidate patch.",
+  "sources": [
+    {
+      "path": "C:/Users/ASUS/.codex/attachments/8d40682f-22d9-4e40-aeaa-e20d994223d4/goal-objective.md",
+      "sha256": "8f51d7b1aef15cd5e0676225e2e9eacfef6279e339f2870e0784657a2429eaaf"
+    },
+    {
+      "path": "E:/Z博士/development/n02_cost_chain_diagnosis_20261016/DIAGNOSIS_ZH.md",
+      "sha256": "80a6354da2488bdd902431db1b5ec113b2089c39eaaf16211c66a47aa9b688c2"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/resource_supervisor.py",
+      "sha256": "bcf0d4102ca1cfcc474ed8c0795f78dae28c4bacabd4baa7e9826ad4f6de67f6"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/process_guardian.py",
+      "sha256": "83c6f0e8947c6ee83394eb9c96376434e58e843693701bffdfbd7c7082945a6e"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/driver.py",
+      "sha256": "95cacc713abccd77730e8eb3f47c3199690f80b72ceb687e435e3ac48ce0c8f5"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/PRIOR_RESOURCE_COST.json",
+      "sha256": "3d72d0dfac4602118daaf191896cf8ceb04472b2c492bc247e46d8556342a716"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/phase_handshake.py",
+      "sha256": "c49b4d0142b4e9e3681f595bca9a49aa339ff28210acf7f48191b3de3b7092f3"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/V4_RELEASE_MANIFEST.json",
+      "sha256": "99aa0fc40c2147594dcc4e37629b067247b992779aabd04b40952fdbf35cf34a"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/FORMAL_AUTHORIZATION_CONTRACT.json",
+      "sha256": "81b65b928288e68589410812909dcec37244d2c3b9669cb1d4617c9b78d76bf5"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/formal_submit_once.py",
+      "sha256": "134e99c538237b5994d892021b59812b0a9dd41365d0110d0806f73d05cfdbc0"
+    },
+    {
+      "path": "E:/Z博士/development/ch2_disaster_relief_n02_formal_auth_binding_v5/REPAIR_REPORT.md",
+      "sha256": "ad1e56e3c04121702b8053883ad19b8ce360036021251853a6aa72b9c9b6c663"
+    }
+  ]
+}
