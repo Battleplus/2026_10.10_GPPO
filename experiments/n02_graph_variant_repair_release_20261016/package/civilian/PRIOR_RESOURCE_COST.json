@@ -1,0 +1,72 @@
+{
+  "deployed_package_archive_sha256": "09970585454444d13f415a4d136bf1eb5c87bdfb7bb022f496bf4839c8ffbf3d",
+  "evidence_files": [
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/resource-ledger.jsonl",
+      "sha256": "ff7ff9c1d3ff84bae737a7b961bc4567d2897c327fed4f0ab9f82f2c942f5cfb"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-show.txt",
+      "sha256": "b1c52610903e0d76e8446610dd64f1b58797ba816567a39c08ffce300f20b2da"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/deployment_receipt.json",
+      "sha256": "f4100fd8f55c9e7e219c0a8579b4d00a88db3c7b3c70d27b117e0bda3db4b907"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/measurement-context.json",
+      "sha256": "74dbd1f27d6672a2493714260bc403a126db1ca0f306ba1f7d683a3f3d6adc53"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-terminal.json",
+      "sha256": "bbe0218bfd09500834b20ab38640caef663225aaf7253f32d3ee7060f4ca487e"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/receipts/01-input_admission.json",
+      "sha256": "f057d14f2d40f14384a891337293920804b71a0a6bed2b5047179e21bf56473e"
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/guardians/01-input_admission.json",
+      "sha256": "7dba7e6c4dff6295169e9ea336cb8e0ef9917e4c9bf3a60aa7f86168dc83fa16"
+    }
+  ],
+  "evidence_roles": {
+    "deployment_receipt": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/deployment_receipt.json",
+    "driver_stage_receipt": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/receipts/01-input_admission.json",
+    "measurement_context": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/measurement-context.json",
+    "outer_guardian_receipt": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/guardians/01-input_admission.json",
+    "resource_ledger": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/resource-ledger.jsonl",
+    "systemd_show": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-show.txt",
+    "systemd_terminal": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-terminal.json"
+  },
+  "hash_scope_note": "Source identity and archive SHA-256 refer to the separately deployed measurement package. The final release hashes this receipt and copied evidence afterward; its full manifest is not embedded here.",
+  "ledger_stage_costs": {
+    "input_admission": {
+      "cpu_seconds": 2.6482568200000003,
+      "wall_seconds": 3.2966022759792395
+    }
+  },
+  "measurement_scope": "target-runtime input_admission plus same-unit systemd process shutdown tail",
+  "schema": "resource-cost-carry-forward/2",
+  "source_identity_sha256": "d9b369faa831ce9d92c05c2b131e977ec70ee60a93c2114b8624ad0096226fec",
+  "stage_costs": {
+    "input_admission": {
+      "cpu_seconds": 3.276935,
+      "wall_seconds": 3.653973
+    }
+  },
+  "stage_coverage": [
+    "input_admission"
+  ],
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "status": "measured_single_stage_bootstrap",
+  "systemd_invocation_id": "5a66544808104f9ab4629e0f4a26e02a",
+  "systemd_total_cpu_seconds": 3.276935,
+  "systemd_total_wall_seconds": 3.653973,
+  "systemd_wrapper_overhead_assigned_to_input_admission": {
+    "cpu_seconds": 0.6286781799999996,
+    "wall_seconds": 0.35737072402076064
+  },
+  "total_cpu_seconds": 3.276935,
+  "total_wall_seconds": 3.653973
+}

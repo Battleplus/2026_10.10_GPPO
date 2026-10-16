@@ -1,0 +1,23 @@
+{
+  "attempt_started": false,
+  "attempt_state": "candidate_identity_only_not_approved_no_attempt_created",
+  "candidate_attempt_identity_sha256": "21a213d2832cfd9fc77c482d4fd75455ee305354d77c16caede427886be9b90f",
+  "candidate_request_identity_sha256": "76fa3f23191a46a19efa37f43dad657dfcbaa574822b790d06e92d322404146f",
+  "candidate_run_id": "n02-l1-graph-variant-repair-run-20261016-01",
+  "execution_receipt": null,
+  "independent_review": "pending",
+  "local_synthetic_critic_interface_validation": "not_run_for_repaired_L1_candidate",
+  "map_contract": "relief-grid-100x100-v1",
+  "measurement_stage_coverage": [
+    "input_admission"
+  ],
+  "measurement_status": "measured_single_stage_bootstrap",
+  "package_release": "ch2_disaster_relief_n02_graph_variant_repair_l1_20261016",
+  "pipeline_execution": "not_run",
+  "prior_resource_cost_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+  "protocol_id": "n02-integration-smoke-v4-100x100",
+  "schema": "n02-static-attempt-identity/2",
+  "target_runtime_critic_interface_validation": "not_run",
+  "target_runtime_preflight": "not_run_for_repaired_L1_candidate",
+  "training_or_rollout": "not_run"
+}

@@ -1,0 +1,36 @@
+{
+  "allocation": {
+    "development": 1,
+    "train": 2
+  },
+  "authorized": false,
+  "candidate_request_identity_sha256": "76fa3f23191a46a19efa37f43dad657dfcbaa574822b790d06e92d322404146f",
+  "candidate_run_id": "n02-l1-graph-variant-repair-run-20261016-01",
+  "execution_started": false,
+  "hash_bundle_sha256": "f05eb10cb758d0da2052d3c4b92a581001db0134a634942f8656387f0121d06d",
+  "identity_state": "static_candidate_not_approved",
+  "independent_review": "pending",
+  "input_registry_sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+  "local_synthetic_critic_interface_validation": "not_run_for_repaired_L1_candidate",
+  "map_contract": "relief-grid-100x100-v1",
+  "measurement_evidence_bundle_sha256": "c6e253e5959c2fd4879c80661d576d7eb0456edbe9e9a695b64cc4a9b5520533",
+  "measurement_stage_coverage": [
+    "input_admission"
+  ],
+  "measurement_status": "measured_single_stage_bootstrap",
+  "model_forward_training_checkpoint": "not_run",
+  "package_release": "ch2_disaster_relief_n02_graph_variant_repair_l1_20261016",
+  "prior_resource_cost_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+  "protocol_id": "n02-integration-smoke-v4-100x100",
+  "release_manifest_sha256": "3aaf0ddb966edbd64bf9da7cc6998774f30c0370fbf6ae8e1b5e4752eeed063f",
+  "request_frozen": false,
+  "request_scope": "candidate_target_runtime_preflight_only",
+  "runtime_dependency_bundle_sha256": "58485fcd1c42a71daa3360d902b21fbb465dd8d3c6a152fbfdd6544e2b9e5274",
+  "runtime_spec_sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+  "scenario_count": 3,
+  "schema": "n02-static-request-identity/2",
+  "server_submission": "not_performed",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "target_runtime_critic_interface_validation": "not_run",
+  "target_runtime_preflight": "not_run_for_repaired_L1_candidate"
+}
