@@ -1,0 +1,35 @@
+{
+  "allocation": {
+    "development": 1,
+    "train": 2
+  },
+  "authorized": false,
+  "candidate_request_identity_sha256": "928428d9daab671fb1703c528370918387b1aaad9e16f67a2c9105074e8feb71",
+  "execution_started": false,
+  "hash_bundle_sha256": "74dacac7b13fda848630c4f4ec5045a27d16675d58a5570d95bc2933d519825d",
+  "identity_state": "static_candidate_not_authorized_not_frozen",
+  "independent_review": "pending",
+  "input_registry_sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+  "local_synthetic_critic_interface_validation": "passed_actual_module_forward_autograd",
+  "map_contract": "relief-grid-100x100-v1",
+  "measurement_evidence_bundle_sha256": "c6e253e5959c2fd4879c80661d576d7eb0456edbe9e9a695b64cc4a9b5520533",
+  "measurement_stage_coverage": [
+    "input_admission"
+  ],
+  "measurement_status": "measured_single_stage_bootstrap",
+  "model_forward_training_checkpoint": "not_run",
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "prior_resource_cost_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+  "protocol_id": "n02-integration-smoke-v4-100x100",
+  "release_manifest_sha256": "27713671439cd34bc5100fb78025c0888ccaa5a678e90d44c1301476c64fce43",
+  "request_frozen": false,
+  "request_scope": "candidate_target_runtime_preflight_only",
+  "runtime_dependency_bundle_sha256": "7039f1d71f0ba4f4b7a132c844795bb4d980ff76819cb7f80f5485ea22e74f7d",
+  "runtime_spec_sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+  "scenario_count": 3,
+  "schema": "n02-static-request-identity/2",
+  "server_submission": "not_performed",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "target_runtime_critic_interface_validation": "not_run",
+  "target_runtime_preflight": "passed"
+}

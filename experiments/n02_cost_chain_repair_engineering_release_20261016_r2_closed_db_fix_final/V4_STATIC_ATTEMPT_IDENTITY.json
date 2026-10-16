@@ -1,0 +1,22 @@
+{
+  "attempt_started": false,
+  "attempt_state": "candidate_identity_only_no_attempt_created",
+  "candidate_attempt_identity_sha256": "070e24274b7204f41583596b511734a889240c945df049dd3e28186da7508b2d",
+  "candidate_request_identity_sha256": "928428d9daab671fb1703c528370918387b1aaad9e16f67a2c9105074e8feb71",
+  "execution_receipt": null,
+  "independent_review": "pending",
+  "local_synthetic_critic_interface_validation": "passed_actual_module_forward_autograd",
+  "map_contract": "relief-grid-100x100-v1",
+  "measurement_stage_coverage": [
+    "input_admission"
+  ],
+  "measurement_status": "measured_single_stage_bootstrap",
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "pipeline_execution": "not_run",
+  "prior_resource_cost_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+  "protocol_id": "n02-integration-smoke-v4-100x100",
+  "schema": "n02-static-attempt-identity/2",
+  "target_runtime_critic_interface_validation": "not_run",
+  "target_runtime_preflight": "passed",
+  "training_or_rollout": "not_run"
+}

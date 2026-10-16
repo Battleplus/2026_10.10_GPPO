@@ -1,0 +1,923 @@
+{
+  "manifest_files": [
+    {
+      "path": "package/civilian/PRIOR_RESOURCE_COST.json",
+      "sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+      "size_bytes": 3732,
+      "actual_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+      "match": true
+    },
+    {
+      "path": "package/civilian/acceptance_harness.py",
+      "sha256": "e50e208756c60ef448b4527e0cb9de7702db7f02de4e4086dcbedfbdaea5d550",
+      "size_bytes": 45997,
+      "actual_sha256": "e50e208756c60ef448b4527e0cb9de7702db7f02de4e4086dcbedfbdaea5d550",
+      "match": true
+    },
+    {
+      "path": "package/civilian/baselines.py",
+      "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "size_bytes": 5740,
+      "actual_sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "match": true
+    },
+    {
+      "path": "package/civilian/branching.py",
+      "sha256": "77fa42f76bc3238d0962b4603097920070821e1802c0f0862720c3c858375e58",
+      "size_bytes": 21373,
+      "actual_sha256": "77fa42f76bc3238d0962b4603097920070821e1802c0f0862720c3c858375e58",
+      "match": true
+    },
+    {
+      "path": "package/civilian/budget_ledger.py",
+      "sha256": "108b420e30c16771d3eab6fadbf17a6e9e023f8cdb0f6606e6d39e8c8038cb46",
+      "size_bytes": 18098,
+      "actual_sha256": "108b420e30c16771d3eab6fadbf17a6e9e023f8cdb0f6606e6d39e8c8038cb46",
+      "match": true
+    },
+    {
+      "path": "package/civilian/chapter1_adapter.py",
+      "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "size_bytes": 1329,
+      "actual_sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "match": true
+    },
+    {
+      "path": "package/civilian/dataset_protocol.py",
+      "sha256": "0d6d7c43a31d3b47f2694b23fcf31492a58504609b0ccf09f3712c40cff27d14",
+      "size_bytes": 12247,
+      "actual_sha256": "0d6d7c43a31d3b47f2694b23fcf31492a58504609b0ccf09f3712c40cff27d14",
+      "match": true
+    },
+    {
+      "path": "package/civilian/driver.py",
+      "sha256": "9b7f24f4304ee3a967fc1aed4cee6a441fab4effc14bccc362ba0637b7c7b14f",
+      "size_bytes": 89209,
+      "actual_sha256": "9b7f24f4304ee3a967fc1aed4cee6a441fab4effc14bccc362ba0637b7c7b14f",
+      "match": true
+    },
+    {
+      "path": "package/civilian/evaluator.py",
+      "sha256": "7bdf8a83be7b7d2028528bdfec189b725c15bbaac710cb7c4517ecff9dc24bd6",
+      "size_bytes": 22513,
+      "actual_sha256": "7bdf8a83be7b7d2028528bdfec189b725c15bbaac710cb7c4517ecff9dc24bd6",
+      "match": true
+    },
+    {
+      "path": "package/civilian/execution_gate.py",
+      "sha256": "0da178d9c451ee97334467cc05dff9a506a8f3b0940a01b8a1ed54df0ccc3e78",
+      "size_bytes": 26915,
+      "actual_sha256": "0da178d9c451ee97334467cc05dff9a506a8f3b0940a01b8a1ed54df0ccc3e78",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/combined.json",
+      "sha256": "ad507f15039998cc80a608cc097f58b88e2ccfdcc100518e252a5c4f26b4d4c6",
+      "size_bytes": 5300,
+      "actual_sha256": "ad507f15039998cc80a608cc097f58b88e2ccfdcc100518e252a5c4f26b4d4c6",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/control.json",
+      "sha256": "4bcbc5c4bbd7ffbfb3e850aaf23a06e95bd68817ceb36b21b2345ddc2957370a",
+      "size_bytes": 4849,
+      "actual_sha256": "4bcbc5c4bbd7ffbfb3e850aaf23a06e95bd68817ceb36b21b2345ddc2957370a",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/energy_change.json",
+      "sha256": "17b473f8cb6f006b5d89f182b4c6f4ba617286c1d60517e1738bb173c54b6df5",
+      "size_bytes": 5002,
+      "actual_sha256": "17b473f8cb6f006b5d89f182b4c6f4ba617286c1d60517e1738bb173c54b6df5",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/external_commitment.json",
+      "sha256": "f2d5e830695fa0fd84e876ed66807e3102a559c7f361dffc2886a768e2673ae9",
+      "size_bytes": 5323,
+      "actual_sha256": "f2d5e830695fa0fd84e876ed66807e3102a559c7f361dffc2886a768e2673ae9",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/failure.json",
+      "sha256": "e8775eced309e04d8f454315fd6e76c2661967adf1c583ce223f10b1aa9a35af",
+      "size_bytes": 4971,
+      "actual_sha256": "e8775eced309e04d8f454315fd6e76c2661967adf1c583ce223f10b1aa9a35af",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/report_delay.json",
+      "sha256": "d384e89dbb6c81fec0569aa63dc37cea1280f966d60eee84bc03e8dd33fdb0a7",
+      "size_bytes": 4854,
+      "actual_sha256": "d384e89dbb6c81fec0569aa63dc37cea1280f966d60eee84bc03e8dd33fdb0a7",
+      "match": true
+    },
+    {
+      "path": "package/civilian/fixtures/stock_loss.json",
+      "sha256": "0ad22b5f9eba894daefdc0726b4b5a9563987ae3186514243d08bdf754e941a8",
+      "size_bytes": 5030,
+      "actual_sha256": "0ad22b5f9eba894daefdc0726b4b5a9563987ae3186514243d08bdf754e941a8",
+      "match": true
+    },
+    {
+      "path": "package/civilian/graph_policy.py",
+      "sha256": "ccbbc895858b9c1963b39a52b3201f90b18dcb6dca942a856b2576aad06f397d",
+      "size_bytes": 35235,
+      "actual_sha256": "ccbbc895858b9c1963b39a52b3201f90b18dcb6dca942a856b2576aad06f397d",
+      "match": true
+    },
+    {
+      "path": "package/civilian/infra_io.py",
+      "sha256": "fbd6533833f8845d49ce6ad28b793245e58f22467acbe83e7c45a14704db7ace",
+      "size_bytes": 15517,
+      "actual_sha256": "fbd6533833f8845d49ce6ad28b793245e58f22467acbe83e7c45a14704db7ace",
+      "match": true
+    },
+    {
+      "path": "package/civilian/literal_graph_ops.py",
+      "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "size_bytes": 9265,
+      "actual_sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/n2_stage_pipeline.py",
+      "sha256": "5063b540d72ad5df145089e6a890c2db0bd72c939bc58f6e0c5906363cb91ebd",
+      "size_bytes": 88961,
+      "actual_sha256": "5063b540d72ad5df145089e6a890c2db0bd72c939bc58f6e0c5906363cb91ebd",
+      "match": true
+    },
+    {
+      "path": "package/civilian/package_layout.py",
+      "sha256": "bd6ee718795e797b485acc0971ee5febe7979ceb7bef2935c82a954f6b77dac0",
+      "size_bytes": 3916,
+      "actual_sha256": "bd6ee718795e797b485acc0971ee5febe7979ceb7bef2935c82a954f6b77dac0",
+      "match": true
+    },
+    {
+      "path": "package/civilian/phase_handshake.py",
+      "sha256": "c49b4d0142b4e9e3681f595bca9a49aa339ff28210acf7f48191b3de3b7092f3",
+      "size_bytes": 33828,
+      "actual_sha256": "c49b4d0142b4e9e3681f595bca9a49aa339ff28210acf7f48191b3de3b7092f3",
+      "match": true
+    },
+    {
+      "path": "package/civilian/ppo_trainer.py",
+      "sha256": "d16c466ba42dc261723e7bc8b345980ea53464e23f6489979b997f64596ee37a",
+      "size_bytes": 27948,
+      "actual_sha256": "d16c466ba42dc261723e7bc8b345980ea53464e23f6489979b997f64596ee37a",
+      "match": true
+    },
+    {
+      "path": "package/civilian/process_guardian.py",
+      "sha256": "83c6f0e8947c6ee83394eb9c96376434e58e843693701bffdfbd7c7082945a6e",
+      "size_bytes": 65604,
+      "actual_sha256": "83c6f0e8947c6ee83394eb9c96376434e58e843693701bffdfbd7c7082945a6e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/registered_data/data/development/n02-development-carrier_competition-00-f8c58727a4bffd36.json",
+      "sha256": "553839e4b0b06bfc830f1c592cd08923de29378fbf65e656490a5b73b8b2d19d",
+      "size_bytes": 3279,
+      "actual_sha256": "553839e4b0b06bfc830f1c592cd08923de29378fbf65e656490a5b73b8b2d19d",
+      "match": true
+    },
+    {
+      "path": "package/civilian/registered_data/data/train/n02-train-base-00-f8f0f2ea820d8265.json",
+      "sha256": "dbdf7445de08751241c76adb954826d6931d4c0e5d6577d5d97d5ce66d2bf9d3",
+      "size_bytes": 3257,
+      "actual_sha256": "dbdf7445de08751241c76adb954826d6931d4c0e5d6577d5d97d5ce66d2bf9d3",
+      "match": true
+    },
+    {
+      "path": "package/civilian/registered_data/data/train/n02-train-carrier_competition-01-f9079eaafa67c7d7.json",
+      "sha256": "ca07dd287086255ef5937a4344628d30d8bffa66b5d27a92219e27580ce057b6",
+      "size_bytes": 3273,
+      "actual_sha256": "ca07dd287086255ef5937a4344628d30d8bffa66b5d27a92219e27580ce057b6",
+      "match": true
+    },
+    {
+      "path": "package/civilian/registered_data/fixtures/causal_allocation_case.json",
+      "sha256": "23086b183ac88f3a4ac2efa8b9c082f893a3587192245c989a05fceae365f905",
+      "size_bytes": 3728,
+      "actual_sha256": "23086b183ac88f3a4ac2efa8b9c082f893a3587192245c989a05fceae365f905",
+      "match": true
+    },
+    {
+      "path": "package/civilian/registered_data/input_registry.json",
+      "sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+      "size_bytes": 3011,
+      "actual_sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+      "match": true
+    },
+    {
+      "path": "package/civilian/relief_env.py",
+      "sha256": "5605c75277af420b19eda00a64a47520334f732d15dbce1805e83318f285b174",
+      "size_bytes": 53730,
+      "actual_sha256": "5605c75277af420b19eda00a64a47520334f732d15dbce1805e83318f285b174",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/deployment_receipt.json",
+      "sha256": "f4100fd8f55c9e7e219c0a8579b4d00a88db3c7b3c70d27b117e0bda3db4b907",
+      "size_bytes": 507,
+      "actual_sha256": "f4100fd8f55c9e7e219c0a8579b4d00a88db3c7b3c70d27b117e0bda3db4b907",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/guardians/01-input_admission.json",
+      "sha256": "7dba7e6c4dff6295169e9ea336cb8e0ef9917e4c9bf3a60aa7f86168dc83fa16",
+      "size_bytes": 3331,
+      "actual_sha256": "7dba7e6c4dff6295169e9ea336cb8e0ef9917e4c9bf3a60aa7f86168dc83fa16",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/measurement-context.json",
+      "sha256": "74dbd1f27d6672a2493714260bc403a126db1ca0f306ba1f7d683a3f3d6adc53",
+      "size_bytes": 797,
+      "actual_sha256": "74dbd1f27d6672a2493714260bc403a126db1ca0f306ba1f7d683a3f3d6adc53",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/receipts/01-input_admission.json",
+      "sha256": "f057d14f2d40f14384a891337293920804b71a0a6bed2b5047179e21bf56473e",
+      "size_bytes": 11107,
+      "actual_sha256": "f057d14f2d40f14384a891337293920804b71a0a6bed2b5047179e21bf56473e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/resource-ledger.jsonl",
+      "sha256": "ff7ff9c1d3ff84bae737a7b961bc4567d2897c327fed4f0ab9f82f2c942f5cfb",
+      "size_bytes": 1582,
+      "actual_sha256": "ff7ff9c1d3ff84bae737a7b961bc4567d2897c327fed4f0ab9f82f2c942f5cfb",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-show.txt",
+      "sha256": "b1c52610903e0d76e8446610dd64f1b58797ba816567a39c08ffce300f20b2da",
+      "size_bytes": 447,
+      "actual_sha256": "b1c52610903e0d76e8446610dd64f1b58797ba816567a39c08ffce300f20b2da",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-terminal.json",
+      "sha256": "bbe0218bfd09500834b20ab38640caef663225aaf7253f32d3ee7060f4ca487e",
+      "size_bytes": 1429,
+      "actual_sha256": "bbe0218bfd09500834b20ab38640caef663225aaf7253f32d3ee7060f4ca487e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/resource_supervisor.py",
+      "sha256": "041734a00dc65e852456e539b82d82caf28f316fc09d3978fd554c110da4e891",
+      "size_bytes": 45824,
+      "actual_sha256": "041734a00dc65e852456e539b82d82caf28f316fc09d3978fd554c110da4e891",
+      "match": true
+    },
+    {
+      "path": "package/civilian/runtime-spec.json",
+      "sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+      "size_bytes": 1034,
+      "actual_sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+      "match": true
+    },
+    {
+      "path": "package/civilian/scenario_matrix.py",
+      "sha256": "0eaf1d35b5a80557f72a7ee861aa0ed17001a7ed9e717f29a64344ee5350fa91",
+      "size_bytes": 14047,
+      "actual_sha256": "0eaf1d35b5a80557f72a7ee861aa0ed17001a7ed9e717f29a64344ee5350fa91",
+      "match": true
+    },
+    {
+      "path": "package/civilian/scenario_schema.py",
+      "sha256": "cb51dc9bdfd74b6207117dcdf65da3f309d12d234a66b33a1f8819f9d0d9f3ea",
+      "size_bytes": 14907,
+      "actual_sha256": "cb51dc9bdfd74b6207117dcdf65da3f309d12d234a66b33a1f8819f9d0d9f3ea",
+      "match": true
+    },
+    {
+      "path": "package/civilian/snapshot_contract.py",
+      "sha256": "1e309550b7cc72a498d2d2773d6ff941c87f42ef7ec36df6153a96a5f1a9c90e",
+      "size_bytes": 7216,
+      "actual_sha256": "1e309550b7cc72a498d2d2773d6ff941c87f42ef7ec36df6153a96a5f1a9c90e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "size_bytes": 1429,
+      "actual_sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "match": true
+    },
+    {
+      "path": "package/civilian/test_synthetic_critic_interface.py",
+      "sha256": "7538d4dffcb6faf02ad1f8326b97c7818279f2fddd5e0c65ee1f91392f5936be",
+      "size_bytes": 6216,
+      "actual_sha256": "7538d4dffcb6faf02ad1f8326b97c7818279f2fddd5e0c65ee1f91392f5936be",
+      "match": true
+    },
+    {
+      "path": "package/civilian/wm_prediction_cache.py",
+      "sha256": "6fa16499a7e743c7b5150a65144adad232d7335defc447b0cb7d5c39a785d62e",
+      "size_bytes": 8678,
+      "actual_sha256": "6fa16499a7e743c7b5150a65144adad232d7335defc447b0cb7d5c39a785d62e",
+      "match": true
+    },
+    {
+      "path": "package/civilian/world_model.py",
+      "sha256": "3adeaa6960c0494c59ddc34bce5e230491a62e7f76800dd13eedb473b3fdf4c5",
+      "size_bytes": 56827,
+      "actual_sha256": "3adeaa6960c0494c59ddc34bce5e230491a62e7f76800dd13eedb473b3fdf4c5",
+      "match": true
+    },
+    {
+      "path": "package/n2/branching.py",
+      "sha256": "65711d9f1d9f86766339708148075f2a72fdba1bb5d7227961b7d810bcbf975b",
+      "size_bytes": 24360,
+      "actual_sha256": "65711d9f1d9f86766339708148075f2a72fdba1bb5d7227961b7d810bcbf975b",
+      "match": true
+    },
+    {
+      "path": "package/n2/failure_export.py",
+      "sha256": "cf963c29d8916dd0108c9ae1b5fb648f51a447c521c979a988ad2eb1ba2bbcee",
+      "size_bytes": 4915,
+      "actual_sha256": "cf963c29d8916dd0108c9ae1b5fb648f51a447c521c979a988ad2eb1ba2bbcee",
+      "match": true
+    },
+    {
+      "path": "package/n2/ppo_integration.py",
+      "sha256": "bf4305ae8d775a6b706c36c849c6af0ca165a527f83e2826baea0a0e2d04aaea",
+      "size_bytes": 876,
+      "actual_sha256": "bf4305ae8d775a6b706c36c849c6af0ca165a527f83e2826baea0a0e2d04aaea",
+      "match": true
+    },
+    {
+      "path": "package/n2/world_model.py",
+      "sha256": "ea90196934a77f2a09a3fd0f5efded8f96b65decded1f70dbc0be7007120bcaf",
+      "size_bytes": 45791,
+      "actual_sha256": "ea90196934a77f2a09a3fd0f5efded8f96b65decded1f70dbc0be7007120bcaf",
+      "match": true
+    },
+    {
+      "path": "package/tests/test_100x100_contract.py",
+      "sha256": "a07346bd98b35bd813c33e868c2d822cef41046110b893ccc180deec0d94e8eb",
+      "size_bytes": 10382,
+      "actual_sha256": "a07346bd98b35bd813c33e868c2d822cef41046110b893ccc180deec0d94e8eb",
+      "match": true
+    },
+    {
+      "path": "package/tests/test_formal_auth_binding.py",
+      "sha256": "86e7f3e3d17dd5ad0174615938ed8d5c3ad2f688777c442adc926b00bd8d7578",
+      "size_bytes": 4956,
+      "actual_sha256": "86e7f3e3d17dd5ad0174615938ed8d5c3ad2f688777c442adc926b00bd8d7578",
+      "match": true
+    }
+  ],
+  "export_files": [
+    {
+      "path": "checkpoint_restore_receipt.json",
+      "sha256": "ec60ce07ae331de6de941397424da30fb89a7d1ed78ca4d2b08477e47a6f5291",
+      "size_bytes": 4512,
+      "actual_sha256": "ec60ce07ae331de6de941397424da30fb89a7d1ed78ca4d2b08477e47a6f5291",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "checkpoints/G/round_01.pt",
+      "sha256": "86d167642aac1e4346939f364b5aef299b4c4fd4d9650a476270dae914a44319",
+      "size_bytes": 1173739,
+      "actual_sha256": "86d167642aac1e4346939f364b5aef299b4c4fd4d9650a476270dae914a44319",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "checkpoints/G_WM/round_01.pt",
+      "sha256": "0408bab1651acd3218e472fea4c25e8951b6228742a53668224b855ea1ef5b4c",
+      "size_bytes": 1178783,
+      "actual_sha256": "0408bab1651acd3218e472fea4c25e8951b6228742a53668224b855ea1ef5b4c",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "collection_receipt.json",
+      "sha256": "49fb5e0a35f416f4c1585e9b8adf23b79de5b16a822f3d449ac840ac6ceadc56",
+      "size_bytes": 2372,
+      "actual_sha256": "49fb5e0a35f416f4c1585e9b8adf23b79de5b16a822f3d449ac840ac6ceadc56",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "development_evaluation_receipt.json",
+      "sha256": "a82a757c44651afeeebce9a4a713d0f98ec67729862f7f061c9f0499acb88eda",
+      "size_bytes": 63536,
+      "actual_sha256": "a82a757c44651afeeebce9a4a713d0f98ec67729862f7f061c9f0499acb88eda",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "development_windows.json",
+      "sha256": "b4a33b220e01ae26d58f43ef647031f42d14b45cd353504a813363aad985e6ba",
+      "size_bytes": 130433,
+      "actual_sha256": "b4a33b220e01ae26d58f43ef647031f42d14b45cd353504a813363aad985e6ba",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "graph_policy_training_receipt.json",
+      "sha256": "26dcecb42d930004c60faa54f88672cc199b7398e1bd0de6daa37527a8437235",
+      "size_bytes": 595090,
+      "actual_sha256": "26dcecb42d930004c60faa54f88672cc199b7398e1bd0de6daa37527a8437235",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "parents.json",
+      "sha256": "86364d5892fc34079f2f9734299a35f702d96d7620cb181fc74052ab024c5c29",
+      "size_bytes": 9837,
+      "actual_sha256": "86364d5892fc34079f2f9734299a35f702d96d7620cb181fc74052ab024c5c29",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "rollouts/G/round_01.jsonl",
+      "sha256": "593ac5ddcec854ec711ded6e76bafb0146449fd355cc45c0aa0bff6a4fb6ee89",
+      "size_bytes": 685956,
+      "actual_sha256": "593ac5ddcec854ec711ded6e76bafb0146449fd355cc45c0aa0bff6a4fb6ee89",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "rollouts/G_WM/round_01.jsonl",
+      "sha256": "8fe8413fef3a96bfc213b4e56323014d1d805d169cfb6e00b7f3a11093fe43fb",
+      "size_bytes": 693156,
+      "actual_sha256": "8fe8413fef3a96bfc213b4e56323014d1d805d169cfb6e00b7f3a11093fe43fb",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "strict_restore_subprocess.json",
+      "sha256": "2389b7eb6e84cd40304b0a32f6431df9e1798e202788724fbb21f45932acda8b",
+      "size_bytes": 1043,
+      "actual_sha256": "2389b7eb6e84cd40304b0a32f6431df9e1798e202788724fbb21f45932acda8b",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "training_branches.jsonl",
+      "sha256": "7d7d1f39fce821ac90d15ddd51b51701f4955a48748131f348ac3bfaa5ecd409",
+      "size_bytes": 224694,
+      "actual_sha256": "7d7d1f39fce821ac90d15ddd51b51701f4955a48748131f348ac3bfaa5ecd409",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "training_windows.json",
+      "sha256": "a743bcaa81c00f1bdf91f40c22c0f61e51e104a293768ddc2ec73e266f09b1f9",
+      "size_bytes": 259466,
+      "actual_sha256": "a743bcaa81c00f1bdf91f40c22c0f61e51e104a293768ddc2ec73e266f09b1f9",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "world_model.pt",
+      "sha256": "1b9a9303af07a519f3e03302a54a4154063a196df93752715974de450fc13c0c",
+      "size_bytes": 186689,
+      "actual_sha256": "1b9a9303af07a519f3e03302a54a4154063a196df93752715974de450fc13c0c",
+      "match": true,
+      "pipeline_copy_match": true
+    },
+    {
+      "path": "world_model_training_receipt.json",
+      "sha256": "2144d06294ee27c34b8fad43c277f1ce1b8136c794010682b89ab53b2599d158",
+      "size_bytes": 510,
+      "actual_sha256": "2144d06294ee27c34b8fad43c277f1ce1b8136c794010682b89ab53b2599d158",
+      "match": true,
+      "pipeline_copy_match": true
+    }
+  ],
+  "export_sources": [
+    {
+      "path": "PRIOR_RESOURCE_COST.json",
+      "sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+      "match": true
+    },
+    {
+      "path": "acceptance_harness.py",
+      "sha256": "e50e208756c60ef448b4527e0cb9de7702db7f02de4e4086dcbedfbdaea5d550",
+      "match": true
+    },
+    {
+      "path": "baselines.py",
+      "sha256": "13b2a84662022b7ed6a56a19629ad3abe2ad954c46926eb1a72caa326039115a",
+      "match": true
+    },
+    {
+      "path": "branching.py",
+      "sha256": "77fa42f76bc3238d0962b4603097920070821e1802c0f0862720c3c858375e58",
+      "match": true
+    },
+    {
+      "path": "budget_ledger.py",
+      "sha256": "108b420e30c16771d3eab6fadbf17a6e9e023f8cdb0f6606e6d39e8c8038cb46",
+      "match": true
+    },
+    {
+      "path": "chapter1_adapter.py",
+      "sha256": "bb1f7c79f562bac4c68ca038f3b2cec69809d2ff86dd992497ea217520f9d6b6",
+      "match": true
+    },
+    {
+      "path": "dataset_protocol.py",
+      "sha256": "0d6d7c43a31d3b47f2694b23fcf31492a58504609b0ccf09f3712c40cff27d14",
+      "match": true
+    },
+    {
+      "path": "driver.py",
+      "sha256": "9b7f24f4304ee3a967fc1aed4cee6a441fab4effc14bccc362ba0637b7c7b14f",
+      "match": true
+    },
+    {
+      "path": "evaluator.py",
+      "sha256": "7bdf8a83be7b7d2028528bdfec189b725c15bbaac710cb7c4517ecff9dc24bd6",
+      "match": true
+    },
+    {
+      "path": "execution_gate.py",
+      "sha256": "0da178d9c451ee97334467cc05dff9a506a8f3b0940a01b8a1ed54df0ccc3e78",
+      "match": true
+    },
+    {
+      "path": "fixtures/combined.json",
+      "sha256": "ad507f15039998cc80a608cc097f58b88e2ccfdcc100518e252a5c4f26b4d4c6",
+      "match": true
+    },
+    {
+      "path": "fixtures/control.json",
+      "sha256": "4bcbc5c4bbd7ffbfb3e850aaf23a06e95bd68817ceb36b21b2345ddc2957370a",
+      "match": true
+    },
+    {
+      "path": "fixtures/energy_change.json",
+      "sha256": "17b473f8cb6f006b5d89f182b4c6f4ba617286c1d60517e1738bb173c54b6df5",
+      "match": true
+    },
+    {
+      "path": "fixtures/external_commitment.json",
+      "sha256": "f2d5e830695fa0fd84e876ed66807e3102a559c7f361dffc2886a768e2673ae9",
+      "match": true
+    },
+    {
+      "path": "fixtures/failure.json",
+      "sha256": "e8775eced309e04d8f454315fd6e76c2661967adf1c583ce223f10b1aa9a35af",
+      "match": true
+    },
+    {
+      "path": "fixtures/report_delay.json",
+      "sha256": "d384e89dbb6c81fec0569aa63dc37cea1280f966d60eee84bc03e8dd33fdb0a7",
+      "match": true
+    },
+    {
+      "path": "fixtures/stock_loss.json",
+      "sha256": "0ad22b5f9eba894daefdc0726b4b5a9563987ae3186514243d08bdf754e941a8",
+      "match": true
+    },
+    {
+      "path": "graph_policy.py",
+      "sha256": "ccbbc895858b9c1963b39a52b3201f90b18dcb6dca942a856b2576aad06f397d",
+      "match": true
+    },
+    {
+      "path": "infra_io.py",
+      "sha256": "fbd6533833f8845d49ce6ad28b793245e58f22467acbe83e7c45a14704db7ace",
+      "match": true
+    },
+    {
+      "path": "literal_graph_ops.py",
+      "sha256": "8a7e9e225c9efe758087c09260bb7af67281d5e30ec88f05650f87984ee2ed4e",
+      "match": true
+    },
+    {
+      "path": "n2_stage_pipeline.py",
+      "sha256": "5063b540d72ad5df145089e6a890c2db0bd72c939bc58f6e0c5906363cb91ebd",
+      "match": true
+    },
+    {
+      "path": "package_layout.py",
+      "sha256": "bd6ee718795e797b485acc0971ee5febe7979ceb7bef2935c82a954f6b77dac0",
+      "match": true
+    },
+    {
+      "path": "phase_handshake.py",
+      "sha256": "c49b4d0142b4e9e3681f595bca9a49aa339ff28210acf7f48191b3de3b7092f3",
+      "match": true
+    },
+    {
+      "path": "ppo_trainer.py",
+      "sha256": "d16c466ba42dc261723e7bc8b345980ea53464e23f6489979b997f64596ee37a",
+      "match": true
+    },
+    {
+      "path": "process_guardian.py",
+      "sha256": "83c6f0e8947c6ee83394eb9c96376434e58e843693701bffdfbd7c7082945a6e",
+      "match": true
+    },
+    {
+      "path": "registered_data/data/development/n02-development-carrier_competition-00-f8c58727a4bffd36.json",
+      "sha256": "553839e4b0b06bfc830f1c592cd08923de29378fbf65e656490a5b73b8b2d19d",
+      "match": true
+    },
+    {
+      "path": "registered_data/data/train/n02-train-base-00-f8f0f2ea820d8265.json",
+      "sha256": "dbdf7445de08751241c76adb954826d6931d4c0e5d6577d5d97d5ce66d2bf9d3",
+      "match": true
+    },
+    {
+      "path": "registered_data/data/train/n02-train-carrier_competition-01-f9079eaafa67c7d7.json",
+      "sha256": "ca07dd287086255ef5937a4344628d30d8bffa66b5d27a92219e27580ce057b6",
+      "match": true
+    },
+    {
+      "path": "registered_data/fixtures/causal_allocation_case.json",
+      "sha256": "23086b183ac88f3a4ac2efa8b9c082f893a3587192245c989a05fceae365f905",
+      "match": true
+    },
+    {
+      "path": "registered_data/input_registry.json",
+      "sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+      "match": true
+    },
+    {
+      "path": "relief_env.py",
+      "sha256": "5605c75277af420b19eda00a64a47520334f732d15dbce1805e83318f285b174",
+      "match": true
+    },
+    {
+      "path": "resource_supervisor.py",
+      "sha256": "041734a00dc65e852456e539b82d82caf28f316fc09d3978fd554c110da4e891",
+      "match": true
+    },
+    {
+      "path": "runtime-spec.json",
+      "sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+      "match": true
+    },
+    {
+      "path": "scenario_matrix.py",
+      "sha256": "0eaf1d35b5a80557f72a7ee861aa0ed17001a7ed9e717f29a64344ee5350fa91",
+      "match": true
+    },
+    {
+      "path": "scenario_schema.py",
+      "sha256": "cb51dc9bdfd74b6207117dcdf65da3f309d12d234a66b33a1f8819f9d0d9f3ea",
+      "match": true
+    },
+    {
+      "path": "snapshot_contract.py",
+      "sha256": "1e309550b7cc72a498d2d2773d6ff941c87f42ef7ec36df6153a96a5f1a9c90e",
+      "match": true
+    },
+    {
+      "path": "stable_identity.py",
+      "sha256": "812944f9f7cb4f16c9907c4d6cf6c552f5b0dc3f7ec8fa2e5ccbe859b04757ef",
+      "match": true
+    },
+    {
+      "path": "test_synthetic_critic_interface.py",
+      "sha256": "7538d4dffcb6faf02ad1f8326b97c7818279f2fddd5e0c65ee1f91392f5936be",
+      "match": true
+    },
+    {
+      "path": "wm_prediction_cache.py",
+      "sha256": "6fa16499a7e743c7b5150a65144adad232d7335defc447b0cb7d5c39a785d62e",
+      "match": true
+    },
+    {
+      "path": "world_model.py",
+      "sha256": "3adeaa6960c0494c59ddc34bce5e230491a62e7f76800dd13eedb473b3fdf4c5",
+      "match": true
+    }
+  ],
+  "prior_evidence": [
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/resource-ledger.jsonl",
+      "sha256": "ff7ff9c1d3ff84bae737a7b961bc4567d2897c327fed4f0ab9f82f2c942f5cfb",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-show.txt",
+      "sha256": "b1c52610903e0d76e8446610dd64f1b58797ba816567a39c08ffce300f20b2da",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/deployment_receipt.json",
+      "sha256": "f4100fd8f55c9e7e219c0a8579b4d00a88db3c7b3c70d27b117e0bda3db4b907",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/measurement-context.json",
+      "sha256": "74dbd1f27d6672a2493714260bc403a126db1ca0f306ba1f7d683a3f3d6adc53",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/systemd-terminal.json",
+      "sha256": "bbe0218bfd09500834b20ab38640caef663225aaf7253f32d3ee7060f4ca487e",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/receipts/01-input_admission.json",
+      "sha256": "f057d14f2d40f14384a891337293920804b71a0a6bed2b5047179e21bf56473e",
+      "match": true
+    },
+    {
+      "path": "resource_cost_evidence/n02-cost-measurement-20261016-r2-closed-db-fix/guardians/01-input_admission.json",
+      "sha256": "7dba7e6c4dff6295169e9ea336cb8e0ef9917e4c9bf3a60aa7f86168dc83fa16",
+      "match": true
+    }
+  ],
+  "snapshot": {
+    "cutoff": "ledger entries completed before settlement_and_export; the current stage is recorded in the live ledger",
+    "path": "resource_ledger_snapshot.json",
+    "sha256": "e6effe8a1a0eee53ad5cb43d001b03af999253ce063cc84cc2c80a985d252789",
+    "size_bytes": 11210,
+    "match": true
+  },
+  "evidence_file_hashes": {
+    "final-formal-run-evidence/authorization-validation.json": "623d9b1ded75941c02f6825939c704751417e9db9435e800f64f65a17a520ba8",
+    "final-formal-run-evidence/authorization.json": "7af32c4f19fb998027f07272792216ff73bacb5963712ad5fb399b6001b4b237",
+    "final-formal-run-evidence/FINAL_FORMAL_AUTHORIZATION_CONTRACT.json": "6085f765b589eeac4891f44465b525d4c3a2365ab1b8aee097144bd8671d2c77",
+    "final-formal-run-evidence/handoff.json": "0749ea82cf5d94fb51b513966356600408000ab3aef7dd8806fc27e455b98e36",
+    "final-formal-run-evidence/journal.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "final-formal-run-evidence/journal.txt": "6679ddf3803bccc8882fc4a6d63029ea561673189bf2fe4a62f777ed6fe2475f",
+    "final-formal-run-evidence/latest-systemd-show.txt": "f3687e9c4ff0d85487e81b4b0f6e8452e4c8b742f65bc1e05a8700c958052e5f",
+    "final-formal-run-evidence/preflight_receipt.json": "8aaf7f453ca38e263574febf45a6c1da9439a20dd37dc8512cae1205a5b6b950",
+    "final-formal-run-evidence/submission.txt": "8183184930fb59146cc46f942853de731d16abfaacccf0ae98f60c9f0a645e77",
+    "final-formal-run-evidence/systemd-terminal.json": "8d3507269c9987caf218a69e758cfa12817e34650278d0b0863282a53a0d8ab6",
+    "final-formal-run-evidence/run-once/authorization_consumed.json": "e514a66741ce9f53fe0e3dae922abc9bce24153d9800f6f9f4f01c3a992a6b90",
+    "final-formal-run-evidence/run-once/console.log": "303fae29329cc7097b95203d45688717532796625c4c160944649a1dfe20ae02",
+    "final-formal-run-evidence/run-once/resource-ledger.jsonl": "adf1d75d5d9a83a9d23157309b4ad7112b22da02a58e15ab8933c78296da2271",
+    "final-formal-run-evidence/run-once/runtime_admission.json": "c4abd6bdae03302b29c035d9510b860b8a24ca0440a2e95539538883da443f44",
+    "final-formal-run-evidence/run-once/supervisor-phase-protocol.jsonl": "9719f68e5ad087f9487342c7c79a17123875d37479a63c93523928d290a26259",
+    "final-formal-run-evidence/run-once/systemd_context.json": "738b1d68be0792bd0fa7e9066effd2d9a338c860867109ec26a6b187aef06514",
+    "final-formal-run-evidence/run-once/systemd_handoff.json": "7ca0d6637b1cde6a6923e230e38bf51729fb3bc00ab0d6d581d08096eacad3a2",
+    "final-formal-run-evidence/run-once/systemd_submission.json": "2a2c3fadabedf0248e88266b39bd96d86f252af293d337613fa3d3ef1f2855b0",
+    "final-formal-run-evidence/run-once/work-calls.sqlite3": "a3147c3649e3716127f9edabb7a8f145d6c39231939e7aa2e3784ab8c697db83",
+    "final-formal-run-evidence/run-once/worker-phase-accounting.jsonl": "136ae8a03c7d0e35776ab817f95b15bb03cc4dd8cee33e86ae44df942d59ca26",
+    "final-formal-run-evidence/run-once/worker-phase-protocol.jsonl": "4a8d9fae27fef5f9ad49ec8024410f65f617aeb75d7001405f67611191d66b4d",
+    "final-formal-run-evidence/run-once/guardians/01-input_admission.json": "12b6153a8a52f6d23539c1d36db256b33af0e272f30a285f0197249ee1a16637",
+    "final-formal-run-evidence/run-once/guardians/02-paired_consequence_collection.json": "eeb349d3f930c1363258ad81b81ae2b807768a4917ba90983d4deece0b77dc03",
+    "final-formal-run-evidence/run-once/guardians/03-world_model_training.json": "50e466fe16f0c6d3c91088dd82896b973b807f6c6177e39a25d18c2b748be327",
+    "final-formal-run-evidence/run-once/guardians/04-checkpoint_restore.json": "39f5db7ca128b374348ed2a0ec60110949476aa597dc9da7b490e839f4cb7cbf",
+    "final-formal-run-evidence/run-once/guardians/05-graph_policy_training.json": "ee4dadf89046dde1fc4fb8b7c74cca48fd3317c6ae04b38c65a409d57bb2833b",
+    "final-formal-run-evidence/run-once/guardians/06-development_evaluation.json": "2b409612dbaf3f14975d57e5b5047b7cbfb845b310b8aad78e56733772d708cf",
+    "final-formal-run-evidence/run-once/guardians/07-settlement_and_export.json": "03c0022397ef8d3e898891def2394f3a04add48bfb7b21ffbf266ca3af565925",
+    "final-formal-run-evidence/run-once/n2_pipeline/checkpoint_restore_receipt.json": "ec60ce07ae331de6de941397424da30fb89a7d1ed78ca4d2b08477e47a6f5291",
+    "final-formal-run-evidence/run-once/n2_pipeline/collection_receipt.json": "49fb5e0a35f416f4c1585e9b8adf23b79de5b16a822f3d449ac840ac6ceadc56",
+    "final-formal-run-evidence/run-once/n2_pipeline/development_evaluation_receipt.json": "a82a757c44651afeeebce9a4a713d0f98ec67729862f7f061c9f0499acb88eda",
+    "final-formal-run-evidence/run-once/n2_pipeline/development_windows.json": "b4a33b220e01ae26d58f43ef647031f42d14b45cd353504a813363aad985e6ba",
+    "final-formal-run-evidence/run-once/n2_pipeline/graph_policy_training_receipt.json": "26dcecb42d930004c60faa54f88672cc199b7398e1bd0de6daa37527a8437235",
+    "final-formal-run-evidence/run-once/n2_pipeline/parents.json": "86364d5892fc34079f2f9734299a35f702d96d7620cb181fc74052ab024c5c29",
+    "final-formal-run-evidence/run-once/n2_pipeline/strict_restore_subprocess.json": "2389b7eb6e84cd40304b0a32f6431df9e1798e202788724fbb21f45932acda8b",
+    "final-formal-run-evidence/run-once/n2_pipeline/training_branches.jsonl": "7d7d1f39fce821ac90d15ddd51b51701f4955a48748131f348ac3bfaa5ecd409",
+    "final-formal-run-evidence/run-once/n2_pipeline/training_windows.json": "a743bcaa81c00f1bdf91f40c22c0f61e51e104a293768ddc2ec73e266f09b1f9",
+    "final-formal-run-evidence/run-once/n2_pipeline/world_model.pt": "1b9a9303af07a519f3e03302a54a4154063a196df93752715974de450fc13c0c",
+    "final-formal-run-evidence/run-once/n2_pipeline/world_model_training_receipt.json": "2144d06294ee27c34b8fad43c277f1ce1b8136c794010682b89ab53b2599d158",
+    "final-formal-run-evidence/run-once/receipts/01-input_admission.json": "5332ab5d2d98e2f5c9ae0c21c0173498844ea90b213fedb1585f09c9528a44e5",
+    "final-formal-run-evidence/run-once/receipts/02-paired_consequence_collection.json": "13d6d225a149bb2b84470447b33e776aee6756d62303f6057e50d4d8934a7f80",
+    "final-formal-run-evidence/run-once/receipts/03-world_model_training.json": "f1c3f8ffcffafe50a7ef9e015c091321bf714387f313c1cfc42a57391ceef135",
+    "final-formal-run-evidence/run-once/receipts/04-checkpoint_restore.json": "5baba9f29459e83a8c966db97ced736a3d079848bc5689bab344063a2e5eb695",
+    "final-formal-run-evidence/run-once/receipts/05-graph_policy_training.json": "fe505593c63cf3d9257687c0fbf190c8faf457303b34c0d9b79f145734a6ef31",
+    "final-formal-run-evidence/run-once/receipts/06-development_evaluation.json": "6c331c65a7b9ef0c5c6e006b73bd20b173734667431013713efe2ac89d08c707",
+    "final-formal-run-evidence/run-once/receipts/07-settlement_and_export.json": "802feecf789eb5eaec705593df4bad4efdda54abab27f1380f94c506a2520e5f",
+    "final-formal-run-evidence/run-once/n2_pipeline/rollouts/G/round_01.jsonl": "593ac5ddcec854ec711ded6e76bafb0146449fd355cc45c0aa0bff6a4fb6ee89",
+    "final-formal-run-evidence/run-once/n2_pipeline/rollouts/G_WM/round_01.jsonl": "8fe8413fef3a96bfc213b4e56323014d1d805d169cfb6e00b7f3a11093fe43fb",
+    "final-formal-run-evidence/run-once/n2_pipeline/checkpoints/G/round_01.pt": "86d167642aac1e4346939f364b5aef299b4c4fd4d9650a476270dae914a44319",
+    "final-formal-run-evidence/run-once/n2_pipeline/checkpoints/G_WM/round_01.pt": "0408bab1651acd3218e472fea4c25e8951b6228742a53668224b855ea1ef5b4c",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/checkpoint_restore_receipt.json": "ec60ce07ae331de6de941397424da30fb89a7d1ed78ca4d2b08477e47a6f5291",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/collection_receipt.json": "49fb5e0a35f416f4c1585e9b8adf23b79de5b16a822f3d449ac840ac6ceadc56",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/development_evaluation_receipt.json": "a82a757c44651afeeebce9a4a713d0f98ec67729862f7f061c9f0499acb88eda",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/development_windows.json": "b4a33b220e01ae26d58f43ef647031f42d14b45cd353504a813363aad985e6ba",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/export_manifest.json": "57589dd747014e33e61a15e63f142591e8aa33beb2eca916750ad31c3887b730",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/graph_policy_training_receipt.json": "26dcecb42d930004c60faa54f88672cc199b7398e1bd0de6daa37527a8437235",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/parents.json": "86364d5892fc34079f2f9734299a35f702d96d7620cb181fc74052ab024c5c29",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/resource_ledger_snapshot.json": "e6effe8a1a0eee53ad5cb43d001b03af999253ce063cc84cc2c80a985d252789",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/strict_restore_subprocess.json": "2389b7eb6e84cd40304b0a32f6431df9e1798e202788724fbb21f45932acda8b",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/training_branches.jsonl": "7d7d1f39fce821ac90d15ddd51b51701f4955a48748131f348ac3bfaa5ecd409",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/training_windows.json": "a743bcaa81c00f1bdf91f40c22c0f61e51e104a293768ddc2ec73e266f09b1f9",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/world_model.pt": "1b9a9303af07a519f3e03302a54a4154063a196df93752715974de450fc13c0c",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/world_model_training_receipt.json": "2144d06294ee27c34b8fad43c277f1ce1b8136c794010682b89ab53b2599d158",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/rollouts/G/round_01.jsonl": "593ac5ddcec854ec711ded6e76bafb0146449fd355cc45c0aa0bff6a4fb6ee89",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/rollouts/G_WM/round_01.jsonl": "8fe8413fef3a96bfc213b4e56323014d1d805d169cfb6e00b7f3a11093fe43fb",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/checkpoints/G/round_01.pt": "86d167642aac1e4346939f364b5aef299b4c4fd4d9650a476270dae914a44319",
+    "final-formal-run-evidence/run-once/export/n2_integration_smoke/checkpoints/G_WM/round_01.pt": "0408bab1651acd3218e472fea4c25e8951b6228742a53668224b855ea1ef5b4c",
+    "final-formal-run-evidence/diagnostics/n02-v5-cost-repair-engineering-20261016-r2-closed-db-fix-final/preflight_receipt.json": "8aaf7f453ca38e263574febf45a6c1da9439a20dd37dc8512cae1205a5b6b950"
+  },
+  "sqlite_work_calls": {
+    "status_counts": {
+      "complete": 1347
+    },
+    "totals": {
+      "candidate_branch": {
+        "reserved": 12,
+        "actual": 12,
+        "rows": 12
+      },
+      "checkpoint_read": {
+        "reserved": 12,
+        "actual": 12,
+        "rows": 11
+      },
+      "checkpoint_write": {
+        "reserved": 3,
+        "actual": 3,
+        "rows": 3
+      },
+      "development_episode": {
+        "reserved": 2,
+        "actual": 2,
+        "rows": 2
+      },
+      "environment_step": {
+        "reserved": 894,
+        "actual": 894,
+        "rows": 894
+      },
+      "output_write": {
+        "reserved": 13,
+        "actual": 13,
+        "rows": 13
+      },
+      "ppo_optimizer_update": {
+        "reserved": 16,
+        "actual": 16,
+        "rows": 16
+      },
+      "training_episode": {
+        "reserved": 4,
+        "actual": 4,
+        "rows": 4
+      },
+      "wm_candidate_evaluation": {
+        "reserved": 232,
+        "actual": 232,
+        "rows": 195
+      },
+      "wm_forward_batch": {
+        "reserved": 198,
+        "actual": 198,
+        "rows": 195
+      },
+      "wm_optimizer_update": {
+        "reserved": 2,
+        "actual": 2,
+        "rows": 2
+      }
+    }
+  },
+  "all_declared_hash_checks_pass": true,
+  "actual_policy_architecture_evidence": {
+    "result": "both G and G-WM use L0 without graph message passing; graph-GPPO target not fulfilled",
+    "constructor_source": "package/civilian/n2_stage_pipeline.py",
+    "constructors": {
+      "G": "build_policy(\"L0\", WM_SEED, device=\"cpu\")",
+      "G-WM": "build_policy(\"L0\", WM_SEED, device=\"cpu\")"
+    },
+    "control_parameter": "variant, not use_message_passing",
+    "branch_source": "package/civilian/graph_policy.py:416,443",
+    "L0_branch": "entity_mlp per node",
+    "L1_branch": "literal_attention and task_update message passing",
+    "checkpoints": [
+      {
+        "path": "final-formal-run-evidence/run-once/n2_pipeline/checkpoints/G/round_01.pt",
+        "stored_variant": "G",
+        "entity_mlp_tensor_key_count": 18,
+        "literal_attention_tensor_key_count": 0,
+        "task_update_tensor_key_count": 0,
+        "strict_restore_as_L0": true
+      },
+      {
+        "path": "final-formal-run-evidence/run-once/n2_pipeline/checkpoints/G_WM/round_01.pt",
+        "stored_variant": "G-WM",
+        "entity_mlp_tensor_key_count": 18,
+        "literal_attention_tensor_key_count": 0,
+        "task_update_tensor_key_count": 0,
+        "strict_restore_as_L0": true
+      }
+    ]
+  },
+  "causal_construction_scope": {
+    "registered_fixture": "package/civilian/registered_data/fixtures/causal_allocation_case.json",
+    "fixture_sha256": "23086b183ac88f3a4ac2efa8b9c082f893a3587192245c989a05fceae365f905",
+    "decision_time": 8,
+    "candidate_a": [
+      "dispatch:n02-heli-1:n02-causal-delivery-a",
+      "NOOP"
+    ],
+    "candidate_b": [
+      "dispatch:n02-heli-1:n02-causal-delivery-b",
+      "NOOP"
+    ],
+    "fixture_verified_meaning": "registered fixture bytes equal generator; not actual label-delta replay",
+    "separate_test_definition": "package/tests/test_100x100_contract.py:test_two_legal_global_choices_change_other_order_and_recompute_labels",
+    "formal_registered_causal_replay_receipt_found": false,
+    "conclusion": "construction exists; formal actual externality label delta remains unevidenced; zero ranking pairs alone does not prove construction absent"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "n02-runtime-spec/1",
+  "status": "expected_contract_only",
+  "expected": {
+    "interpreter_path": "/home/user1/w1-runtimes/w1-py31116-torch270cu128-v2/w1-light-repaired-fair-rerun-py31116/bin/python",
+    "interpreter_flag": "-B",
+    "python": "3.11.16",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "device": "cpu",
+    "affinity": [0],
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  "measurement": {
+    "status": "not_measured",
+    "actual": null
+  },
+  "evidence": {
+    "target_runtime_inventory": null,
+    "target_runtime_preflight": null
+  },
+  "integrity_note": "This file records the frozen target contract only. Installed versions, CPU affinity, thread configuration, accelerator state, and environment have not been measured in the target runtime."
+}

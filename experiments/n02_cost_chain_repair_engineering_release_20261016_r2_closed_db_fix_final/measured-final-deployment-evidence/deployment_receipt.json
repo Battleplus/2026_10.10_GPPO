@@ -1,0 +1,9 @@
+{
+  "status": "preflight_pass",
+  "release": "ch2_disaster_relief_n02_cost_repair_engineering_20261016_r2_closed_db_fix_final",
+  "publish": "/home/user1/w1-pilot/packages/ch2_disaster_relief_n02_cost_repair_engineering_20261016_r2_closed_db_fix_final",
+  "preflight_exit": 0,
+  "source_identity_sha256": "98a6377e3c5088ce9bca8efbc4b284ed27019eba399c8543ae32a8b25e35e2bf",
+  "archive_sha256": "0433447c96b3cd9c388dcfbd5890f41de976df0a961ca1f2a5df88ef92b5b3cf",
+  "archive_filename": "deployment-package.zip"
+}

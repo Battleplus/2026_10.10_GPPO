@@ -1,0 +1,2359 @@
+{
+  "first_error": null,
+  "guardian_invocation_measurement": {
+    "child_cpu_seconds": 20.003681,
+    "cpu_seconds": 23.362832708,
+    "guardian_cpu_seconds": 3.359151708,
+    "scope": "guardian process start through worker exit, excluding final receipt writes",
+    "source": "guardian time.monotonic/process_time plus wait4 child user and system CPU; stage allocation requires a committed phase boundary",
+    "status": "measured",
+    "wall_seconds": 29.85973918804666
+  },
+  "outer_guardian_receipt": "/home/user1/w1-pilot/runs/n02-v5-formal-auth-binding-closed-db-fix-final-once/guardians/06-development_evaluation.json",
+  "partial_checkpoints": [],
+  "release_digest": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76",
+  "resource_entry": {
+    "cpu_seconds": 1.9675350000000016,
+    "export_limit_bytes": 1073741824,
+    "finished_wall_monotonic": 270047.921346415,
+    "first_error": null,
+    "metadata": {
+      "outer_guardian_receipt": "/home/user1/w1-pilot/runs/n02-v5-formal-auth-binding-closed-db-fix-final-once/guardians/06-development_evaluation.json",
+      "outer_guardian_sampling_interval_seconds": 0.25,
+      "prior_resource_cost_sha256": "bc60410eb314e7882b9cf85237d8d3243209f27edb11ce242dc94c6bfe485824",
+      "receipt": "/home/user1/w1-pilot/runs/n02-v5-formal-auth-binding-closed-db-fix-final-once/receipts/06-development_evaluation.json",
+      "release_digest": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76",
+      "runtime_identity_sha256": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76"
+    },
+    "outer_guardian_error": null,
+    "outer_guardian_kill_reason": null,
+    "peak_export_bytes": 5232319,
+    "peak_rss_bytes": 1645547520,
+    "peak_work_bytes": 8425355,
+    "pilot_cpu_used_including_this": 25.878642561000003,
+    "pilot_wall_used_including_this": 32.67788081702707,
+    "release_digest": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76",
+    "rss_high_water_source": "linux:/proc/self/status:VmHWM",
+    "rss_limit_bytes": 4294967296,
+    "runtime_identity_sha256": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76",
+    "schema": "resource-ledger-entry/2",
+    "stage": "development_evaluation",
+    "stage_cpu_used_including_this": 1.9675350000000016,
+    "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+    "stage_wall_used_including_this": 3.0358187170349993,
+    "started_wall_monotonic": 270044.885527698,
+    "status": "complete",
+    "wall_seconds": 3.0358187170349993,
+    "work_limit_bytes": 1073741824
+  },
+  "result": {
+    "development_is_diagnostic_only": true,
+    "development_parent_count": 1,
+    "episodes": [
+      {
+        "environment_step_count": 60,
+        "parent_index": 0,
+        "policy_decision_count": 60,
+        "proposal_diagnostics": [
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "1d6332c5d0dfde8b6fd415512eda64b7ebcae66a0d88fe70b07f33256677bbee",
+              "70b1667aaa9af07838e63b9f0acd7d35ecc2d0ec07d4fab9cc441cad8c86cc6f",
+              "7c3b762ed202077cf86607af2ca031c215327482b431b7d429de6d300e43d52f"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 0.06291499733924866,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "94fee30dd43935d057b93cd80408cc197a931e914c33c5ee2cca07d7e3c68012",
+              "8c5b6fd3bcb0965f7e0f0529b410b784d573aba13f95063c264083ad18d7e99a",
+              "9f02bac5448f0246dc7be081f04d728019fb0cef63d054eecd1858837207bab9"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "a3fdb52efbbb875a0a705a9ce599820f99ec9a0610bf985967f2ba7a3df0ab1d",
+              "c839d5285d2cf76236805ad6b94d2e90364d0807f8d2a1ac6532675cd3ad1cd6",
+              "76b694cc5bae01154d297a6afc0d822668d0ddde2c09d7f533924119d6920e9f"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0000001192092896,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": null,
+              "candidate_evaluations": 0,
+              "enabled": false,
+              "forward_batches": 0,
+              "hit": false,
+              "miss": false
+            }
+          }
+        ],
+        "proposal_probability_forward_count": 69,
+        "scenario_id": "n02-development-carrier_competition-00-f8c58727a4bffd36",
+        "summary": {
+          "delivered_orders": 4,
+          "energy_used": 11.551500870754841,
+          "inspection_completion_rate": 1.0,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0,
+          "new_assignments": 4,
+          "reassignments": 1,
+          "undiscovered_orders": 0,
+          "unmet_orders": 0,
+          "weighted_on_time_delivery_rate": 1.0
+        },
+        "variant": "G",
+        "world_model_candidate_evaluation_count": 0,
+        "world_model_prediction_cache_hit_count": 0,
+        "world_model_prediction_cache_miss_count": 0,
+        "world_model_prediction_forward_count": 0
+      },
+      {
+        "environment_step_count": 60,
+        "parent_index": 0,
+        "policy_decision_count": 60,
+        "proposal_diagnostics": [
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "1d6332c5d0dfde8b6fd415512eda64b7ebcae66a0d88fe70b07f33256677bbee",
+              "70b1667aaa9af07838e63b9f0acd7d35ecc2d0ec07d4fab9cc441cad8c86cc6f",
+              "7c3b762ed202077cf86607af2ca031c215327482b431b7d429de6d300e43d52f"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 0.06158050149679184,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "28d0edfb3ddcb02a7bb2bf7ebad8cff6d6b2bff2825d203dbc478f0737b80cb6",
+              "candidate_evaluations": 4,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "4289f5170cbae8a6a2b0f7219306d2e492ed417762178f43d71d0595a4dccd97",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "7cb37ddec437af95c1f57062eec2237b298f8c0bab1f5e50ff503261bc24d779",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "f9edb2c1ce5e26610722452b9dfe9d6bf1b3d7b5153e0ad8b3d28dc9de0ea398",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "94fee30dd43935d057b93cd80408cc197a931e914c33c5ee2cca07d7e3c68012",
+              "8c5b6fd3bcb0965f7e0f0529b410b784d573aba13f95063c264083ad18d7e99a",
+              "9f02bac5448f0246dc7be081f04d728019fb0cef63d054eecd1858837207bab9"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "e4ea32580f5bc89c15cf99a55b9ca48ab129fc49fdbdfd645826241474b4fc77",
+              "candidate_evaluations": 4,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "530ea671386e43e741551cc5a07d4242403b5d5f075940b303c7e69ff7c34aa8",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "a46f7b5df51b227dea76560f6febc62afd0c4af90d7f7bda5663758ad08155eb",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d",
+              "a3fdb52efbbb875a0a705a9ce599820f99ec9a0610bf985967f2ba7a3df0ab1d",
+              "c839d5285d2cf76236805ad6b94d2e90364d0807f8d2a1ac6532675cd3ad1cd6",
+              "76b694cc5bae01154d297a6afc0d822668d0ddde2c09d7f533924119d6920e9f"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 4,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "9d657d796863353b3655428a397d8f5319d89dc56997e993fd45a236287b35f4",
+              "candidate_evaluations": 4,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "edcc76fc0958963b7bde185acacea49c427e1850b46321cf9590925660ae0934",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "a8437c4102623541c153e311b8e7fd2a713039a9839ff7e9d222e21e074418de",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "6ab596c16a75aa255fa8067f94da0606a8f18284b13c7e8b76bc8e3e881a6b2b",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "f1c524fbec2c9a20b51f6b7f18e84833cac8cf78e72bb3ea7576bfdab5ce4ccf",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "a996f311da38caac5e26b8acd356d31327b4324f9f441813b6c96ebddd923d3e",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "947b9b4aa069b8941d8200057c6948ab73249fa25575cbab07f5012f7477a572",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "61e2a98b89d5a123c235460f8400a6fb0795c09269d37bba9f8a26a2875dad7a",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "506738bf5ade0d23013fd60697195fad62ad195692587bfd8f27f328a95b2327",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "d0daa1abb200644093deddee6b309d74d67313a8e7e86c5eec22e871b75212e0",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "ff0a919affbd9f7b6df2983f32dfb175c2bf771476f48bef549bfc1087f299b1",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "ae85220bbc58619bea4f3b734f4fd6241b21b9e6279247e5c20966b293086d23",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "5e8a104012812f02eaf34bccf5ee32ff4fe7dc29517bfda8b998e25fe9430db5",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "ca741a0c97928e7957bb5848fc33a2763ebff60436ca1febf09f341dc2661299",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b1f02ccf4d94ed40c93d8ffb4c270f5868d74cdde2fa4dfd912c7f9be2a2baca",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "e7735b7c86f07070ddb600549510ab97cde09934833bc6e48e3384ddd025476f",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "86a369fe72734bdc4df97570a32aad0cc63ba51c82c65b68a9ecb67f2e5c1cbd",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "972011fe3801c85c636dff6b7430da72ec217a8504e57150f00fb0b66656c7fb",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "c84277e5544aca302edbbdca8b6c677cef2640e161596dc208b68d8a5b64458a",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "52555dba41b5c27580fd0fe57ccbb0f1f0e7bf096659b0b69d6cce8408a387fb",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "984d783fde1d02db41bcb9e60e6b4fecfda065e96945d0b0b098ac1149273e21",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "1d2e0d73544717428df63033995883d008aea3123bf614bcda8a510f0fa42840",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "648f60032cf12e27f8d779eb37cd4d33c1076a7d4c2a0edbcfa9b598cc86b555",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "a0294a56c606d52d9568f69067487345665c1f43d11f8797f0ab2e314b7874ce",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "8053d8cc9e1e10993f6a2c1806026c4a135173c286784f85fdcbd7f3b7348e8a",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "072e3002d89b8dfa619d3ea25ebf96ea0f1cf6ed1fb297d0c2f10b3f3364bedf",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "169e5a22da1901f481d1eb763acbcb18ba3293a76eb222f8c5f168125d34b995",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b1addb8b120e20b458c3d547f8cec7c422ebc32ce2cff90d5c6604d794ccc421",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "d04b7a578979a582c0c27d456d352fdbd3dde706af7e75262fcb4c8d18ff82a7",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "46c8d51265895ff6fe27b93c2a7936ed4b49e362921811849b0a863ad89e2f22",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b6472db0893bc394d32a7ed36a6095daf11ea84b9d2296fe3ac66e8cdd06f218",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "4c743be74da10378bfd50913c1aacc2d3987c29b6c4c73dbf137d7e055d7d729",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "a173fc584d85b7b6f4b0ad16a991271784c92c694657e99b8a01b77e6bc87232",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "359293726627b6693ffcc839d7a6f26a3344d70d39262904c811d945bbfdfa44",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b3e6a8744658aa21c3a0d8c222c3b0138f344692a59464471c3437105cf07510",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b75a939b67a4d8403d778d16b628d6d703701605155294aee4357b880995a4a0",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "9367a12eaf9e3a97ce2b79e0a32c345f92b2a6a0d0a4f8f5f41e90e7dddc2b04",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b0fc86fadb7d65a6222420a1df11488b4efbcba943446bd0d6c1fa83a96d90d2",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "7ee5f293adf6695bcac071a2ee519c6c45c2ae0b6d0ccd5032ed44e956699c93",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "0c75031c7e5c03d66f956f15db34df68b6da8629e9c092e2419c9036449f94de",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "bd2bfcb20ce2dc856671525a9c4154a6595ae0287dfd8da65dee81fc2d6d4ee4",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "4d0b1c1e7ebfb1e33e02e3517c702911c4ec6e9ae6dbb18352bc1ab11ce0c2e7",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "e4708b8164af53e078b35a51640d0e833da1b3ce8f0e6a78a7d3dd6302176b2f",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "2379f28a6c169f6aa451b51b9c6d3a4fc46e581c9157aba5dee2569ed070a63b",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "3cbf66c21c8e41832b7d73ef06e54a141ef108b75fc4fdb7380a327978955317",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "7aa368dbda96066f547e9c5827995a360ba9dd4eb6c93e9a9a3e956597cf1eec",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "3172ec86edb5c11912527ea407125fa35461c47b8ec2b72d12ae0268025c2191",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "b2447e5e7a70966d1eadb936ead92a5e122c638b185b4f98b30d596b9f985aea",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "1fb1d13ba639d1102b85b04a6b72b8a696624faf2e640f3e625f8798099854d2",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "5f05b57fb9fe883615d925ec6f44f0151330fb15afc258db52dbdd0231af92e7",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "75eaa31111a16d7e9c885a96efbefafb03339cdeee44815a39fa6e3df0a67d7f",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "49197eaef052d98088e5c1f965bb526a26d8fe00b23f76fac160f3bb0048f4fd",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          },
+          {
+            "candidate_ids": [
+              "9d9ca8882a17c8c73937efd59fe43327395b2cd6be6ee19277fe2d74280ad62d"
+            ],
+            "critic_aggregation": "conditional_softmax_over_proposal_subset",
+            "proposal_count": 1,
+            "proposal_probability_binding": "complete_action_batch_sequential_masks",
+            "proposal_set_mass_scope": "finite_proposal_subset",
+            "proposal_set_probability_mass": 1.0,
+            "wm_prediction_cache": {
+              "cache_key_sha256": "7d9ae2304cb407e384a76594ebaac785655ea3c1690bb4fc6c1d663d2f65d79a",
+              "candidate_evaluations": 1,
+              "enabled": true,
+              "forward_batches": 1,
+              "hit": false,
+              "miss": true
+            }
+          }
+        ],
+        "proposal_probability_forward_count": 69,
+        "scenario_id": "n02-development-carrier_competition-00-f8c58727a4bffd36",
+        "summary": {
+          "delivered_orders": 4,
+          "energy_used": 11.551500870754841,
+          "inspection_completion_rate": 1.0,
+          "inspection_on_time_rate": 1.0,
+          "late_orders": 0,
+          "new_assignments": 4,
+          "reassignments": 1,
+          "undiscovered_orders": 0,
+          "unmet_orders": 0,
+          "weighted_on_time_delivery_rate": 1.0
+        },
+        "variant": "G-WM",
+        "world_model_candidate_evaluation_count": 69,
+        "world_model_prediction_cache_hit_count": 0,
+        "world_model_prediction_cache_miss_count": 60,
+        "world_model_prediction_forward_count": 60
+      }
+    ],
+    "evaluation_environment_step_count": 120,
+    "evaluation_episode_count": 2,
+    "evaluation_policy_decision_count": 120,
+    "expected_evaluation_episode_count": 2,
+    "matched_variants": [
+      "G",
+      "G-WM"
+    ],
+    "paired_differences": [
+      {
+        "G_minus_G-WM_energy_used": 0.0,
+        "G_minus_G-WM_inspection_on_time_rate": 0.0,
+        "G_minus_G-WM_weighted_on_time_delivery_rate": 0.0,
+        "scenario_id": "n02-development-carrier_competition-00-f8c58727a4bffd36"
+      }
+    ],
+    "policy_training_receipt_sha256": "26dcecb42d930004c60faa54f88672cc199b7398e1bd0de6daa37527a8437235",
+    "proposal_probability_forward_count": 138,
+    "schema": "n2-civilian-stage-pipeline/1",
+    "stage": "development_evaluation",
+    "status": "complete",
+    "world_model_candidate_evaluation_count": 69,
+    "world_model_prediction_cache_hit_count": 0,
+    "world_model_prediction_cache_miss_count": 60,
+    "world_model_prediction_cache_stats": {
+      "candidate_evaluations": 69,
+      "entry_count": 60,
+      "evictions": 0,
+      "forward_batches": 60,
+      "hits": 0,
+      "max_entries": 2048,
+      "misses": 60,
+      "schema": "n2-frozen-wm-prediction-cache/1"
+    },
+    "world_model_prediction_forward_count": 60,
+    "world_model_work": {
+      "actual": {
+        "candidate_evaluation_count": 232,
+        "forward_batch_count": 198
+      },
+      "caps": {
+        "candidate_evaluation_count": 2048,
+        "forward_batch_count": 512
+      },
+      "static_upper_bound": {
+        "candidate_components": {
+          "gwm_development_evaluation": 240,
+          "gwm_ppo_update": 0,
+          "gwm_rollout": 480,
+          "prediction_check": 32,
+          "strict_restore": 32,
+          "training": 128
+        },
+        "candidate_evaluation_count": 912,
+        "forward_batch_count": 204,
+        "forward_components": {
+          "gwm_development_evaluation": 60,
+          "gwm_ppo_update": 0,
+          "gwm_rollout": 120,
+          "prediction_check": 8,
+          "strict_restore": 8,
+          "training": 8
+        },
+        "ppo_cache_lookup_count": 480
+      },
+      "status": "within_bounds"
+    }
+  },
+  "runtime_identity_sha256": "60326b6164a03d2fdee55cbbbd72c9294992dc8d3c5f7cb13047e329e0053d76",
+  "schema": "driver-stage-receipt/2",
+  "stage": "development_evaluation",
+  "stage_measurement_status": "measured",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "stage_state": "stage_entered",
+  "status": "complete"
+}

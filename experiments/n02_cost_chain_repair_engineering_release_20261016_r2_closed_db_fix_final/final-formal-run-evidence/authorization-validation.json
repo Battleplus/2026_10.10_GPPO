@@ -1,0 +1,30 @@
+{
+  "authorization_sha256": "986fc17d4589008afdb622587f4b9ae17786bb2567b1059c00eccc18acc2c1f2",
+  "attempt_id": "n02-v5-formal-auth-binding-closed-db-fix-final-once",
+  "attempt_identity_sha256": "3f3bf1d0bab48867bd74b698dac2b98fae48bddc04fefad2aad442e295b65a5d",
+  "request_identity_sha256": "928428d9daab671fb1703c528370918387b1aaad9e16f67a2c9105074e8feb71",
+  "authorized": true,
+  "request_frozen": true,
+  "request_scope": "n02-v5-full-pipeline-once",
+  "scope": "n02-v5-full-pipeline-once",
+  "budget": {
+    "server_wall_seconds": 1800,
+    "server_cpu_seconds": 900,
+    "rss_bytes": 4294967296,
+    "work_storage_bytes": 1073741824,
+    "export_storage_bytes": 1073741824,
+    "environment_steps": 4000,
+    "candidate_branches": 128,
+    "world_model_updates": 8,
+    "ppo_updates": 16,
+    "policy_training_episodes": 4,
+    "development_evaluation_episodes": 2,
+    "world_model_forward_batches": 512,
+    "world_model_candidate_evaluations": 2048
+  },
+  "preflight": {
+    "engineering_id": "n02-v5-cost-repair-engineering-20261016-r2-closed-db-fix-final",
+    "path": "/home/user1/w1-pilot/diagnostics/n02-v5-cost-repair-engineering-20261016-r2-closed-db-fix-final/preflight_receipt.json",
+    "sha256": "8aaf7f453ca38e263574febf45a6c1da9439a20dd37dc8512cae1205a5b6b950"
+  }
+}
