@@ -1,0 +1,19 @@
+{
+  "authorization_created": false,
+  "formal_attempt_created": false,
+  "measured_stage_scope": [
+    "input_admission"
+  ],
+  "mode": "controlled_preflight_only",
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "pending_status_sha256": "603dffa8e9998089fa4641d50d4dbf21fe4fc816901112ec5a258d779eee2044",
+  "preflight_only": true,
+  "run_guarded_pipeline_exit_code": 1,
+  "runtime_identity_sha256": "b9a2cfb97bf8ac0a6f3bd0b567a57d8a87256bd0f581f86eb8a8a76eed579114",
+  "schema": "n02-engineering-cost-measurement/1",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "status": "failed",
+  "systemd_invocation_id": "4c5e77cb19a249398144e5611aa9d827",
+  "training_started": false,
+  "unit_name": "n02-cost-repair-20261016-r2.service"
+}

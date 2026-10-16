@@ -1,0 +1,22 @@
+{
+  "archive_sha256": "1ad32ddcff7ba38c0524b98ad239296f1d2c425493e8cab41ebf10f6d1b468cf",
+  "authorization_created": false,
+  "formal_attempt_created": false,
+  "helper_sha256": "3b1fd20c73deabfa8436229b5f070232421e5ff38dbb29561147442ae2b54ace",
+  "host": "172.17.27.173",
+  "journal_exit_code": 0,
+  "launch_exit_code": 1,
+  "launch_submissions": 1,
+  "prior_status_sha256": "603dffa8e9998089fa4641d50d4dbf21fe4fc816901112ec5a258d779eee2044",
+  "remote_helper_hash_verified": true,
+  "remote_helper_sha256": "3b1fd20c73deabfa8436229b5f070232421e5ff38dbb29561147442ae2b54ace",
+  "remote_measurement_root_downloaded": true,
+  "remote_receipt_sha256": "ee2599ec45163e85545737c0c992b9c7e0867781bd0e25170a94351840c0af74",
+  "run_id": "n02-cost-measurement-20261016-r2",
+  "source_identity_sha256": "76249c0c9de6ac5a32446638542ae278e214075ce201258eb85f0980f3776c20",
+  "status": "launch_failed_first_attempt",
+  "training_started": false,
+  "unit_name": "n02-cost-repair-20261016-r2.service",
+  "user": "user1",
+  "work_root": "/home/user1/w1-pilot/diagnostics/n02-cost-measurement-20261016-r2"
+}

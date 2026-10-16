@@ -1,0 +1,44 @@
+{
+  "budget_proposal": {
+    "cpu_seconds": 100,
+    "rss_bytes": 4294967296,
+    "systemd_cpu_quota_percent": 36,
+    "systemd_cpu_quota_period_seconds": 0.1,
+    "systemd_runtime_max_seconds": 270,
+    "systemd_timeout_start_seconds": 270,
+    "wall_seconds": 270
+  },
+  "formal_attempt_created": false,
+  "measurement_scope": [
+    "input_admission",
+    "same-unit systemd shutdown tail"
+  ],
+  "schema": "n02-engineering-cost-measurement/1",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "status": "failed",
+  "systemd_cpu_seconds": 3.899507,
+  "systemd_invocation_id": "4c5e77cb19a249398144e5611aa9d827",
+  "systemd_properties": {
+    "ActiveState": "failed",
+    "CPUAccounting": "yes",
+    "CPUQuotaPerSecUSec": "360ms",
+    "CPUUsageNSec": "3899507000",
+    "ExecMainExitTimestampMonotonic": "263538288259",
+    "ExecMainStartTimestampMonotonic": "263533910221",
+    "ExecMainStatus": "1",
+    "Id": "n02-cost-repair-20261016-r2.service",
+    "InvocationID": "4c5e77cb19a249398144e5611aa9d827",
+    "KillMode": "control-group",
+    "LoadState": "loaded",
+    "MemoryAccounting": "yes",
+    "MemoryMax": "4294967296",
+    "RemainAfterExit": "yes",
+    "Restart": "no",
+    "Result": "exit-code",
+    "SubState": "failed",
+    "TasksMax": "64"
+  },
+  "systemd_wall_seconds": 4.378038,
+  "training_started": false,
+  "unit_name": "n02-cost-repair-20261016-r2.service"
+}
