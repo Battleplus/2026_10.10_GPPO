@@ -1,0 +1,73 @@
+{
+  "schema": "n02-v5-formal-run-first-error-evidence/1",
+  "status": "stopped_at_first_error",
+  "release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "attempt_id": "n02-v5-formal-auth-binding-once",
+  "authorization": {
+    "schema": "n02-v5-formal-run-authorization/1",
+    "state": "authorized",
+    "one_time": true,
+    "scope": "n02-v5-full-pipeline-once",
+    "request_identity_sha256": "bf81982fafa28ebf84224fd610b978cadb89ff938739d1519af18a210cd7ca79",
+    "attempt_identity_sha256": "e042bf77edd8ae56ecac39fbcdb09644c9cd1f3fe31d07dfc666883c917b83a9",
+    "authorization_body_sha256": "a0bb4fba04b4f351879bd157fb037b276fd949ba71df4f3e264b8368daf615c9",
+    "authorization_file_sha256": "14fa69cf64d51c1f5aa1631af9a4da926126107378dbd97e6ae9a7491d701837",
+    "preflight_receipt_sha256": "b607e3c07b48c3647cb4fab0ace2607709dd4bdff080240bd06b85f9d7ec9600",
+    "consumption_state": "submitted"
+  },
+  "systemd": {
+    "unit": "n02-v4-n02-v5-formal-auth-binding-once.service",
+    "invocation_id": "d26c70718c2d4cbaaa67f87269a291df",
+    "active_state": "failed",
+    "sub_state": "failed",
+    "result": "exit-code",
+    "exec_main_status": 1,
+    "cpu_usage_ns": 1706205000,
+    "cpu_usage_seconds": 1.706205,
+    "journal_start": "2026-10-16T12:14:38.256744+0800",
+    "journal_exit": "2026-10-16T12:14:39.997038+0800",
+    "observed_service_wall_seconds": 1.740294,
+    "resource_measurement_scope": "systemd unit only; no completed worker ledger or settlement"
+  },
+  "first_error": {
+    "type": "PermissionError",
+    "message": "N2 pipeline execution requires a measured prior resource-cost receipt",
+    "source": "package/civilian/process_guardian.py:1028",
+    "prior_resource_cost_status": "no_current_engineering_runs",
+    "prior_resource_measurement_status": "pending",
+    "validated_receipt_present": false,
+    "pipeline_execution_allowed": false
+  },
+  "execution_counts": {
+    "world_model_updates": 0,
+    "ppo_updates": 0,
+    "worker_started": false,
+    "sqlite_present": false,
+    "settlement_present": false,
+    "environment_step_count": null,
+    "environment_step_count_reason": "The pipeline stopped before a run ledger was created."
+  },
+  "run_tree": {
+    "downloaded_files": [
+      "authorization_consumed.json",
+      "console.log",
+      "systemd_handoff.json",
+      "systemd_submission.json"
+    ],
+    "downloaded_file_count": 4,
+    "settlement_complete": false
+  },
+  "evidence_sha256": {
+    "preflight_receipt.json": "b607e3c07b48c3647cb4fab0ace2607709dd4bdff080240bd06b85f9d7ec9600",
+    "authorization.json": "14fa69cf64d51c1f5aa1631af9a4da926126107378dbd97e6ae9a7491d701837",
+    "authorization-validation.json": "c8263c1ab99406e8831206873be8236500d4f8f916ce54d70a15afac7f96e8f2",
+    "handoff.json": "8f25ddda85bb62100a8cb34ac619866a80eae641450e918b39bc15c0b373f099",
+    "systemd-terminal.json": "c728b1b4601b9751ec0aa9f0025e8d8db044c104970922324016303d9b46b5e5",
+    "journal.txt": "1cb90d3246aa8d9e7ae2e3253582bd991e54514ce24ae90c7b9aaea2be8e0e9d",
+    "run-once/console.log": "fef1932b2970882bdc9c5a10d66ae59bfc8b79fb0fa549d04645db06ab8f4ad9",
+    "run-once/authorization_consumed.json": "b4324bc84dfd527e0cc40946064ff2afd531443e13eb7d47704efd12203b0497",
+    "run-once/systemd_submission.json": "7ca8f4c8437643f3f8789ce5b8534653fa926ef06a9ac84564074571c2b69fbf",
+    "run-once/systemd_handoff.json": "84f82cac03fb2f1239670b8c16f050f49ef67711c6bdfccb106a8b6af149597d",
+    "package/civilian/PRIOR_RESOURCE_COST.json": "3d72d0dfac4602118daaf191896cf8ceb04472b2c492bc247e46d8556342a716"
+  }
+}

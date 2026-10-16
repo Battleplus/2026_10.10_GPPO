@@ -1,0 +1,30 @@
+{
+  "authorization_sha256": "a0bb4fba04b4f351879bd157fb037b276fd949ba71df4f3e264b8368daf615c9",
+  "attempt_id": "n02-v5-formal-auth-binding-once",
+  "attempt_identity_sha256": "e042bf77edd8ae56ecac39fbcdb09644c9cd1f3fe31d07dfc666883c917b83a9",
+  "request_identity_sha256": "bf81982fafa28ebf84224fd610b978cadb89ff938739d1519af18a210cd7ca79",
+  "authorized": true,
+  "request_frozen": true,
+  "request_scope": "n02-v5-full-pipeline-once",
+  "scope": "n02-v5-full-pipeline-once",
+  "budget": {
+    "server_wall_seconds": 1800,
+    "server_cpu_seconds": 900,
+    "rss_bytes": 4294967296,
+    "work_storage_bytes": 1073741824,
+    "export_storage_bytes": 1073741824,
+    "environment_steps": 4000,
+    "candidate_branches": 128,
+    "world_model_updates": 8,
+    "ppo_updates": 16,
+    "policy_training_episodes": 4,
+    "development_evaluation_episodes": 2,
+    "world_model_forward_batches": 512,
+    "world_model_candidate_evaluations": 2048
+  },
+  "preflight": {
+    "engineering_id": "n02-v5-preflight-formal-auth-binding",
+    "path": "/home/user1/w1-pilot/diagnostics/n02-v5-preflight-formal-auth-binding/preflight_receipt.json",
+    "sha256": "b607e3c07b48c3647cb4fab0ace2607709dd4bdff080240bd06b85f9d7ec9600"
+  }
+}

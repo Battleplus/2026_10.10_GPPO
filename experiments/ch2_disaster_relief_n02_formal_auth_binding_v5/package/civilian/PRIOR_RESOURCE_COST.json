@@ -1,0 +1,20 @@
+{
+  "schema": "prior-resource-cost-status/1",
+  "stage_protocol": "n02-integration-smoke-v4/seven-stage",
+  "status": "no_current_engineering_runs",
+  "known_consumed": {
+    "wall_seconds": 0.0,
+    "cpu_seconds": 0.0
+  },
+  "measurement": {
+    "status": "pending",
+    "actual": null
+  },
+  "validated_receipt": null,
+  "gates": {
+    "target_runtime_preflight_allowed": true,
+    "pipeline_execution_allowed": false,
+    "request_freeze_allowed": false
+  },
+  "integrity_note": "Zero is the known consumed amount because no engineering run has been recorded; it is not a measured runtime cost. No receipt or evidence hashes are present. Pipeline execution and Request freeze remain disallowed until target-runtime measurements and a validated resource receipt exist."
+}

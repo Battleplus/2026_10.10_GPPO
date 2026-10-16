@@ -1,0 +1,30 @@
+{
+  "allocation": {
+    "development": 1,
+    "train": 2
+  },
+  "authorized": false,
+  "candidate_request_identity_sha256": "bf81982fafa28ebf84224fd610b978cadb89ff938739d1519af18a210cd7ca79",
+  "execution_started": false,
+  "hash_bundle_sha256": "f53854570c452b9e8d21badcf3e72ee1d5747a193c28a7e66d63779103a561e5",
+  "identity_state": "static_candidate_not_authorized_not_frozen",
+  "independent_review": "pending",
+  "input_registry_sha256": "e4e9046890c6e2935bdf1ed02e77cbf250ba074ddd4ffcb4ab8a0fad0eeefd55",
+  "local_synthetic_critic_interface_validation": "passed_actual_module_forward_autograd",
+  "map_contract": "relief-grid-100x100-v1",
+  "model_forward_training_checkpoint": "not_run",
+  "package_release": "ch2_disaster_relief_n02_formal_auth_binding_v5",
+  "prior_resource_cost_sha256": "3d72d0dfac4602118daaf191896cf8ceb04472b2c492bc247e46d8556342a716",
+  "protocol_id": "n02-integration-smoke-v4-100x100",
+  "release_manifest_sha256": "dc5755a2cb7ecb6c82599ae9297155f1b9fd6cce256ca24050b0dad5127be6b1",
+  "request_frozen": false,
+  "request_scope": "candidate_target_runtime_preflight_only",
+  "runtime_dependency_bundle_sha256": "5cd3b7dd71a774ee016c2de0f03c89b490b95e0bfa871eda5092062f128a1670",
+  "runtime_spec_sha256": "0a389e099ca87ec3ebda945f00c48c34e94993ff8d9bad3f1bab305aaa91316b",
+  "scenario_count": 3,
+  "schema": "n02-static-request-identity/2",
+  "server_submission": "not_performed",
+  "stage_protocol": "n02-integration-smoke-v4-100x100/seven-stage",
+  "target_runtime_critic_interface_validation": "not_run",
+  "target_runtime_preflight": "not_run"
+}

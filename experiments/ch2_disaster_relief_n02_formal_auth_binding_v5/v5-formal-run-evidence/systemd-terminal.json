@@ -1,0 +1,15 @@
+{
+  "unit": "n02-v4-n02-v5-formal-auth-binding-once.service",
+  "properties": {
+    "MainPID": "0",
+    "Result": "exit-code",
+    "ExecMainStatus": "1",
+    "ControlGroup": "",
+    "CPUUsageNSec": "1706205000",
+    "LoadState": "loaded",
+    "ActiveState": "failed",
+    "SubState": "failed",
+    "InvocationID": "d26c70718c2d4cbaaa67f87269a291df"
+  },
+  "submission_error": null
+}

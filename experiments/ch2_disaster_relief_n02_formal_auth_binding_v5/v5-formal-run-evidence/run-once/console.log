@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/user1/w1-pilot/packages/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/driver.py", line 1864, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/user1/w1-pilot/packages/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/driver.py", line 1795, in main
+    return run_guarded_pipeline(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user1/w1-pilot/packages/ch2_disaster_relief_n02_formal_auth_binding_v5/package/civilian/process_guardian.py", line 1028, in run_guarded_pipeline
+    raise PermissionError("N2 pipeline execution requires a measured prior resource-cost receipt")
+PermissionError: N2 pipeline execution requires a measured prior resource-cost receipt
